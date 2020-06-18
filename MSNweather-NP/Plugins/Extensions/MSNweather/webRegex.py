@@ -34,7 +34,8 @@ iconsMap={
     'bezchmurnie'           :   '31.png',
     'slonecznie'            :   '32.png',
     'przewaznieslonecznie'  :   '34.png',
-    'burze'                 :   '37.png',
+    'burze'                 :   '35.png',
+    'silneburze'            :   '37.png',
     #EN
     "rainshowers"           :   '9.png',
     'lightrain'             :   '11.png',
