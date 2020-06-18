@@ -25,7 +25,15 @@ MyMemoriesWakeUpPicDialog = None
 BingPicOfTheDay = '/usr/lib/enigma2/python/Plugins/Extensions/MyMemories/data/BingPicOfTheDay.jpg'
 GenerateBootlogo = """
 ffmpeg -i "PHOTO" -r 25 -b 20000 -s 1280x720 /tmp/mybootlogo.m1v
-[ -f /tmp/mybootlogo.m1v ] && mv -f /tmp/mybootlogo.m1v /etc/enigma2/bootlogo.mvi
+if [ -f /tmp/mybootlogo.m1v ];then
+  if [ -e /usr/share/vuplus-bootlogo/ ];then 
+    [ -f /usr/share/vuplus-bootlogo/bootlogo.mvi.org ] || mv -f /usr/share/vuplus-bootlogo/bootlogo.mvi /usr/share/vuplus-bootlogo/bootlogo.mvi.org
+    cp -f /tmp/mybootlogo.m1v /usr/share/vuplus-bootlogo/bootlogo.mvi
+  else
+    cp -f /tmp/mybootlogo.m1v /etc/enigma2/bootlogo.mvi
+  fi
+  rm -f /tmp/mybootlogo.m1v
+fi
 """ # podaje sie pelna sciezka do jpg , orginalne bootlogo /usr/share/bootlogo.mvi
 
 def getScale():
@@ -60,9 +68,9 @@ config.mymemories.infoline = ConfigEnableDisable(default=True)
 config.mymemories.loop = ConfigEnableDisable(default=True)
 config.mymemories.bgcolor = ConfigSelection(default="#00000000", choices = [("#00000000", _("black")),("#009eb9ff", _("blue")),("#00ff5a51", _("red")), ("#00ffe875", _("yellow")), ("#0038FF48", _("green"))])
 config.mymemories.textcolor = ConfigSelection(default="#0038FF48", choices = [("#00000000", _("black")),("#009eb9ff", _("blue")),("#00ff5a51", _("red")), ("#00ffe875", _("yellow")), ("#0038FF48", _("green"))])
-config.mymemories.textHeight = ConfigInteger(default=20, limits=(20, 40))
-config.mymemories.textPositionH = ConfigInteger(default=45, limits=(0, getDesktop(0).size().width()))
-config.mymemories.textPositionV = ConfigInteger(default=30, limits=(0, getDesktop(0).size().height()))
+config.mymemories.textHeight = ConfigInteger(default=40, limits=(20, 60))
+config.mymemories.textPositionH = ConfigInteger(default=60, limits=(0, getDesktop(0).size().width()))
+config.mymemories.textPositionV = ConfigInteger(default= getDesktop(0).size().height() - 40 - 40, limits=(0, getDesktop(0).size().height()))
 
 config.mymemories.stopService = ConfigEnableDisable(default=False)
 config.mymemories.separator = NoSave(ConfigNothing())
@@ -1148,7 +1156,8 @@ class MyMemoriesWakeUpPic(Screen):
         if ptr != None:
             text = self.cleanFileNameForDisplay()
             self["picDescr"].setText(text)
-            textWidth = len(text) * int(config.mymemories.textHeight.value * 0.75) # The best would be to calculate real width, but don't know how to do it. :(
+            #textWidth = len(text) * int(config.mymemories.textHeight.value * 0.75) # The best would be to calculate real width, but don't know how to do it. :(
+            textWidth = self["picDescr"].instance.calculateSize().width()
             self["picDescr"].instance.resize(eSize(textWidth, config.mymemories.textHeight.value + 4) )
             self["picDescr"].instance.setForegroundColor(parseColor(config.mymemories.textcolor.value))
             self["picDescr"].instance.setBackgroundColor(parseColor(config.mymemories.bgcolor.value))
