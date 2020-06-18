@@ -39,16 +39,23 @@ if textHeight > textTmpHeight:
 else:
         textHeight = textTmpHeight
 
+AnimEndPosY = animPosition[1] + animHeight + offset
+listPosY = textPos[1] + textHeight + offset
 listHeight = listItemHeight * len(self.list)
 if DBG: open("/tmp/MessageBox.log", "a").write('listHeight=%s\n' % listHeight)
-if (textPos[1] + textHeight + offset) > (animPosition[1] + animHeight + offset):
-        listPos = (offset, textPos[1] + textHeight + offset)
+#
+if (listPosY) > (AnimEndPosY):
+        listPos = (offset, listPosY)
         listSize = (WindowWidth - offset * 2, listHeight)
-        newWindowHeight = listPos[1] + listSize[1] + offset
+        newWindowHeight = listPosY + listHeight + offset
+elif (listPosY + listHeight) > (AnimEndPosY):
+        listPos = (offset, AnimEndPosY)
+        listSize = (WindowWidth - offset * 2, listHeight)
+        newWindowHeight = AnimEndPosY + listHeight + offset
 else:
-        listPos = (textPos[0], textHeight + offset) 
+        listPos = (textPos[0], listPosY) 
         listSize =  (textWidth, listHeight)
-        newWindowHeight = animPosition[1] + animHeight + offset
+        newWindowHeight = AnimEndPosY
 #newWindowHeight = listPos[1] + listSize[1] + offset
 
 # Move and Resize list
