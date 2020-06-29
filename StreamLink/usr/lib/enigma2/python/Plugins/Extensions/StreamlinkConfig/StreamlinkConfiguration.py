@@ -14,9 +14,7 @@ from Screens.Screen import Screen
 from Screens.Setup import SetupSummary
 
 config.plugins.streamlinksrv = ConfigSubsection()
-config.plugins.streamlinksrv.checkPackages = NoSave(ConfigNothing())
-config.plugins.streamlinksrv.generateBouquet = NoSave(ConfigNothing())
-config.plugins.streamlinksrv.modifyBouquet = NoSave(ConfigNothing())
+config.plugins.streamlinksrv.installBouquet = NoSave(ConfigNothing())
 
 config.plugins.streamlinksrv.enabled = ConfigYesNo(default = False)
 config.plugins.streamlinksrv.logLevel = ConfigSelection(default = "info", choices = [("none", _("none")),
@@ -73,6 +71,13 @@ class StreamlinkConfiguration(Screen, ConfigListScreen):
         Mlist = []
         # pilot.wp.pl
         #Mlist.append(getConfigListEntry("", NoSave(ConfigNothing()) ))
+        Mlist.append(getConfigListEntry('\c00289496' + _("*** Available IPTV bouquets ***")))
+        for f in sorted(os.listdir("/usr/lib/enigma2/python/Plugins/Extensions/StreamlinkConfig/IPTVbouquets"), key=str.lower):
+            if os.path.exists('/etc/enigma2/%s' % f):
+                Mlist.append(getConfigListEntry(_("Press OK to remove: %s") % f , config.plugins.streamlinksrv.installBouquet))
+            else:
+                Mlist.append(getConfigListEntry(_("Press OK to add: %s") % f , config.plugins.streamlinksrv.installBouquet))
+        Mlist.append(getConfigListEntry(""))
         Mlist.append(getConfigListEntry('\c00289496' + _("*** %s configuration ***") % 'pilot.wp.pl'))
         Mlist.append(getConfigListEntry(_("Username:"), config.plugins.streamlinksrv.WPusername))
         Mlist.append(getConfigListEntry(_("Password:"), config.plugins.streamlinksrv.WPpassword))
@@ -235,6 +240,29 @@ class StreamlinkConfiguration(Screen, ConfigListScreen):
                 elif currItem == config.plugins.streamlinksrv.remoteE2bouquet:
                     from StreamingChannelConverter import StreamingChannelFromServerScreen
                     session.openWithCallback(self.doNothing, StreamingChannelFromServerScreen) 
+                elif currItem == config.plugins.streamlinksrv.installBouquet:
+                    bouquetFileName = currInfo.split(': ')[1].strip()
+                    if os.path.exists('/etc/enigma2/%s' % bouquetFileName):
+                        self.DBGlog('/etc/enigma2/%s' % bouquetFileName)
+                        os.system('rm -f /etc/enigma2/%s' % bouquetFileName)
+                        f = ''
+                        for line in open('/etc/enigma2/bouquets.tv','r'):
+                            if not bouquetFileName in line:
+                                f += line
+                        open('/etc/enigma2/bouquets.tv','w').write(f)
+                        self.session.openWithCallback(self.reloadBouquets,MessageBox, _("Bouquet '%s' removed properly") % bouquetFileName , MessageBox.TYPE_INFO, timeout = 5)
+                    else:
+                        os.system('ln -sf /usr/lib/enigma2/python/Plugins/Extensions/StreamlinkConfig/IPTVbouquets/%s /etc/enigma2/%s' % (bouquetFileName,bouquetFileName))
+                        f = open('/etc/enigma2/bouquets.tv','r').read()
+                        if not os.path.basename(bouquetFileName) in f:
+                            if not f.endswith('\n'):
+                                f += '\n'
+                            f += '#SERVICE 1:7:1:0:0:0:0:0:0:0:FROM BOUQUET "%s" ORDER BY bouquet\n' % os.path.basename(bouquetFileName)
+                            self.DBGlog('Dodano bukiet do listy')
+                            open('/etc/enigma2/bouquets.tv','w').write(f)
+                        self.session.openWithCallback(self.reloadBouquets,MessageBox, _("Bouquet '%s' added properly") % bouquetFileName , MessageBox.TYPE_INFO, timeout = 5)
+                    self["config"].list = self.buildList()
+                    return
                 self.DBGlog('%s' % str(self.doAction))
                 if not self.doAction is None:
                     bfn = self.doAction[1]
