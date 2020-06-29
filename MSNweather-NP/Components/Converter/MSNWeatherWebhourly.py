@@ -39,13 +39,19 @@ class MSNWeatherWebhourly(Converter, object):
         printDEBUG( myFUNC , myText )
             
     def DEBUG(self, myFUNC = '' , myText = '' ):
-        if config.plugins.WeatherPlugin.DebugMSNWeatherWebhourlyConverter.value:
-            from Plugins.Extensions.MSNweather.debug import printDEBUG
-            printDEBUG( myFUNC , myText )
+        try:
+            if config.plugins.WeatherPlugin.DebugMSNWeatherWebhourlyConverter.value:
+                from Plugins.Extensions.MSNweather.debug import printDEBUG
+                printDEBUG( myFUNC , myText )
+        except Exception:
+            pass
 
     def syncItems(self):
         self.DEBUG('MSNWeatherWebhourly(Converter).syncItems >>>')
-        self.WebhourlyItems = self.source.getWebhourlyItems().copy()
+        try:
+            self.WebhourlyItems = self.source.getWebhourlyItems().copy()
+        except Exception:
+            self.WebhourlyItems = {}
         self.DEBUG('\t len(self.WebhourlyItems) = %s' % len(self.WebhourlyItems) )
     
     @cached

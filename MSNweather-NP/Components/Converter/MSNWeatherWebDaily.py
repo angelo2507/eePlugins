@@ -41,14 +41,20 @@ class MSNWeatherWebDaily(Converter, object):
         printDEBUG( myFUNC , myText )
             
     def DEBUG(self, myFUNC = '' , myText = '' ):
-        if config.plugins.WeatherPlugin.DebugMSNWeatherWebDailyConverter.value:
-            from Plugins.Extensions.MSNweather.debug import printDEBUG
-            printDEBUG( myFUNC , myText )
+        try:
+            if config.plugins.WeatherPlugin.DebugMSNWeatherWebDailyConverter.value:
+                from Plugins.Extensions.MSNweather.debug import printDEBUG
+                printDEBUG( myFUNC , myText )
+        except Exception:
+            pass
     
     def syncItems(self):
         self.DEBUG('MSNWeatherWebDaily(Converter).syncItems >>>')
-        self.WebDailyItems = self.source.getWebDailyItems().copy()
-    
+        try:
+            self.WebDailyItems = self.source.getWebDailyItems().copy()
+        except Exception:
+            self.WebDailyItems = {}
+            
     @cached
     def getText(self):
         self.DEBUG('MSNWeatherWebDaily(Converter).getText >>> self.mode="%s"' % self.mode)

@@ -99,9 +99,12 @@ class MSNWeatherNP(Converter, object):
         printDEBUG( myFUNC , myText , 'MSNWeatherConverter.log' )
             
     def DEBUG(self, myFUNC = '' , myText = '' ):
-        if config.plugins.WeatherPlugin.DebugMSNWeatherConverter.value:
-            from Plugins.Extensions.MSNweather.debug import printDEBUG
-            printDEBUG( myFUNC , myText , 'MSNWeatherConverter.log' )
+        try:
+            if config.plugins.WeatherPlugin.DebugMSNWeatherConverter.value:
+                from Plugins.Extensions.MSNweather.debug import printDEBUG
+                printDEBUG( myFUNC , myText , 'MSNWeatherConverter.log' )
+        except Exception:
+            pass
 
     def getIndex(self, key):
         self.DEBUG('getIndex key="%s"' % key) 

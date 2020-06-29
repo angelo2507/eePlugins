@@ -41,13 +41,19 @@ class MSNWeatherWebCurrent(Converter, object):
         printDEBUG( myFUNC , myText, 'MSNWeatherWebCurrentConverter.log' )
             
     def DEBUG(self, myFUNC = '' , myText = '' ):
-        if config.plugins.WeatherPlugin.DebugMSNWeatherWebCurrentConverter.value:
-            from Plugins.Extensions.MSNweather.debug import printDEBUG
-            printDEBUG( myFUNC , myText )
+        try:
+            if config.plugins.WeatherPlugin.DebugMSNWeatherWebCurrentConverter.value:
+                from Plugins.Extensions.MSNweather.debug import printDEBUG
+                printDEBUG( myFUNC , myText )
+        except Exception:
+            pass
 
     def syncItems(self):
         self.DEBUG('MSNWeatherWebCurrent(Converter).syncItems >>')
-        self.WebCurrentItems = self.source.getWebCurrentItems().copy()
+        try:
+            self.WebCurrentItems = self.source.getWebCurrentItems().copy()
+        except Exception:
+            self.WebCurrentItems = {}
     
     @cached
     def getText(self): #self.mode = ('name','description','field1Name','field2Name','ObservationTime','field1Value','field1Status','field2Value','field2Status')
