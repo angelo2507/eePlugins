@@ -1156,13 +1156,14 @@ class MyMemoriesWakeUpPic(Screen):
         if ptr != None:
             text = self.cleanFileNameForDisplay()
             self["picDescr"].setText(text)
-            #textWidth = len(text) * int(config.mymemories.textHeight.value * 0.75) # The best would be to calculate real width, but don't know how to do it. :(
-            textWidth = self["picDescr"].instance.calculateSize().width()
+            textWidth = len(text) * int(config.mymemories.textHeight.value * 0.75) # The best would be to calculate real width, but don't know how to do it. :(
             self["picDescr"].instance.resize(eSize(textWidth, config.mymemories.textHeight.value + 4) )
             self["picDescr"].instance.setForegroundColor(parseColor(config.mymemories.textcolor.value))
             self["picDescr"].instance.setBackgroundColor(parseColor(config.mymemories.bgcolor.value))
             self["picDescr"].instance.move(ePoint(config.mymemories.textPositionH.value, config.mymemories.textPositionV.value))
             self["picDescr"].instance.setFont(gFont("Regular", config.mymemories.textHeight.value)) 
+            textWidth = self["picDescr"].instance.calculateSize().width()
+            self["picDescr"].instance.resize(eSize(textWidth, config.mymemories.textHeight.value + 4) )
             
             self["pic"].instance.setPixmap(ptr.__deref__())
             if config.mymemories.autoWakeUpTime.value > 0:
