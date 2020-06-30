@@ -61,6 +61,7 @@ class TSIPHost(TSCBaseHostClass):
 			
 	
 	def showitms(self,cItem):
+		printDBG('citem='+str(cItem))
 		url=cItem['url']  
 		hst='host2'
 		img=cItem['icon']
@@ -76,6 +77,7 @@ class TSIPHost(TSCBaseHostClass):
 						url1=url1.replace('../',self.MAIN_URL+'/Mobile/Category/')
 						name = 'I '+name +' I '+tscolor('\c00????00')+'('+ desc1+')'
 						if not image.startswith('http'): image = self.MAIN_URL + image
+						if not url1.startswith('http'): url1 = self.MAIN_URL + url1
 						self.addVideo({'import':cItem['import'],'good_for_fav':True, 'hst':'tshost', 'category':'host2', 'url':url1, 'title':name, 'desc':desc2, 'icon':image} )	
 		elif gnr2==1:
 			sts, data = self.cm.getPage(url,self.defaultParams)
@@ -88,6 +90,7 @@ class TSIPHost(TSCBaseHostClass):
 						url1=url1.replace('../',self.MAIN_URL+'/Mobile/Category/')
 						name = 'I '+name +' I '+tscolor('\c00????00')+'('+ desc2+')'
 						if not image.startswith('http'): image = self.MAIN_URL + image
+						if not url1.startswith('http'): url1 = self.MAIN_URL + url1
 						self.addDir({'import':cItem['import'],'good_for_fav':True, 'category':'host2', 'url':url1, 'title':name, 'desc':desc1, 'icon':image, 'mode':'30','sub_mode':2} )	
 		elif gnr2==2:	 
 			sts, data = self.cm.getPage(url,self.defaultParams)

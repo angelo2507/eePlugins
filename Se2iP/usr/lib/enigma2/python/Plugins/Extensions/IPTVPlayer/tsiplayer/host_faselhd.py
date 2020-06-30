@@ -227,7 +227,9 @@ class TSIPHost(TSCBaseHostClass):
 				if config.plugins.iptvplayer.ts_dsn.value:
 					sts, data = self.cm.getPage(url) 
 					if '/video_player?' in url:
-						urlTab.append({'name':'|M3u8| Faselhd', 'url':'hst#tshost#'+url, 'need_resolve':1,'type':'local'})					
+						urlTab.append({'name':'|M3u8 v1| Faselhd', 'url':'hst#tshost#'+url, 'need_resolve':1,'type':'local'})					
+					elif '/player.php?' in url:
+						urlTab.append({'name':'|M3u8 v2| Faselhd', 'url':'hst#tshost#'+url, 'need_resolve':1,'type':'local'})							
 					else:
 						Liste_els_3 = re.findall('<iframe.*?src="(.*?)"', data, re.S)	
 						if Liste_els_3:

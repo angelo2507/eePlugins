@@ -27,6 +27,10 @@ tunisia_gouv = [("", "None"),("Tunis","Tunis"),("Ariana","Ariana"),("Béja","Bé
                 ("Sousse","Sousse"),("Tataouine","Tataouine"),("Tozeur","Tozeur"),("Zaghouane","Zaghouane")]
 
 
+def printD(x1,x2=''):
+	printDBG(x1)
+	return ''
+
 def cryptoJS_AES_decrypt(encrypted, password, salt):
 	def derive_key_and_iv(password, salt, key_length, iv_length):
 		d = d_i = ''
@@ -53,6 +57,8 @@ def tscolor(color):
 				else: return color
 		else: return color	
 
+def tshost(hst):
+	return ''
 	
 def gethostname(url):
 	url=url.replace('http://','').replace('https://','').replace('www.','')
@@ -213,7 +219,21 @@ class TSCBaseHostClass:
                 				
         return name_ 
 		
-
+    def std_url(self,url):
+		url1=url
+		printDBG('url0='+url1)
+		url1=url1.replace('://','rgy11soft')
+		url1=url1.replace('?','rgy22soft')        
+		url1=url1.replace('&','rgy33soft') 
+		url1=url1.replace('=','rgy44soft') 
+		url1=urllib.unquote(url1)
+		url1=urllib.quote(url1)
+		url1=url1.replace('rgy11soft','://')
+		url1=url1.replace('rgy22soft','?')        
+		url1=url1.replace('rgy33soft','&') 	
+		url1=url1.replace('rgy44soft','=') 		
+		printDBG('url1='+url1)
+		return url1
     def uniform_titre(self,titre,year_op=0):
 		titre=titre.replace('مشاهدة وتحميل مباشر','').replace('مشاهدة','').replace('اون لاين','')
 		tag_type   = ['مدبلج للعربية','مترجمة للعربية','مترجم للعربية', 'مدبلجة', 'مترجمة' , 'مترجم' , 'مدبلج', 'مسلسل', 'عرض', 'انمي', 'فيلم']
