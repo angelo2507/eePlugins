@@ -19,6 +19,7 @@ from wpConfig import headers
 from wpConfig import params #'login_url', 'main_url', 'video_url', 'close_stream_url'
 from wpConfig import data
 from wpConfig import getCookie
+from wpConfig import PreferDash
 from wpBouquet import _login
 
 class PilotWPpl(Plugin):
@@ -76,11 +77,11 @@ class PilotWPpl(Plugin):
             hlsUrl = response[u'data'][u'stream_channel'][u'streams'][1][u'url'][0]
         log.debug("Found streams:\n\t dash: %s\n\t hls: %s" % (dashUrl,hlsUrl))
         
-        PreferDash=True
-        
         if PreferDash:
+            log.debug("use DASH stream")
             return DASHStream.parse_manifest(self.session, dashUrl)
         else:
+            log.debug("use HLS stream")
             return HLSStream.parse_variant_playlist(self.session,
                                                     update_scheme(self.url, hlsUrl),
                                                                     headers={'Referer': self.url, 

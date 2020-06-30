@@ -33,8 +33,10 @@ config.plugins.streamlinksrv.bufferPath = ConfigText(default = "/tmp")
 # pilot.wp.pl
 config.plugins.streamlinksrv.WPusername = ConfigText()
 config.plugins.streamlinksrv.WPpassword = ConfigPassword()
-config.plugins.streamlinksrv.WPbouquet = NoSave(ConfigNothing())
-config.plugins.streamlinksrv.WPlogin = NoSave(ConfigNothing())
+config.plugins.streamlinksrv.WPbouquet  = NoSave(ConfigNothing())
+config.plugins.streamlinksrv.WPlogin    = NoSave(ConfigNothing())
+config.plugins.streamlinksrv.WPpreferDASH = ConfigEnableDisable(default = False)
+config.plugins.streamlinksrv.WPvideoDelay = ConfigSelection(default = "0", choices = [("0", _("off")), ("1", _("by 1s.")), ("2", _("by 2s.")), ])
 # teleelevidenie
 config.plugins.streamlinksrv.TELEusername = ConfigText()
 config.plugins.streamlinksrv.TELEpassword = ConfigPassword()
@@ -50,7 +52,13 @@ config.plugins.streamlinksrv.remoteE2bouquet = NoSave(ConfigNothing())
 
 if os.path.exists("/tmp/StreamlinkConfig.log"):
     os.remove("/tmp/StreamlinkConfig.log")
- 
+
+#### get user configs ####
+if config.plugins.streamlinksrv.WPusername.value == '' and os.path.exists('/hdd/User_Configs/WPusername'):
+    config.plugins.streamlinksrv.WPusername.value =  open('/hdd/User_Configs/WPusername', 'r').readline().strip()
+if config.plugins.streamlinksrv.WPpassword.value == '' and os.path.exists('/hdd/User_Configs/WPpassword'):
+    config.plugins.streamlinksrv.WPpassword.value =  open('/hdd/User_Configs/WPpassword', 'r').readline().strip()
+
 class StreamlinkConfiguration(Screen, ConfigListScreen):
     from enigma import getDesktop
     if getDesktop(0).size().width() == 1920: #definicja skin-a musi byc tutaj, zeby vti sie nie wywalalo na labelach, inaczje trzeba uzywasc zrodla statictext
@@ -83,6 +91,8 @@ class StreamlinkConfiguration(Screen, ConfigListScreen):
         Mlist.append(getConfigListEntry(_("Password:"), config.plugins.streamlinksrv.WPpassword))
         Mlist.append(getConfigListEntry(_("Check login credentials"), config.plugins.streamlinksrv.WPlogin))
         Mlist.append(getConfigListEntry(_("Press OK to create %s bouquet") % "userbouquet.WPPL.tv", config.plugins.streamlinksrv.WPbouquet))
+        Mlist.append(getConfigListEntry(_("Prefer DASH than HLS:"), config.plugins.streamlinksrv.WPpreferDASH))
+        #Mlist.append(getConfigListEntry(_("Delay video:"), config.plugins.streamlinksrv.WPvideoDelay))
         Mlist.append(getConfigListEntry(""))
         Mlist.append(getConfigListEntry('\c00289496' + _("*** remote E2 helper ***")))
         Mlist.append(getConfigListEntry(_("IP address:"), config.plugins.streamlinksrv.remoteE2address))
@@ -91,15 +101,15 @@ class StreamlinkConfiguration(Screen, ConfigListScreen):
         Mlist.append(getConfigListEntry(_("Password:"), config.plugins.streamlinksrv.remoteE2password))
         Mlist.append(getConfigListEntry(_("Wakeup if remote E2 in standby:"), config.plugins.streamlinksrv.remoteE2wakeup))
         Mlist.append(getConfigListEntry(_("Zap before stream workarround:"), config.plugins.streamlinksrv.remoteE2zap))
-        Mlist.append(getConfigListEntry(_("Press OK to select and download %s bouquet") % "userbouquet.remoteE2.tv", config.plugins.streamlinksrv.remoteE2bouquet))
+        #Mlist.append(getConfigListEntry(_("Press OK to select and download %s bouquet") % "userbouquet.remoteE2.tv", config.plugins.streamlinksrv.remoteE2bouquet))
+        
+        #Mlist.append(getConfigListEntry(""))
+        #Mlist.append(getConfigListEntry('\c00289496' + _("*** %s configuration ***") % 'teleelevidenie')) #https://my.teleelevidenie.com/signin
+        #Mlist.append(getConfigListEntry(_("Username:"), config.plugins.streamlinksrv.TELEusername))
+        #Mlist.append(getConfigListEntry(_("Password:"), config.plugins.streamlinksrv.TELEpassword))
+        #Mlist.append(getConfigListEntry(_("Press OK to download %s bouquet") % "enigma2-hls", config.plugins.streamlinksrv.TELEbouquet))
         
         Mlist.append(getConfigListEntry(""))
-        Mlist.append(getConfigListEntry('\c00289496' + _("*** %s configuration ***") % 'teleelevidenie')) #https://my.teleelevidenie.com/signin
-        Mlist.append(getConfigListEntry(_("Username:"), config.plugins.streamlinksrv.TELEusername))
-        Mlist.append(getConfigListEntry(_("Password:"), config.plugins.streamlinksrv.TELEpassword))
-        Mlist.append(getConfigListEntry(_("Press OK to download %s bouquet") % "enigma2-hls", config.plugins.streamlinksrv.TELEbouquet))
-        Mlist.append(getConfigListEntry(""))
-        #Mlist.append(getConfigListEntry(""))
         Mlist.append(getConfigListEntry('\c00289496' + _("*** Deamon configuration ***")))
         Mlist.append(getConfigListEntry(_("Enable deamon:"), config.plugins.streamlinksrv.enabled))
         Mlist.append(getConfigListEntry(_("Port number (127.0.0.1:X):"), config.plugins.streamlinksrv.PortNumber))

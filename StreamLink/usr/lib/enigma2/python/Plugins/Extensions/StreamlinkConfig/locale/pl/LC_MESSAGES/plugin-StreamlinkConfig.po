@@ -125,5 +125,50 @@ msgstr "Naciśnij OK aby zalogować się"
 msgid "Credentials verification"
 msgstr "Sprawdzanie danych do logowania"
 
+msgid "off"
+msgstr "wył."
+
+msgid "by 1s."
+msgstr "o 1s"
+
+msgid "by 2s."
+msgstr "o 2s"
+
+msgid "*** Available IPTV bouquets ***"
+msgstr "*** Dostępne bukiety IPTV ***"
+
+msgid "Press OK to remove: %s"
+msgstr "Naciśnij OK aby usunąć: %s"
+
+msgid "Press OK to add: %s"
+msgstr "Naciśnij OK aby dodać: %s"
+
+msgid "Prefer DASH than HLS:"
+msgstr "Preferuj DASH potem HLS:"
+
+msgid "Delay video:"
+msgstr "Opóźnij wideo:"
+
+msgid "*** remote E2 helper ***"
+msgstr "*** wsparcie zdalnej E2 ***"
+
+msgid "IP address:"
+msgstr "Adres IP:"
+
+msgid "Streaming port:"
+msgstr "Port strumienia:"
+
+msgid "Wakeup if remote E2 in standby:"
+msgstr "Obudź zdalne E2, jeśli śpi:"
+
+msgid "Zap before stream workarround:"
+msgstr "Obejście problemu przełączanie przed strumieniowaniem:"
+
+msgid "Press OK to select and download %s bouquet"
+msgstr "Naciśnij OK, aby wybrać i pobrać bukiet %s"
+
+msgid "Buffer path:"
+msgstr "Ścieżka bufora:"
+
 #msgid ""
 #msgstr ""

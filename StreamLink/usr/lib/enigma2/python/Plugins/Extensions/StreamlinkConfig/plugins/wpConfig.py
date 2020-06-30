@@ -18,6 +18,8 @@ data = {'device': 'AndroidTV',
         'password': getE2config('WPpassword')
       }
 
+PreferDash = getE2config('WPpreferDASH', False)
+
 def saveCookie(cookie):
     open("/usr/lib/enigma2/python/Plugins/Extensions/StreamlinkConfig/plugins/pilotwppl.cookie", "w").write('%s' % cookie)
   
