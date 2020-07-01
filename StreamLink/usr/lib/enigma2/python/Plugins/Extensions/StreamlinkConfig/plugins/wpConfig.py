@@ -19,6 +19,7 @@ data = {'device': 'AndroidTV',
       }
 
 PreferDash = getE2config('WPpreferDASH', False)
+videoDelay = getE2config('WPvideoDelay', 0)
 
 def saveCookie(cookie):
     open("/usr/lib/enigma2/python/Plugins/Extensions/StreamlinkConfig/plugins/pilotwppl.cookie", "w").write('%s' % cookie)

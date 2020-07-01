@@ -128,11 +128,11 @@ msgstr "Sprawdzanie danych do logowania"
 msgid "off"
 msgstr "wył."
 
-msgid "by 1s."
-msgstr "o 1s"
+msgid "by %s s."
+msgstr "o %s s."
 
-msgid "by 2s."
-msgstr "o 2s"
+msgid "don't delay"
+msgstr "nie opóźniaj"
 
 msgid "*** Available IPTV bouquets ***"
 msgstr "*** Dostępne bukiety IPTV ***"

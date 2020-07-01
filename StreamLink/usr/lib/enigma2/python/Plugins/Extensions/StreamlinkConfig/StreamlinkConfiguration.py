@@ -36,7 +36,9 @@ config.plugins.streamlinksrv.WPpassword = ConfigPassword()
 config.plugins.streamlinksrv.WPbouquet  = NoSave(ConfigNothing())
 config.plugins.streamlinksrv.WPlogin    = NoSave(ConfigNothing())
 config.plugins.streamlinksrv.WPpreferDASH = ConfigEnableDisable(default = False)
-config.plugins.streamlinksrv.WPvideoDelay = ConfigSelection(default = "0", choices = [("0", _("off")), ("1", _("by 1s.")), ("2", _("by 2s.")), ])
+config.plugins.streamlinksrv.WPvideoDelay = ConfigSelection(default = "0", choices = [("0", _("don't delay")), ("0.25", _("by %s s." % '0.25')),
+                                                                                      ("0.5", _("by %s s." % '0.5')), ("0.75", _("by %s s." % '0.75')),
+                                                                                      ("1.0", _("by %s s." % '1.0'))])
 # teleelevidenie
 config.plugins.streamlinksrv.TELEusername = ConfigText()
 config.plugins.streamlinksrv.TELEpassword = ConfigPassword()
@@ -92,7 +94,7 @@ class StreamlinkConfiguration(Screen, ConfigListScreen):
         Mlist.append(getConfigListEntry(_("Check login credentials"), config.plugins.streamlinksrv.WPlogin))
         Mlist.append(getConfigListEntry(_("Press OK to create %s bouquet") % "userbouquet.WPPL.tv", config.plugins.streamlinksrv.WPbouquet))
         Mlist.append(getConfigListEntry(_("Prefer DASH than HLS:"), config.plugins.streamlinksrv.WPpreferDASH))
-        #Mlist.append(getConfigListEntry(_("Delay video:"), config.plugins.streamlinksrv.WPvideoDelay))
+        Mlist.append(getConfigListEntry(_("Delay video:"), config.plugins.streamlinksrv.WPvideoDelay))
         Mlist.append(getConfigListEntry(""))
         Mlist.append(getConfigListEntry('\c00289496' + _("*** remote E2 helper ***")))
         Mlist.append(getConfigListEntry(_("IP address:"), config.plugins.streamlinksrv.remoteE2address))

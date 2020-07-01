@@ -6,7 +6,7 @@ import re
 from streamlink.plugin import Plugin
 from streamlink.plugin.api import useragents
 #from streamlink.plugin.api.utils import itertags
-from streamlink.stream import HLSStream
+from streamlink.stream._hls4wp import HLSStream
 from streamlink.stream.dash import DASHStream
 from streamlink.utils import update_scheme
 
@@ -20,6 +20,7 @@ from wpConfig import params #'login_url', 'main_url', 'video_url', 'close_stream
 from wpConfig import data
 from wpConfig import getCookie
 from wpConfig import PreferDash
+from wpConfig import videoDelay
 from wpBouquet import _login
 
 class PilotWPpl(Plugin):
@@ -82,15 +83,16 @@ class PilotWPpl(Plugin):
             return DASHStream.parse_manifest(self.session, dashUrl)
         else:
             log.debug("use HLS stream")
+            log.debug("videoDelay = %s" % videoDelay)
             return HLSStream.parse_variant_playlist(self.session,
                                                     update_scheme(self.url, hlsUrl),
-                                                                    headers={'Referer': self.url, 
-                                                                    'user-agent': headers['user-agent'],
-#                                                                    'accept': 'application/json', 
-                                                                     'x-version': headers['x-version'],
-#                                                                    'content-type': 'application/json; charset=UTF-8',
-                                                                    'Cookie': cookies
-                                                                 }
-                                                    ) 
+                                                    headers={'Referer': self.url, 
+                                                             'user-agent': headers['user-agent'],
+#                                                            'accept': 'application/json', 
+                                                             'x-version': headers['x-version'],
+#                                                            'content-type': 'application/json; charset=UTF-8',
+                                                             'Cookie': cookies
+                                                            }
+                                                    )
 
 __plugin__ = PilotWPpl

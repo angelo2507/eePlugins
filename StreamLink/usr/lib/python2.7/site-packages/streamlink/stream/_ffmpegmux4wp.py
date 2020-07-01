@@ -15,6 +15,8 @@ import logging
 
 log = logging.getLogger(__name__)
 
+from streamlink.e2config import getE2config
+
 class MuxedStream(Stream):
     __shortname__ = "muxed-stream"
 
@@ -101,6 +103,10 @@ class FFMPEGMuxer(StreamIO):
         copyts = options.pop("copyts", False)
 
         self._cmd = [self.command(session), '-nostats', '-y']
+        delayVideo = str(getE2config('WPvideoDelay', '0'))
+        if delayVideo != '0':
+            self._cmd.extend(['-itsoffset', delayVideo])
+        
         if self.is_muxed:
             self.pipes = [NamedPipe("ffmpeg-{0}-{1}".format(os.getpid(), random.randint(0, 1000))) for _ in self.streams]
             self.pipe_threads = [threading.Thread(target=self.copy_to_pipe, args=(self, stream, np))
