@@ -94,8 +94,8 @@ class FFMPEGMuxer(StreamIO):
         self.is_muxed = options.pop("is_muxed", True)
         ofmt = options.pop("format", "matroska")
         outpath = options.pop("outpath", "pipe:1")
-        videocodec = session.options.get("ffmpeg-video-transcode") or options.pop("vcodec", "copy")
-        audiocodec = session.options.get("ffmpeg-audio-transcode") or options.pop("acodec", "copy")
+        videocodec = options.pop("vcodec", None) or session.options.get("ffmpeg-video-transcode") or "copy"
+        audiocodec = options.pop("acodec", None) or session.options.get("ffmpeg-audio-transcode") or "copy"
         metadata = options.pop("metadata", {})
         maps = options.pop("maps", [])
         copyts = options.pop("copyts", False)

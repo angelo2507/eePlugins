@@ -170,5 +170,11 @@ msgstr "Naciśnij OK, aby wybrać i pobrać bukiet %s"
 msgid "Buffer path:"
 msgstr "Ścieżka bufora:"
 
+msgid "Bouquet '%s' removed properly"
+msgstr "Bukiet '%s' został usunięty z listy kanałów"
+
+msgid "Bouquet '%s' added properly"
+msgstr "Bukiet '%s' został dodany do listy kanałów"
+
 #msgid ""
 #msgstr ""

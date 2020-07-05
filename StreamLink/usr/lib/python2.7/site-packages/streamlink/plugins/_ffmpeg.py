@@ -20,15 +20,21 @@ class ffmpegCMDplugin(Plugin):
         params = self.url.split('ffmpeg|')[1].split('|')
         url = params.pop(0)
         log.debug("\t url: %s" % url)
+        #params in url
         formatVal = "matroska"
+        vcodecVal = 'copy'
+        acodecVal = 'copy'
+        ffmpegParams= {}
         if len(params) > 0:
             log.debug("\t ffmpeg params: {0}".format(' '.join(params)))
             for param in params:
                 if param.startswith('format='): formatVal = param.split('=')[1]
+                if param.startswith('vcodec='): vcodecVal = param.split('=')[1]
+                if param.startswith('acodec='): acodecVal = param.split('=')[1]
         else:
             log.debug("\t additional ffmpeg params NOT provided")
           
-        return {"ffmpeg_stream": FFMPEGMuxer(self.session, *(url,), is_muxed=False, format=formatVal)}
+        return {"ffmpeg_stream": FFMPEGMuxer(self.session, *(url,), is_muxed=False, format=formatVal, vcodec = vcodecVal, acodec = acodecVal, extraParams = ffmpegParams)}
 
 
 __plugin__ = ffmpegCMDplugin

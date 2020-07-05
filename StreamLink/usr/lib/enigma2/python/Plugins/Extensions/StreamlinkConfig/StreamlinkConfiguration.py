@@ -289,8 +289,14 @@ class StreamlinkConfiguration(Screen, ConfigListScreen):
             self.DBGlog('%s' % str(e))
     
     def OkbuttonTextChangedConfirmed(self, ret ):
-        curIndex = self["config"].getCurrentIndex()
-        self["config"].list[curIndex][1].value = ret
+        if ret is None:
+            self.DBGlog("OkbuttonTextChangedConfirmed(ret ='%s')" % str(ret))
+        else:
+            try:
+                curIndex = self["config"].getCurrentIndex()
+                self["config"].list[curIndex][1].value = ret
+            except Exception as e:
+                self.DBGlog('%s' % str(e))
 
     def OkbuttonConfirmed(self, ret = False):
         if ret:

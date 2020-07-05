@@ -1,0 +1,619 @@
+#NAME Kamery internetowe z PIP
+#SERVICE 1:64:1:0:0:0:0:0:0:0::Update 03.07.2020 by endriu
+#DESCRIPTION Update 03.07.2020 by endriu
+#SERVICE 1:64:E:0:0:0:0:0:0:0::Webcams:
+#DESCRIPTION Webcams: Polska (PL) (osaosa - update endriu)
+#SERVICE 1:0:0:0:0:0:0:0:0:4:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//stream8.nadaje.com%3a12426/live/nad403.stream/playlist.m3u8|format=mpegts:Olesno - Rynek
+#DESCRIPTION Olesno - Rynek
+#SERVICE 1:0:0:0:0:0:0:0:0:4:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//stream8.nadaje.com%3a12426/live/ofh1273.stream/playlist.m3u8|format=mpegts:Olesno - Pieloka
+#DESCRIPTION Olesno - Pieloka
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//s1.worldcam.live%3a8082/rabien/index.m3u8|format=mpegts:Aleksandrów Łódzki - Rąbień - Staw
+#DESCRIPTION Aleksandrów Łódzki - Rąbień - Staw
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//hoktastream1.webcamera.pl/czarnygron_cam_961902/czarnygron_cam_961902.stream/playlist.m3u8|format=mpegts:Andrychów - Czarny Groń
+#DESCRIPTION Andrychów - Czarny Groń
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hls.sat-kol.pl/hls/and/channel4_high.m3u8|format=mpegts:Andrychów-Panorama
+#DESCRIPTION Andrychów-Panorama
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//hoktastream5.webcamera.pl/andrychow_cam_3aad9b/andrychow_cam_3aad9b.stream/playlist.m3u8|format=mpegts:Andrychów - widok na centrum
+#DESCRIPTION Andrychów - widok na centrum
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/0wb6RpTJaE8|format=mpegts:Barcin-Rynek (YT)
+#DESCRIPTION Barcin-Rynek (YT)
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//hoktastream4.webcamera.pl/skywind_cam_4b0f1c/skywind_cam_4b0f1c.stream/playlist.m3u8|format=mpegts:Białka Tatrzańska-Bania Pasaż
+#DESCRIPTION Białka Tatrzańska-Bania Pasaż
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//hoktastream5.webcamera.pl/airnet_cam_f15ad8/airnet_cam_f15ad8.stream/playlist.m3u8|format=mpegts:Białka Tatrzańska-ul. Środkowa
+#DESCRIPTION Białka Tatrzańska-ul. Środkowa
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//hoktastream1.webcamera.pl/skywind_cam_bfed73/skywind_cam_bfed73.stream/playlist.m3u8|format=mpegts:Białka Tatrzańska-Kaniówka - Stok
+#DESCRIPTION Białka Tatrzańska-Kaniówka - Stok
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//hoktastream4.webcamera.pl/kotelnica_cam_0b240f/kotelnica_cam_0b240f.stream/playlist.m3u8|format=mpegts:Białka Tatrzańska-Kaniówka - Stok II
+#DESCRIPTION Białka Tatrzańska-Kaniówka - Stok II
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//hoktastream4.webcamera.pl/kotelnica_cam_d105f8/kotelnica_cam_d105f8.stream/playlist.m3u8|format=mpegts:Białka Tatrzańska-Kaniówka - Stok III
+#DESCRIPTION Białka Tatrzańska-Kaniówka - Stok III
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//hoktastream5.webcamera.pl/kotelnica_cam_ea8e3d/kotelnica_cam_ea8e3d.stream/playlist.m3u8|format=mpegts:Białka Tatrzańska-Kaniówka - Stok IV
+#DESCRIPTION Białka Tatrzańska-Kaniówka - Stok IV
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//hoktastream4.webcamera.pl/skywind_cam_772102/skywind_cam_772102.stream/playlist.m3u8|format=mpegts:Białka Tatrzańska-Kotelnica Białczańska - Stok
+#DESCRIPTION Białka Tatrzańska-Kotelnica Białczańska - Stok
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//hoktastream1.webcamera.pl/litwinka_cam_ed1e59/litwinka_cam_ed1e59.stream/playlist.m3u8|format=mpegts:Białka Tatrzańska-Litwinka-Grapa - Stok
+#DESCRIPTION Białka Tatrzańska-Litwinka-Grapa - Stok
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//hoktastream1.webcamera.pl/willawidokowa_cam_eefa62/willawidokowa_cam_eefa62.stream/playlist.m3u8|format=mpegts:Biały Dunajec-Panorama Tatr
+#DESCRIPTION Biały Dunajec-Panorama Tatr
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//s1.worldcam.live%3a8082/bialystok/index.m3u8|format=mpegts:Białystok-Panorama miasta
+#DESCRIPTION Białystok-Panorama miasta
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/-3HMFivfAtg|format=mpegts:Białystok-Rynek (YT)
+#DESCRIPTION Białystok-Rynek (YT)
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//s1.worldcam.live%3a8082/neptun/index.m3u8|format=mpegts:Bielsko-Biała - Mikuszowice Krakowskie
+#DESCRIPTION Bielsko-Biała - Mikuszowice Krakowskie
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//91.200.39.22/live/katwie/index.m3u8|format=mpegts:Bielsko-Biała - Panorama
+#DESCRIPTION Bielsko-Biała - Panorama
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//91.200.39.22/live/debowiec/index.m3u8|format=mpegts:Bielsko-Biała Park Linowy Dębowiec dolna stacja
+#DESCRIPTION Bielsko-Biała Park Linowy Dębowiec dolna stacja
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//91.200.39.22/live/debowiec2/index.m3u8|format=mpegts:Bielsko-Biała Park Linowy Dębowiec górna stacja
+#DESCRIPTION Bielsko-Biała Park Linowy Dębowiec górna stacja
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//91.200.39.22/live/szyndzielnia/index.m3u8|format=mpegts:Bielsko-Biała Szyndzielnia - Kolej linowa
+#DESCRIPTION Bielsko-Biała Szyndzielnia - Kolej linowa
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//53c7d208964cd.streamlock.net/Watra/CamWatra3.stream/playlist.m3u8|format=mpegts:Bojanowo - Rynek
+#DESCRIPTION Bojanowo - Rynek
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//kamery.tvbraniewo24.pl%3a5080/LiveApp/streams/917010841117394475089870.m3u8|format=mpegts:Braniewo - Amfiteatr miejski
+#DESCRIPTION Braniewo - Amfiteatr miejski
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//kamery.tvbraniewo24.pl%3a5080/LiveApp/streams/601368541594721318093195.m3u8|format=mpegts:Braniewo - ul. Gdańska, fontanna
+#DESCRIPTION Braniewo - ul. Gdańska, fontanna
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//kamery.tvbraniewo24.pl%3a5080/LiveApp/streams/619460987622383837302161.m3u8|format=mpegts:Braniewo - Panorama 
+#DESCRIPTION Braniewo - Panorama 
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//kamery.tvbraniewo24.pl%3a5080/LiveApp/streams/818218270130948565038191.m3u8|format=mpegts:Braniewo - Rondo gen. Andersa
+#DESCRIPTION Braniewo - Rondo gen. Andersa
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//kamery.tvbraniewo24.pl%3a5080/LiveApp/streams/637629554315491718912396.m3u8|format=mpegts:Braniewo - ul. Elbląska, DW 504
+#DESCRIPTION Braniewo - ul. Elbląska, DW 504
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//kamery.tvbraniewo24.pl%3a5080/LiveApp/streams/853734119073868618727613.m3u8|format=mpegts:Braniewo - ul. Gdańska w kierunku ronda, DK 54
+#DESCRIPTION Braniewo - ul. Gdańska w kierunku ronda, DK 54
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//kamery.tvbraniewo24.pl%3a5080/LiveApp/streams/302624947691181270464411.m3u8|format=mpegts:Braniewo - ul. Kościuszki - Gdańska, DK 54
+#DESCRIPTION Braniewo - ul. Kościuszki - Gdańska, DK 54
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//kamery.tvbraniewo24.pl%3a5080/LiveApp/streams/948634133083629416625975.m3u8|format=mpegts:Braniewo - Most w Nowej Pasłęce
+#DESCRIPTION Braniewo - Most w Nowej Pasłęce
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//s1.worldcam.live%3a8082/brzesko/index.m3u8|format=mpegts:Brzesko - Plac Kazimierza Wielkiego
+#DESCRIPTION Brzesko - Plac Kazimierza Wielkiego
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//s1.worldcam.live%3a8082/porebaspytkowska/index.m3u8|format=mpegts:Brzesko - Poręba Spytkowska
+#DESCRIPTION Brzesko - Poręba Spytkowska
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//s1.worldcam.live%3a8082/brzozowrynek/index.m3u8|format=mpegts:Brzozów - Rynek
+#DESCRIPTION Brzozów - Rynek
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//s1.worldcam.live%3a8082/brzozowstadion/index.m3u8|format=mpegts:Brzozów - Stadion
+#DESCRIPTION Brzozów - Stadion
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hoktastream1.webcamera.pl/bukovina_cam_7aa04f/bukovina_cam_7aa04f.stream/playlist.m3u8|format=mpegts:Bukowina Tatrzańska -  Bukovina Hotel
+#DESCRIPTION Bukowina Tatrzańska -  Bukovina Hotel
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hoktastream1.webcamera.pl/bukovina_cam_04f738/bukovina_cam_04f738.stream/playlist.m3u8|format=mpegts:Bukowina Tatrzańska - widok
+#DESCRIPTION Bukowina Tatrzańska - widok
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//hoktastream2.webcamera.pl/rusinski_cam_3580b7/rusinski_cam_3580b7.stream/playlist.m3u8|format=mpegts:Bukowina Tatrzańska - Rusiń Ski
+#DESCRIPTION Bukowina Tatrzańska - Rusiń Ski
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//hoktastream1.webcamera.pl/skywind_cam_3c5be6/skywind_cam_3c5be6.stream/playlist.m3u8|format=mpegts:Bukowina Tatrzańska-Kurucowy Wierch
+#DESCRIPTION Bukowina Tatrzańska-Kurucowy Wierch
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hoktastream1.webcamera.pl/bukovina_cam_c632c4/bukovina_cam_c632c4.stream/playlist.m3u8|format=mpegts:Bukowina Tatrzańska termy - Bukovina Hotel
+#DESCRIPTION Bukowina Tatrzańska termy - Bukovina Hotel
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//hoktastream1.webcamera.pl/airnet_cam_d60f3c/airnet_cam_d60f3c.stream/playlist.m3u8|format=mpegts:Bukowina Tatrzańska-Rzepiska - Tatry
+#DESCRIPTION Bukowina Tatrzańska-Rzepiska - Tatry
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//hoktastream5.webcamera.pl/olczan_cam_65ae74/olczan_cam_65ae74.stream/playlist.m3u8|format=mpegts:Bukowina Tatrzańska - UFO Ski
+#DESCRIPTION Bukowina Tatrzańska - UFO Ski
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hoktastream2.webcamera.pl/bydgoszcz_cam_406fa8/bydgoszcz_cam_406fa8.stream/playlist.m3u8|format=mpegts:Bydgoszcz Stary Rynek
+#DESCRIPTION Bydgoszcz Stary Rynek
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//s1.worldcam.live%3a8082/bytom/index.m3u8|format=mpegts:Bytom - Osiedle Centrum
+#DESCRIPTION Bytom - Osiedle Centrum
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//stream.profi-net.sk%3a443/tmr/KATOWICE1.stream/playlist.m3u8|format=mpegts:Chorzów - Legendia
+#DESCRIPTION Chorzów - Legendia
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//stream.mwc.pl/chorzowlive/miasto.stream/playlist.m3u8|format=mpegts:Chorzów panorama
+#DESCRIPTION Chorzów panorama
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hoktastream2.webcamera.pl/chlopy_cam_73ac3a/chlopy_cam_73ac3a.stream/playlist.m3u8|format=mpegts:Chłopy
+#DESCRIPTION Chłopy
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//stream.silesnet.net/webcams/cieszyn.m3u8|format=mpegts:Cieszyn
+#DESCRIPTION Cieszyn
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/dQtf4eIRF20:Ciechocinek - 1 maja I (YT)
+#DESCRIPTION Ciechocinek - 1 maja I (YT)
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/wd0HNAx4G5M:Ciechocinek - Fontanna na Parterach Hellwiga (YT)
+#DESCRIPTION Ciechocinek - Fontanna na Parterach Hellwiga (YT)
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/l0b_NFdGeDM:Ciechocinek - fontanna Grzybek
+#DESCRIPTION Ciechocinek - fontanna Grzybek
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/JaByVP9aPeY:Ciechocinek - Park Wodny (YT)
+#DESCRIPTION Ciechocinek - Park Wodny (YT)
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/hBYz-xhdrcc:Ciechocinek - Skwer Excentryków (YT)
+#DESCRIPTION Ciechocinek - Skwer Excentryków (YT)
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/A19zGL6GdaI:Ciechocinek - Skwer Excentryków II (YT)
+#DESCRIPTION Ciechocinek - Skwer Excentryków II (YT)
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/rAJiCHSutvU:Ciechocinek - Tężnie (YT)
+#DESCRIPTION Ciechocinek - Tężnie (YT)
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//stream.silesnet.net/webcams/cieszyn.m3u8|format=mpegts:Cieszyn - Rynek
+#DESCRIPTION Cieszyn - Rynek
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//91.224.104.112%3a8080/Fabisie/index.m3u8|format=mpegts:Cięcina-Fabisie - Beskid Śląski
+#DESCRIPTION Cięcina-Fabisie - Beskid Śląski
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hoktastream1.webcamera.pl/czarnygron_cam_961902/czarnygron_cam_961902.stream/playlist.m3u8|format=mpegts:Czarny Groń - Magiczna Osada
+#DESCRIPTION Czarny Groń - Magiczna Osada
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//s1.worldcam.live%3a8082/czchow/index.m3u8|format=mpegts:Czchów - Rynek
+#DESCRIPTION Czchów - Rynek
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//hoktastream5.webcamera.pl/czechowice_live_94d1ae/czechowice_live_94d1ae.stream/playlist.m3u8|format=mpegts:Czechowice-Dziedzice - Plac Jana Pawła II
+#DESCRIPTION Czechowice-Dziedzice - Plac Jana Pawła II
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/KcPn4m0ma-U:Czeladź - Rynek
+#DESCRIPTION Czeladź - Rynek
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/-spihS2HN40:Częstochowa - Kaplica Matki Bożej (YT)
+#DESCRIPTION Częstochowa - Kaplica Matki Bożej (YT)
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//s1.worldcam.live%3a8082/acz/index.m3u8|format=mpegts:Częstochowa - Lotnisko Rudniki
+#DESCRIPTION Częstochowa - Lotnisko Rudniki
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/v_eRd6lsK88:Częstochowa - Sczyt Jasnogórski - Ołtarz (YT)
+#DESCRIPTION Częstochowa - Sczyt Jasnogórski - Ołtarz (YT)
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hoktastream1.webcamera.pl/dab-bartek_cam_187c42/dab-bartek_cam_187c42.stream/playlist.m3u8|format=mpegts:Dąb Bartek - Najstarszy dąb w Polsce
+#DESCRIPTION Dąb Bartek - Najstarszy dąb w Polsce
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hoktastream2.webcamera.pl/darlowo_cam_fd6665/darlowo_cam_fd6665.stream/playlist.m3u8|format=mpegts:Darłowo Rynek
+#DESCRIPTION Darłowo Rynek
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//da1.panolive.ovh%3a8083/cam/dobrzen-wielki2_hd/playlist.m3u8|format=mpegts:Dobrzeń Wielki-park za Urzędem Gminy
+#DESCRIPTION Dobrzeń Wielki-park za Urzędem Gminy
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//da1.panolive.ovh%3a8083/cam/dobrzen-wielki1_hd/playlist.m3u8|format=mpegts:Dobrzeń Wielki-Panorama
+#DESCRIPTION Dobrzeń Wielki-Panorama
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//stream5.nadaje.com%3a32508/live/bqn444.stream/chunklist_w744316814.m3u8|format=mpegts:Dynów
+#DESCRIPTION Dynów
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hoktastream1.webcamera.pl/dzwirzyno_cam_2faeeb/dzwirzyno_cam_2faeeb.stream/playlist.m3u8|format=mpegts:Dźwirzyno wydmy
+#DESCRIPTION Dźwirzyno wydmy
+#SERVICE 1:0:1:2C6A:E48E:EC:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/draw_plackonstytucji.m3u8?#User-Agent=Mozilla/5.0|format=mpegts:Drawsko Pomorskie - Plac Konstytucji
+#DESCRIPTION Drawsko Pomorskie - Plac Konstytucji
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hls1.webcamera.pl/dziwnowum_cam_a4181f/dziwnowum_cam_a4181f.stream/playlist.m3u8|format=mpegts:Dziwnów na żywo I
+#DESCRIPTION Dziwnów na żywo I
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//stream.elblag.net%3a18080/kim/index.m3u8|format=mpegts:Elbląg - Pasaż przy ul. Hetmańskiej
+#DESCRIPTION Elbląg - Pasaż przy ul. Hetmańskiej
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//stream.elblag.net%3a18080/kim2/index.m3u8|format=mpegts:Elbląg - ul. Bałuckiego
+#DESCRIPTION Elbląg - ul. Bałuckiego
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hoktastream1.webcamera.pl/umgabin_cam_7c93cf/umgabin_cam_7c93cf.stream/playlist.m3u8|format=mpegts:Gąbin
+#DESCRIPTION Gąbin
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//kamery.airport.gdansk.pl%3a1935/EPGD/pps1.stream/playlist.m3u8|format=mpegts:Gdańsk - Lech Walesa Airport 1
+#DESCRIPTION Gdańsk - Lech Walesa Airport 1
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//kamery.airport.gdansk.pl%3a1935/EPGD/p29.stream/playlist.m3u8|format=mpegts:Gdańsk - Lech Walesa Airport 2
+#DESCRIPTION Gdańsk - Lech Walesa Airport 2
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//kamery.airport.gdansk.pl%3a1935/EPGD/p11.stream/playlist.m3u8|format=mpegts:Gdańsk - Lech Walesa Airport 3
+#DESCRIPTION Gdańsk - Lech Walesa Airport 3
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//kamery.airport.gdansk.pl%3a1935/EPGD/app29.stream/playlist.m3u8|format=mpegts:Gdańsk - Lech Walesa Airport 4
+#DESCRIPTION Gdańsk - Lech Walesa Airport 4
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//kamery.airport.gdansk.pl%3a1935/EPGD/przyloty_t2.stream/playlist.m3u8|format=mpegts:Gdańsk - Lech Walesa Airport 5
+#DESCRIPTION Gdańsk - Lech Walesa Airport 5
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//194.116.130.227%3a1935/volta/gda_olimp.stream/playlist.m3u8|format=mpegts:Gdańsk - Olimp
+#DESCRIPTION Gdańsk - Olimp
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//194.116.130.227%3a1935/gda/gda_dluga.stream/playlist.m3u8|format=mpegts:Gdańsk - Widok na Długi Targ
+#DESCRIPTION Gdańsk - Widok na Długi Targ
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hls11.webcamera.pl/umgdansk_cam_11161c/umgdansk_cam_11161c.stream/playlist.m3u8|format=mpegts:Gdańsk - Widok na kładkę przez Motławę
+#DESCRIPTION Gdańsk - Widok na kładkę przez Motławę
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//194.116.130.227%3a1935/gda/gda_teatr.stream/playlist.m3u8|format=mpegts:Gdańsk - Widok na Targ Węglowy
+#DESCRIPTION Gdańsk - Widok na Targ Węglowy
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//hoktastream1.webcamera.pl/gdynia_cam_b80d1e/gdynia_cam_b80d1e.stream/playlist.m3u8|format=mpegts:Gdynia-plaża miejska
+#DESCRIPTION Gdynia-plaża miejska
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hoktastream1.webcamera.pl/gdynia_cam_a7916a/gdynia_cam_a7916a.stream/playlist.m3u8|format=mpegts:Gdynia-Skwer Kościuszki
+#DESCRIPTION Gdynia-Skwer Kościuszki
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hoktastream1.webcamera.pl/gdynia_cam_b3ccea/gdynia_cam_b3ccea.stream/playlist.m3u8|format=mpegts:Gdynia-marina
+#DESCRIPTION Gdynia-marina
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//hoktastream4.webcamera.pl/gizycko_cam_a96a04/gizycko_cam_a96a04.stream/playlist.m3u8|format=mpegts:Giżycko-Jezioro Niegocin
+#DESCRIPTION Giżycko-Jezioro Niegocin
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//hoktastream4.webcamera.pl/gizycko_cam_82df5c/gizycko_cam_82df5c.stream/playlist.m3u8|format=mpegts:Gizycko-Most Obrotowy
+#DESCRIPTION Gizycko-Most Obrotowy
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hls13.webcamera.pl/gliwice_cam_c28bda/gliwice_cam_c28bda.stream/playlist.m3u8|format=mpegts:Gliwice rynek
+#DESCRIPTION Gliwice rynek
+#SERVICE 1:0:1:AD2F:4A79:EC:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hls.sat-kol.pl/hls/gor/channel5_high.m3u8|format=mpegts:Gorlice-Centrum
+#DESCRIPTION Gorlice-Centrum
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hoktastream2.webcamera.pl/grzybowo_cam_31ad63/grzybowo_cam_31ad63.stream/playlist.m3u8|format=mpegts:Grzybowo
+#DESCRIPTION Grzybowo
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hoktastream1.webcamera.pl/hel_cam_cf55ee/hel_cam_cf55ee.stream/playlist.m3u8|format=mpegts:Hel
+#DESCRIPTION Hel
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//polineo.pl%3a1936/live/camera37.stream/playlist.m3u8|format=mpegts:Istebna-Koniaków Centrum
+#DESCRIPTION Istebna-Koniaków Centrum
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hoktastream2.webcamera.pl/jantar_cam_8948dd/jantar_cam_8948dd.stream/playlist.m3u8|format=mpegts:Jantar Plaża
+#DESCRIPTION Jantar Plaża
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//stream.malborskieswiatlowody.pl%3a18850/Jantar_Karmazyn/index.m3u8|format=mpegts:Jantar Bar KARMAZYN
+#DESCRIPTION Jantar Bar KARMAZYN
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//stream.malborskieswiatlowody.pl%3a18850/Jantar_wyjscie_2/index.m3u8|format=mpegts:Jantar ul. Morska
+#DESCRIPTION Jantar ul. Morska
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//stream.malborskieswiatlowody.pl%3a18850/Jantar/index.m3u8|format=mpegts:Jantar Plaża wejście
+#DESCRIPTION Jantar Plaża wejście
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hoktastream2.webcamera.pl/jaroslawiec_cam_1cced2/jaroslawiec_cam_1cced2.stream/playlist.m3u8|format=mpegts:Jarosławiec-deptak
+#DESCRIPTION Jarosławiec-deptak
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hoktastream1.webcamera.pl/jaroslawiec_cam_40eca5/jaroslawiec_cam_40eca5.stream/playlist.m3u8|format=mpegts:Jarosłwiec plaża
+#DESCRIPTION Jarosłwiec plaża
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hoktastream2.webcamera.pl/tv_cam_b21b94/tv_cam_b21b94.stream/playlist.m3u8|format=mpegts:Kamery pogodowe
+#DESCRIPTION Kamery pogodowe
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//hoktastream2.webcamera.pl/kolorowa_cam_9da325/kolorowa_cam_9da325.stream/playlist.m3u8|format=mpegts:Karpacz-Centrum Rekracji i Sportu
+#DESCRIPTION Karpacz-Centrum Rekracji i Sportu
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hoktastream4.webcamera.pl/karpacz_cam_133512/karpacz_cam_133512.stream/playlist.m3u8|format=mpegts:Karpacz-deptak
+#DESCRIPTION Karpacz-deptak
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hoktastream2.webcamera.pl/zieleniec_cam_c960f6/zieleniec_cam_c960f6.stream/playlist.m3u8|format=mpegts:Karpacz Biały Jar  II
+#DESCRIPTION Karpacz Biały Jar  II
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hoktastream1.webcamera.pl/zieleniec_cam_fd1045/zieleniec_cam_fd1045.stream/playlist.m3u8|format=mpegts:Karpacz Biały Jar  III
+#DESCRIPTION Karpacz Biały Jar  III
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hoktastream2.webcamera.pl/karpacz_cam_ab594f/karpacz_cam_ab594f.stream/playlist.m3u8|format=mpegts:Karpacz Panorama
+#DESCRIPTION Karpacz Panorama
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//hoktastream5.webcamera.pl/karpacz_cam_96f84d/karpacz_cam_96f84d.stream/playlist.m3u8|format=mpegts:Karpacz-stadion lekkoatletyczny
+#DESCRIPTION Karpacz-stadion lekkoatletyczny
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hoktastream4.webcamera.pl/snieznica_cam_9975a0/snieznica_cam_9975a0.stream/playlist.m3u8|format=mpegts:Kasina Wielka-Kasina SKI
+#DESCRIPTION Kasina Wielka-Kasina SKI
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//hls12.webcamera.pl/katowice_cam_2bcad5/katowice_cam_2bcad5.stream/playlist.m3u8|format=mpegts:Katowice Spodek
+#DESCRIPTION Katowice Spodek
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hls7.webcamera.pl/nocowanie_cam_0c89d6/nocowanie_cam_0c89d6.stream/playlist.m3u8|format=mpegts:Kazimierz Dolny
+#DESCRIPTION Kazimierz Dolny
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/kolo_sulkowskiego.m3u8|format=mpegts:Kolobrzeg - Plaza Sulkowskiego
+#DESCRIPTION Kolobrzeg - Plaza Sulkowskiego
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/kolo_port.m3u8|format=mpegts:Kolobrzeg - Wejscie do portu
+#DESCRIPTION Kolobrzeg - Wejscie do portu
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hoktastream1.webcamera.pl/kolobrzegmarina_cam_967ce0/kolobrzegmarina_cam_967ce0.stream/playlist.m3u8|format=mpegts:Kołobrzeg Marina
+#DESCRIPTION Kołobrzeg Marina
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//hls12.webcamera.pl/kolobrzeg_cam_c26ccc/kolobrzeg_cam_c26ccc.stream/playlist.m3u8|format=mpegts:Kołobrzeg obrotowa
+#DESCRIPTION Kołobrzeg obrotowa
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//176.103.33.12%3a8090/Kowal1/tracks-v1/index.m3u8|format=mpegts:Kowal - Park Kazimierza Wielkiego
+#DESCRIPTION Kowal - Park Kazimierza Wielkiego
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/krak_centrumkongresowe.m3u8?#User-Agent=Mozilla/5.0|format=mpegts:Kraków-Centrum Kongresowe ICE
+#DESCRIPTION Kraków-Centrum Kongresowe ICE
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//hoktastream1.webcamera.pl/wentzl_cam_be5c6c/wentzl_cam_be5c6c.stream/playlist.m3u8|format=mpegts:Kraków-hotel Wentzl
+#DESCRIPTION Kraków-hotel Wentzl
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/krak_kapelanka.m3u8?#User-Agent=Mozilla/5.0|format=mpegts:Kraków - Kapelanka
+#DESCRIPTION Kraków - Kapelanka
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/krak_lematauronarena.m3u8?#User-Agent=Mozilla/5.0|format=mpegts:Kraków - Lema-Tauron Arena
+#DESCRIPTION Kraków - Lema-Tauron Arena
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/krak_lemamogilska.m3u8?#User-Agent=Mozilla/5.0|format=mpegts:Kraków - Lema-Mogilska
+#DESCRIPTION Kraków - Lema-Mogilska
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hoktastream4.webcamera.pl/krakow_cam_c4feaa/krakow_cam_c4feaa.stream/playlist.m3u8|format=mpegts:Kraków-Nowa Huta
+#DESCRIPTION Kraków-Nowa Huta
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//hoktastream1.webcamera.pl/krakow_cam_66c146/krakow_cam_66c146.stream/playlist.m3u8|format=mpegts:Kraków-Panorama
+#DESCRIPTION Kraków-Panorama
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/krak_rondogrunwaldzkie.m3u8?#User-Agent=Mozilla/5.0|format=mpegts:Kraków - Rondo Grundwaldzkie
+#DESCRIPTION Kraków - Rondo Grundwaldzkie
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//hoktastream1.webcamera.pl/krakow_cam_c44608/krakow_cam_c44608.stream/playlist.m3u8|format=mpegts:Kraków-Rynek Podgórski
+#DESCRIPTION Kraków-Rynek Podgórski
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//hoktastream1.webcamera.pl/krakow_cam_9a3b91/krakow_cam_9a3b91.stream/playlist.m3u8|format=mpegts:Kraków-Rynek Główny
+#DESCRIPTION Kraków-Rynek Główny
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/krak_rynek2.m3u8?#User-Agent=Mozilla/5.0|format=mpegts:Kraków - Rynek Główny II
+#DESCRIPTION Kraków - Rynek Główny II
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/krak_rynek1.m3u8?#User-Agent=Mozilla/5.0|format=mpegts:Kraków - Rynek główny III
+#DESCRIPTION Kraków - Rynek główny III
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//hls1.webcamera.pl/krakowsan_cam_480f1a/krakowsan_cam_480f1a.stream/chunks.m3u8|format=mpegts:Kraków ul.Grodzka
+#DESCRIPTION Kraków ul.Grodzka
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hoktastream2.webcamera.pl/krakow_cam_4c3e37/krakow_cam_4c3e37.stream/playlist.m3u8|format=mpegts:Kraków zakole Wisły
+#DESCRIPTION Kraków zakole Wisły
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//da1.panolive.ovh%3a8083/cam/krapkowice2_hd/playlist.m3u8|format=mpegts:Krapkowice-Panorama Otmętu
+#DESCRIPTION Krapkowice-Panorama Otmętu
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//da1.panolive.ovh%3a8083/cam/krapkowice1_hd/playlist.m3u8|format=mpegts:Krapkowice-Panorama rynku
+#DESCRIPTION Krapkowice-Panorama rynku
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//da1.panolive.ovh%3a8083/cam/krapkowice3_hd/playlist.m3u8|format=mpegts:Krapkowice-Rynek
+#DESCRIPTION Krapkowice-Rynek
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/kutn_jp2podrzeczna.m3u8?#User-Agent=Mozilla/5.0|format=mpegts:Kutno - Jana Pawła II-Podrzeczna
+#DESCRIPTION Kutno - Jana Pawła II-Podrzeczna
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/kutn_oporowskajp2.m3u8?#User-Agent=Mozilla/5.0|format=mpegts:Kutno - Oporowska-Jana Pawła II
+#DESCRIPTION Kutno - Oporowska-Jana Pawła II
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//s1.worldcam.live%3a8082/kutno/index.m3u8|format=mpegts:Kutno - Plac Pilsudskiego
+#DESCRIPTION Kutno - Plac Pilsudskiego
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hoktastream2.webcamera.pl/pkl_cam_473633/pkl_cam_473633.stream/playlist.m3u8|format=mpegts:Kuźnice kolej na Kasprowy Wierch
+#DESCRIPTION Kuźnice kolej na Kasprowy Wierch
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//da1.panolive.ovh%3a8083/cam/ladek-zdroj3_hd/playlist.m3u8|format=mpegts:Lądek Zdrój-fontanna, "Wojciech"
+#DESCRIPTION Lądek Zdrój-fontanna, "Wojciech"
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn1.panolive.eu%3a8083/cam/ladek-zdroj1/chunks.m3u8|format=mpegts:Lądek Zdrój Park Zdrojowy
+#DESCRIPTION Lądek Zdrój Park Zdrojowy
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn1.panolive.eu%3a8083/cam/ladek-zdroj2/chunks.m3u8|format=mpegts:Lądek Zdrój Rynek i Ratusz
+#DESCRIPTION Lądek Zdrój Rynek i Ratusz
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hstream2.webcamera.pl/lanckorona_cam_fdeac0/lanckorona_cam_fdeac0.stream/playlist.m3u8|format=mpegts:Lanckorona
+#DESCRIPTION Lanckorona
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//frn.rtsp.me/S1ZyvKLZ54esOnVVXPn2BQ/1593780010/hls/HYAz6z76.m3u8|format=mpegts:Łeba-Camping Przymorze
+#DESCRIPTION Łeba-Camping Przymorze
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/9jbMIb9Tp00:Łeba-Deptak ul. Kościuszki (YT)
+#DESCRIPTION Łeba-Deptak ul. Kościuszki (YT)
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/qiF4UX3G3G0:Łeba-Port Jachtowy (YT)
+#DESCRIPTION Łeba-Port Jachtowy (YT)
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hoktastream1.webcamera.pl/leba_cam_863fcf/leba_cam_863fcf.stream/playlist.m3u8|format=mpegts:Łeba-Plaża
+#DESCRIPTION Łeba-Plaża
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//hoktastream5.webcamera.pl/leba_cam_0d3c03/leba_cam_0d3c03.stream/playlist.m3u8|format=mpegts:Łeba-Plaża 2
+#DESCRIPTION Łeba-Plaża 2
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hoktastream2.webcamera.pl/lidzbark_cam_2c458e/lidzbark_cam_2c458e.stream/playlist.m3u8|format=mpegts:Lidzbark
+#DESCRIPTION Lidzbark
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/lodz_augustowrokicinskawschod.m3u8?#User-Agent=Mozilla/5.0|format=mpegts:Łódź - Augustow - Rokicinska wschod
+#DESCRIPTION Łódź - Augustow - Rokicinska wschod
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/lodz_augustowrokicinskazachod.m3u8?#User-Agent=Mozilla/5.0|format=mpegts:Łódź - Augustow - Rokicinska zachod
+#DESCRIPTION Łódź - Augustow - Rokicinska zachod
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/lodz_bratyslawskawaltera.m3u8?#User-Agent=Mozilla/5.0|format=mpegts:Łódź - Bratyslawska - Waltera-Janke
+#DESCRIPTION Łódź - Bratyslawska - Waltera-Janke
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/lodz_toya2.m3u8?#User-Agent=Mozilla/5.0|format=mpegts:Łódź - Double Tree by Hilton - wschod
+#DESCRIPTION Łódź - Double Tree by Hilton - wschod
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/lodz_toya1.m3u8?#User-Agent=Mozilla/5.0|format=mpegts:Łódź - Double Tree by Hilton - zachod
+#DESCRIPTION Łódź - Double Tree by Hilton - zachod
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/lodz_lodzfabryczna1.m3u8?#User-Agent=Mozilla/5.0|format=mpegts:Łódź - Dworzec Łódź Fabryczna I
+#DESCRIPTION Łódź - Dworzec Łódź Fabryczna I
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/lodz_lodzfabryczna2.m3u8?#User-Agent=Mozilla/5.0|format=mpegts:Łódź - Dworzec Łódź Fabryczna II
+#DESCRIPTION Łódź - Dworzec Łódź Fabryczna II
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/lodz_kosciuszkistruga.m3u8?#User-Agent=Mozilla/5.0|format=mpegts:Łódź - Kosciuszki - Struga
+#DESCRIPTION Łódź - Kosciuszki - Struga
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/lodz_lagiewnickainflancka.m3u8?#User-Agent=Mozilla/5.0|format=mpegts:Łódź - Lagiewnicka - Inflancka
+#DESCRIPTION Łódź - Lagiewnicka - Inflancka
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/lodz_manufaktura1.m3u8?#User-Agent=Mozilla/5.0|format=mpegts:Łódź - Manufaktura Rynek I
+#DESCRIPTION Łódź - Manufaktura Rynek I
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/lodz_manufaktura2.m3u8?#User-Agent=Mozilla/5.0|format=mpegts:Łódź - Manufaktura Rynek II
+#DESCRIPTION Łódź - Manufaktura Rynek II
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/lodz_mickiewiczakosciuszki.m3u8?#User-Agent=Mozilla/5.0|format=mpegts:Łódź - Mickiewicza - Kosciuszki
+#DESCRIPTION Łódź - Mickiewicza - Kosciuszki
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/lodz_piotrkowskaschillera.m3u8?#User-Agent=Mozilla/5.0|format=mpegts:Łódź - Piotrkowska - aleja Leona Schillera
+#DESCRIPTION Łódź - Piotrkowska - aleja Leona Schillera
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/lodz_piotrkowskanarutowicza.m3u8?#User-Agent=Mozilla/5.0|format=mpegts:Łódź - Piotrkowska - Narutowicza
+#DESCRIPTION Łódź - Piotrkowska - Narutowicza
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/lodz_piotrkowskanawrot.m3u8?#User-Agent=Mozilla/5.0|format=mpegts:Łódź - Piotrkowska - Nawrot
+#DESCRIPTION Łódź - Piotrkowska - Nawrot
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/lodz_piotrkowskatraugutta.m3u8?#User-Agent=Mozilla/5.0|format=mpegts:Łódź - Piotrkowska - Traugutta
+#DESCRIPTION Łódź - Piotrkowska - Traugutta
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/lodz_placwolnosci.m3u8?#User-Agent=Mozilla/5.0|format=mpegts:Łódź - Plac Wolnosci
+#DESCRIPTION Łódź - Plac Wolnosci
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/lodz_politechnikiwroblewskiego.m3u8?#User-Agent=Mozilla/5.0|format=mpegts:Łódź - Politechniki - Wroblewskiego
+#DESCRIPTION Łódź - Politechniki - Wroblewskiego
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/lodz_lublinek1.m3u8?#User-Agent=Mozilla/5.0|format=mpegts:Łódź - Port Lotniczy Łódź I
+#DESCRIPTION Łódź - Port Lotniczy Łódź I
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/lodz_lublinek2.m3u8?#User-Agent=Mozilla/5.0|format=mpegts:Łódź - Port Lotniczy Łódź I
+#DESCRIPTION Łódź - Port Lotniczy Łódź I
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/lodz_rondobroniewskiego.m3u8?#User-Agent=Mozilla/5.0|format=mpegts:Łódź - Rondo Broniewskiego
+#DESCRIPTION Łódź - Rondo Broniewskiego
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/lodz_rondoinsurekcji.m3u8?#User-Agent=Mozilla/5.0|format=mpegts:Łódź - Rondo Insurekcji Kosciuszkowskiej
+#DESCRIPTION Łódź - Rondo Insurekcji Kosciuszkowskiej
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/lodz_rondoinwalidow.m3u8?#User-Agent=Mozilla/5.0|format=mpegts:Łódź - Rondo Inwalidow
+#DESCRIPTION Łódź - Rondo Inwalidow
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/lodz_rondolotnikow.m3u8?#User-Agent=Mozilla/5.0|format=mpegts:Łódź - Rondo Lotnikow Lwowskich
+#DESCRIPTION Łódź - Rondo Lotnikow Lwowskich
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/lodz_rondosybirakow.m3u8?#User-Agent=Mozilla/5.0|format=mpegts:Łódź - Rondo Sybirakow
+#DESCRIPTION Łódź - Rondo Sybirakow
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/lodz_rzgowskakurczaki.m3u8?#User-Agent=Mozilla/5.0|format=mpegts:Łódź - Rzgowska - Kurczaki
+#DESCRIPTION Łódź - Rzgowska - Kurczaki
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/lodz_kopcinskiegopilsudskiego.m3u8?#User-Agent=Mozilla/5.0|format=mpegts:Łódź - Skrzyzowanie marszalkow
+#DESCRIPTION Łódź - Skrzyzowanie marszalkow
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/lodz_wlokniarzykaliska.m3u8?#User-Agent=Mozilla/5.0|format=mpegts:Łódź - Wlokniarzy - Kaliska estakada
+#DESCRIPTION Łódź - Wlokniarzy - Kaliska estakada
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/lodz_wppalki.m3u8?#User-Agent=Mozilla/5.0|format=mpegts:Łódź - Wojska Polskiego - aleja Palki
+#DESCRIPTION Łódź - Wojska Polskiego - aleja Palki
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/lodz_wyszynskiegoarmiikrajowej.m3u8?#User-Agent=Mozilla/5.0|format=mpegts:Łódź - Wyszynskiego - Armii Krajowej
+#DESCRIPTION Łódź - Wyszynskiego - Armii Krajowej
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/lodz_podrzeczna2.m3u8?#User-Agent=Mozilla/5.0|format=mpegts:Łódź - Zachodnia - Drewnowska
+#DESCRIPTION Łódź - Zachodnia - Drewnowska
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/lodz_podrzeczna1.m3u8?#User-Agent=Mozilla/5.0|format=mpegts:Łódź - Zachodnia - Palac Poznanskiego
+#DESCRIPTION Łódź - Zachodnia - Palac Poznanskiego
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/lodz_zakladowahetmanska.m3u8?#User-Agent=Mozilla/5.0|format=mpegts:Łódź - Zakladowa - Hetmanska
+#DESCRIPTION Łódź - Zakladowa - Hetmanska
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/lodz_zielonalegionow.m3u8?#User-Agent=Mozilla/5.0|format=mpegts:Łódź - Zielona - Legionow
+#DESCRIPTION Łódź - Zielona - Legionow
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/lodz_zielonazeligowskiego.m3u8?#User-Agent=Mozilla/5.0|format=mpegts:Łódź - Zielona - Zeligowskiego
+#DESCRIPTION Łódź - Zielona - Zeligowskiego
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/WW9OQ_LEGzo:Międzyzdroje plaża (YT)
+#DESCRIPTION Międzyzdroje plaża (YT)
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hoktastream1.webcamera.pl/miedzyzdroje_cam_bcc4fd/miedzyzdroje_cam_bcc4fd.stream/playlist.m3u8|format=mpegts:Międzyzdroje plaża
+#DESCRIPTION Międzyzdroje plaża
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//hoktastream1.webcamera.pl/skywind_cam_267ae1/skywind_cam_267ae1.stream/playlist.m3u8|format=mpegts:Mikołajki-Port
+#DESCRIPTION Mikołajki-Port
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//hoktastream2.webcamera.pl/mragowo_cam_9b8f18/mragowo_cam_9b8f18.stream/playlist.m3u8|format=mpegts:Mrągowo-Molo
+#DESCRIPTION Mrągowo-Molo
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hls15.webcamera.pl/mrzezyno_cam_905068/mrzezyno_cam_905068.stream/playlist.m3u8|format=mpegts:Mrzeżyno plaża NOWOŚĆ
+#DESCRIPTION Mrzeżyno plaża NOWOŚĆ
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hoktastream2.webcamera.pl/mrzezyno_cam_8e2d5d/mrzezyno_cam_8e2d5d.stream/playlist.m3u8|format=mpegts:Mrzeżyno port
+#DESCRIPTION Mrzeżyno port
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hoktastream1.webcamera.pl/airnet_cam_4279f5/airnet_cam_4279f5.stream/playlist.m3u8|format=mpegts:Mrzeżyno port 1
+#DESCRIPTION Mrzeżyno port 1
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/mysl_katochopina.m3u8?#User-Agent=Mozilla/5.0|format=mpegts:Mysłowice - Chopina - Katowicka
+#DESCRIPTION Mysłowice - Chopina - Katowicka
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/mysl_grunwaldzka.m3u8?#User-Agent=Mozilla/5.0|format=mpegts:Mysłowice - Grunwaldzka
+#DESCRIPTION Mysłowice - Grunwaldzka
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/mysl_katokrakowska.m3u8|format=mpegts:Mysłowice - Katowicka - Krakowska
+#DESCRIPTION Mysłowice - Katowicka - Krakowska
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/mysl_katomost.m3u8?#User-Agent=Mozilla/5.0|format=mpegts:Mysłowice - Krakowska - Most Niepodleglosci
+#DESCRIPTION Mysłowice - Krakowska - Most Niepodleglosci
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/mysl_mikolowskaak.m3u8?#User-Agent=Mozilla/5.0|format=mpegts:Mysłowice - Mikolowska - Armii Krajowej
+#DESCRIPTION Mysłowice - Mikolowska - Armii Krajowej
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/mysl_rynek.m3u8?#User-Agent=Mozilla/5.0|format=mpegts:Mysłowice - Rynek
+#DESCRIPTION Mysłowice - Rynek
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hls8.webcamera.pl/dab-bartek_cam_187c42/dab-bartek_cam_187c42.stream/playlist.m3u8|format=mpegts:Najstarszy dąb w Polsce
+#DESCRIPTION Najstarszy dąb w Polsce
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hoktastream1.webcamera.pl/rewal_cam_003f77/rewal_cam_003f77.stream/playlist.m3u8|format=mpegts:Niechorze
+#DESCRIPTION Niechorze
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hstream1.webcamera.pl/niedzica_cam_a6aff0/niedzica_cam_a6aff0.stream/playlist.m3u8|format=mpegts:Niedzica - Jezioro i zamek w Czorsztynie
+#DESCRIPTION Niedzica - Jezioro i zamek w Czorsztynie
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hoktastream1.webcamera.pl/nocowanie_cam_be431a/nocowanie_cam_be431a.stream/playlist.m3u8|format=mpegts:Okuninka Jezioro Białe
+#DESCRIPTION Okuninka Jezioro Białe
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hoktastream4.webcamera.pl/opole_cam_8b53d4/opole_cam_8b53d4.stream/playlist.m3u8|format=mpegts:Opole
+#DESCRIPTION Opole
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//hoktastream2.webcamera.pl/olsztyn_cam_b8151b/olsztyn_cam_b8151b.stream/playlist.m3u8|format=mpegts:Olsztyn-Słoneczna Polana
+#DESCRIPTION Olsztyn-Słoneczna Polana
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/pabi_nawrockiegogrotaroweckiego.m3u8?#User-Agent=Mozilla/5.0|format=mpegts:Pabianice - Nawrockiego - Grota-Roweckiego
+#DESCRIPTION Pabianice - Nawrockiego - Grota-Roweckiego
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/pabi_warszawskamajdany.m3u8?#User-Agent=Mozilla/5.0|format=mpegts:Pabianice - Warszawska - Majdany
+#DESCRIPTION Pabianice - Warszawska - Majdany
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/pabi_zamkowatraugutta.m3u8?#User-Agent=Mozilla/5.0|format=mpegts:Pabianice - Zamkowa-Traugutta
+#DESCRIPTION Pabianice - Zamkowa-Traugutta
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/piot_dmowskiegozelazna.m3u8?#User-Agent=Mozilla/5.0|format=mpegts:Piotrkow Trybunalski - Dmowskiego - Armii Krajowej
+#DESCRIPTION Piotrkow Trybunalski - Dmowskiego - Armii Krajowej
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/piot_rondosolidarnosci.m3u8?#User-Agent=Mozilla/5.0|format=mpegts:Piotrkow Trybunalski - Rondo Solidarnosci
+#DESCRIPTION Piotrkow Trybunalski - Rondo Solidarnosci
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/piot_rynektrybunalski.m3u8?#User-Agent=Mozilla/5.0|format=mpegts:Piotrkow Trybunalski - Rynek Trybunalski
+#DESCRIPTION Piotrkow Trybunalski - Rynek Trybunalski
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/piot_sikorskiegoarmiikrajowej.m3u8?#User-Agent=Mozilla/5.0|format=mpegts:Piotrków Trybunalski - Sikorskiego - Armii Krajowej
+#DESCRIPTION Piotrków Trybunalski - Sikorskiego - Armii Krajowej
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/piot_slowackiegokostromska.m3u8?#User-Agent=Mozilla/5.0|format=mpegts:Piotrków Trybunalski - Slowackiego - Kostromska
+#DESCRIPTION Piotrków Trybunalski - Slowackiego - Kostromska
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/pisz_domkultury.m3u8?#User-Agent=Mozilla/5.0|format=mpegts:Pisz - Dom Kultury
+#DESCRIPTION Pisz - Dom Kultury
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/pisz_placdaszynskiego.m3u8?#User-Agent=Mozilla/5.0|format=mpegts:Pisz - Plac Daszyńskiego
+#DESCRIPTION Pisz - Plac Daszyńskiego
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/pisz_plazajeziororos.m3u8?#User-Agent=Mozilla/5.0|format=mpegts:Pisz - Plaża miejska-jezioro Roś
+#DESCRIPTION Pisz - Plaża miejska-jezioro Roś
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/pisz_rondokaczynskiego.m3u8?#User-Agent=Mozilla/5.0|format=mpegts:Pisz - Rondo im. Lecha Kaczyńskiego
+#DESCRIPTION Pisz - Rondo im. Lecha Kaczyńskiego
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hls8.webcamera.pl/polanczyk_cam_d1e2d8/polanczyk_cam_d1e2d8.stream/playlist.m3u8|format=mpegts:Polańczyk Jezioro Solińskie
+#DESCRIPTION Polańczyk Jezioro Solińskie
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hoktastream1.webcamera.pl/poniwiec_cam_f8436f/poniwiec_cam_f8436f.stream/playlist.m3u8|format=mpegts:Poniwiec - Ustroń
+#DESCRIPTION Poniwiec - Ustroń
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//live.mtp.pl/cam1.ts/stream.m3u8|format=mpegts:Poznań - Dworzec PKP, Most Dworcowy
+#DESCRIPTION Poznań - Dworzec PKP, Most Dworcowy
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/j7Egi0FM9A8:Poznań-Hetmańska / Głogowska (YT)
+#DESCRIPTION Poznań-Hetmańska / Głogowska (YT)
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/gqLO9Mn6zac:Poznań-Plac Adama Mickiewicza (YT)
+#DESCRIPTION Poznań-Plac Adama Mickiewicza (YT)
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//hoktastream6.webcamera.pl/poznan_cam_a2ec1b/poznan_cam_a2ec1b.stream/playlist.m3u8|format=mpegts:Poznań-Rynek
+#DESCRIPTION Poznań-Rynek
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/prze_mostsiwca.m3u8?#User-Agent=Mozilla/5.0|format=mpegts:Przemyśl - Most Siwca
+#DESCRIPTION Przemyśl - Most Siwca
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/prze_plackonstytucji.m3u8?#User-Agent=Mozilla/5.0|format=mpegts:Przemyśl - Plac Konstytuchi
+#DESCRIPTION Przemyśl - Plac Konstytuchi
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/prze_placnabramie.m3u8?#User-Agent=Mozilla/5.0|format=mpegts:Przemyśl - Plac Na Bramie
+#DESCRIPTION Przemyśl - Plac Na Bramie
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/prze_placniepodleglosci.m3u8?#User-Agent=Mozilla/5.0|format=mpegts:Przemyśl - Plac Niepodleglosci
+#DESCRIPTION Przemyśl - Plac Niepodleglosci
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//cdn-3-go.toya.net.pl%3a8081/kamery/prze_rynekurzadmiasta.m3u8?#User-Agent=Mozilla/5.0|format=mpegts:Przemyśl - Rynek - Urzad Miasta
+#DESCRIPTION Przemyśl - Rynek - Urzad Miasta
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hoktastream1.webcamera.pl/gminarewal_cam_95ef9b/gminarewal_cam_95ef9b.stream/playlist.m3u8|format=mpegts:Pustkowo widok na Krzyż Nadziei
+#DESCRIPTION Pustkowo widok na Krzyż Nadziei
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hls1.webcamera.pl/pszow2_cam_4b93fa/pszow2_cam_4b93fa.stream/playlist.m3u8|format=mpegts:Pyszów Lodowisko
+#DESCRIPTION Pyszów Lodowisko
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//78.31.90.123/hls/polna.m3u8|format=mpegts:Racibórz Polna
+#DESCRIPTION Racibórz Polna
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//78.31.90.123/hls/rynek.m3u8|format=mpegts:Racibórz Rynek
+#DESCRIPTION Racibórz Rynek
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//hoktastream5.webcamera.pl/rewa_cam_c2a755/rewa_cam_c2a755.stream/playlist.m3u8|format=mpegts:Rewa-widok na Zatokę Gdańską
+#DESCRIPTION Rewa-widok na Zatokę Gdańską
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hls8.webcamera.pl/gminarewal_cam_a95d00/gminarewal_cam_a95d00.stream/playlist.m3u8|format=mpegts:Rewal deptak
+#DESCRIPTION Rewal deptak
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//hoktastream2.webcamera.pl/gminarewal_cam_a882c3/gminarewal_cam_a882c3.stream/playlist.m3u8|format=mpegts:Rewal-Plaża
+#DESCRIPTION Rewal-Plaża
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//hoktastream2.webcamera.pl/rewalsunset_cam_bc33e3/rewalsunset_cam_bc33e3.stream/playlist.m3u8|format=mpegts:Rewal-Plaża, taras
+#DESCRIPTION Rewal-Plaża, taras
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//hoktastream1.webcamera.pl/gminarewal_cam_95ef9b/gminarewal_cam_95ef9b.stream/playlist.m3u8|format=mpegts:Rewal-Pustkowo - Bałtycki Krzyż Nadziei
+#DESCRIPTION Rewal-Pustkowo - Bałtycki Krzyż Nadziei
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hls12.webcamera.pl/rusinski_cam_3580b7/rusinski_cam_3580b7.stream/playlist.m3u8|format=mpegts:Rusiń-ski
+#DESCRIPTION Rusiń-ski
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//hoktastream1.webcamera.pl/sarbinowo_cam_bd6ec8/sarbinowo_cam_bd6ec8.stream/playlist.m3u8|format=mpegts:Sarbinowo-Plaża
+#DESCRIPTION Sarbinowo-Plaża
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//kamera.task.gda.pl%3a443/rtplive/molo.sdp/playlist.m3u8|format=mpegts:Sopot - Molo
+#DESCRIPTION Sopot - Molo
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//hls8.webcamera.pl/sopot_cam_e1c28f/sopot_cam_e1c28f.stream/playlist.m3u8|format=mpegts:Sopot - Molo II
+#DESCRIPTION Sopot - Molo II
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/HV-aSp6nXGI:Sopot-klub Atelier (YT)
+#DESCRIPTION Sopot-klub Atelier (YT)
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/2HhmQw0y_8U:Sopot-Plac Przyjaciół Sopotu (YT)
+#DESCRIPTION Sopot-Plac Przyjaciół Sopotu (YT)
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//dynamo.c.s73cdn.net/spatif/index.m3u8|format=mpegts:Sopot-Plac Zdrojowy
+#DESCRIPTION Sopot-Plac Zdrojowy
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//hoktastream2.webcamera.pl/sopot_cam_7b9f92/sopot_cam_7b9f92.stream/playlist.m3u8|format=mpegts:Sopot - widok na Monciak
+#DESCRIPTION Sopot - widok na Monciak
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hoktastream2.webcamera.pl/flisacy_cam_35a158/flisacy_cam_35a158.stream/playlist.m3u8|format=mpegts:Spływ Dunajcem - Sromowce W.
+#DESCRIPTION Spływ Dunajcem - Sromowce W.
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hoktastream1.webcamera.pl/starachowice_cam_ac8dee/starachowice_cam_ac8dee.stream/playlist.m3u8|format=mpegts:Starachowice-Panorama
+#DESCRIPTION Starachowice-Panorama
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hoktastream1.webcamera.pl/starachowice_cam_815972/starachowice_cam_815972.stream/playlist.m3u8|format=mpegts:Starachowice-Rynek
+#DESCRIPTION Starachowice-Rynek
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//live.tvregionalna24.pl%3a18085/Stegna_urzad_live/tracks-v1/index.m3u8|format=mpegts:Stegna
+#DESCRIPTION Stegna
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.youtube.com/watch?v=fGAiiIEXz0U:Stary Sącz-rynek  (YT)
+#DESCRIPTION Stary Sącz-rynek  (YT)
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//live.tvregionalna24.pl%3a18085/Stegna_Klif/tracks-v1/index.m3u8|format=mpegts:Stegna Klif
+#DESCRIPTION Stegna Klif
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//da1.panolive.ovh%3a8083/cam/suprasl2_hd/playlist.m3u8|format=mpegts:Supraśl-ul. 3 Maja
+#DESCRIPTION Supraśl-ul. 3 Maja
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//da1.panolive.ovh%3a8083/cam/suprasl1_hd/playlist.m3u8|format=mpegts:Supraśl-Pałac Buchholtza
+#DESCRIPTION Supraśl-Pałac Buchholtza
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hls1.webcamera.pl/skywind_cam_698693/skywind_cam_698693.stream/playlist.m3u8|format=mpegts:Świerardów Zdrój SKI & SUN
+#DESCRIPTION Świerardów Zdrój SKI & SUN
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hoktastream1.webcamera.pl/skywind_cam_0aa7a8/skywind_cam_0aa7a8.stream/playlist.m3u8|format=mpegts:Świerardów Zdrój SKI & SUN
+#DESCRIPTION Świerardów Zdrój SKI & SUN
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hoktastream1.webcamera.pl/szczecin_cam_141876/szczecin_cam_141876.stream/playlist.m3u8|format=mpegts:Szczecin Bulwary
+#DESCRIPTION Szczecin Bulwary
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hoktastream1.webcamera.pl/szrenicka_cam_ae9568/szrenicka_cam_ae9568.stream/playlist.m3u8|format=mpegts:Szklarska Poręba - Dolna stacja
+#DESCRIPTION Szklarska Poręba - Dolna stacja
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//streaming.airmax.pl/szrenicakam2/tracks-v1/index.m3u8|format=mpegts:Szklarska Poręba Szrenica
+#DESCRIPTION Szklarska Poręba Szrenica
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//hls14.webcamera.pl/tarnow_cam_d0e19c/tarnow_cam_d0e19c.stream/playlist.m3u8|format=mpegts:Tarnów Rynek miejski
+#DESCRIPTION Tarnów Rynek miejski
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hoktastream1.webcamera.pl/trzepowo_cam_9d241d/trzepowo_cam_9d241d.stream/playlist.m3u8|format=mpegts:Trzepowo Stacja Narciarska
+#DESCRIPTION Trzepowo Stacja Narciarska
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hls13.webcamera.pl/turek_cam_dd3c59/turek_cam_dd3c59.stream/playlist.m3u8|format=mpegts:Turek - miasto
+#DESCRIPTION Turek - miasto
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hoktastream1.webcamera.pl/ustka_cam_4feffd/ustka_cam_4feffd.stream/playlist.m3u8|format=mpegts:Ustka plaża
+#DESCRIPTION Ustka plaża
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hoktastream1.webcamera.pl/nocowanie_cam_a470d8/nocowanie_cam_a470d8.stream/playlist.m3u8|format=mpegts:Ustroń rynek
+#DESCRIPTION Ustroń rynek
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//hstream2.webcamera.pl/poreba_cam_e71a81/poreba_cam_e71a81.stream/playlist.m3u8|format=mpegts:Wadowice-Jezioro Mucharskie
+#DESCRIPTION Wadowice-Jezioro Mucharskie
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//hoktastream2.webcamera.pl/witanowice_cam_09d640/witanowice_cam_09d640.stream/playlist.m3u8|format=mpegts:Wadowice- Kościół pw. św. Mikołaja
+#DESCRIPTION Wadowice- Kościół pw. św. Mikołaja
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//hls13.webcamera.pl/wadowice_cam_f87101/wadowice_cam_f87101.stream/playlist.m3u8|format=mpegts:Wadowice rynek
+#DESCRIPTION Wadowice rynek
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.youtube.com/watch?v=jPwZ6bRSD3M&feature=youtu.be:Warszawa-Krakowskie Przedmieście (YT)
+#DESCRIPTION Warszawa-Krakowskie Przedmieście (YT)
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.youtube.com/watch?v=tTdPAX8iNZE:Warszawa-Rondo Plac Zbawiciela (YT)
+#DESCRIPTION PL -Warszawa-Rondo Plac Zbawiciela (YT)
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.youtube.com/watch?v=1RwDF830LA4:Warszawa-Panorama Centrum (YT)
+#DESCRIPTION Warszawa-Panorama Centrum (YT)
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/v5a03Vf0lgQ:Warszawa-Żwirki i Wigury
+#DESCRIPTION Warszawa-Żwirki i Wigury
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//hoktastream2.webcamera.pl/warszawa_cam_d0fc4d/warszawa_cam_d0fc4d.stream/playlist.m3u8|format=mpegts:Warszawa-Pałac Kultury i Nauki
+#DESCRIPTION Warszawa-Pałac Kultury i Nauki
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.youtube.com/watch?v=dZKNxlJUcN0:Warszawa-Plac Defilad (YT)
+#DESCRIPTION Warszawa-Plac Defilad (YT)
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/u1gJA5zk7rc:Warszawa-Plac Zamkowy (YT)
+#DESCRIPTION Warszawa-Plac Zamkowy (YT)
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//hoktastream6.webcamera.pl/warszawa_cam_78f5e6/warszawa_cam_78f5e6.stream/playlist.m3u8|format=mpegts:Warszawa-Rynek Starego Miasta
+#DESCRIPTION Warszawa-Rynek Starego Miasta
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.youtube.com/channel/UCzk5x_PbhFKUoJx_HNTefDQ/live:Warszawa-Stacja kolejowa Zachodnia (YT)
+#DESCRIPTION Warszawa-Stacja kolejowa Zachodnia (YT)
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//hoktastream1.webcamera.pl/warszawa_cam_f2b95c/warszawa_cam_f2b95c.stream/playlist.m3u8|format=mpegts:Warszawa-Stadion Narodowy
+#DESCRIPTION Warszawa-Stadion Narodowy
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hoktastream1.webcamera.pl/wdzydze_cam_8d77ee/wdzydze_cam_8d77ee.stream/playlist.m3u8|format=mpegts:Wdzydze Kiszewskie
+#DESCRIPTION Wdzydze Kiszewskie
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//hoktastream1.webcamera.pl/um_wejherowo_cam_85442c/um_wejherowo_cam_85442c.stream/playlist.m3u8|format=mpegts:Wejherowo - Deptak
+#DESCRIPTION Wejherowo - Deptak
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//hoktastream1.webcamera.pl/wejherowo_cam_e071d5/wejherowo_cam_e071d5.stream/playlist.m3u8|format=mpegts:Wejcherowo-Panorama
+#DESCRIPTION Wejcherowo-Panorama
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hoktastream1.webcamera.pl/um_wejherowo_cam_47c4b7/um_wejherowo_cam_47c4b7.stream/playlist.m3u8|format=mpegts:Wejherowo-Rynek
+#DESCRIPTION Wejherowo-Rynek
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//194.116.130.227%3a1935/gda/gda_filharmonia.stream/playlist.m3u8|format=mpegts:Widok na Motławę
+#DESCRIPTION Widok na Motławę
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hoktastream2.webcamera.pl/wiezyca_cam_64129e/wiezyca_cam_64129e.stream/playlist.m3u8|format=mpegts:Wieżyca
+#DESCRIPTION Wieżyca
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hoktastream1.webcamera.pl/wiezyca_cam_b79e09/wiezyca_cam_b79e09.stream/playlist.m3u8|format=mpegts:Wieżyca stok
+#DESCRIPTION Wieżyca stok
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//hoktastream1.webcamera.pl/wisla_cam_e154be/wisla_cam_e154be.stream/playlist.m3u8|format=mpegts:Wisła-Deptak
+#DESCRIPTION Wisła-Deptak
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//hoktastream4.webcamera.pl/hotelstok_cam_77f104/hotelstok_cam_77f104.stream/playlist.m3u8|format=mpegts:Wisła-HOTEL STOK - Stacja Narciarska
+#DESCRIPTION Wisła-HOTEL STOK - Stacja Narciarska
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//hoktastream2.webcamera.pl/wisla_cam_3d639c/wisla_cam_3d639c.stream/playlist.m3u8|format=mpegts:Wisła-Skocznia
+#DESCRIPTION Wisła-Skocznia
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//hoktastream1.webcamera.pl/wladyslawowo_cam_250100/wladyslawowo_cam_250100.stream/playlist.m3u8|format=mpegts:Władysławowo-Jastrzębia Góra-plaża
+#DESCRIPTION Władysławowo-Jastrzębia Góra-plaża
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hoktastream2.webcamera.pl/wladyslawowo_cam_459a14/wladyslawowo_cam_459a14.stream/playlist.m3u8|format=mpegts:Władysławowo-Plaża
+#DESCRIPTION Władysławowo-Plaża
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//da1.panolive.ovh%3a8083/cam/wolbrom1_hd/playlist.m3u8|format=mpegts:Strzegowa-Kościół
+#DESCRIPTION Strzegowa-Kościół
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hoktastream2.webcamera.pl/wroclaw_cam_181113/wroclaw_cam_181113.stream/playlist.m3u8|format=mpegts:Wrocław Rynek
+#DESCRIPTION Wrocław Rynek
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//hoktastream1.webcamera.pl/wroclaw_przed_cam_16c68e/wroclaw_przed_cam_16c68e.stream/playlist.m3u8|format=mpegts:Wrocław-Stare Miasto
+#DESCRIPTION Wrocław-Stare Miasto
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//hoktastream2.webcamera.pl/krupowki2_cam_305cd7/krupowki2_cam_305cd7.stream/playlist.m3u8|format=mpegts:Zakopane-Dolna stacja kolei linowo-terenowej
+#DESCRIPTION Zakopane-Dolna stacja kolei linowo-terenowej
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//hoktastream5.webcamera.pl/krupowki2_cam_62169a/krupowki2_cam_62169a.stream/playlist.m3u8|format=mpegts:Zakopane-Krupówki Dolne
+#DESCRIPTION Zakopane-Krupówki Dolne
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//hoktastream4.webcamera.pl/zakopane_cam_cd5b2d/zakopane_cam_cd5b2d.stream/playlist.m3u8|format=mpegts:Zakopane-Krupówki Środkowe
+#DESCRIPTION Zakopane-Krupówki Środkowe
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//hoktastream1.webcamera.pl/skywind_cam_62d9a1/skywind_cam_62d9a1.stream/playlist.m3u8|format=mpegts:Zakopane-HARENDA-ski
+#DESCRIPTION Zakopane-HARENDA-ski
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hls8.webcamera.pl/pkl_cam_c9ee88/pkl_cam_c9ee88.stream/playlist.m3u8|format=mpegts:Zakopane - Kasprowy Hala Gąsienicowa
+#DESCRIPTION Zakopane - Kasprowy Hala Gąsienicowa
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hls13.webcamera.pl/pkl_cam_72b29d/pkl_cam_72b29d.stream/playlist.m3u8|format=mpegts:Zakopane - Kasprowy Wierch
+#DESCRIPTION Zakopane - Kasprowy Wierch
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hoktastream1.webcamera.pl/skywind_cam_85105a/skywind_cam_85105a.stream/playlist.m3u8|format=mpegts:Zakopane - Polana Szymoszkowa
+#DESCRIPTION Zakopane - Polana Szymoszkowa
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hoktastream1.webcamera.pl/pkl_cam_cc787e/pkl_cam_cc787e.stream/playlist.m3u8|format=mpegts:Zakopane-Gubałówka
+#DESCRIPTION Zakopane-Gubałówka
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hstream2.webcamera.pl/poreba_cam_e71a81/poreba_cam_e71a81.stream/playlist.m3u8|format=mpegts:Zalew Świnna Poręba
+#DESCRIPTION Zalew Świnna Poręba
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//da1.panolive.ovh%3a8083/cam/zawadzkie_hd/playlist.m3u8|format=mpegts:Zawadzkie-panorama
+#DESCRIPTION Zawadzkie-panorama
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//hoktastream2.webcamera.pl/skywind_cam_809945/skywind_cam_809945.stream/playlist.m3u8|format=mpegts:Zieleniec SKI Arena
+#DESCRIPTION Zieleniec SKI Arena
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//hoktastream5.webcamera.pl/bartus_cam_24684f/bartus_cam_24684f.stream/playlist.m3u8|format=mpegts:Zieleniec SKI Arena - Bartuś
+#DESCRIPTION Zieleniec SKI Arena - Bartuś
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//hoktastream1.webcamera.pl/gryglowka_cam_a7853c/gryglowka_cam_a7853c.stream/playlist.m3u8|format=mpegts:Zieleniec SKI Arena -Gryglówka stacja dolna
+#DESCRIPTION Zieleniec SKI Arena -Gryglówka stacja dolna
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hoktastream4.webcamera.pl/nartorama_cam_ff2f98/nartorama_cam_ff2f98.stream/playlist.m3u8|format=mpegts:Zieleniec SKI Arena – Nartorama
+#DESCRIPTION Zieleniec SKI Arena – Nartorama
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//hoktastream2.webcamera.pl/nartorama_cam_f20c3c/nartorama_cam_f20c3c.stream/playlist.m3u8|format=mpegts:Zieleniec SKI Arena – Nartorama II
+#DESCRIPTION Zieleniec SKI Arena – Nartorama II
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//hoktastream2.webcamera.pl/zieleniec_cam_8471bc/zieleniec_cam_8471bc.stream/playlist.m3u8|format=mpegts:Zieleniec SKI Arena - Winterpol WT2 szkoła T&T
+#DESCRIPTION Zieleniec SKI Arena - Winterpol WT2 szkoła T&T
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//hoktastream4.webcamera.pl/zieleniec_cam_b059be/zieleniec_cam_b059be.stream/playlist.m3u8|format=mpegts:Zieleniec SKI Arena - Winterpol W3
+#DESCRIPTION Zieleniec SKI Arena - Winterpol W3
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//hoktastream2.webcamera.pl/zieleniec_cam_79fa00/zieleniec_cam_79fa00.stream/playlist.m3u8|format=mpegts:Zieleniec SKI Arena - Winterpol W3 dolna stacja
+#DESCRIPTION Zieleniec SKI Arena - Winterpol W3 dolna stacja
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//hoktastream2.webcamera.pl/zieleniec_cam_e77d95/zieleniec_cam_e77d95.stream/playlist.m3u8|format=mpegts:Zieleniec SKI Arena - Winterpol wyciąg W5
+#DESCRIPTION Zieleniec SKI Arena - Winterpol wyciąg W5
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//cdn.stream360.pl%3a80/Zlotoryja/zlotoryja1.stream/playlist.m3u8|format=mpegts:Złotoryja -Rynek
+#DESCRIPTION Złotoryja -Rynek
