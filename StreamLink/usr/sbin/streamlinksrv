@@ -469,14 +469,23 @@ def start():
             LOGGER.error("err: {}", str(err))
 
     httpd = ThreadedHTTPServer(("", PORT_NUMBER), StreamHandler)
-    LOGGER.info("{0} Server ({1}) started", time.asctime(), __version__)
+    try:
+        sys.path.append('/usr/lib/enigma2/python/Plugins/Extensions/StreamlinkConfig/')
+        from version import Version as jVersion
+    except Exception as e:
+        jVersion = str(e)
+    LOGGER.info("###################################################")
+    LOGGER.info("{0} Server ({1} - {2}) started", time.asctime(), __version__, jVersion)
     LOGGER.info("Host:          {0}", hostname())
     LOGGER.info("Port:          {0}", PORT_NUMBER)
     LOGGER.info("OS:            {0}", platform.platform())
     LOGGER.info("Python:        {0}".format(platform.python_version()))
     LOGGER.info("Streamlink:    {0} / {1}".format(streamlink_version, streamlink_version_date))
+    LOGGER.info("Log level:     {0}", _loglevel)
     LOGGER.debug("Options Parser: {0}".format(opts_parser_version))
     LOGGER.info("Requests({0}), Websocket({1})".format(requests_version, websocket_version))
+    LOGGER.info("###################################################")
+    
 
     streamlink = Streamlink2()
     del streamlink
@@ -602,6 +611,8 @@ class Daemon:
             else:
                 print str(err)
                 sys.exit(1)
+        if os.path.exists(self.pidfile):
+            os.remove(self.pidfile)
 
     def restart(self):
         """

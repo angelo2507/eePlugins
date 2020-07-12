@@ -17,7 +17,7 @@ config.plugins.streamlinksrv = ConfigSubsection()
 config.plugins.streamlinksrv.installBouquet = NoSave(ConfigNothing())
 
 config.plugins.streamlinksrv.enabled = ConfigYesNo(default = False)
-config.plugins.streamlinksrv.logLevel = ConfigSelection(default = "info", choices = [("none", _("none")),
+config.plugins.streamlinksrv.logLevel = ConfigSelection(default = "debug", choices = [("none", _("none")),
                                                                                     ("info", _("info")),
                                                                                     ("warning", _("warning")),
                                                                                     ("error", _("error")),
@@ -27,7 +27,7 @@ config.plugins.streamlinksrv.logLevel = ConfigSelection(default = "info", choice
                                                                               ])
 config.plugins.streamlinksrv.logToFile = ConfigEnableDisable(default = False)
 config.plugins.streamlinksrv.ClearLogFile = ConfigEnableDisable(default = True)
-config.plugins.streamlinksrv.logPath = ConfigSelection(default = "/home/root", choices = [("/home/root", "/home/root"), ("/tmp", "/tmp"), ("/hdd", "/hdd"), ])
+config.plugins.streamlinksrv.logPath = ConfigSelection(default = "/tmp", choices = [("/home/root", "/home/root"), ("/tmp", "/tmp"), ("/hdd", "/hdd"), ])
 config.plugins.streamlinksrv.PortNumber = ConfigSelection(default = "8088", choices = [("8088", "8088"), ("88", "88"), ])
 config.plugins.streamlinksrv.bufferPath = ConfigText(default = "/tmp")
 # pilot.wp.pl

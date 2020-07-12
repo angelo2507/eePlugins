@@ -42,7 +42,8 @@ hlsdl"
 
 for pkg in $paskagesList;
 do
-  if [ `echo "$paskagesList"| grep -c $pkg` -gt 0 ];then
+  #echo "$installed"| grep -c $pkg
+  if [ `echo "$installed"| grep -c $pkg` -gt 0 ];then
     if [ $reinstall -eq 0 ];then
         [ $PL -eq 1 ] && echo "$pkg jest już zainstalowany" || echo "$pkg already installed"
     else
@@ -50,25 +51,27 @@ do
         [ $PL -eq 1 ] && echo "$pkg jest już zainstalowany, wymuszam reinstalację" || "$pkg already installed, reinstalling it"
         echo "------------------------------------------------------------"
         opkg install --force-reinstall $pkg
-		err=$?
-		if [ $err -gt 0 ] && [ `ls /usr/lib/enigma2/python/Plugins/Extensions/StreamlinkConfig/plugins/|grep -c $pkg` -eq 1 ];then
-			echo "------------------------------------------------------------"
-			[ $PL -eq 1 ] && echo "BŁĄD: brak $pkg w oficjanym repozytorium, instaluję kopię" || "ERROR: no $pkg in official repo, installing offline version"
-			echo "------------------------------------------------------------"
-			opkg install --force-reinstall /usr/lib/enigma2/python/Plugins/Extensions/StreamlinkConfig/plugins/$pkg*.ipk
-		fi
+                err=$?
+                if [ $err -gt 0 ] && [ `ls /usr/lib/enigma2/python/Plugins/Extensions/StreamlinkConfig/plugins/|grep -c $pkg` -eq 1 ];then
+                        echo "------------------------------------------------------------"
+                        [ $PL -eq 1 ] && echo "BŁĄD: brak $pkg w oficjanym repozytorium, instaluję kopię" || "ERROR: no $pkg in official repo, installing offline version"
+                        echo "------------------------------------------------------------"
+                        opkg install --force-reinstall /usr/lib/enigma2/python/Plugins/Extensions/StreamlinkConfig/plugins/$pkg*.ipk
+                fi
     fi
   else
     opkg install $pkg
-	err=$?
-	if [ $err -gt 0 ] && [ `ls /usr/lib/enigma2/python/Plugins/Extensions/StreamlinkConfig/plugins/|grep -c $pkg` -eq 1 ];then
-		echo "------------------------------------------------------------"
-		[ $PL -eq 1 ] && echo "BŁĄD: brak $pkg w oficjanym repozytorium, instaluję kopię" || "ERROR: no $pkg in official repo, installing offline version"
-		echo "------------------------------------------------------------"
-		opkg install /usr/lib/enigma2/python/Plugins/Extensions/StreamlinkConfig/plugins/$pkg*.ipk
-	fi
+        err=$?
+        if [ $err -gt 0 ] && [ `ls /usr/lib/enigma2/python/Plugins/Extensions/StreamlinkConfig/plugins/|grep -c $pkg` -eq 1 ];then
+                echo "------------------------------------------------------------"
+                [ $PL -eq 1 ] && echo "BŁĄD: brak $pkg w oficjanym repozytorium, instaluję kopię" || "ERROR: no $pkg in official repo, installing offline version"
+                echo "------------------------------------------------------------"
+                opkg install /usr/lib/enigma2/python/Plugins/Extensions/StreamlinkConfig/plugins/$pkg*.ipk
+        fi
   fi
 done
+
+[ -e /usr/lib/python2.7/site-packages/Crypto/Util/Padding.py ] || ln -sf /usr/lib/python2.7/site-packages/streamlink/missingScripts/Padding.py /usr/lib/python2.7/site-packages/Crypto/Util/Padding.py
 
 sync
 [ `grep -c 'config.plugins.streamlinksrv.enabled=true' < /etc/enigma2/settings` -eq 0 ] && exit 0
