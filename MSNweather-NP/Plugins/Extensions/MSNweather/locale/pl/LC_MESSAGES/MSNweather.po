@@ -337,3 +337,54 @@ msgstr "Długość geograficzna czujnika airly"
 
 msgid "Location in www.foreca.com/<this part>"
 msgstr "Lokalizacja w www.foreca.com/<ta część>"
+
+msgid "*** Basic settings ***"
+msgstr "*** Ustawienia podstawowe ***"
+
+msgid "*** Home air condition ***"
+msgstr "*** Domowe klimatyzatory ***"
+
+msgid "1st AC system:"
+msgstr "Pierwszy klimatyzator:"
+
+msgid "IP address:"
+msgstr "Adres IP:"
+
+msgid "2nd AC system"
+msgstr "Drugi klimatyzator:"
+
+msgid "*** Debuging options ***"
+msgstr "*** Opcje logowania ***"
+
+msgid "not installed"
+msgstr "nie zainstalowany"
+
+msgid "Daikin Air Conditioner"
+msgstr "Firmy Daikin"
+
+msgid "Samsung Air Conditioner"
+msgstr "Firmy Samsung"
+
+msgid "AC in the attic"
+msgstr "Klima na poddaszu"
+
+msgid "AC in the bedroom"
+msgstr "Klima w sypialni"
+
+msgid "*** Integration with Airly plugin ***"
+msgstr "*** Integracja z wtyczką Airly ***"
+
+msgid "Get current data from:"
+msgstr "Użyj aktualnych danych z:"
+
+msgid "MSN service"
+msgstr "serwisu MSN"
+
+msgid "Airly service"
+msgstr "serwisu airly"
+
+msgid "MSN or Airly depending which latest"
+msgstr "serwisu, który ma dane najświerzsze"
+
+msgid "Description:"
+msgstr "Opis:"

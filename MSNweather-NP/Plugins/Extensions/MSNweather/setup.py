@@ -42,7 +42,7 @@ import os
 DBG = False
 if DBG: from debug import printDEBUG
 
-def initWeatherPluginEntryConfig():
+def initWeatherPluginEntryConfig(i=0):
     s = ConfigSubsection()
     s.city = ConfigText(default = "Warszawa", visible_width = 100, fixed_size = False)
     s.degreetype = ConfigSelection(choices = [("C", _("metric system")), ("F", _("imperial system"))], default = "C")
@@ -51,6 +51,8 @@ def initWeatherPluginEntryConfig():
     s.geolongitude = ConfigText(default = "auto", visible_width = 100, fixed_size = False)
     s.weatherSearchFullName = ConfigText(default = "", visible_width = 100, fixed_size = False)
     s.thingSpeakChannelID = ConfigText(default = "", visible_width = 100, fixed_size = False)
+    if s.thingSpeakChannelID.value == '' and os.path.exists('/hdd/User_Configs/thingSpeakChannelID.%s' % i):
+        s.thingSpeakChannelID.value =  open('/hdd/User_Configs/thingSpeakChannelID.%s' % i, 'r').readline().strip()
 
     s.airlylatitude = ConfigText(default = "", visible_width = 100, fixed_size = False)
     s.airlylongitude = ConfigText(default = "", visible_width = 100, fixed_size = False)
@@ -64,7 +66,7 @@ def initConfig():
     if count != 0:
         i = 0
         while i < count:
-            initWeatherPluginEntryConfig()
+            initWeatherPluginEntryConfig(i)
             i += 1
 
 class MSNWeatherEntriesListConfigScreen(Screen):
@@ -501,11 +503,30 @@ class MSNWeatherConfiguration(Screen, ConfigListScreen):
             
     def runSetup(self):
         ConfigList = []
+        ConfigList.append(getConfigListEntry('\c00289496' + _("*** Basic settings ***")))
         ConfigList.append(getConfigListEntry(_("Icons type:"), config.plugins.WeatherPlugin.IconsType))
         ConfigList.append(getConfigListEntry(_("Icons scaling engine:"), config.plugins.WeatherPlugin.ScalePicType))
         ConfigList.append(getConfigListEntry(_("Build histograms:"), config.plugins.WeatherPlugin.BuildHistograms))
         if config.plugins.WeatherPlugin.BuildHistograms.value:
             ConfigList.append(getConfigListEntry(_("Period:"), config.plugins.WeatherPlugin.HistoryPeriod))
+
+        #ConfigList.append(getConfigListEntry(""))
+        #ConfigList.append(getConfigListEntry('\c00289496' + _("*** Integration with Airly plugin ***")))
+        #ConfigList.append(getConfigListEntry(_("Get current data from:"), config.plugins.WeatherPlugin.CurrentValuesSource))
+        
+        ConfigList.append(getConfigListEntry(""))
+        ConfigList.append(getConfigListEntry('\c00289496' + _("*** Home air condition ***")))
+        ConfigList.append(getConfigListEntry(_("1st AC system:"), config.plugins.WeatherPlugin.AC1))
+        if config.plugins.WeatherPlugin.AC1.value != 'off':
+            ConfigList.append(getConfigListEntry(_("IP address:"), config.plugins.WeatherPlugin.AC1_IP))
+            ConfigList.append(getConfigListEntry(_("Description:"), config.plugins.WeatherPlugin.AC1inf))
+        ConfigList.append(getConfigListEntry(_("2nd AC system:"), config.plugins.WeatherPlugin.AC2))
+        if config.plugins.WeatherPlugin.AC2.value != 'off':
+            ConfigList.append(getConfigListEntry(_("IP address:"), config.plugins.WeatherPlugin.AC2_IP))
+            ConfigList.append(getConfigListEntry(_("Description:"), config.plugins.WeatherPlugin.AC2inf))
+
+        ConfigList.append(getConfigListEntry(""))
+        ConfigList.append(getConfigListEntry('\c00289496' + _("*** Debuging options ***")))
         ConfigList.append(getConfigListEntry(_("Debug (require restart):"), config.plugins.WeatherPlugin.DebugEnabled))
         if config.plugins.WeatherPlugin.DebugEnabled.value:
             ConfigList.append(getConfigListEntry(_("Debug log file size:"), config.plugins.WeatherPlugin.DebugSize))
@@ -533,11 +554,13 @@ class MSNWeatherConfiguration(Screen, ConfigListScreen):
 
     def keySave(self):
         for x in self["config"].list:
-            x[1].save()
+            if len(x) >= 2:
+                x[1].save()
         configfile.save()
         self.close()
 
     def keyCancel(self):
         for x in self["config"].list:
-            x[1].cancel()
+            if len(x) >= 2:
+                x[1].cancel()
         self.close()  

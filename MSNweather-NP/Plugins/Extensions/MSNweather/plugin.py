@@ -21,7 +21,7 @@
 
 from . import _
 from Components.ActionMap import ActionMap
-from Components.config import ConfigSubsection, ConfigSubList, ConfigInteger, config, NoSave, ConfigEnableDisable, ConfigSelection
+from Components.config import ConfigSubsection, ConfigSubList, ConfigInteger, config, NoSave, ConfigEnableDisable, ConfigSelection, ConfigText, ConfigIP
 #from Components.Pixmap import Pixmap
 from Components.j00zekAccellPixmap import j00zekAccellPixmap
 from Components.Sources.StaticText import StaticText
@@ -54,6 +54,14 @@ config.plugins.WeatherPlugin.IconsType = ConfigSelection(choices = availableOpti
 config.plugins.WeatherPlugin.ScalePicType = ConfigSelection(choices = [ ("self.instance.setScale", _("internal E2")), ("ePicLoad", _("ePicLoad (E.g. Vu+ org)")) ], default = "self.instance.setScale")
 
 config.plugins.WeatherPlugin.BuildHistograms = ConfigEnableDisable(default = False)
+config.plugins.WeatherPlugin.CurrentValuesSource = ConfigSelection(choices = [ ("msn", _("MSN service")), ("airly", _("Airly service")) , ("msnarly", _("MSN or Airly depending which latest"))], default = "msn")
+
+config.plugins.WeatherPlugin.AC1 = ConfigSelection(choices = [ ("off", _("not installed")), ("daikin", _("Daikin Air Conditioner")) , ("samsung", _("Samsung Air Conditioner"))], default = "off")
+config.plugins.WeatherPlugin.AC1_IP = ConfigIP(default = [0,0,0,0])
+config.plugins.WeatherPlugin.AC1inf = ConfigText(default = _("AC in the attic"), visible_width = 100, fixed_size = False)
+config.plugins.WeatherPlugin.AC2 = ConfigSelection(choices = [ ("off", _("not installed")), ("daikin", _("Daikin Air Conditioner")) , ("samsung", _("Samsung Air Conditioner"))], default = "off")
+config.plugins.WeatherPlugin.AC2_IP = ConfigIP(default = [0,0,0,0])
+config.plugins.WeatherPlugin.AC2inf = ConfigText(default = _("AC in the bedroom"), visible_width = 100, fixed_size = False)
 
 config.plugins.WeatherPlugin.DebugEnabled = ConfigEnableDisable(default = False)
 config.plugins.WeatherPlugin.DebugSize = ConfigSelection(choices = [ ("10000", "10KB"), ("100000", "100KB"), ("1000000", "1MB"), ], default = "10000")
@@ -122,6 +130,7 @@ class MSNweather(Screen):
             <ePixmap pixmap="skin_default/buttons/red.png" position="0,300" size="140,40" alphatest="on" />
             <ePixmap pixmap="skin_default/buttons/green.png" position="160,300" size="140,40" alphatest="on" />
             <ePixmap pixmap="skin_default/buttons/yellow.png" position="330,300" size="140,40" alphatest="on" />
+            <ePixmap pixmap="skin_default/buttons/blue.png" position="490,300" size="140,40" alphatest="on" />
             <widget source="session.CurrentService" render="Label" position="10,295" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#9f1313" transparent="1" >
               <convert type="j00zekTranslator">Close</convert>
             </widget>
