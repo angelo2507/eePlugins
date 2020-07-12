@@ -1,32 +1,66 @@
 # -*- coding: utf-8 -*-
-# @j00zek 2014/2015/2016/2017/2019/2020
-#
-# changes/improvements comparin to standard Console:
-# - translation of cmd texts with common structure _(), e.g. echo "_(this is an example)"
-# - safe for tuners with small memory size
-
-from enigma import eConsoleAppContainer, eServiceReference, getDesktop
-from Screens.InfoBar import InfoBar
-from Screens.Screen import Screen
+from enigma import eConsoleAppContainer, getDesktop
 from Components.ActionMap import ActionMap
-from Components.MenuList import MenuList
 from Components.ScrollLabel import ScrollLabel
-from inits import *
 from Screens.Screen import Screen
+    
+class OMBsystem: #Calling os.system is not recommended, it may fail due to lack of memory and blocks E2 mainthread
+    def __init__(self, cmd, callBackFun=None):
+        self.callBackFun = callBackFun
+        self.cmd = cmd
+        
+        self.console = eConsoleAppContainer()
+        if None != self.callBackFun:
+            self.console_appClosed_conn = eConnectCallback(self.console.appClosed, self._cmdFinished)
+            self.console_stdoutAvail_conn = eConnectCallback(self.console.stdoutAvail, self._dataAvail)
+            self.outData     = ""
+        self.console.execute( E2PrioFix( cmd ) )
+        
+    def terminate(self, doCallBackFun=False):
+        self.kill(doCallBackFun)
+        
+    def kill(self, doCallBackFun=False):
+        if None != self.console:
+            if None != self.callBackFun:
+                self.console_appClosed_conn = None
+                self.console_stdoutAvail_conn = None
+            else:
+                doCallBackFun = False
+            self.console.sendCtrlC()
+            self.console = None
+            if doCallBackFun:
+                self.callBackFun(-1, self.outData)
+                self.callBackFun = None
+
+    def _dataAvail(self, data):
+        if None != data:
+            self.outData += data
+
+    def _cmdFinished(self, code):
+        self.console_appClosed_conn = None
+        self.console_stdoutAvail_conn = None
+        self.console = None
+        self.callBackFun(code, self.outData)
+        self.callBackFun = None
+
+    def __del__(self):
+        pass
 
 class OMBconsole(Screen):
-    if getDesktop(0).size().width() >= 1920:
-        skin = """
-          <screen name="OMBconsole" position="60,560" size="600,400" title="Command execution...">
-            <widget name="text" position="0,0" size="600,400" font="Console;18" backgroundColor="background" transparent="1"/>
-          </screen>"""
-    else:
-        skin = """
-          <screen position="40,300" size="550,400" title="Command execution..." >
-            <widget name="text" position="0,0" size="550,400" font="Console;14" />
-          </screen>"""
+    def __init__(self, session, title = "Executing...", cmdlist = None, txtLines = 2, finishedCallback = None, closeOnSuccess = True):
+        if getDesktop(0).size().width() == 1080:
+            fontH = 18
+            posY  = 1080 - 60 - fontH * txtLines
+        else:
+            fontH = 14
+            posY  = 1080 - 40 - fontH * txtLines
+        sizeY = fontH * txtLines
+            
+        self.skin = """
+          <screen name="OMBconsole" position="60,%s" size="400,%s" title="%s">
+            <widget name="text" position="0,0" size="400,%s" font="Console;%s" backgroundColor="background" transparent="1"/>
+          </screen>""" % (posY,sizeY,sizeY,title,fontH)
         
-    def __init__(self, session, title = "j00zekBouquetsConsole", cmdlist = None, finishedCallback = None, closeOnSuccess = False, endText = "\nUżyj strzałek góra/dół do przewinięcia tekstu. OK zamyka okno"):
         Screen.__init__(self, session)
 
         self.finishedCallback = finishedCallback
@@ -43,10 +77,9 @@ class OMBconsole(Screen):
         }, -1)
         
         self.cmdlist = cmdlist
-        self.newtitle = title
-        self.endText = endText
+        #self.newtitle = title
         
-        self.onShown.append(self.updateTitle)
+        #self.onShown.append(self.updateTitle)
         
         self.container = eConsoleAppContainer()
         self.run = 0
@@ -54,13 +87,12 @@ class OMBconsole(Screen):
         self.container.dataAvail.append(self.dataAvail)
         self.onLayoutFinish.append(self.startRun) # dont start before gui is finished
 
-    def updateTitle(self):
-        self.setTitle(self.newtitle)
+    #def updateTitle(self):
+    #    self.setTitle(self.newtitle)
 
     def startRun(self):
         self["text"].setText("" + "\n\n")
-        #print "TranslatedConsole: executing in run", self.run, " the command:", self.cmdlist[self.run]
-        with open("/proc/sys/vm/drop_caches", "w") as f: f.write("1\n")
+        with open("/proc/sys/vm/drop_caches", "w") as f: f.write("1\n") #just in case for low memory tuners
         if self.container.execute(self.cmdlist[self.run]): #start of container application failed...
             self.runFinished(-1) # so we must call runFinished manual
 
@@ -69,20 +101,17 @@ class OMBconsole(Screen):
             self.errorOcurred = True
         self.run += 1
         if self.run != len(self.cmdlist):
-            with open("/proc/sys/vm/drop_caches", "w") as f: f.write("1\n")
             if self.container.execute(self.cmdlist[self.run]): #start of container application failed...
                 self.runFinished(-1) # so we must call runFinished manual
         else:
             #lastpage = self["text"].isAtLastPage()
             str = self["text"].getText()
-            str += self.endText;
             self["text"].setText(str)
             #if lastpage:
             self["text"].lastPage()
             if self.finishedCallback is not None:
                 self.finishedCallback()
-            if not self.errorOcurred and self.closeOnSuccess:
-                self.cancel()
+            self.cancel()
 
     def cancel(self):
         if self.run == len(self.cmdlist):
@@ -91,19 +120,6 @@ class OMBconsole(Screen):
             self.container.dataAvail.remove(self.dataAvail)
 
     def dataAvail(self, str):
-        #lastpage = self["text"].isAtLastPage()
-        #with open("/tmp/JB", "a") as f: f.write(str)
-        if str.find("zapTo(") > -1:
-            dvbService = str.split('zapTo(', 1)[1]
-            if dvbService.find(")") > -1:
-                dvbService = dvbService.split(')', 1)[0]
-                serviceDVB = eServiceReference(dvbService)
-                InfoBar.instance.servicelist.clearPath()
-                InfoBar.instance.servicelist.enterPath(serviceDVB)
-                InfoBar.instance.servicelist.setCurrentSelection(serviceDVB)
-                InfoBar.instance.servicelist.zap()
-                str = str.replace("zapTo(%s)" % dvbService ,"Przełączanie na kanał nadający dane o numeracji...")
-            #with open("/tmp/JB", "a") as f: f.write("aaaa" + dvbService)
-        self["text"].setText(self["text"].getText() + str)
-        #if lastpage:
+        #self["text"].setText(self["text"].getText() + str)
+        self["text"].setText(str)
         self["text"].lastPage()

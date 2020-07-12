@@ -367,14 +367,20 @@ class OMBManagerInstall(Screen):
 
 	def keyInstall(self):
 		text = _("Please select the necessary option...")
-		menu = [(_("Standard install"), "standard"), (_("Use altenative folder"), "altenative")]
+		menu = [(_("Standard install"), "standard"), (_("Use altenative folder"), "altenative"), (_("Standard install without deletion of source zip file"), "standard2")]
 		def setAction(choice):
 			if choice:
 				if choice[1] == "standard":
 					self.alt_install = False
+					self.delZIP = True
 					self.keyPostInstall()
 				elif choice[1] == "altenative":
 					self.alt_install = True
+					self.delZIP = True
+					self.keyPostInstall()
+				elif choice[1] == "standard2":
+					self.alt_install = False
+					self.delZIP = False
 					self.keyPostInstall()
 		dlg = self.session.openWithCallback(setAction, ChoiceBox, title=text, list=menu)
 
@@ -466,7 +472,7 @@ class OMBManagerInstall(Screen):
 						os.system(OMB_RM_BIN + ' -rf ' + tmp_folder)
 					else:
 						self.afterInstallImage(target_folder)
-						os.system(OMB_RM_BIN + ' -f ' + source_file)
+						if self.delZIP: os.system(OMB_RM_BIN + ' -f ' + source_file)
 						os.system(OMB_RM_BIN + ' -rf ' + tmp_folder)
 						self.messagebox.close()
 						self.close(target_folder)
@@ -480,7 +486,7 @@ class OMBManagerInstall(Screen):
 						os.system(OMB_RM_BIN + ' -rf ' + tmp_folder)
 					else:
 						self.afterInstallImage(target_folder)
-						os.system(OMB_RM_BIN + ' -f ' + source_file)
+						if self.delZIP: os.system(OMB_RM_BIN + ' -f ' + source_file)
 						os.system(OMB_RM_BIN + ' -rf ' + tmp_folder)
 						self.messagebox.close()
 						self.close(target_folder)
@@ -493,7 +499,7 @@ class OMBManagerInstall(Screen):
 					os.system(OMB_RM_BIN + ' -rf ' + tmp_folder)
 				else:
 					self.afterInstallImage(target_folder)
-					os.system(OMB_RM_BIN + ' -f ' + source_file)
+					if self.delZIP: os.system(OMB_RM_BIN + ' -f ' + source_file)
 					os.system(OMB_RM_BIN + ' -rf ' + tmp_folder)
 					self.messagebox.close()
 					self.close(target_folder)
@@ -501,7 +507,7 @@ class OMBManagerInstall(Screen):
 				self.showError(_("Error unpacking rootfs"))
 				os.system(OMB_RM_BIN + ' -rf ' + tmp_folder)
 		elif self.installImage(tmp_folder, target_folder, kernel_target_file, tmp_folder):
-			os.system(OMB_RM_BIN + ' -f ' + source_file)
+			if self.delZIP: os.system(OMB_RM_BIN + ' -f ' + source_file)
 			os.system(OMB_RM_BIN + ' -rf ' + tmp_folder)
 			self.messagebox.close()
 			self.close(target_folder)
