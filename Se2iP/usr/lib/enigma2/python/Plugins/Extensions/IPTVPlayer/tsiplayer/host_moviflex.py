@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from Plugins.Extensions.IPTVPlayer.tools.iptvtools import printDBG
 from Plugins.Extensions.IPTVPlayer.libs import ph
-from Plugins.Extensions.IPTVPlayer.tsiplayer.libs.tstools import TSCBaseHostClass,gethostname,tscolor
+from Plugins.Extensions.IPTVPlayer.tsiplayer.libs.tstools import TSCBaseHostClass,gethostname,tscolor,tshost
 from Plugins.Extensions.IPTVPlayer.libs.e2ijson import loads as json_loads
 from Plugins.Extensions.IPTVPlayer.tools.iptvtypes import strwithmeta
 from Plugins.Extensions.IPTVPlayer.libs.urlparserhelper import unpackJSPlayerParams, SAWLIVETV_decryptPlayerParams
@@ -18,14 +18,18 @@ import base64
 
 def getinfo():
 	info_={}
-	info_['name']='Moviflex.Net'
-	info_['version']='1.2 17/08/2019'
+	name = 'Moviflex'
+	hst = tshost(name)	
+	if hst=='': hst = 'https://moviflex.se'
+	info_['host']= hst
+	info_['name']=name
+	info_['version']='1.2.01 05/07/2020'
 	info_['dev']='RGYSoft'
-	info_['cat_id']='104'
+	info_['cat_id']='201'
 	info_['desc']='أفلام و مسلسلات اجنبية'
 	info_['icon']='https://cdn.moviflex.net/wp-content/uploads/2017/10/zymzJNA_22bcf2779f586340b970a361a8648be9.png'
 	info_['recherche_all']='0'
-	info_['update']='Bugs Fix'
+	#info_['update']='Bugs Fix'
 	return info_
 	
 	
@@ -33,7 +37,7 @@ class TSIPHost(TSCBaseHostClass):
 	def __init__(self):
 		TSCBaseHostClass.__init__(self,{'cookie':'moviflex.cookie'})
 		self.USER_AGENT = 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0'
-		self.MAIN_URL = 'https://moviflex.se'
+		self.MAIN_URL = getinfo()['host']
 		self.HEADER = {'User-Agent': self.USER_AGENT,'Accept':'*/*','X-Requested-With':'XMLHttpRequest', 'Connection': 'keep-alive', 'Accept-Encoding':'gzip', 'Pragma':'no-cache'}
 		self.HEADER1 = {'User-Agent': self.USER_AGENT,'Accept':'*/*', 'Connection': 'keep-alive', 'Accept-Encoding':'gzip'}
 		self.defaultParams = {'timeout':9,'header':self.HEADER, 'use_cookie': True, 'load_cookie': True, 'save_cookie': True, 'cookiefile': self.COOKIE_FILE}
@@ -183,6 +187,13 @@ class TSIPHost(TSCBaseHostClass):
 						url_els = re.findall('<source src="(.*?)"', data, re.S)
 						if url_els:
 							urlTab.append({'name':'Moviflex', 'url':url_els[0], 'need_resolve':0,'type':'local'})
+
+					elif '//moviflex.se' in url:
+						sts, data = self.getPage(url,self.defaultParams)
+						url_els = re.findall('file":.*?"(.*?)"', data, re.S)
+						if url_els:
+							urlTab.append({'name':'Moviflex', 'url':url_els[0], 'need_resolve':0,'type':'local'})
+
 					elif 'moviflex.ml' in url:
 						post_data = {'r':'','d':'moviflex.ml'}
 						url=url.replace('/v/','/api/source/')
@@ -204,6 +215,8 @@ class TSIPHost(TSCBaseHostClass):
 							url_els = re.findall('file":"(.*?)".*?label":"(.*?)"', script_, re.S)
 							for (url_,titre_) in url_els:	
 								urlTab.append({'name':'|'+titre_+'| Moviflex' , 'url':strwithmeta(url_, {'Referer':url}), 'need_resolve':0,'type':'local'})				
+
+
 					else:	
 						if len(url)>4:
 							url11 = url.split('https://')

@@ -168,7 +168,7 @@ class IPTVHost(IHost):
     ###################################################
 
 class Host:
-    XXXversion = "2020.06.29.1"
+    XXXversion = "2020.07.13.0"
     XXXremote  = "0.0.0.0"
     currList = []
     MAIN_URL = ''
@@ -1169,20 +1169,21 @@ class Host:
            printDBG( 'Host listsItems data: '+data )
            next = self.cm.ph.getSearchGroups(data, '''data-page="next"\shref=['"]([^"^']+?)['"]''', 1, True)[0] 
            if not next: next = self.cm.ph.getSearchGroups(data, '''rel="next"\shref=['"]([^"^']+?)['"]''', 1, True)[0] 
-           data2 = self.cm.ph.getAllItemsBeetwenMarkers(data, 'class="thumb-list__item video-thumb video-thumb--dated">', '</div><div')
-           if not data2: data2 = self.cm.ph.getAllItemsBeetwenMarkers(data, 'class="thumb-list__item video-thumb">', '</div><div')
-           for item in data2:
+           data = data.split('video-id=')
+           if len(data): del data[0]
+           for item in data:
               phTitle = self.cm.ph.getSearchGroups(item, '''alt=['"]([^"^']+?)['"]''', 1, True)[0] 
               phUrl = self.cm.ph.getSearchGroups(item, '''href=['"]([^"^']+?)['"]''', 1, True)[0]
               phImage = self.cm.ph.getSearchGroups(item, '''src=['"]([^"^']+?)['"]''', 1, True)[0] 
               phRuntime = self.cm.ph.getSearchGroups(item, '''duration">([^>]+?)<''', 1, True)[0] 
-              valTab.append(CDisplayListItem(decodeHtml(phTitle),'['+phRuntime+'] '+decodeHtml(phTitle),CDisplayListItem.TYPE_VIDEO, [CUrlItem('', phUrl, 1)], 0, phImage, None)) 
+              views =self.cm.ph.getSearchGroups(item, '''text">([^>]+?)</span''', 1, True)[0] 
+              like = self.cm.ph.getSearchGroups(item, '''like".*?text">([^>]+?)<''', 1, True)[0] 
+              valTab.append(CDisplayListItem(decodeHtml(phTitle),'['+phRuntime+'] '+decodeHtml(phTitle)+'\n'+views+'\n'+like,CDisplayListItem.TYPE_VIDEO, [CUrlItem('', phUrl, 1)], 0, phImage, None)) 
            if next:
               next = next.replace('&amp;','&')
               if next.startswith('/'): next = 'https://xhamster.com' + next
               next = decodeUrl(next)
-              valTab.append(CDisplayListItem('Next', 'Page: '+next, CDisplayListItem.TYPE_CATEGORY, [next], name, '', None))
-           data2 = None
+              valTab.append(CDisplayListItem('Next', 'Page: '+next.split('/')[-1], CDisplayListItem.TYPE_CATEGORY, [next], name, '', None))
            return valTab
         if 'xhamster-pornostars' == name:
            printDBG( 'Host listsItems begin name='+name )
@@ -2063,22 +2064,22 @@ class Host:
             header = {'User-Agent': host, 'Accept':'application/json','Accept-Language':'en,en-US;q=0.7,en;q=0.3','X-Requested-With':'XMLHttpRequest','Content-Type':'application/x-www-form-urlencoded'} 
             query_data = {'header': header, 'use_host': False, 'use_cookie': True, 'save_cookie': True, 'load_cookie': False, 'cookiefile': COOKIEFILE, 'use_post': False, 'return_data': True }
             try:
-                #data = self.cm.getURLRequestData(query_data)
                 sts, data = self.cm.getPage(url, query_data)
             except Exception as e:
                 printExc()
                 return valTab 
+            data = data.replace('\\','')
             printDBG( 'Host listsItems data: '+data )
-            #data = self.cm.ph.getAllItemsBeetwenMarkers(data, 'data-model-card', '<div class="each-model" data-cam-score=')
-            data = data.split('<a class="model-wrapper"')
+            data = data.split('class="model-wrapper"')
             if len(data): del data[0]
             for item in data:
                 phTitle = self.cm.ph.getSearchGroups(item, '''alt=['"]([^"^']+?)['"]''', 1, True)[0].replace('Model ','')
-                phUrl = self.cm.ph.getSearchGroups(item, '''href=['"]([^"^']+?)['"]''', 1, True)[0] 
+                phUrl = self.cm.ph.getSearchGroups(item, '''class="modelLink"\shref=['"]([^"^']+?)['"]''', 1, True)[0] 
                 phImage = self.cm.ph.getSearchGroups(item, '''live-image-src=['"]([^"^']+?)['"]''', 1, True)[0] 
                 desc = self.cm.ph.getSearchGroups(item, '''title=['"]([^"^']+?)['"]''', 1, True)[0] 
                 age = self.cm.ph.getSearchGroups(item, '''model-age">([^>]+?)<''', 1, True)[0] 
                 if phUrl.startswith('/'): phUrl = self.MAIN_URL + phUrl
+                if not 'http' in phUrl: phUrl = 'https://www.naked.com/?model=' + phUrl
                 if phImage.startswith('//'): phImage = 'http:' + phImage
                 valTab.append(CDisplayListItem(decodeHtml(phTitle), decodeHtml(phTitle)+'\n'+desc, CDisplayListItem.TYPE_VIDEO, [CUrlItem('', phUrl, 1)], 0, phImage, None)) 
             return valTab 
@@ -5993,7 +5994,7 @@ class Host:
            return valTab
         if 'LETMEJERK-clips' == name:
            printDBG( 'Host listsItems begin name='+name )
-           for x in range(1, 20): 
+           for x in range(1, 3): 
               COOKIEFILE = os_path.join(GetCookieDir(), 'letmejerk.cookie')
               self.HTTP_HEADER = self.cm.getDefaultHeader(browser='chrome')
               self.defaultParams = {'header':self.HTTP_HEADER, 'use_cookie': True, 'load_cookie': True, 'save_cookie': True, 'cookiefile': COOKIEFILE}
@@ -6003,9 +6004,10 @@ class Host:
               self.defaultParams['cookie_items'] = {'visited':'yes'}
               sts, data = self.getPage(url, 'letmejerk.cookie', 'letmejerk.com', self.defaultParams)
               if not sts: return valTab
-              #printDBG( 'Host listsItems data: '+data )
-              next = self.cm.ph.getDataBeetwenMarkers(data, '<ul class="paginator">', '</ul>', False)[1]
-              data = self.cm.ph.getAllItemsBeetwenMarkers(data, '<div class="th-image">', '</div>')
+              printDBG( 'Host listsItems data: '+data )
+              next = self.cm.ph.getDataBeetwenMarkers(data, 'class="next"', '</ul>', False)[1]
+              data = data.split('<div class="th">')
+              if len(data): del data[0]
               if not len(data): continue
               for item in data:
                  phTitle = self.cm.ph.getSearchGroups(item, '''alt=['"]([^"^']+?)['"]''', 1, True)[0] 
@@ -6014,6 +6016,7 @@ class Host:
                  if not phImage: phImage = self.cm.ph.getSearchGroups(item, '''data-original=['"]([^"^']+?)['"]''', 1, True)[0] 
                  phUrl = self.cm.ph.getSearchGroups(item, '''href=['"]([^"^']+?)['"]''', 1, True)[0] 
                  Time = self.cm.ph.getSearchGroups(item, '''clock"></i>([^>]+?)<''', 1, True)[0].strip()
+                 if ''==Time: Time = self.cm.ph.getSearchGroups(item, '''clock-o"></i>([^>]+?)<''', 1, True)[0].strip()
                  if phUrl.startswith('/'): phUrl = 'https://www.letmejerk.com' + phUrl
                  if phImage.startswith('//'): phImage = 'https:' + phImage
                  try:
@@ -6021,13 +6024,14 @@ class Host:
                  except: pass
                  if phTitle and not phUrl.endswith('/.html'):
                     valTab.append(CDisplayListItem(decodeHtml(phTitle),'['+Time+'] '+decodeHtml(phTitle),CDisplayListItem.TYPE_VIDEO, [CUrlItem('', phUrl, 1)],'', phImage, None)) 
-              if len(next)>180:
+              if len(next)>18:
                  match = re.compile('href="(.*?)"').findall(next)
                  if not match: return valTab
                  next = match[-1].replace('&sort=','')
-                 url1 = url.replace(url.split('/')[-1],'')
-                 next = url1 + next
-                 valTab.append(CDisplayListItem('Next ', 'Page: '+next, CDisplayListItem.TYPE_CATEGORY, [next], name, '', 'next'))
+                 #url1 = url.replace(url.split('/')[-1],'')
+                 #next = url1 + next
+                 if next.startswith('/'): next = 'https://www.letmejerk.com' + next
+                 valTab.append(CDisplayListItem('Next ', 'Page: '+next.split('=')[-1], CDisplayListItem.TYPE_CATEGORY, [next], name, '', 'next'))
               if len(data): break
            return valTab
 
@@ -6936,9 +6940,7 @@ class Host:
            printDBG( 'Host listsItems data: '+data )
            next = self.cm.ph.getSearchGroups(data, '''<link rel="next" href=['"]([^"^']+?)['"]''', 1, True)[0].replace('&amp;','&').replace('..','')
            if next == '': next = self.cm.ph.getSearchGroups(data, '''<li class="next"><a href=['"]([^"^']+?)['"]''', 1, True)[0].replace('&amp;','&').replace('..','')
-           data2 = self.cm.ph.getDataBeetwenMarkers(data, '<a href="/tag/" class="k more">', 'footer', False)[1]
-           if len(data2): data = data2
-           data = data.split('<div class="video-item"')
+           data = data.split('data-id=')
            if len(data): del data[0]
            for item in data:
               Added = ''
@@ -6947,14 +6949,14 @@ class Host:
               phUrl = self.cm.ph.getSearchGroups(item, '''href=['"]([^"^']+?)['"]''', 1, True)[0].replace('..','')
               Time = self.cm.ph.getSearchGroups(item, '''clock-o"></i>([^>]+?)<''', 1, True)[0].strip()
               if not Time: Time = self.cm.ph.getSearchGroups(item, '''i-len">([^>]+?)<''', 1, True)[0].strip()
+              if not Time: Time = self.cm.ph.getSearchGroups(item, '''</use></svg>([^>]+?)<''', 1, True)[0].strip()
               Added = self.cm.ph.getSearchGroups(item, '''&nbsp;<span>([^>]+?)<''', 1, True)[0].strip()
               if phUrl.startswith('/'): phUrl = self.MAIN_URL + phUrl
               if phImage.startswith('//'): phImage = 'http:' + phImage
               try:
                  phImage = urlparser.decorateUrl(phImage, {'Referer': self.MAIN_URL})
               except: pass
-              if phTitle and Time:
-                 valTab.append(CDisplayListItem(decodeHtml(phTitle),'['+Time+'] '+decodeHtml(phTitle)+'\n'+Added,CDisplayListItem.TYPE_VIDEO, [CUrlItem('', phUrl, 1)],'', phImage, None)) 
+              valTab.append(CDisplayListItem(decodeHtml(phTitle),'['+Time+'] '+decodeHtml(phTitle)+'\n'+Added,CDisplayListItem.TYPE_VIDEO, [CUrlItem('', phUrl, 1)],'', phImage, None)) 
            if next:
               if next.startswith('//'): next = 'http:' + next
               if next.startswith('/'): next = self.MAIN_URL + next
@@ -8321,27 +8323,27 @@ class Host:
               videoPage = self.cm.ph.getSearchGroups(data, '''video_alt_url5: ['"]([^"^']+?)['"]''')[0] 
               if videoPage:
                  printDBG( 'Host videoPage video_alt_url5 4k: '+videoPage )
-                 return videoPage
+                 return strwithmeta(videoPage, {'Referer':url})
               videoPage = self.cm.ph.getSearchGroups(data, '''video_alt_url4: ['"]([^"^']+?)['"]''')[0] 
               if videoPage:
                  printDBG( 'Host videoPage video_alt_url4 High HD: '+videoPage )
-                 return videoPage
+                 return strwithmeta(videoPage, {'Referer':url})
               videoPage = self.cm.ph.getSearchGroups(data, '''video_alt_url3: ['"]([^"^']+?)['"]''')[0] 
               if videoPage:
                  printDBG( 'Host videoPage video_alt_url3 Full High: '+videoPage )
-                 return videoPage
+                 return strwithmeta(videoPage, {'Referer':url})
            videoPage = self.cm.ph.getSearchGroups(data, '''video_alt_url2: ['"]([^"^']+?)['"]''')[0] 
            if videoPage:
               printDBG( 'Host videoPage video_alt_url2 HD: '+videoPage )
-              return videoPage
+              return strwithmeta(videoPage, {'Referer':url})
            videoPage = self.cm.ph.getSearchGroups(data, '''video_alt_url: ['"]([^"^']+?)['"]''')[0] 
            if videoPage:
               printDBG( 'Host videoPage video_alt_url Medium: '+videoPage )
-              return videoPage
+              return strwithmeta(videoPage, {'Referer':url})
            videoPage = self.cm.ph.getSearchGroups(data, '''video_url: ['"]([^"^']+?)['"]''')[0] 
            if videoPage:
               printDBG( 'Host videoPage video_url Low: '+videoPage )
-              return videoPage
+              return strwithmeta(videoPage, {'Referer':url})
            return ''
 
         if parser == 'http://www.hclips.com':
@@ -10035,6 +10037,7 @@ class Host:
            modelname = self.cm.meta['url'].split('=')[-1]
            id = ''
            host = ''
+           data = data.replace('\\','')
            printDBG( 'Host listsItems data: '+data )
            data = data.split('<div class="live clearfix')
            if len(data): del data[0]

@@ -31,6 +31,7 @@ class TSIPHost(TSCBaseHostClass):
 	def getPage(self,baseUrl, addParams = {}, post_data = None):
 		i=0
 		while True:
+			baseUrl=self.std_url(baseUrl)
 			printDBG('counttttt'+str(i))
 			if addParams == {}: addParams = dict(self.defaultParams)
 			sts, data = self.cm.getPage(baseUrl, addParams, post_data)
@@ -158,7 +159,19 @@ class TSIPHost(TSCBaseHostClass):
 		if sts:
 			srv = json_loads(data)
 			URL = srv.get('data',{}).get('attributes',{}).get('url','')
-			if URL!='': urlTab.append((URL,'1'))
+			if URL.startswith('//'): URL = 'https:'+URL
+			if '/cdn/' in URL:
+				urlParams = dict(self.defaultParams)
+				urlParams['header']['Referer']=self.MAIN_URL
+				sts, data = self.getPage(URL,urlParams)
+				if sts:
+					printDBG('data='+data)
+					srv_ = re.findall("'frame'..src.*?=.*?'(.*?)'", data, re.S)
+					if srv_:
+						URL_ = srv_[0]
+						urlTab.append((URL_,'1'))
+			else:
+				if URL!='': urlTab.append((URL,'1'))
 		return urlTab
 
 	def getArticle(self, cItem):
@@ -167,7 +180,7 @@ class TSIPHost(TSCBaseHostClass):
 		desc = cItem['desc']
 		sts, data = self.getPage(cItem['url'])
 		if sts:
-			lst_dat=re.findall('row description\'>(.*?)</d', data, re.S)
+			lst_dat=re.findall('review-content">(.*?)</p', data, re.S)
 			if lst_dat:
 				desc=desc+'\\n'+ph.clean_html(lst_dat[0])
 

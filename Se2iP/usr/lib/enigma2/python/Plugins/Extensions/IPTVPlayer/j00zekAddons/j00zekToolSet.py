@@ -52,12 +52,6 @@ def AlternateOptionsList(list):
     #
     list.append( getConfigListEntry("", config.plugins.iptvplayer.j00zekSeparator))
     list.append( getConfigListEntry(_("--- Paths to utilities ---"), config.plugins.iptvplayer.j00zekSeparator))
-    if config.plugins.iptvplayer.wgetpath.value        == '': config.plugins.iptvplayer.wgetpath.value        = '/usr/lib/enigma2/python/Plugins/Extensions/IPTVPlayer/bin/armv7/wget'
-    if config.plugins.iptvplayer.rtmpdumppath.value    == '': config.plugins.iptvplayer.rtmpdumppath.value    = '/usr/lib/enigma2/python/Plugins/Extensions/IPTVPlayer/bin/armv7/hlsdl'
-    if config.plugins.iptvplayer.f4mdumppath.value     == '': config.plugins.iptvplayer.f4mdumppath.value     = '/usr/lib/enigma2/python/Plugins/Extensions/IPTVPlayer/bin/armv7/f4mdump'
-    #if config.plugins.iptvplayer.uchardetpath.value    == '': config.plugins.iptvplayer.uchardetpath.value    = '/usr/lib/enigma2/python/Plugins/Extensions/IPTVPlayer/bin/armv7/'
-    #if config.plugins.iptvplayer.exteplayer3path.value == '': config.plugins.iptvplayer.exteplayer3path.value = '/usr/lib/enigma2/python/Plugins/Extensions/IPTVPlayer/bin/armv7/'
-    #if config.plugins.iptvplayer.gstplayerpath.value   == '': config.plugins.iptvplayer.gstplayerpath.value   = '/usr/lib/enigma2/python/Plugins/Extensions/IPTVPlayer/bin/armv7/'
     list.append( getConfigListEntry(_("wgetpath"), config.plugins.iptvplayer.wgetpath))
     list.append( getConfigListEntry(_("rtmpdumppath"), config.plugins.iptvplayer.rtmpdumppath))
     list.append( getConfigListEntry(_("f4mdumppath"), config.plugins.iptvplayer.f4mdumppath))

@@ -15,7 +15,7 @@ def getinfo():
 	if hst=='': hst = 'https://aflam06.net'
 	info_['host']= hst
 	info_['name']=name	
-	info_['version']='1.3 09/06/2020'
+	info_['version']='1.0.01 05/07/2020'
 	info_['dev']='OPESBOY'
 	info_['cat_id']='201'
 	info_['desc']='أفلام, مسلسلات و انمي عربية و اجنبية'

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from Plugins.Extensions.IPTVPlayer.tools.iptvtools import printDBG
 from Plugins.Extensions.IPTVPlayer.libs import ph
-from Plugins.Extensions.IPTVPlayer.tsiplayer.libs.tstools import TSCBaseHostClass,tscolor
+from Plugins.Extensions.IPTVPlayer.tsiplayer.libs.tstools import TSCBaseHostClass,tscolor,tshost
 try:
 	from Plugins.Extensions.IPTVPlayer.tsiplayer.libs.vstream.requestHandler import cRequestHandler
 	from Plugins.Extensions.IPTVPlayer.tsiplayer.libs.vstream.config import GestionCookie
@@ -14,8 +14,12 @@ from Plugins.Extensions.IPTVPlayer.tools.iptvtypes import strwithmeta
 
 def getinfo():
 	info_={}
-	info_['name']='Cima4u.Tv'
-	info_['version']='1.6 20/02/2020' 
+	name = 'Cima4u.Tv'
+	hst = tshost(name)	
+	if hst=='': hst = 'http://w.cima4u.io'
+	info_['host']= hst
+	info_['name']=name
+	info_['version']='1.1.01 05/07/2020' 
 	info_['dev']='RGYSoft'
 	info_['cat_id']='201'
 	info_['desc']='أفلام, مسلسلات و انمي عربية و اجنبية'
@@ -29,11 +33,17 @@ class TSIPHost(TSCBaseHostClass):
 	def __init__(self):
 		TSCBaseHostClass.__init__(self,{'cookie':'cima4u2.cookie'})
 		self.USER_AGENT = 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0'
-		self.MAIN_URL = 'http://cima4u.io'
+		self.MAIN_URL =  getinfo()['host']
 		self.MAIN_URL2 = 'http://live.cima4u.io'
 		self.HEADER = {'User-Agent': self.USER_AGENT, 'Connection': 'keep-alive', 'Accept-Encoding':'gzip', 'Content-Type':'application/x-www-form-urlencoded','Referer':self.getMainUrl(), 'Origin':self.getMainUrl()}
 		self.defaultParams = {'header':self.HEADER, 'with_metadata':True, 'use_cookie': True, 'load_cookie': True, 'save_cookie': True, 'cookiefile': self.COOKIE_FILE}
-		self.getPage = self.cm.getPage
+		#self.getPage = self.cm.getPage
+			
+	def getPage(self, baseUrl, addParams = {}, post_data = None):
+		baseUrl=self.std_url(baseUrl)
+		if addParams == {}: addParams = dict(self.defaultParams)
+		addParams['cloudflare_params'] = {'cookie_file':self.COOKIE_FILE, 'User-Agent':self.USER_AGENT}
+		return self.cm.getPageCFProtection(baseUrl, addParams, post_data)			
 
 	def getPage1(self,baseUrl, addParams = {}, post_data = None):
 		if addParams == {}: addParams = dict(self.defaultParams) 

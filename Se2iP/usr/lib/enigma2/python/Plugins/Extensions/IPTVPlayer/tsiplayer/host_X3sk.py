@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from Plugins.Extensions.IPTVPlayer.tools.iptvtools import printDBG
-from Plugins.Extensions.IPTVPlayer.tsiplayer.libs.tstools import TSCBaseHostClass,tscolor
+from Plugins.Extensions.IPTVPlayer.tsiplayer.libs.tstools import TSCBaseHostClass,tscolor,tshost
 from Plugins.Extensions.IPTVPlayer.libs.e2ijson import loads as json_loads
 from Plugins.Extensions.IPTVPlayer.libs import ph
 import re,urllib,base64
@@ -8,8 +8,13 @@ from Plugins.Extensions.IPTVPlayer.tools.iptvtypes                 import strwit
 
 def getinfo():
 	info_={}
+	name = 'Esheeq.Com'
+	hst = tshost(name)	
+	if hst=='': hst = 'https://esheeq.com'
+	info_['host']= hst
+	info_['name']=name
 	info_['name']='Esheeq.Com'
-	info_['version']='1.5 09/06/2020'
+	info_['version']='1.1.01 05/07/2020'
 	info_['dev']='RGYSoft'
 	info_['cat_id']='201'
 	info_['desc']='أفلام و مسلسلات تركية'
@@ -24,7 +29,7 @@ class TSIPHost(TSCBaseHostClass):
 	def __init__(self):
 		TSCBaseHostClass.__init__(self,{'cookie':'_3sk.cookie'})
 		self.USER_AGENT = 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
-		self.MAIN_URL = 'https://esheeq.com'
+		self.MAIN_URL = getinfo()['host']
 		self.HEADER = {'User-Agent': self.USER_AGENT, 'Connection': 'keep-alive', 'Accept-Encoding':'gzip', 'Content-Type':'application/x-www-form-urlencoded','Referer':self.getMainUrl(), 'Origin':self.getMainUrl()}
 		self.defaultParams = {'header':self.HEADER, 'use_cookie': True, 'load_cookie': True, 'save_cookie': True, 'cookiefile': self.COOKIE_FILE}
 		#self.getPage = self.cm.getPage

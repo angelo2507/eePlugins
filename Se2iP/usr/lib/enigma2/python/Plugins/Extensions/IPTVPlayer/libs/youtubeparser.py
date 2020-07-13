@@ -34,7 +34,12 @@ config.plugins.iptvplayer.ytSortBy        = ConfigSelection(default = "", choice
 
 
 class YouTubeParser():
-    HOST = 'Mozilla/5.0 (Windows NT 6.1; rv:17.0) Gecko/20100101 Firefox/17.0'
+    HTTP_HEADER = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36',
+                   'X-YouTube-Client-Name': '1', 'X-YouTube-Client-Version': '2.20200207.03.01', 'X-Requested-With':'XMLHttpRequest'
+                  }
+    http_params={'header':HTTP_HEADER, 'return_data': True}
+    postdata = {}
+
     def __init__(self):
         self.cm = common()
         return
@@ -298,7 +303,7 @@ class YouTubeParser():
 
         currList = []
         try:
-            sts,data =  self.cm.getPage(url, {'host': self.HOST})
+            sts,data =  self.cm.getPage(url, self.http_params)
             if sts:
                 sts,data = CParsingHelper.getDataBeetwenMarkers(data, 'class="playlist-videos-container', '<div class="watch-sidebar-body">', False)
                 data = data.split('class="yt-uix-scroller-scroll-unit')
@@ -317,31 +322,48 @@ class YouTubeParser():
     def getVideosFromPlaylist(self, url, category, page, cItem):
         printDBG('YouTubeParser.getVideosFromPlaylist')
         currList = []
+        page = 0
+        currList = []
+
         try:
-            sts,data =  self.cm.getPage(url, {'host': self.HOST})
+            sts,data =  self.cm.getPage(url, self.http_params, self.postdata)
+            #printDBG('YouTubeParser.getVideosFromPlaylist data[%s]' % (data) )
+
             if sts:
-                if '1' == page:
-                    sts,data = CParsingHelper.getDataBeetwenMarkers(data, 'id="pl-video-list"', 'footer-container', False)
-                else:
-                    data = json_loads(data)
-                    data = data['load_more_widget_html'] + '\n' + data['content_html']
-                    
-                # nextPage
-                match = re.search('data-uix-load-more-href="([^"]+?)"', data)
-                if not match: 
-                    nextPage = ""
-                else: 
-                    nextPage = match.group(1).replace('&amp;', '&')
-                
-                itemsTab = data.split('<tr class="pl-video')
-                currList = self.parseListBase(itemsTab)
-                if '' != nextPage:
-                    item = dict(cItem)
-                    item.update({'title': 'Następna strona', 'page': str(int(page) + 1), 'url': 'http://www.youtube.com' + nextPage})
-                    currList.append(item)
+                if data:
+                    data2 = self.cm.ph.getAllItemsBeetwenMarkers(data, '"playlistVideoRenderer"', '}},')
+                    for item in data2:
+                        tmp = item.replace('}},','}}}}').replace('\u0026','&')
+                        title = self.cm.ph.getSearchGroups(item, '''"label"\s*:\s*"([^"]+?)"''')[0]
+                        url = 'http://www.youtube.com/watch?v=%s' % self.cm.ph.getSearchGroups(item, '''"videoId"\s*:\s*"([^"]+?)"''')[0]
+                        icon = self.cm.ph.getSearchGroups(item, '''"url"\s*:\s*"([^"]+?)"''')[0]
+                        time = ''
+                        desc = title
+                        params = {'type': 'video', 'category': 'video', 'title': title, 'url': url, 'icon': icon.replace('&amp;', '&'), 'time': time, 'desc': desc}
+                        currList.append(params)
+                    data2 = None
+                   
+                    # nextPage
+                try:
+                    match = re.search('"continuation":"([^"]+?)"', data)
+                    xsrf_token = data.split("XSRF_TOKEN\":\"")[1].split("\"")[0]
+                    ctoken = data.split("\"nextContinuationData\":{\"continuation\":\"")[1].split("\"")[0]
+                    itct = data.split("\"{}\",\"clickTrackingParams\":\"".format(ctoken))[1].split("\"")[0]
+                    self.postdata = {"session_token": xsrf_token}
+                    if not match: nextPage = ""
+                    else: nextPage = 'https://www.youtube.com/comment_service_ajax?action_get_comments=1&continuation=%s&pbj=1&ctoken=%s&itct=%s' % (ctoken, ctoken, itct)
+                except Exception:
+                    printExc()
+                try:
+                    if '' != nextPage:
+                        item = dict(cItem)
+                        item.update({'title': _("Next page"), 'page': str(int(page) + 1), 'url': nextPage})
+                        currList.append(item)
+                except Exception:
+                    printExc()
         except Exception:
             printExc()
-            
+            return []
         return currList
     # end getVideosFromPlaylist
 
@@ -354,36 +376,52 @@ class YouTubeParser():
         else: return match.group(1)
         
     def getVideosFromChannelList(self, url, category, page, cItem):
+        printDBG('YouTubeParser.getVideosFromChannelList cItem[%s]' % (cItem) )
         printDBG('YouTubeParser.getVideosFromChannelList page[%s]' % (page) )
+
+        page = 0
         currList = []
-        tries = 10
-        while tries > 0:
-            tries -= 1
-            try:
-                sts,data =  self.cm.getPage(url, {'host': self.HOST})
-                if sts:
-                    if '1' == page:
-                        sts,data = CParsingHelper.getDataBeetwenMarkers(data, 'feed-item-container', 'footer-container', False)
-                    else:
-                        data = json_loads(data)
-                        data = data['load_more_widget_html'] + '\n' + data['content_html']
-                    
+
+        try:
+            sts,data =  self.cm.getPage(url, self.http_params, self.postdata)
+            #printDBG('YouTubeParser.getVideosFromChannelList data[%s]' % (data) )
+
+            if sts:
+                if data:
+                    data2 = self.cm.ph.getAllItemsBeetwenMarkers(data, '"gridVideoRenderer"', '}},')
+                    for item in data2:
+                        tmp = item.replace('}},','}}}}').replace('\u0026','&')
+                        icon = self.cm.ph.getSearchGroups(item, '''"url"\s*:\s*"([^"]+?)"''')[0] 
+                        url = 'http://www.youtube.com/watch?v=%s' % self.cm.ph.getSearchGroups(item, '''"videoId"\s*:\s*"([^"]+?)"''')[0]
+                        data = json_loads('{'+tmp+'}')
+                        title = data['gridVideoRenderer']['title']['accessibility']['accessibilityData']['label'] 
+                        time = ''
+                        desc = title
+                        params = {'type': 'video', 'category': 'video', 'title': title, 'url': url, 'icon': icon.replace('&amp;', '&'), 'time': time, 'desc': desc}
+                        currList.append(params)
+                    data2 = None
+
                     # nextPage
-                    match = re.search('data-uix-load-more-href="([^"]+?)"', data)
+                try:
+                    match = re.search('"continuation":"([^"]+?)"', data)
+                    xsrf_token = data.split("XSRF_TOKEN\":\"")[1].split("\"")[0]
+                    ctoken = data.split("\"nextContinuationData\":{\"continuation\":\"")[1].split("\"")[0]
+                    itct = data.split("\"{}\",\"clickTrackingParams\":\"".format(ctoken))[1].split("\"")[0]
+                    self.postdata = {"session_token": xsrf_token}
                     if not match: nextPage = ""
-                    else: nextPage = match.group(1).replace('&amp;', '&')
-    
-                    data = data.split('feed-item-container')
-                    currList = self.parseListBase(data)
-                    
+                    else: nextPage = 'https://www.youtube.com/comment_service_ajax?action_get_comments=1&continuation=%s&pbj=1&ctoken=%s&itct=%s' % (ctoken, ctoken, itct)
+                except Exception:
+                    printExc()
+                try:
                     if '' != nextPage:
                         item = dict(cItem)
-                        item.update({'title': _("Next page"), 'page': str(int(page) + 1), 'url': 'http://www.youtube.com' + nextPage})
+                        item.update({'title': _("Next page"), 'page': str(int(page) + 1), 'url': nextPage})
                         currList.append(item)
-                    if currList: break
-            except Exception:
-                printExc()
-                return []
+                except Exception:
+                    printExc()
+        except Exception:
+            printExc()
+            return []
         return currList
     # end getVideosFromChannel
 
@@ -396,31 +434,47 @@ class YouTubeParser():
         currList = []
         try:
             url = 'http://www.youtube.com/results?search_query=%s&filters=%s&search_sort=%s&page=%s' % (pattern, searchType, sortBy, page) 
-            sts,data =  self.cm.getPage(url, {'host': self.HOST})
+            sts,data =  self.cm.getPage(url, self.http_params)
+            #printDBG('YouTubeParser.getSearchResult pattern[%s], searchType[%s], page[%s]' % (pattern, searchType, data))
+
             if sts:
-                nextPage = self.cm.ph.getDataBeetwenMarkers(data, 'page-box', '</div>', False)[1]
-                if nextPage.find('>%d<' % (int(page) + 1)) > -1: 
-                    nextPage = True
-                else: 
-                    nextPage = False
-                
-                sp = '<li><div class="yt-lockup'
-                if searchType == 'playlist':
-                    m2 = '<div class="branded-page-box'
-                else:
-                    m2 = '</ol>'
-                
-                data = CParsingHelper.getDataBeetwenMarkers(data, sp, m2, False)[1]
-                data = data.split(sp)
-                currList = self.parseListBase(data, searchType)
-                
-                if len(currList) and nextPage:
-                    item = {'name': 'history', 'type': 'category', 'category': nextPageCategory, 'pattern':pattern, 'search_type':searchType, 'title': _("Next page"), 'page': str(int(page) + 1)}
-                    currList.append(item)
+                if data:
+                    data2 = self.cm.ph.getAllItemsBeetwenMarkers(data, '"videoRenderer"', '}},')
+                    for item in data2:
+                        tmp = item.replace('}},','}}}').replace('\u0026','&')
+                        icon = self.cm.ph.getSearchGroups(item, '''"url"\s*:\s*"([^"]+?)"''')[0]
+                        url = 'http://www.youtube.com/watch?v=%s' % self.cm.ph.getSearchGroups(item, '''"videoId"\s*:\s*"([^"]+?)"''')[0]
+                        data = json_loads('{'+tmp+'}')
+                        title = data['videoRenderer']['title']['accessibility']['accessibilityData']['label'] 
+                        time = ''
+                        desc = title
+                        params = {'type': 'video', 'category': 'video', 'title': title, 'url': url, 'icon': icon.replace('&amp;', '&'), 'time': time, 'desc': desc}
+                        currList.append(params)
+                    data2 = None
+
+                    # nextPage
+                try:
+                    match = re.search('"continuation":"([^"]+?)"', data)
+                    xsrf_token = data.split("XSRF_TOKEN\":\"")[1].split("\"")[0]
+                    ctoken = data.split("\"nextContinuationData\":{\"continuation\":\"")[1].split("\"")[0]
+                    itct = data.split("\"{}\",\"clickTrackingParams\":\"".format(ctoken))[1].split("\"")[0]
+                    self.postdata = {"session_token": xsrf_token}
+                    if not match: nextPage = ""
+                    else: nextPage = 'https://www.youtube.com/comment_service_ajax?action_get_comments=1&continuation=%s&pbj=1&ctoken=%s&itct=%s' % (ctoken, ctoken, itct)
+                except Exception:
+                    printExc()
+                try:
+                    if '' != nextPage:
+                        item = dict(cItem)
+                        item.update({'title': _("Next page"), 'page': str(int(page) + 1), 'url': nextPage})
+                        currList.append(item)
+                except Exception:
+                    printExc()
         except Exception:
             printExc()
             return []
         return currList
+                
     # end getVideosFromSearch
     
     ########################################################
@@ -430,7 +484,7 @@ class YouTubeParser():
         printDBG('YouTubeParser.getListPlaylistsItems page[%s]' % (page))
         currList = []
         try:
-            sts,data =  self.cm.getPage(url, {'host': self.HOST})
+            sts,data =  self.cm.getPage(url, self.http_params)
             if sts:
                 #self.cm.ph.writeToFile('/mnt/new2/yt.html', data)
                 if '1' == page:
@@ -470,7 +524,7 @@ class YouTubeParser():
 
         currList = []
         if baseUrl != '':
-            sts, data =  self.cm.getPage(baseUrl, {'host': self.HOST})
+            sts, data =  self.cm.getPage(baseUrl, self.http_params)
             try:
                 data = json_loads(data)['video']
                 for item in data:
