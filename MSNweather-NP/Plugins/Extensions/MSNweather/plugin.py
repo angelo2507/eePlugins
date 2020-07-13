@@ -25,6 +25,7 @@ from Components.config import ConfigSubsection, ConfigSubList, ConfigInteger, co
 #from Components.Pixmap import Pixmap
 from Components.j00zekAccellPixmap import j00zekAccellPixmap
 from Components.Sources.StaticText import StaticText
+from Components.Label import Label
 from debug import printDEBUG
 #from datetime import datetime, timedelta
 from Tools.Directories import resolveFilename, SCOPE_SKIN
@@ -58,7 +59,7 @@ config.plugins.WeatherPlugin.CurrentValuesSource = ConfigSelection(choices = [ (
 
 config.plugins.WeatherPlugin.AC1 = ConfigSelection(choices = [ ("off", _("not installed")), ("daikin", _("Daikin Air Conditioner")) , ("samsung", _("Samsung Air Conditioner"))], default = "off")
 config.plugins.WeatherPlugin.AC1_IP = ConfigIP(default = [0,0,0,0])
-config.plugins.WeatherPlugin.AC1inf = ConfigText(default = _("AC in the attic"), visible_width = 100, fixed_size = False)
+config.plugins.WeatherPlugin.AC1inf = ConfigText(default = _("AC in the living room"), visible_width = 100, fixed_size = False)
 config.plugins.WeatherPlugin.AC2 = ConfigSelection(choices = [ ("off", _("not installed")), ("daikin", _("Daikin Air Conditioner")) , ("samsung", _("Samsung Air Conditioner"))], default = "off")
 config.plugins.WeatherPlugin.AC2_IP = ConfigIP(default = [0,0,0,0])
 config.plugins.WeatherPlugin.AC2inf = ConfigText(default = _("AC in the bedroom"), visible_width = 100, fixed_size = False)
@@ -127,10 +128,19 @@ class MSNweather(Screen):
             <widget render="Label" source="condition" position="270,95" zPosition="1" size="300,20" font="Regular;18" transparent="1"/>
             <widget render="Label" source="wind_condition" position="270,115" zPosition="1" size="300,20" font="Regular;18" transparent="1"/>
             <widget render="Label" source="humidity" position="270,135" zPosition="1" size="300,20" font="Regular;18" valign="bottom" transparent="1"/>
-            <ePixmap pixmap="skin_default/buttons/red.png" position="0,300" size="140,40" alphatest="on" />
+            
+            <ePixmap pixmap="skin_default/buttons/red.png" position="0,300" size="35,27" alphatest="on" />
+            <widget name="key_red" position="40,300" size="150,35" font="Roboto_HD; 24" backgroundColor="black" transparent="1"/>
+            
             <ePixmap pixmap="skin_default/buttons/green.png" position="160,300" size="140,40" alphatest="on" />
+            <widget name="key_green" position="40,300" size="150,35" font="Roboto_HD; 24" backgroundColor="black" transparent="1"/>
+
             <ePixmap pixmap="skin_default/buttons/yellow.png" position="330,300" size="140,40" alphatest="on" />
+            <widget name="key_yellow" position="40,300" size="150,35" font="Roboto_HD; 24" backgroundColor="black" transparent="1"/>
+
             <ePixmap pixmap="skin_default/buttons/blue.png" position="490,300" size="140,40" alphatest="on" />
+            <widget name="key_blue" position="40,300" size="150,35" font="Roboto_HD; 24" backgroundColor="black" transparent="1"/>
+
             <widget source="session.CurrentService" render="Label" position="10,295" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#9f1313" transparent="1" >
               <convert type="j00zekTranslator">Close</convert>
             </widget>
@@ -140,11 +150,6 @@ class MSNweather(Screen):
             <widget source="session.CurrentService" render="Label" position="370,295" zPosition="1" size="180,40" font="Regular;20" halign="center" valign="center" backgroundColor="#a08500" transparent="1" >
               <convert type="j00zekTranslator">Show Histograms</convert>
             </widget>
-<!--            <ePixmap pixmap="skin_default/buttons/blue.png" position="560,300" size="140,40" alphatest="on" />
-            <widget source="session.CurrentService" render="Label" position="580,295" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#18188b" transparent="1" >
-              <convert type="j00zekTranslator"> </convert>
-            </widget>
--->
         </screen>"""
     
     def __init__(self, session):
@@ -159,9 +164,10 @@ class MSNweather(Screen):
             "right": self.nextItem,
             "left": self.previousItem,
             "info": self.showWebsite,
-            "green": self.ShowMaps,
+            #"red": self.klima1,
+            #"green": self.klima2,
             "yellow": self.ShowHistograms,
-            "blue": self.close,
+            "blue": self.ShowMaps,
         }, -1)
 
         self["statustext"] = StaticText()
@@ -174,6 +180,11 @@ class MSNweather(Screen):
         self["observationtime"] = StaticText()
         self["observationpoint"] = StaticText()
         self["feelsliketemp"] = StaticText()
+
+        self["key_red"] = Label(config.plugins.WeatherPlugin.AC1inf.value)
+        self["key_green"] = Label(config.plugins.WeatherPlugin.AC2inf.value)
+        self["key_yellow"] = Label(_("Show Histograms"))
+        self["key_blue"] = Label(_("Show Maps"))
 
         self.weatherPluginEntryIndex = -1
         self.weatherPluginEntry = None

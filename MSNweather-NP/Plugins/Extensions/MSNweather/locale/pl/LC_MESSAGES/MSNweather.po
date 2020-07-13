@@ -371,6 +371,9 @@ msgstr "Klima na poddaszu"
 msgid "AC in the bedroom"
 msgstr "Klima w sypialni"
 
+msgid "AC in the living room"
+msgstr "Klima w salonie"
+
 msgid "*** Integration with Airly plugin ***"
 msgstr "*** Integracja z wtyczką Airly ***"
 
