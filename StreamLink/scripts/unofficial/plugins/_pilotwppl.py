@@ -8,6 +8,7 @@ from streamlink.plugin.api import useragents
 #from streamlink.plugin.api.utils import itertags
 from streamlink.stream._hls4wp import HLSStream
 from streamlink.stream.dash import DASHStream
+from streamlink.stream.file import FileStream
 from streamlink.utils import update_scheme
 
 log = logging.getLogger(__name__)
@@ -31,6 +32,25 @@ class PilotWPpl(Plugin):
         return cls._url_re.match(url) is not None
 
     def _get_streams(self):
+        def _Response():
+            try:
+                return self.session.http.get(
+                                                 self.url,
+                                                 params=data,
+                                                 verify=False,
+                                                 headers=headers,
+                                                ).json()
+        
+            except Exception as e:
+                strErr = str(e)
+                log.debug("EXCEPTION: %s" % strErr)
+                if '403' in strErr:
+                    return '403'
+                if '422' in strErr:
+                    return '422'
+                else:
+                    return strErr
+                    
         log.debug("PilotWPpl._get_streams() >>>")
         cookies = getCookie()
         if not cookies:
@@ -44,13 +64,19 @@ class PilotWPpl(Plugin):
         self.session.http.headers.update({'x-version': headers['x-version']})
         self.session.http.headers.update({'content-type': headers['content-type']})
         self.session.http.headers.update({'Cookie': cookies})
-        response = self.session.http.get(
-                self.url,
-                params=data,
-                verify=False,
-                headers=headers,
-            ).json()
         
+        response = _Response()
+        if response == '403':
+            cookies = _login()
+            self.session.http.headers.update({'Cookie': cookies})
+            response = _Response()
+        if response == '403': #403 Client Error: Forbidden for url:
+            raise Exception('wperror-403')    
+            return
+        elif response == '422': #422 Client Error: Unprocessable Entity for url:
+            raise Exception('wperror-422')    
+            return
+
         log.debug("Response: %s" % response)
         meta = response.get('_meta', None)
         log.debug("meta: %s" % meta)

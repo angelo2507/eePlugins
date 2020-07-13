@@ -1,6 +1,7 @@
 import os
 import random
 import threading
+import tempfile
 
 import subprocess
 
@@ -108,7 +109,18 @@ class FFMPEGMuxer(StreamIO):
             self._cmd.extend(['-itsoffset', delayVideo])
         
         if self.is_muxed:
-            self.pipes = [NamedPipe("ffmpeg-{0}-{1}".format(os.getpid(), random.randint(0, 1000))) for _ in self.streams]
+            #self.pipes = [NamedPipe("ffmpeg-{0}-{1}".format(os.getpid(), random.randint(0, 1000))) for _ in self.streams]
+            self.pipes = []
+            self.pipesFiles = []
+            for _ in self.streams: #zmiana, zeby nie bylo duplikatow
+                tmpName = "ffmpeg-{0}-{1}".format(os.getpid(), random.randint(0, 1000))
+                pipeFile = os.path.join(tempfile.gettempdir(), tmpName)
+                if os.path.exists(pipeFile):
+                    tmpName += str(random.randint(0, 9))
+                #log.debug("pipeFile: {0}".format(pipeFile))
+                self.pipes.extend([NamedPipe(tmpName)])
+                self.pipesFiles.extend([pipeFile])
+            #log.debug("pipeFile: {0}".format(self.pipesFiles))    
             self.pipe_threads = [threading.Thread(target=self.copy_to_pipe, args=(self, stream, np))
                                  for stream, np in zip(self.streams, self.pipes)]
 
@@ -189,3 +201,9 @@ class FFMPEGMuxer(StreamIO):
         if self.close_errorlog:
             self.errorlog.close()
             self.errorlog = None
+            
+        if len(self.pipesFiles) > 0:
+            for pipeFile in self.pipesFiles:
+                if os.path.exists(pipeFile):
+                    try: os.remove(pipeFile)
+                    except Exception: pass

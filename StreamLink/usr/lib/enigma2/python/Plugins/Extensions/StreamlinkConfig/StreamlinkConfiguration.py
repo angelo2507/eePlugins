@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from __init__ import mygettext as _
 from version import Version
 import os
@@ -17,7 +18,7 @@ config.plugins.streamlinksrv = ConfigSubsection()
 config.plugins.streamlinksrv.installBouquet = NoSave(ConfigNothing())
 
 config.plugins.streamlinksrv.enabled = ConfigYesNo(default = False)
-config.plugins.streamlinksrv.logLevel = ConfigSelection(default = "debug", choices = [("none", _("none")),
+config.plugins.streamlinksrv.logLevel = ConfigSelection(default = "info", choices = [("none", _("none")),
                                                                                     ("info", _("info")),
                                                                                     ("warning", _("warning")),
                                                                                     ("error", _("error")),
@@ -36,6 +37,7 @@ config.plugins.streamlinksrv.WPpassword = ConfigPassword()
 config.plugins.streamlinksrv.WPbouquet  = NoSave(ConfigNothing())
 config.plugins.streamlinksrv.WPlogin    = NoSave(ConfigNothing())
 config.plugins.streamlinksrv.WPpreferDASH = ConfigEnableDisable(default = False)
+config.plugins.streamlinksrv.WPdevice = ConfigSelection(default = "androidtv", choices = [("androidtv", "Android TV"), ("web", _("web client")), ])
 config.plugins.streamlinksrv.WPvideoDelay = ConfigSelection(default = "0", choices = [("0", _("don't delay")), ("0.25", _("by %s s." % '0.25')),
                                                                                       ("0.5", _("by %s s." % '0.5')), ("0.75", _("by %s s." % '0.75')),
                                                                                       ("1.0", _("by %s s." % '1.0'))])
@@ -66,16 +68,18 @@ class StreamlinkConfiguration(Screen, ConfigListScreen):
     if getDesktop(0).size().width() == 1920: #definicja skin-a musi byc tutaj, zeby vti sie nie wywalalo na labelach, inaczje trzeba uzywasc zrodla statictext
         skin = """<screen name="StreamlinkConfiguration" position="center,center" size="1000,700" title="Streamlink configuration">
                             <widget name="config" position="20,20" size="960,600" zPosition="1" scrollbarMode="showOnDemand" />
-                            <widget name="key_red"    position="20,630" zPosition="2" size="960,30" foregroundColor="red"   valign="center" halign="left" font="Regular;22" transparent="1" />
-                            <widget name="key_green"  position="20,630" zPosition="2" size="960,30" foregroundColor="green"  valign="center" halign="center" font="Regular;22" transparent="1" />
-                            <widget name="key_yellow" position="20,630" zPosition="2" size="960,30" foregroundColor="yellow" valign="center" halign="right" font="Regular;22" transparent="1" />
+                            <widget name="key_red"    position="91,630" zPosition="2" size="200,30" foregroundColor="red"   valign="center" halign="left" font="Regular;22" transparent="1" />
+                            <widget name="key_green"  position="378,630" zPosition="2" size="200,30" foregroundColor="green"  valign="center" halign="left" font="Regular;22" transparent="1" />
+                            <widget name="key_yellow" position="665,630" zPosition="2" size="200,30" foregroundColor="yellow" valign="center" halign="left" font="Regular;22" transparent="1" />
+                            <widget name="key_blue"   position="865,630" zPosition="2" size="200,30" foregroundColor="blue"   valign="center" halign="left" font="Regular;22" transparent="1" />
                           </screen>"""
     else:
         skin = """<screen name="StreamlinkConfiguration" position="center,center" size="700,200" title="Streamlink configuration">
-                            <widget name="config" position="20,20" size="640,145" zPosition="1" scrollbarMode="showOnDemand" />
-                            <widget name="key_red"    position="20,150" zPosition="2" size="660,30" foregroundColor="red" valign="center" halign="left" font="Regular;22" transparent="1" />
-                            <widget name="key_green"  position="20,150" zPosition="2" size="660,30" foregroundColor="green" valign="center" halign="center" font="Regular;22" transparent="1" />
-                            <widget name="key_yellow" position="20,150" zPosition="2" size="660,30" foregroundColor="yellow" valign="center" halign="right" font="Regular;22" transparent="1" />
+                            <widget name="config"   position="20,20" size="640,145" zPosition="1" scrollbarMode="showOnDemand" />
+                            <widget name="key_red"    position="20,150" zPosition="2" size="150,30" foregroundColor="red" valign="center" halign="left" font="Regular;22" transparent="1" />
+                            <widget name="key_green"  position="170,150" zPosition="2" size="150,30" foregroundColor="green" valign="center" halign="left" font="Regular;22" transparent="1" />
+                            <widget name="key_yellow" position="360,150" zPosition="2" size="150,30" foregroundColor="yellow" valign="center" halign="left" font="Regular;22" transparent="1" />
+                            <widget name="key_blue"   position="500,150" zPosition="2" size="150,30" foregroundColor="blue" valign="center" halign="left" font="Regular;22" transparent="1" />
                           </screen>"""
     def buildList(self):
         Mlist = []
@@ -92,9 +96,10 @@ class StreamlinkConfiguration(Screen, ConfigListScreen):
         Mlist.append(getConfigListEntry(_("Username:"), config.plugins.streamlinksrv.WPusername))
         Mlist.append(getConfigListEntry(_("Password:"), config.plugins.streamlinksrv.WPpassword))
         Mlist.append(getConfigListEntry(_("Check login credentials"), config.plugins.streamlinksrv.WPlogin))
-        Mlist.append(getConfigListEntry(_("Press OK to create %s bouquet") % "userbouquet.WPPL.tv", config.plugins.streamlinksrv.WPbouquet))
+        #Mlist.append(getConfigListEntry("Przedstaw się jako:", config.plugins.streamlinksrv.WPdevice))
         Mlist.append(getConfigListEntry(_("Prefer DASH than HLS:"), config.plugins.streamlinksrv.WPpreferDASH))
         Mlist.append(getConfigListEntry(_("Delay video:"), config.plugins.streamlinksrv.WPvideoDelay))
+        Mlist.append(getConfigListEntry(_("Press OK to create %s bouquet") % "userbouquet.WPPL.tv", config.plugins.streamlinksrv.WPbouquet))
         Mlist.append(getConfigListEntry(""))
         Mlist.append(getConfigListEntry('\c00289496' + _("*** remote E2 helper ***")))
         Mlist.append(getConfigListEntry(_("IP address:"), config.plugins.streamlinksrv.remoteE2address))
@@ -137,6 +142,7 @@ class StreamlinkConfiguration(Screen, ConfigListScreen):
         self["key_red"] = Label(_("Cancel"))
         self["key_green"] = Label(_("Save"))
         self["key_yellow"] = Label(_("Check status"))
+        self["key_blue"] = Label(_("Restart daemon"))
 
         # Define Actions
         self["actions"] = ActionMap(["StreamlinkConfiguration"],
@@ -145,6 +151,7 @@ class StreamlinkConfiguration(Screen, ConfigListScreen):
                 "red"   : self.exit,
                 "green" : self.save,
                 "yellow": self.yellow,
+                "blue"  : self.blue,
                 "save":   self.save,
                 "ok":     self.Okbutton,
             }, -2)
@@ -180,6 +187,11 @@ class StreamlinkConfiguration(Screen, ConfigListScreen):
                 cmd = '/usr/lib/enigma2/python/Plugins/Extensions/StreamlinkConfig/plugins/installPackets.sh'
             self.session.openWithCallback(self.doNothing ,Console, title = mtitle, cmdlist = [ cmd ])
         self.session.openWithCallback(yellowRet, MessageBox, _("Do you want to force packets reinstallation?"), MessageBox.TYPE_YESNO, default = False)
+        
+    def blue(self):
+        mtitle = _('Restarting daemon')
+        cmd = '/usr/sbin/streamlinksrv restart'
+        self.session.openWithCallback(self.doNothing ,Console, title = mtitle, cmdlist = [ cmd ])
         
     def exit(self):
         self.close(None)

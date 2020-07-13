@@ -11,6 +11,8 @@ __version__ = "1.1.0"
 import os
 os.environ["XDG_CONFIG_HOME"] = "/etc"
 
+os.system('if [ `ps -ef|grep -v grep|grep -c ffmpeg` -eq 0 ];then rm -f /tmp/ffmpeg-*;fi')
+
 import sys
 import time
 import atexit
@@ -65,7 +67,7 @@ if getE2config('logToFile', False) :
         for logPath in ('/home/root','/tmp','/hdd'):
           if os.path.exists(logPath + '/streamlinksrv.log'):
               os.system('rm -f /%s/streamlinksrv.log' % logPath)
-    logging.basicConfig(filename= getE2config('logPath', '/home/root') + '/streamlinksrv.log',
+    logging.basicConfig(filename= getE2config('logPath', '/tmp') + '/streamlinksrv.log',
                             filemode='a',
                             format='%(asctime)s,%(msecs)d %(name)s %(levelname)s %(message)s',
                             datefmt='%H:%M:%S',
@@ -182,7 +184,7 @@ def remoteE2( url = '' ):
                 LOGGER.debug("response : {}", str(response))
             except Exception as e:
                 LOGGER.error("Exception : {}", str(e))
-                return '/usr/share/offline.mp4'
+                return '/usr/lib/enigma2/python/Plugins/Extensions/StreamlinkConfig/streams/offline.mp4'
             #pobudka e2
             if '<e2instandby>' in str(response) and 'true' in str(response):
                 try:
@@ -197,7 +199,7 @@ def remoteE2( url = '' ):
                     LOGGER.debug("response : {}", str(response))
                 except Exception as e:
                     LOGGER.error("Exception : {}", str(e))
-                    return '/usr/share/offline.mp4'
+                    return '/usr/lib/enigma2/python/Plugins/Extensions/StreamlinkConfig/streams/offline.mp4'
             else:
                 LOGGER.info("tuner running: {}")
         #generate URL e.g. http://192.168.1.8:8001/1:0:1:3DD0:640:13E:820000:0:0:0
@@ -211,7 +213,7 @@ def remoteE2( url = '' ):
                 LOGGER.debug("response : {}", str(response))
             except Exception as e:
                 LOGGER.error("Exception : {}", str(e))
-                return '/usr/share/offline.mp4'
+                return '/usr/lib/enigma2/python/Plugins/Extensions/StreamlinkConfig/streams/offline.mp4'
         time.sleep(1)
         return 'http://%s:%s/%s' % ( remoteE2address , remoteE2port , url )
     elif not remoteE2standbyCMD is None:
@@ -278,11 +280,11 @@ def sendHeaders(http, status=200, type="text/html"):
     http.send_header('Content-type', type)
     http.end_headers()
 
-def sendOfflineMP4(http, send_headers=True):
+def sendOfflineMP4(http, send_headers=True, file2send="/usr/lib/enigma2/python/Plugins/Extensions/StreamlinkConfig/streams/offline.mp4"):
     if send_headers:
         sendHeaders(http)
 
-    http.wfile.write(open("/usr/share/offline.mp4", "r").read())
+    http.wfile.write(open(file2send, "r").read())
     http.wfile.close()
 
 def Stream(streamlink, http, url, argstr, quality):
@@ -310,7 +312,7 @@ def Stream(streamlink, http, url, argstr, quality):
                 try:
                     args = setup_args(arglist, config_files=config_files, ignore_unknown=False)
                 except Exception:
-                    return sendOfflineMP4(http, send_headers=not_stream_opened)
+                    return sendOfflineMP4(http, send_headers=not_stream_opened, file2send="/usr/lib/enigma2/python/Plugins/Extensions/StreamlinkConfig/streams/wrongURLargs.mp4")
                 else:
                     _loglevel = args.loglevel
                     logger.root.setLevel(_loglevel)
@@ -336,7 +338,7 @@ def Stream(streamlink, http, url, argstr, quality):
 
         if not streams:
             LOGGER.error("No playable streams found on this URL: {0}".format(url))
-            return sendOfflineMP4(http, send_headers=not_stream_opened)
+            return sendOfflineMP4(http, send_headers=not_stream_opened, file2send="/usr/lib/enigma2/python/Plugins/Extensions/StreamlinkConfig/streams/noStreamsFound.mp4")
 
         LOGGER.info("Available streams:\n{0}", format_valid_streams(plugin, streams))
         for stream_name in (resolve_stream_name(streams, s) for s in quality.split(',')):
@@ -361,16 +363,16 @@ def Stream(streamlink, http, url, argstr, quality):
         shutil.copyfileobj(fd, http.wfile)
     except NoPluginError:
         LOGGER.error("No plugin can handle URL: {0}", url)
-        sendOfflineMP4(http, send_headers=not_stream_opened)
+        sendOfflineMP4(http, send_headers=not_stream_opened, file2send="/usr/lib/enigma2/python/Plugins/Extensions/StreamlinkConfig/streams/noPluginFound.mp4")
     except PluginError as err:
         LOGGER.error("Plugin error: {0}", err)
-        sendOfflineMP4(http, send_headers=not_stream_opened)
+        sendOfflineMP4(http, send_headers=not_stream_opened, file2send="/usr/lib/enigma2/python/Plugins/Extensions/StreamlinkConfig/streams/PluginError.mp4")
     except FatalPluginError as err:
         LOGGER.error("Fatal Plugin error: {0}", err)
-        sendOfflineMP4(http, send_headers=not_stream_opened)
+        sendOfflineMP4(http, send_headers=not_stream_opened, file2send="/usr/lib/enigma2/python/Plugins/Extensions/StreamlinkConfig/streams/PluginFatalError.mp4")
     except NoStreamsError as err:
         LOGGER.error(err)
-        sendOfflineMP4(http, send_headers=not_stream_opened)
+        sendOfflineMP4(http, send_headers=not_stream_opened, file2send="/usr/lib/enigma2/python/Plugins/Extensions/StreamlinkConfig/streams/noStreamsFound.mp4")
     except socket.error as err:
         if err.errno != errno.EPIPE:
             # Not a broken pipe
@@ -381,13 +383,19 @@ def Stream(streamlink, http, url, argstr, quality):
         else:
             LOGGER.error("Got exception: {0}\n{1}", err, traceback.format_exc().splitlines())
 
-        sendOfflineMP4(http, send_headers=not_stream_opened)
+        if str(err) == 'wperror-403':
+            sendOfflineMP4(http, send_headers=not_stream_opened, file2send="/usr/lib/enigma2/python/Plugins/Extensions/StreamlinkConfig/streams/wperror-403.mp4")
+        elif str(err) == 'wperror-422':
+            sendOfflineMP4(http, send_headers=not_stream_opened, file2send="/usr/lib/enigma2/python/Plugins/Extensions/StreamlinkConfig/streams/wperror-422.mp4")
+        else:
+            sendOfflineMP4(http, send_headers=not_stream_opened)
     finally:
         if fd:
             LOGGER.info("Stream ended")
             fd.close()
             LOGGER.info("Closing currently open stream...")
             remoteE2() #to put in standby
+            os.system('if [ `ps -ef|grep -v grep|grep -c ffmpeg` -eq 0 ];then rm -f /tmp/ffmpeg-*;fi;rm -f /tmp/*.streamlink.') #troche porzadku bo smietnik zostaje
 
 class Streamlink2(Streamlink):
     _loaded_plugins = None
@@ -410,7 +418,7 @@ class StreamHandler(BaseHTTPRequestHandler):
         sendHeaders(s)
 
     def do_GET(s):
-        print '!!!!!!!!!!!!!!!!!!!!!!!!!!!!'
+        os.system('if [ `ps -ef|grep -v grep|grep -c ffmpeg` -eq 0 ];then rm -f /tmp/ffmpeg-*;fi;rm -f /tmp/*.streamlink.')
         url=urllib.unquote(s.path[1:])
         quality="best"
 
