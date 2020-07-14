@@ -518,12 +518,16 @@ class MSNWeatherConfiguration(Screen, ConfigListScreen):
         ConfigList.append(getConfigListEntry('\c00289496' + _("*** Home air condition ***")))
         ConfigList.append(getConfigListEntry(_("1st AC system:"), config.plugins.WeatherPlugin.AC1))
         if config.plugins.WeatherPlugin.AC1.value != 'off':
-            ConfigList.append(getConfigListEntry(_("IP address:"), config.plugins.WeatherPlugin.AC1_IP))
-            ConfigList.append(getConfigListEntry(_("Description:"), config.plugins.WeatherPlugin.AC1inf))
+            ConfigList.append(getConfigListEntry('- ' + _("IP address:"), config.plugins.WeatherPlugin.AC1_IP))
+            ConfigList.append(getConfigListEntry('- ' + _("Port:"), config.plugins.WeatherPlugin.AC1_PORT))
+            ConfigList.append(getConfigListEntry('- ' + _("Description:"), config.plugins.WeatherPlugin.AC1inf))
         ConfigList.append(getConfigListEntry(_("2nd AC system:"), config.plugins.WeatherPlugin.AC2))
         if config.plugins.WeatherPlugin.AC2.value != 'off':
-            ConfigList.append(getConfigListEntry(_("IP address:"), config.plugins.WeatherPlugin.AC2_IP))
-            ConfigList.append(getConfigListEntry(_("Description:"), config.plugins.WeatherPlugin.AC2inf))
+            ConfigList.append(getConfigListEntry('- ' + _("IP address:"), config.plugins.WeatherPlugin.AC2_IP))
+            ConfigList.append(getConfigListEntry('- ' + _("Port:"), config.plugins.WeatherPlugin.AC2_PORT))
+            ConfigList.append(getConfigListEntry('- ' + _("Description:"), config.plugins.WeatherPlugin.AC2inf))
+        if config.plugins.WeatherPlugin.AC1.value != 'off' or config.plugins.WeatherPlugin.AC2.value != 'off':
+            ConfigList.append(getConfigListEntry(_("Use A/C outside temp sensor instead of MSN:"), config.plugins.WeatherPlugin.ACuseTempSensor))
 
         ConfigList.append(getConfigListEntry(""))
         ConfigList.append(getConfigListEntry('\c00289496' + _("*** Debuging options ***")))

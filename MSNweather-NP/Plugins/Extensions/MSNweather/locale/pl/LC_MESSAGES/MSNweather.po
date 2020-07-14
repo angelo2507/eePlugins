@@ -350,7 +350,7 @@ msgstr "Pierwszy klimatyzator:"
 msgid "IP address:"
 msgstr "Adres IP:"
 
-msgid "2nd AC system"
+msgid "2nd AC system:"
 msgstr "Drugi klimatyzator:"
 
 msgid "*** Debuging options ***"
@@ -391,3 +391,12 @@ msgstr "serwisu, który ma dane najświerzsze"
 
 msgid "Description:"
 msgstr "Opis:"
+
+msgid "A/C type not set!"
+msgstr "Nie zdefiniowano typu klimatyzatora!"
+
+msgid "A/C IP address not set!"
+msgstr "Nie zdefiniowano adresu IP klimatyzatora!"
+
+msgid "Use A/C outside temp sensor instead of MSN:"
+msgstr "Użyj zewnętrzny czujnik temparatury klimy zamiast MSN:"

@@ -21,23 +21,23 @@
 
 from . import _
 from Components.ActionMap import ActionMap
-from Components.config import ConfigSubsection, ConfigSubList, ConfigInteger, config, NoSave, ConfigEnableDisable, ConfigSelection, ConfigText, ConfigIP
+from Components.config import ConfigSubsection, ConfigSubList, ConfigInteger, config, NoSave, ConfigEnableDisable, ConfigSelection, ConfigText, ConfigIP, ConfigYesNo
 #from Components.Pixmap import Pixmap
 from Components.j00zekAccellPixmap import j00zekAccellPixmap
-from Components.Sources.StaticText import StaticText
 from Components.Label import Label
+from Components.Sources.StaticText import StaticText
 from debug import printDEBUG
-#from datetime import datetime, timedelta
-from Tools.Directories import resolveFilename, SCOPE_SKIN
-#from enigma import eTimer
 from getWeather import getWeather
 from Plugins.Plugin import PluginDescriptor
+#from datetime import datetime, timedelta
+#from enigma import eTimer
 #from random import randint
+from Screens.MessageBox import MessageBox
 from Screens.Screen import Screen
 from setup import initConfig, MSNWeatherEntriesListConfigScreen
+from Tools.Directories import resolveFilename, SCOPE_SKIN
 from Tools.LoadPixmap import LoadPixmap
 from version import Version
-from Components.Label import Label
 import time, os
 
 DBG = False
@@ -57,11 +57,14 @@ config.plugins.WeatherPlugin.ScalePicType = ConfigSelection(choices = [ ("self.i
 config.plugins.WeatherPlugin.BuildHistograms = ConfigEnableDisable(default = False)
 config.plugins.WeatherPlugin.CurrentValuesSource = ConfigSelection(choices = [ ("msn", _("MSN service")), ("airly", _("Airly service")) , ("msnarly", _("MSN or Airly depending which latest"))], default = "msn")
 
+config.plugins.WeatherPlugin.ACuseTempSensor = ConfigYesNo(default = False)
 config.plugins.WeatherPlugin.AC1 = ConfigSelection(choices = [ ("off", _("not installed")), ("daikin", _("Daikin Air Conditioner")) , ("samsung", _("Samsung Air Conditioner"))], default = "off")
 config.plugins.WeatherPlugin.AC1_IP = ConfigIP(default = [0,0,0,0])
+config.plugins.WeatherPlugin.AC1_PORT = ConfigInteger(default = 80,limits=(80,999))
 config.plugins.WeatherPlugin.AC1inf = ConfigText(default = _("AC in the living room"), visible_width = 100, fixed_size = False)
 config.plugins.WeatherPlugin.AC2 = ConfigSelection(choices = [ ("off", _("not installed")), ("daikin", _("Daikin Air Conditioner")) , ("samsung", _("Samsung Air Conditioner"))], default = "off")
 config.plugins.WeatherPlugin.AC2_IP = ConfigIP(default = [0,0,0,0])
+config.plugins.WeatherPlugin.AC2_PORT = ConfigInteger(default = 80,limits=(80,999))
 config.plugins.WeatherPlugin.AC2inf = ConfigText(default = _("AC in the bedroom"), visible_width = 100, fixed_size = False)
 
 config.plugins.WeatherPlugin.DebugEnabled = ConfigEnableDisable(default = False)
@@ -116,7 +119,6 @@ def Plugins(**kwargs):
     return list
 
 class MSNweather(Screen):
-
     skin = """
         <screen name="MSNweather" position="center,center" size="664,340" title="MSN weather NP">
             <widget render="Label" source="caption" position="10,20" zPosition="1" size="600,28" font="Regular;24" transparent="1"/>
@@ -156,18 +158,17 @@ class MSNweather(Screen):
         Screen.__init__(self, session)
         self.title = _("MSN weather NP @j00zek %s" % Version)
         self.setTitle(_("MSN weather NP @j00zek %s") % Version) 
-        self["actions"] = ActionMap(["SetupActions", "DirectionActions", "MenuActions", "ColorActions"],
+        self["actions"] = ActionMap(["MSNweatherNP"],
 
         {
-            "cancel": self.close,
-            "menu": self.config,
-            "right": self.nextItem,
-            "left": self.previousItem,
-            "info": self.showWebsite,
-            #"red": self.klima1,
-            #"green": self.klima2,
-            "yellow": self.ShowHistograms,
-            "blue": self.ShowMaps,
+            "keyCancel": self.close,
+            "keyMenu": self.config,
+            "keyRight": self.nextItem,
+            "keyLeft": self.previousItem,
+            "keyRed": self.keyRed,
+            "keyGreen": self.keyGreen,
+            "keyYellow": self.keyYellow,
+            "keyBlue": self.keyBlue,
         }, -1)
 
         self["statustext"] = StaticText()
@@ -327,17 +328,44 @@ class MSNweather(Screen):
         self.clearFields()
         self["statustext"].text = errortext
 
-    def showWebsite(self):
-        try:
-            from Plugins.Extensions.Browser.Browser import Browser
-            if self.webSite:
-                self.session.open(Browser, config.plugins.WebBrowser.fullscreen.value, self.webSite, False)
-        except: pass # I dont care if browser is installed or not...
-        
-    def ShowHistograms(self):
+    def doNothing(self, ret = False):
+        return
+      
+    def keyYellow(self): #ShowHistograms
         from histograms import MSNweatherHistograms
         self.session.open(MSNweatherHistograms)
 
-    def ShowMaps(self):
+    def keyBlue(self): #ShowMaps
         from maps import MSNweatherMaps
         self.session.open(MSNweatherMaps)
+
+    def keyRed(self): #
+        open("/tmp/ac.txt", "w").write('%s\n' % config.plugins.WeatherPlugin.AC1.value)
+        if config.plugins.WeatherPlugin.AC1inf.value == '':
+            return
+        elif config.plugins.WeatherPlugin.AC1inf.value in ('Close', 'Anuluj'):
+            self.close()
+        elif config.plugins.WeatherPlugin.AC1.value == 'off': #"daikin" "samsung"
+            self.session.openWithCallback(self.doNothing,MessageBox, _("A/C type not set!"), MessageBox.TYPE_WARNING, timeout = 5)
+        elif config.plugins.WeatherPlugin.AC1_IP.value == [0,0,0,0]:
+            self.session.openWithCallback(self.doNothing,MessageBox, _("A/C IP address not set!"), MessageBox.TYPE_WARNING, timeout = 5)
+        elif config.plugins.WeatherPlugin.AC1.value == 'daikin':
+            from aircon_Controller_daikin import DaikinController
+            self.session.open(DaikinController, config.plugins.WeatherPlugin.AC1_IP.value, config.plugins.WeatherPlugin.AC1_PORT.value, config.plugins.WeatherPlugin.AC1inf.value)
+        elif config.plugins.WeatherPlugin.AC1.value == 'samsung':
+            from aircon_Controller_samsung import SamsungController
+            self.session.open(SamsungController, config.plugins.WeatherPlugin.AC1_IP.value, config.plugins.WeatherPlugin.AC1_PORT.value, config.plugins.WeatherPlugin.AC1inf.value)
+
+    def keyGreen(self): #
+        if config.plugins.WeatherPlugin.AC2inf.value == '':  
+            return
+        elif config.plugins.WeatherPlugin.AC2.value == 'off': #"daikin" "samsung"
+            self.session.openWithCallback(self.doNothing,MessageBox, _("A/C type not set!"), MessageBox.TYPE_WARNING, timeout = 5)
+        elif config.plugins.WeatherPlugin.AC2_IP.value == [0,0,0,0]:
+            self.session.openWithCallback(self.doNothing,MessageBox, _("A/C IP address not set!"), MessageBox.TYPE_WARNING, timeout = 5)
+        elif config.plugins.WeatherPlugin.AC2.value == 'daikin':
+            from aircon_Controller_daikin import DaikinController
+            self.session.open(DaikinController, config.plugins.WeatherPlugin.AC2_IP.value, config.plugins.WeatherPlugin.AC2_PORT.value, config.plugins.WeatherPlugin.AC2inf.value)
+        elif config.plugins.WeatherPlugin.AC2.value == 'samsung':
+            from aircon_Controller_samsung import SamsungController
+            self.session.open(SamsungController, config.plugins.WeatherPlugin.AC2_IP.value, config.plugins.WeatherPlugin.AC2_PORT.value, config.plugins.WeatherPlugin.AC2inf.value)
