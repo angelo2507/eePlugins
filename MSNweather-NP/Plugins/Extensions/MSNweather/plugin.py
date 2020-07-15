@@ -340,7 +340,6 @@ class MSNweather(Screen):
         self.session.open(MSNweatherMaps)
 
     def keyRed(self): #
-        open("/tmp/ac.txt", "w").write('%s\n' % config.plugins.WeatherPlugin.AC1.value)
         if config.plugins.WeatherPlugin.AC1inf.value == '':
             return
         elif config.plugins.WeatherPlugin.AC1inf.value in ('Close', 'Anuluj'):
@@ -351,10 +350,10 @@ class MSNweather(Screen):
             self.session.openWithCallback(self.doNothing,MessageBox, _("A/C IP address not set!"), MessageBox.TYPE_WARNING, timeout = 5)
         elif config.plugins.WeatherPlugin.AC1.value == 'daikin':
             from aircon_Controller_daikin import DaikinController
-            self.session.open(DaikinController, config.plugins.WeatherPlugin.AC1_IP.value, config.plugins.WeatherPlugin.AC1_PORT.value, config.plugins.WeatherPlugin.AC1inf.value)
+            self.session.openWithCallback(self.doNothing, DaikinController, config.plugins.WeatherPlugin.AC1_IP.value, config.plugins.WeatherPlugin.AC1_PORT.value, config.plugins.WeatherPlugin.AC1inf.value)
         elif config.plugins.WeatherPlugin.AC1.value == 'samsung':
             from aircon_Controller_samsung import SamsungController
-            self.session.open(SamsungController, config.plugins.WeatherPlugin.AC1_IP.value, config.plugins.WeatherPlugin.AC1_PORT.value, config.plugins.WeatherPlugin.AC1inf.value)
+            self.session.openWithCallback(self.doNothing, SamsungController, config.plugins.WeatherPlugin.AC1_IP.value, config.plugins.WeatherPlugin.AC1_PORT.value, config.plugins.WeatherPlugin.AC1inf.value)
 
     def keyGreen(self): #
         if config.plugins.WeatherPlugin.AC2inf.value == '':  
@@ -365,7 +364,7 @@ class MSNweather(Screen):
             self.session.openWithCallback(self.doNothing,MessageBox, _("A/C IP address not set!"), MessageBox.TYPE_WARNING, timeout = 5)
         elif config.plugins.WeatherPlugin.AC2.value == 'daikin':
             from aircon_Controller_daikin import DaikinController
-            self.session.open(DaikinController, config.plugins.WeatherPlugin.AC2_IP.value, config.plugins.WeatherPlugin.AC2_PORT.value, config.plugins.WeatherPlugin.AC2inf.value)
+            self.session.openWithCallback(self.doNothing, DaikinController, config.plugins.WeatherPlugin.AC2_IP.value, config.plugins.WeatherPlugin.AC2_PORT.value, config.plugins.WeatherPlugin.AC2inf.value)
         elif config.plugins.WeatherPlugin.AC2.value == 'samsung':
             from aircon_Controller_samsung import SamsungController
-            self.session.open(SamsungController, config.plugins.WeatherPlugin.AC2_IP.value, config.plugins.WeatherPlugin.AC2_PORT.value, config.plugins.WeatherPlugin.AC2inf.value)
+            self.session.openWithCallback(self.doNothing, SamsungController, config.plugins.WeatherPlugin.AC2_IP.value, config.plugins.WeatherPlugin.AC2_PORT.value, config.plugins.WeatherPlugin.AC2inf.value)
