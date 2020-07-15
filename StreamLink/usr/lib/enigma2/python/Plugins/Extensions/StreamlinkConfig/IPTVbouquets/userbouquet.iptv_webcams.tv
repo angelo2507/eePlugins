@@ -1,6 +1,6 @@
 #NAME IPTV Webcams
-#SERVICE 1:64:E:0:0:0:0:0:0:0::Webcams: Polska (PL) (endriu 12.07.20)
-#DESCRIPTION Webcams: Polska (PL) (endriu 12.07.20)
+#SERVICE 1:64:E:0:0:0:0:0:0:0::Webcams: Polska (PL) (endriu 14.07.20)
+#DESCRIPTION Webcams: Polska (PL) (endriu 14.07.20)
 #SERVICE 4097:0:0:0:0:0:0:0:0:4:http%3a//stream8.nadaje.com%3a12426/live/nad403.stream/playlist.m3u8:PL - Olesno - Rynek
 #DESCRIPTION PL - Olesno - Rynek
 #SERVICE 4097:0:0:0:0:0:0:0:0:4:http%3a//stream8.nadaje.com%3a12426/live/ofh1273.stream/playlist.m3u8:PL - Olesno - Pieloka
@@ -198,20 +198,18 @@
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//hoktastream5.webcamera.pl/czechowice_live_94d1ae/czechowice_live_94d1ae.stream/playlist.m3u8:PL - Czechowice-Dziedzice - Plac Jana Pawła II
 #DESCRIPTION PL - Czechowice-Dziedzice - Plac Jana Pawła II
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/KcPn4m0ma-U:PL - Czeladź - Rynek
-#DESCRIPTION PL - Czeladź - Rynek
+#DESCRIPTION PL - Czeladź - Rynek (YT)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//s1.worldcam.live%3a8082/acz/index.m3u8:PL - Częstochowa - Lotnisko Rudniki
 #DESCRIPTION PL - Częstochowa - Lotnisko Rudniki
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//streaming.airmax.pl/jasnagora/tracks-v1/mono.m3u8:PL - Częstochowa - Panorama na Jasną Górę
 #DESCRIPTION PL - Częstochowa - Panorama na Jasną Górę
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/v_eRd6lsK88:PL - Częstochowa - Sczyt Jasnogórski - Ołtarz (YT)
 #DESCRIPTION PL - Częstochowa - Sczyt Jasnogórski - Ołtarz (YT)
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//stream1.stimotion.pl/live/debowiec1.m3u8:PL - Dębowiec
-#DESCRIPTION PL - Dębowiec
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//frn.rtsp.me/12wwFhkZKeFjZDYSmXvPBA/1593892592/hls/ddGDR9Gn.m3u8:PL - Darłowo-Dąbki - Jezioro Bukowo
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https://rtsp.me/embed/ddGDR9Gn/:PL - Darłowo-Dąbki - Jezioro Bukowo
 #DESCRIPTION PL - Darłowo-Dąbki - Jezioro Bukowo
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//frn.rtsp.me/atK9JH9kUAA-fnMqcZe8MQ/1593892875/hls/2nQN7Z9d.m3u8:PL - Darłowo-Dąbki - Jezioro Bukowo - parking i nabrzeże
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https://rtsp.me/embed/2nQN7Z9d/:PL - Darłowo-Dąbki - Jezioro Bukowo - parking i nabrzeże
 #DESCRIPTION PL - Darłowo-Dąbki - Jezioro Bukowo - parking i nabrzeże
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//frn.rtsp.me/vORR-AjfnnZkZcGBzuzqUw/1593892983/hls/F3Ar6dhi.m3u8:PL - Darłowo-Dąbki - Jezioro Bukowo - slip, pomost
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https://rtsp.me/embed/F3Ar6dhi/:PL - Darłowo-Dąbki - Jezioro Bukowo - slip, pomost
 #DESCRIPTION PL - Darłowo-Dąbki - Jezioro Bukowo - slip, pomost
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/E4iuF1xgCuI:PL - Darłowo - Panorama (YT)
 #DESCRIPTION PL - Darłowo - Panorama (YT)
@@ -233,6 +231,8 @@
 #DESCRIPTION PL - Dąbrowa Górnicza-Plac Wolności
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//kam1.dabrowa-gornicza.pl%3a4443/video-pogoria-hires/vi.m3u8:PL - Dąbrowa Górnicza - Jezioro Pogoria III
 #DESCRIPTION PL - Dąbrowa Górnicza - Jezioro Pogoria III
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//stream1.stimotion.pl/live/debowiec1.m3u8:PL - Dębowiec
+#DESCRIPTION PL - Dębowiec
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//ls.tkchopin.pl%3a9043/live/debki_plaza_static.stream/chunklist_w1369985741.m3u8:PL - Dębki - Plaża
 #DESCRIPTION PL - Dębki - Plaża
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//ls.tkchopin.pl%3a9043/live/debki_plaza_obrotowa.stream/chunklist_w1768786443.m3u8:PL - Dębki - Plaża (obrotowa)
@@ -323,7 +323,7 @@
 #DESCRIPTION PL - Gdańsk - Widok na kładkę przez Motławę
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//194.116.130.227%3a1935/gda/gda_teatr.stream/playlist.m3u8:PL - Gdańsk - Widok na Targ Węglowy
 #DESCRIPTION PL - Gdańsk - Widok na Targ Węglowy
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//manifest.googlevideo.com/api/manifest/hls_variant/expire/1593984854/ei/9vIBX7fhNs73yQXhtIPYAQ/ip/185.253.229.131/id/RdNYGKZ7rM4.1/source/yt_live_broadcast/requiressl/yes/hfr/1/playlist_duration/30/manifest_duration/30/maudio/1/vprv/1/go/1/keepalive/yes/dover/11/itag/0/playlist_type/DVR/sparams/expire,ei,ip,id,source,requiressl,hfr,playlist_duration,manifest_duration,maudio,vprv,go,itag,playlist_type/sig/AOq0QJ8wRQIhAPEcIPm_6Nx6oZLRF1RF-eZAT5GgKTCytM4p4bBYouOWAiBwmAbGChmwrntNmq46YKnhd-9Dhlqu_LTUdexVkgZ3ww==/file/index.m3u8:PL - Gdynia - bulwar (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/RdNYGKZ7rM4:PL - Gdynia - bulwar (YT)
 #DESCRIPTION PL - Gdynia - bulwar (YT)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//hoktastream1.webcamera.pl/gdynia_cam_b3ccea/gdynia_cam_b3ccea.stream/playlist.m3u8:PL - Gdynia - Live
 #DESCRIPTION PL - Gdynia - Live
@@ -334,7 +334,7 @@
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//ls.tkchopin.pl%3a9043/live/gdynia_marina_obrotowa.stream/playlist.m3u8:PL - Gdynia Przystań jachtowa
 #DESCRIPTION PL - Gdynia Przystań jachtowa
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/VVtPOGGCodU:PL - Gdynia - plaża
-#DESCRIPTION PL - Gdynia - plaża
+#DESCRIPTION PL - Gdynia - plaża (YT)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//hoktastream1.webcamera.pl/gdynia_cam_b80d1e/gdynia_cam_b80d1e.stream/playlist.m3u8:PL - Gdynia - plaża II
 #DESCRIPTION PL - Gdynia - plaża II
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//hoktastream1.webcamera.pl/gdynia_cam_e257dc/gdynia_cam_e257dc.stream/playlist.m3u8:PL - Gdynia-Port
@@ -431,7 +431,7 @@
 #DESCRIPTION PL - Hel - Neptun
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//kamera.task.gda.pl%3a443/rtplive/hel3.sdp/playlist.m3u8:PL - Hel - Fokarium
 #DESCRIPTION PL - Hel - Fokarium
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//manifest.googlevideo.com/api/manifest/hls_variant/expire/1594154272/ei/wIgEX4baCoeZyQWsiZKICQ/ip/185.253.229.131/id/oYBrRrw0aY0.1/source/yt_live_broadcast/requiressl/yes/hfr/1/playlist_duration/30/manifest_duration/30/maudio/1/vprv/1/go/1/keepalive/yes/dover/11/itag/0/playlist_type/DVR/sparams/expire,ei,ip,id,source,requiressl,hfr,playlist_duration,manifest_duration,maudio,vprv,go,itag,playlist_type/sig/AOq0QJ8wRQIhAJonJ9JlOG6_aBJEd18T1bhxczJnJdnRVUtoOAcMTDUBAiA1_EDVSUVwr2_1TLSkeTixClGrj83iJCGi7Yert_C1bw==/file/index.m3u8:PL - Hel - Fokarium II (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/oYBrRrw0aY0:PL - Hel - Fokarium II (YT)
 #DESCRIPTION PL - Hel - Fokarium II (YT)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//edge6.popler.tv/popler_rtplive_nimble/wirtualnyhel5/chunks.m3u8?nimblesessionid=1129171&wmsAuthSign=c2VydmVyX3RpbWU9Ny82LzIwMjAgNjo1ODoyNiBQTSZoYXNoX3ZhbHVlPXpiQXlzR1l6VmNnTFdXQk9uR2N4ZWc9PSZ2YWxpZG1pbnV0ZXM9NQ==&expires=1594062206&ip=188.147.39.225&secure=ixt0RkQpwhQyhDr7CXCUZw:PL - Hel - Mała Plaża
 #DESCRIPTION PL - Hel - Mała Plaża
@@ -773,6 +773,8 @@
 #DESCRIPTION PL - Krosno-Rynek – widok na studnię
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//s24.ipcamlive.com/streams/185ef9ad36cd67989/stream.m3u8:PL - Krynica Morska - Panorama morza
 #DESCRIPTION PL - Krynica Morska - Panorama morza
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//77.89.89.9:1935/live/krotoszyn.stream/chunklist_w776926199.m3u8:PL - Krotoszyn - Rynek
+#DESCRIPTION PL - Krotoszyn - Rynek
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//hoktastream1.webcamera.pl/krynicamorska_cam_b92412/krynicamorska_cam_b92412.stream/playlist.m3u8:PL - Krynica Morska-Port jachtowy
 #DESCRIPTION PL - Krynica Morska-Port jachtowy
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//video.jarosz.pl/hls/camera2.m3u8:PL - Krynica Zdrój - Dom Zdrojowy
@@ -1365,8 +1367,8 @@
 #DESCRIPTION PL - Poznań - Rynek
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//hls.zkzl.poznan.pl/hls/hulewiczow/index.m3u8:PL - Poznań - ul. Hulewiczów
 #DESCRIPTION PL - Poznań - ul. Hulewiczów
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/GaLsmhnWR2A:PL - Poznań - Warta Residence
-#DESCRIPTION PL - Poznań - Warta Residence
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/GaLsmhnWR2A:PL - Poznań - Warta Residence (YT)
+#DESCRIPTION PL - Poznań - Warta Residence (YT)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//streaming.prudnik.eu/laka.m3u8:PL - Prudnik - Łąka Prudnicka
 #DESCRIPTION PL - Prudnik - Łąka Prudnicka
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//streaming.prudnik.eu/ratuszowa.m3u8:PL - Prudnik - Ul. Ratuszowa
@@ -1537,16 +1539,16 @@
 #DESCRIPTION PL - Serock - Rynek
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//streaming.airmax.pl/umserock2/tracks-v1/mono.m3u8:PL - Serock - Plaża
 #DESCRIPTION PL - Serock - Plaża
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/kBhqExhpuoY:PL - Siechnice - Rynek
-#DESCRIPTION PL - Siechnice - Rynek
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/kBhqExhpuoY:PL - Siechnice - Rynek (YT)
+#DESCRIPTION PL - Siechnice - Rynek (YT)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//hoktastream2.webcamera.pl/sierpc_cam_1b07be/sierpc_cam_1b07be.stream/chunks.m3u8:PL - Sierpc - Muzeum Wsi Mazowieckiej
 #DESCRIPTION PL - Sierpc - Muzeum Wsi Mazowieckiej
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//s1.worldcam.live%3a8082/skala/tracks-v1/mono.m3u8:PL - Skała - Rynek
 #DESCRIPTION PL - Skała - Rynek
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//s1.worldcam.live%3a8082/skopanie/tracks-v1/mono.m3u8:PL - Skopanie - Panorama miasta
 #DESCRIPTION PL - Skopanie - Panorama miasta
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/RgEqeDMTsNU:PL - Słubice - Most graniczny
-#DESCRIPTION PL - Słubice - Most graniczny
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/RgEqeDMTsNU:PL - Słubice - Most graniczny (YT)
+#DESCRIPTION PL - Słubice - Most graniczny (YT)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/BhCqbZctzVU:PL - Sokółka - Kino "Sokół" (YT)
 #DESCRIPTION PL - Sokółka - Kino "Sokół" (YT)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/_y5n-YLxOaE:PL - Sokółka - Plac Kościuszki (YT)
@@ -1750,7 +1752,7 @@
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/PnkbIxlwT9Q:PL - Szczyrk - Chata Wuja Toma (YT)
 #DESCRIPTION PL - Szczyrk - Chata Wuja Toma (YT)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/3hya1xVuJB4:PL - Szczyrk - Hotel Meta - Wyciąg narciarski
-#DESCRIPTION PL - Szczyrk - Hotel Meta - Wyciąg narciarski
+#DESCRIPTION PL - Szczyrk - Hotel Meta - Wyciąg narciarski (YT)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/2JLT2f6RrNE:PL - Szczyrk - Panorama (YT)
 #DESCRIPTION PL - Szczyrk - Panorama (YT)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//stream.malborskieswiatlowody.pl%3a18850/Sztutowo_wydma/tracks-v1/mono.m3u8:PL - Sztutowo Plaża%3a Willa na Wydmie
@@ -1909,8 +1911,8 @@
 #DESCRIPTION PL - Warszawa - Stadion Narodowy
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//53c7d208964cd.streamlock.net/pkinwawa/cam3.stream/chunklist_w454008818_tkdG9rZW5zZW5kdGltZT0xNTk0NDgwNDQ0JnRva2Vuc2hhc2g9cE5icW1jWENpRzNNTFFGWW5DSEV5Z3ctOGx3Uk5XcWVZT0xhVG9aajlpbU5kNzdid1lTRFhYWHVxekdkRkliOSZ0b2tlbnNzdGFydHRpbWU9MTU5NDQ2OTY0NA==.m3u8:PL - Warszawa - Sokoły, panorama centrum
 #DESCRIPTION PL - Warszawa - Sokoły, panorama centrum
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/v5a03Vf0lgQ:PL - Warszawa - Żwirki i Wigury
-#DESCRIPTION PL - Warszawa - Żwirki i Wigury
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/v5a03Vf0lgQ:PL - Warszawa - Żwirki i Wigury (YT)
+#DESCRIPTION PL - Warszawa - Żwirki i Wigury (YT)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//hoktastream1.webcamera.pl/wdzydze_cam_8d77ee/wdzydze_cam_8d77ee.stream/playlist.m3u8:PL - Wdzydze Kiszewskie
 #DESCRIPTION PL - Wdzydze Kiszewskie
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//hoktastream1.webcamera.pl/um_wejherowo_cam_85442c/um_wejherowo_cam_85442c.stream/playlist.m3u8:PL - Wejherowo - Deptak
@@ -4043,16 +4045,6 @@
 #DESCRIPTION Ptaki - Szpak I
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5d881567b7568.streamlock.net/live/Spreeuw4Binnen.stream/chunklist.m3u8:Ptaki - Szpak II
 #DESCRIPTION Ptaki - Szpak II
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//hoktastream2.webcamera.pl/klekusiowo_cam_b05c8d/klekusiowo_cam_b05c8d.stream_aac/playlist.m3u8:Ptaki - Bocian I - Polska - Klekusiowo
-#DESCRIPTION Ptaki - Bocian I - Polska - Klekusiowo
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//hoktastream2.webcamera.pl/klekusiowo_cam_cd36d8/klekusiowo_cam_cd36d8.stream/playlist.m3u8:Ptaki - Bocian II - Polska - Klekusiowo
-#DESCRIPTION Ptaki - Bocian II - Polska - Klekusiowo
-#SERVICE 4097:0:1:9348:81ED:EC:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/_Lw96b9mceg:Ptaki - Bocian - Sławacinek Stary (YT)
-#DESCRIPTION Ptaki - Bocian - Sławacinek Stary (YT)
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//lb01.bpstream.com/wildliferomania2/live.stream_aac/.m3u8:Ptaki - Bocian III - Rumänien
-#DESCRIPTION Ptaki - Bocian III - Rumänien
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//rrr.sz.xlcdn.com/?account=bdl&file=Ooievaar1&type=live&service=wowza&protocol=https&output=playlist.m3u8:Ptaki - Bocian IV - NL
-#DESCRIPTION Ptaki - Bocian IV - NL
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5d881567b7568.streamlock.net/live/TurkseTortel.stream/chunklist.m3u8:Ptaki - Gołąb
 #DESCRIPTION Ptaki - Gołąb
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5d881567b7568.streamlock.net/live/Torenvalk3.stream/chunklist.m3u8:Ptaki - Pustułka I

@@ -1,6 +1,6 @@
 #NAME Bociany z PIP
-#SERVICE 1:64:E:0:0:0:0:0:0:0::Bociany:(endriu 13.07.20)
-#DESCRIPTION Bociany:(endriu 13.07.20)
+#SERVICE 1:64:E:0:0:0:0:0:0:0::Bociany:(endriu 14.07.20)
+#DESCRIPTION Bociany:(endriu 14.07.20)
 #SERVICE 1:0:0:0:0:0:0:0:0:2:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//stream5.nadaje.com%3a8324/live/YgL921.stream/chunklist_w1411557585.m3u8|format=mpegts:Brzozów
 #DESCRIPTION Brzozów
 #SERVICE 1:0:0:0:0:0:0:0:0:2:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//streaming.airmax.pl/umigwc/tracks-v1/mono.m3u8|format=mpegts:Borzykowa
@@ -47,6 +47,10 @@
 #DESCRIPTION Sokółka (YT)
 #SERVICE 1:0:0:0:0:0:0:0:0:2:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hoktastream2.webcamera.pl/klekusiowo_cam_b05c8d/klekusiowo_cam_b05c8d.stream/chunks.m3u8|format=mpegts:Tomaszów Bolesławiecki (Klekusiowo)
 #DESCRIPTION Tomaszów Bolesławiecki (Klekusiowo)
+#SERVICE 1:0:0:0:0:0:0:0:0:2:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hoktastream2.webcamera.pl/klekusiowo_cam_cd36d8/klekusiowo_cam_cd36d8.stream/playlist.m3u8|format=mpegts:Tomaszów Bolesławiecki (Klekusiowo 2)
+#DESCRIPTION Tomaszów Bolesławiecki (Klekusiowo 2)
+#SERVICE 4097:0:4:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/_Lw96b9mceg:Sławacinek Stary (YT)
+#DESCRIPTION Sławacinek Stary (YT)
 #SERVICE 4097:0:4:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/4ce--6pZtFo :Strzelce (YT)
 #DESCRIPTION Strzelce (YT)
 #SERVICE 4097:0:4:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/DKy8yzmTCr4:Strzelce - widok na staw (YT)
@@ -65,3 +69,4 @@
 #DESCRIPTION Wola Suchożebrska
 #SERVICE 1:0:0:0:0:0:0:0:0:2:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//s1.worldcam.live%3a8082/zastawki/tracks-v1a1/index-1362504585-now.m3u8|format=mpegts:Zastawki
 #DESCRIPTION Zastawki
+
