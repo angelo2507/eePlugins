@@ -1,0 +1,48 @@
+<screen position="70,75" size="710,950" title=" " flags="wfNoBorder" backgroundColor="transparent" >
+<!-- header -->
+    <ePixmap position="0,0" zPosition="-5" size="710,950" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MSNweather/aircon_data/bg_710x950.png" />
+    <widget source="global.CurrentTime" render="Label" position="45,30" size="80,35" font="Roboto_HD; 27" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="145,30" size="460,35" font="Roboto_HD; 27" foregroundColor="lemon" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Format:%A %d.%m.%Y</convert>
+    </widget>
+<!-- Top part -->
+    <ePixmap position="40,120" zPosition="-4" size="105,105" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MSNweather/aircon_data/icon_daikin_105x105.png" alphatest="blend"/>
+    <widget name="ac_config_info" position="130,130" size="490,30" font="Roboto_HD; 24" backgroundColor="black" transparent="1"/>
+    <widget name="ac_name" position="130,160" size="490,30" font="Roboto_HD; 24" backgroundColor="black" transparent="1"/>
+<!-- Middle part -->
+    <ePixmap position="80,236" zPosition="-4" size="48,48" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MSNweather/aircon_data/co_idtemp_eu.png" alphatest="blend"/>
+    <widget name="indoor_temp" position="140,236" size="200,48" font="Roboto_HD; 27" valign="center" backgroundColor="black" transparent="1"/>
+    <ePixmap position="331,236" zPosition="-4" size="48,48" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MSNweather/aircon_data/co_odtemp_eu.png" alphatest="blend"/>
+    <widget name="outdoor_temp" position="391,236" size="200,48" font="Roboto_HD; 27" valign="center" backgroundColor="black" transparent="1"/>
+    <widget name="on_off_icon"  position="570,230" zPosition="-4" size="60,60" alphatest="blend"/>
+
+    <ePixmap position="155,376" zPosition="-4" size="72,96" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MSNweather/aircon_data/op_auto_eu.png" alphatest="blend"/>
+    <ePixmap position="220,308" zPosition="-4" size="72,96" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MSNweather/aircon_data/op_cool_eu.png" alphatest="blend"/>
+
+    <ePixmap position="319,280" zPosition="-4" size="72,96" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MSNweather/aircon_data/op_heat_eu.png" alphatest="blend"/>
+        
+    <ePixmap position="418,308" zPosition="-4" size="72,96" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MSNweather/aircon_data/op_fan_eu.png" alphatest="blend"/>
+    <ePixmap position="485,376" zPosition="-4" size="72,96" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MSNweather/aircon_data/op_dry_eu.png" alphatest="blend"/>
+
+    <ePixmap position="220,370" zPosition="-4" size="270,270" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MSNweather/aircon_data/co_back_off.png" alphatest="blend"/>
+    <ePixmap position="220,370" zPosition="-3" size="270,270" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MSNweather/aircon_data/co_back_plus_minus.png" alphatest="blend"/>
+        
+    <ePixmap position="80,740" zPosition="-4" size="184,96" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MSNweather/aircon_data/op_btm_fanspeed_off_eu.png" alphatest="blend"/>
+    <ePixmap position="280,740" zPosition="-4" size="184,96" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MSNweather/aircon_data/op_btm_drction_ul_off_eu.png" alphatest="blend"/>
+<!-- Bottom part -->
+<!-- data -->
+    <!--ePixmap position="10,120" zPosition="-5" size="360,515" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MSNweather/aircon_data/daikin_background.png" alphatest="blend"/-->
+    <!--eLabel position="10,120" size="360,515" zPosition="-10" backgroundColor="#00222222" /--> 
+
+<!-- bottom menu -->
+    <ePixmap pixmap="BlackHarmony/buttons/key_red.png" position="47,880" size="35,27" alphatest="blend"/>
+    <ePixmap pixmap="BlackHarmony/buttons/key_green.png" position="201,880" size="35,27" alphatest="blend"/>
+    <ePixmap pixmap="BlackHarmony/buttons/key_yellow.png" position="355,880" size="35,27" alphatest="blend"/>
+    <ePixmap pixmap="BlackHarmony/buttons/key_blue.png" position="509,880" size="35,27" alphatest="blend"/>
+    <widget name="key_red" position="87,880" size="150,27" zPosition="1" font="Roboto_HD; 24" halign="left" foregroundColor="white" backgroundColor="dark_grey" transparent="1"/>
+    <widget name="key_green" position="241,880" size="150,27" zPosition="1" font="Roboto_HD; 24" halign="left" foregroundColor="white" backgroundColor="dark_grey" transparent="1"/>
+    <widget name="key_yellow" position="402,880" size="150,27" zPosition="1" font="Roboto_HD;24" halign="left" foregroundColor="white" backgroundColor="dark_grey" transparent="1"/>
+    <widget name="key_blue" position="556,880" size="150,27" zPosition="1" font="Roboto_HD;24" halign="left" foregroundColor="white" backgroundColor="dark_grey" transparent="1"/>
+</screen>

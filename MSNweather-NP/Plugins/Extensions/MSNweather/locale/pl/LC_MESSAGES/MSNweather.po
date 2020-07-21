@@ -400,3 +400,18 @@ msgstr "Nie zdefiniowano adresu IP klimatyzatora!"
 
 msgid "Use A/C outside temp sensor instead of MSN:"
 msgstr "Użyj zewnętrzny czujnik temparatury klimy zamiast MSN:"
+
+msgid "Fan"
+msgstr "Wiatrak"
+
+msgid "Direction"
+msgstr "Kierunek"
+
+msgid "Mode"
+msgstr "Tryb"
+
+msgid "Turn off"
+msgstr "Wyłącz"
+
+msgid "Turn on"
+msgstr "Włącz"
