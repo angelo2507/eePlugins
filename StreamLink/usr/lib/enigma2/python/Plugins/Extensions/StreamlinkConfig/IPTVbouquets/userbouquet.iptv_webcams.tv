@@ -63,6 +63,8 @@
 #DESCRIPTION PL - Bielsko-Biała Szyndzielnia - Kolej linowa
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//streaming.e-sbl.net%3a1935/live/rynek_bierun.stream/playlist.m3u8:PL - Bieruń-Rynek
 #DESCRIPTION PL - Bieruń-Rynek
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//37.131.166.52/Bledzew/tracks-v1/mono.m3u8:PL - Bledzew - rynek
+#DESCRIPTION PL - Bledzew - rynek
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//s4.aztv.pl/aztv_bochnia/aztv_bochnia.stream/chunklist_w425323882.m3u8:PL - Bochnia - Rynek
 #DESCRIPTION PL - Bochnia - Rynek
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//s4.aztv.pl/aztv_bochnia/aztv_bochnia2.stream/chunklist_w254281264.m3u8:PL - Bochnia - Rynek 2
@@ -197,7 +199,7 @@
 #DESCRIPTION PL - Czchów - Rynek
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//hoktastream5.webcamera.pl/czechowice_live_94d1ae/czechowice_live_94d1ae.stream/playlist.m3u8:PL - Czechowice-Dziedzice - Plac Jana Pawła II
 #DESCRIPTION PL - Czechowice-Dziedzice - Plac Jana Pawła II
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/KcPn4m0ma-U:PL - Czeladź - Rynek
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/KcPn4m0ma-U:PL - Czeladź - Rynek (YT)
 #DESCRIPTION PL - Czeladź - Rynek (YT)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//s1.worldcam.live%3a8082/acz/index.m3u8:PL - Częstochowa - Lotnisko Rudniki
 #DESCRIPTION PL - Częstochowa - Lotnisko Rudniki
@@ -205,11 +207,11 @@
 #DESCRIPTION PL - Częstochowa - Panorama na Jasną Górę
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/v_eRd6lsK88:PL - Częstochowa - Sczyt Jasnogórski - Ołtarz (YT)
 #DESCRIPTION PL - Częstochowa - Sczyt Jasnogórski - Ołtarz (YT)
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https://rtsp.me/embed/ddGDR9Gn/:PL - Darłowo-Dąbki - Jezioro Bukowo
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https:PL - Darłowo-Dąbki - Jezioro Bukowo
 #DESCRIPTION PL - Darłowo-Dąbki - Jezioro Bukowo
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https://rtsp.me/embed/2nQN7Z9d/:PL - Darłowo-Dąbki - Jezioro Bukowo - parking i nabrzeże
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https:PL - Darłowo-Dąbki - Jezioro Bukowo - parking i nabrzeże
 #DESCRIPTION PL - Darłowo-Dąbki - Jezioro Bukowo - parking i nabrzeże
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https://rtsp.me/embed/F3Ar6dhi/:PL - Darłowo-Dąbki - Jezioro Bukowo - slip, pomost
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https:PL - Darłowo-Dąbki - Jezioro Bukowo - slip, pomost
 #DESCRIPTION PL - Darłowo-Dąbki - Jezioro Bukowo - slip, pomost
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/E4iuF1xgCuI:PL - Darłowo - Panorama (YT)
 #DESCRIPTION PL - Darłowo - Panorama (YT)
@@ -329,11 +331,13 @@
 #DESCRIPTION PL - Gdynia - Live
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//ls.tkchopin.pl%3a9043/live/gdynia_orlowo_plaza_obrotowa.stream/playlist.m3u8:PL - Gdynia Orłowo
 #DESCRIPTION PL - Gdynia Orłowo
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge01.balticlivecam.com/blc/p_PL_Gdynia_harbour/tracks-v1/mono.m3u8?token=b20347cec9d67b775b338cddd93e4ddc%3A1594994717029:PL - Gdynia - Port - Panorama
+#DESCRIPTION PL - Gdynia - Port - Panorama
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/4tK3eyxr5ac:PL - Gdynia-Panorama (YT)
 #DESCRIPTION PL - Gdynia-Panorama (YT)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//ls.tkchopin.pl%3a9043/live/gdynia_marina_obrotowa.stream/playlist.m3u8:PL - Gdynia Przystań jachtowa
 #DESCRIPTION PL - Gdynia Przystań jachtowa
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/VVtPOGGCodU:PL - Gdynia - plaża
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/VVtPOGGCodU:PL - Gdynia - plaża (YT)
 #DESCRIPTION PL - Gdynia - plaża (YT)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//hoktastream1.webcamera.pl/gdynia_cam_b80d1e/gdynia_cam_b80d1e.stream/playlist.m3u8:PL - Gdynia - plaża II
 #DESCRIPTION PL - Gdynia - plaża II
@@ -429,10 +433,6 @@
 #DESCRIPTION PL - Hel - Marina
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//edge9.popler.tv/popler_publishlive/sgcnet1/chunks.m3u8?nimblesessionid=771377&wmsAuthSign=c2VydmVyX3RpbWU9Ny82LzIwMjAgNzowMjozMCBQTSZoYXNoX3ZhbHVlPWxkZW9UQnAwSmtzRmRwemJ2WkpZMnc9PSZ2YWxpZG1pbnV0ZXM9NQ==&expires=1594062450&ip=188.147.39.225&secure=iFKgh0a29JsazK8gDYRKRA:PL - Hel - Neptun
 #DESCRIPTION PL - Hel - Neptun
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//kamera.task.gda.pl%3a443/rtplive/hel3.sdp/playlist.m3u8:PL - Hel - Fokarium
-#DESCRIPTION PL - Hel - Fokarium
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/oYBrRrw0aY0:PL - Hel - Fokarium II (YT)
-#DESCRIPTION PL - Hel - Fokarium II (YT)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//edge6.popler.tv/popler_rtplive_nimble/wirtualnyhel5/chunks.m3u8?nimblesessionid=1129171&wmsAuthSign=c2VydmVyX3RpbWU9Ny82LzIwMjAgNjo1ODoyNiBQTSZoYXNoX3ZhbHVlPXpiQXlzR1l6VmNnTFdXQk9uR2N4ZWc9PSZ2YWxpZG1pbnV0ZXM9NQ==&expires=1594062206&ip=188.147.39.225&secure=ixt0RkQpwhQyhDr7CXCUZw:PL - Hel - Mała Plaża
 #DESCRIPTION PL - Hel - Mała Plaża
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//edge6.popler.tv/popler_rtplive_nimble/wirtualnyhel4/chunks.m3u8?nimblesessionid=1129163&wmsAuthSign=c2VydmVyX3RpbWU9Ny82LzIwMjAgNjo1NzoyMSBQTSZoYXNoX3ZhbHVlPWd6bXNNK2pPKzYrS2lvWitDamwrQUE9PSZ2YWxpZG1pbnV0ZXM9NQ==&expires=1594062141&ip=188.147.39.225&secure=lC_DqhfXAjhoLPWKnDqcMg:PL - Hel - Zatoka
@@ -737,7 +737,7 @@
 #DESCRIPTION PL - Kraków - ul. Stanisława Lema
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//hoktastream2.webcamera.pl/krakow_cam_4c3e37/krakow_cam_4c3e37.stream/playlist.m3u8:PL - Kraków zakole Wisły
 #DESCRIPTION PL - Kraków zakole Wisły
-#SERVICE 4097:00:0:0:0:0:0:0:0:0:https%3a//hoktastream5.webcamera.pl/krasocin_cam_42cdc1/krasocin_cam_42cdc1.stream/chunks.m3u8:PL - Krasocin - Widok z holenderskiego Wiatraka (obrotowa)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//hoktastream5.webcamera.pl/krasocin_cam_42cdc1/krasocin_cam_42cdc1.stream/chunks.m3u8:PL - Krasocin - Widok z holenderskiego Wiatraka (obrotowa)
 #DESCRIPTION PL - Krasocin - Widok z holenderskiego Wiatraka (obrotowa)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//da1.panolive.ovh%3a8083/cam/krapkowice2_hd/playlist.m3u8:PL - Krapkowice-Panorama Otmętu
 #DESCRIPTION PL - Krapkowice-Panorama Otmętu
@@ -773,7 +773,7 @@
 #DESCRIPTION PL - Krosno-Rynek – widok na studnię
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//s24.ipcamlive.com/streams/185ef9ad36cd67989/stream.m3u8:PL - Krynica Morska - Panorama morza
 #DESCRIPTION PL - Krynica Morska - Panorama morza
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//77.89.89.9:1935/live/krotoszyn.stream/chunklist_w776926199.m3u8:PL - Krotoszyn - Rynek
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//77.89.89.9:PL - Krotoszyn - Rynek
 #DESCRIPTION PL - Krotoszyn - Rynek
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//hoktastream1.webcamera.pl/krynicamorska_cam_b92412/krynicamorska_cam_b92412.stream/playlist.m3u8:PL - Krynica Morska-Port jachtowy
 #DESCRIPTION PL - Krynica Morska-Port jachtowy
@@ -1273,7 +1273,7 @@
 #DESCRIPTION PL - Opole - Domecko - Widok w kierunku Opola
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//streaming.airmax.pl/domecko2/tracks-v1/mono.m3u8:PL - Opole - Domecko - Widok w kierunku Prószkowa
 #DESCRIPTION PL - Opole - Domecko - Widok w kierunku Prószkowa
-#SERVICE 4097:0:0:0:0:0:0:0:0:00:https%3a//streaming.airmax.pl/opolepanorama/tracks-v1/mono.m3u8:PL - Opole - Panorama - Basen Błękitna Fala
+#SERVICE 4097:0:0:0:0:0:0:0:0::https%3a//streaming.airmax.pl/opolepanorama/tracks-v1/mono.m3u8:PL - Opole - Panorama - Basen Błękitna Fala
 #DESCRIPTION PL - Opole - Panorama - Basen Błękitna Fala
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//hoktastream4.webcamera.pl/opole_cam_8b53d4/opole_cam_8b53d4.stream/playlist.m3u8:PL - Opole - Rynek
 #DESCRIPTION PL - Opole - Rynek
@@ -1751,7 +1751,7 @@
 #DESCRIPTION PL - Szczyrk - Biały Krzyż - Stok narciarski
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/PnkbIxlwT9Q:PL - Szczyrk - Chata Wuja Toma (YT)
 #DESCRIPTION PL - Szczyrk - Chata Wuja Toma (YT)
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/3hya1xVuJB4:PL - Szczyrk - Hotel Meta - Wyciąg narciarski
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/3hya1xVuJB4:PL - Szczyrk - Hotel Meta - Wyciąg narciarski (YT)
 #DESCRIPTION PL - Szczyrk - Hotel Meta - Wyciąg narciarski (YT)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/2JLT2f6RrNE:PL - Szczyrk - Panorama (YT)
 #DESCRIPTION PL - Szczyrk - Panorama (YT)
@@ -2274,55 +2274,55 @@
 #SERVICE 1:64:1:0:0:0:0:0:0:0::Webcams: Austria (AT)
 #DESCRIPTION Webcams: Austria (AT)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//linz.it-wms.com/clip_current_720p.mp4:AT - OÖ - Linz - Donaulände
-#DESCRIPTION AT - OÖ - Linz - Donaulände
+#DESCRIPTION AT - Linz - Donaulände
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//klagenfurt2.it-wms.com/clip_current_720p.mp4:AT - K - Klagenfurt - Domplatz
-#DESCRIPTION AT - K - Klagenfurt - Domplatz
+#DESCRIPTION AT - Klagenfurt - Domplatz
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//klagenfurt-sternwarte.it-wms.com/clip_current_720p.mp4:AT - K - Klagenfurt - Sternwarte
-#DESCRIPTION AT - K - Klagenfurt - Sternwarte
+#DESCRIPTION AT - Klagenfurt - Sternwarte
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//badbleiberg.it-wms.com/clip_current_720p.mp4:AT - K - Bad Bleiberg
-#DESCRIPTION AT - K - Bad Bleiberg
+#DESCRIPTION AT - Bad Bleiberg
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//finkenstein.it-wms.com/clip_current_720p.mp4:AT - K - Finkenstein - Burgarena
-#DESCRIPTION AT - K - Finkenstein - Burgarena
+#DESCRIPTION AT - Finkenstein - Burgarena
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//pacheiner.it-wms.com/clip_current_720p.mp4:AT - K - Gerlitzen - Pacheiner
-#DESCRIPTION AT - K - Gerlitzen - Pacheiner
+#DESCRIPTION AT - Gerlitzen - Pacheiner
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//gerlitzen.it-wms.com/clip_current_720p.mp4:AT - K - Gerlitzen - Sattendorf
-#DESCRIPTION AT - K - Gerlitzen - Sattendorf
+#DESCRIPTION AT - Gerlitzen - Sattendorf
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//presseggersee.it-wms.com/clip_current_720p.mp4:AT - K - Hermagor - Presseggersee
-#DESCRIPTION AT - K - Hermagor - Presseggersee
+#DESCRIPTION AT - Hermagor - Presseggersee
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//pyramidenkogel.it-wms.com/clip_current_720p.mp4:AT - K - Keutschach - Pyramidenkogel
-#DESCRIPTION AT - K - Keutschach - Pyramidenkogel
+#DESCRIPTION AT - Keutschach - Pyramidenkogel
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//petzen2.it-wms.com/clip_current_720p.mp4:AT - K - Petzen - Bergstation
-#DESCRIPTION AT - K - Petzen - Bergstation
+#DESCRIPTION AT - Petzen - Bergstation
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//velden3.it-wms.com/clip_current_720p.mp4:AT - K - Velden - Wörthersee
-#DESCRIPTION AT - K - Velden - Wörthersee
+#DESCRIPTION AT - Velden - Wörthersee
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//villach.it-wms.com/clip_current_720p.mp4:AT - K - Villach - Draubrücke
-#DESCRIPTION AT - K - Villach - Draubrücke
+#DESCRIPTION AT - Villach - Draubrücke
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//grossarl.it-wms.com/clip_current_720p.mp4:AT - S - Großarl - Kreuzkogel
-#DESCRIPTION AT - S - Großarl - Kreuzkogel
+#DESCRIPTION AT - Großarl - Kreuzkogel
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//s1.live-panorama.com/keblivestreaming/streams/schmittenTVLow.sdp.stream.m3u8:AT - S - Zell am See - Schmitten
-#DESCRIPTION AT - S - Zell am See - Schmitten
+#DESCRIPTION AT - Zell am See - Schmitten
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//ch-fra-n5.livespotting.com/vpu/qvciam2t/ccew37cm.m3u8:AT - S - Dienten am Hochkönig - Bürglalm - Bergstation
-#DESCRIPTION AT - S - Dienten am Hochkönig - Bürglalm - Bergstation
+#DESCRIPTION AT - Dienten am Hochkönig - Bürglalm - Bergstation
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//ch-fra-n5.livespotting.com/vpu/qvciam2t/smb88bwv.m3u8:AT - S - Dienten am Hochkönig - Bürglalmabfahrt
-#DESCRIPTION AT - S - Dienten am Hochkönig - Bürglalmabfahrt
+#DESCRIPTION AT - Dienten am Hochkönig - Bürglalmabfahrt
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//ch-fra-n2.livespotting.com/vpu/qvciam2t/nsav1jnq.m3u8:AT - S - Dienten am Hochkönig - Hochkönig
-#DESCRIPTION AT - S - Dienten am Hochkönig - Hochkönig
+#DESCRIPTION AT - Dienten am Hochkönig - Hochkönig
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//graz-rathausturm.it-wms.com/clip_current_720p.mp4:AT - ST - Graz
-#DESCRIPTION AT - ST - Graz
+#DESCRIPTION AT - Graz
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//schoeckl.it-wms.com/clip_current_720p.mp4:AT - ST - Schöckl
-#DESCRIPTION AT - ST - Schöckl
+#DESCRIPTION AT - Schöckl
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//panodata.panomax.com/cams/1138/videos/1138_HDready.mp4:AT - ST - Tauplitzalm
-#DESCRIPTION AT - ST - Tauplitzalm
+#DESCRIPTION AT - Tauplitzalm
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5857499ee635b.streamlock.net/tourismusverbandlechtal-rtplive/_definst_/mp4%3acamera4.stream/chunklist_w1988488083.m3u8:AT - T - Lechtal - Bernhardseck
-#DESCRIPTION AT - T - Lechtal - Bernhardseck
+#DESCRIPTION AT - Lechtal - Bernhardseck
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5857499ee635b.streamlock.net/tourismusverbandlechtal-rtplive/_definst_/mp4%3acamera1.stream/chunklist_w1046920313.m3u8:AT - T - Lechtal - Elbigenalp
-#DESCRIPTION AT - T - Lechtal - Elbigenalp
+#DESCRIPTION AT - Lechtal - Elbigenalp
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5857499ee635b.streamlock.net/tourismusverbandlechtal-rtplive/_definst_/mp4%3acamera3.stream/chunklist_w1564110205.m3u8:AT - T - Lechtal - Holzgau
-#DESCRIPTION AT - T - Lechtal - Holzgau
+#DESCRIPTION AT - Lechtal - Holzgau
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//pillersee.it-wms.com/clip_current_720p.mp4:AT - T - St. Ulrich am Pillersee
-#DESCRIPTION AT - T - St. Ulrich am Pillersee
+#DESCRIPTION AT - St. Ulrich am Pillersee
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//pfaenderbahn.it-wms.com/clip_current_720p.mp4:AT - V - Bregenz - Pfänderbahn
-#DESCRIPTION AT - V - Bregenz - Pfänderbahn
+#DESCRIPTION AT - Bregenz - Pfänderbahn
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//broadcast.haus-des-meeres.at/1/nocache.hh/01/3000-0/stream.m3u8:AT - Wien - Haus des Meeres
 #DESCRIPTION AT - Wien - Haus des Meeres
 #SERVICE 1:64:D:0:0:0:0:0:0:0::Webcams: Niemcy (DE)
@@ -3863,220 +3863,6 @@
 #DESCRIPTION Kolej - UK - Talyl lyn - Pendre yard
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//maybach.railcam.co.uk/Williton1_17337/index.m3u8:Kolej - UK - Williton - Station
 #DESCRIPTION Kolej - UK - Williton - Station
-#SERVICE 1:64:0:0:0:0:0:0:0:0::Webcams: Chillout
-#DESCRIPTION Webcams: Chillout
-#SERVICE 1:64:0:0:0:0:0:0:0:0::Webcams: Akwaria i zwierzęta morskie
-#DESCRIPTION Webcams: Akwaria i zwierzęta morskie
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//cdn-001.whatsupcams.com/hls/hr_pulaaquarium01.m3u8:Akwarium - Pula
-#DESCRIPTION Akwarium - Pula
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//sochi.camera%3a8080/cam_40/index.m3u8:Akwarium - Sochi
-#DESCRIPTION Akwarium - Sochi
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//sochi.camera%3a8080/cam_39/index.m3u8:Akwarium - Koi - Sochi
-#DESCRIPTION Akwarium - Koi - Sochi
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//live.zoosociety.org%3a1935/live/lakewi.stream/.m3u8:Akwarium - Milwaukee - USA
-#DESCRIPTION Akwarium - Milwaukee - USA
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//live.zoosociety.org%3a1935/live/penguincam.stream/.m3u8:Pingwin I
-#DESCRIPTION Pingwin I
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//zssd-penguin.hls.camzonecdn.com/CamzoneStreams/zssd-penguin/Playlist.m3u8:Pingwin II
-#DESCRIPTION Pingwin II
-#SERVICE 4097:0:0:8C79:B156:EC:0:0:0:0:https%3a//s1.dcdn.lt/livecam/kljm2.stream/chunklist.m3u8:Pingwin III
-#DESCRIPTION Pingwin III
-#SERVICE 4097:0:1:BC03:1A1B:EC:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.youtube.com/channel/UC30iDn14yeARYIoAcdvd8MA/live:Pingwiny - Śląski Ogród Zoologiczny (YT)
-#DESCRIPTION Pingwiny - Śląski Ogród Zoologiczny (YT)
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//s1.dcdn.lt/livecam/kljm1.stream/chunklist.m3u8:Robbe
-#DESCRIPTION Robbe
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.youtube.com/watch?v=3A1Wi3sOy7g:Foka - Vilsandi Island - Estland (YT)
-#DESCRIPTION Foka - Vilsandi Island - Estland (YT)
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//565c3c746b763.streamlock.net/live/ecomare.stream/playlist.m3u8:Lew morski - Ecomare - NL
-#DESCRIPTION Lew morski - Ecomare - NL
-#SERVICE 1:64:0:0:0:0:0:0:0:0::Webcams: Zwierzęta - przyroda
-#DESCRIPTION Webcams: Zwierzęta - przyroda
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//ape.hls.camzonecdn.com/CamzoneStreams/ape/playlist.m3u8:Małpa - USA
-#DESCRIPTION Małpa - USA
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//hoktastream2.webcamera.pl/pszczoly_cam_41eddc/pszczoly_cam_41eddc.stream/playlist.m3u8:Przczoły - Polska
-#DESCRIPTION Przczoły - Polska
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//files.atriw.com/mstream/zubryonline.stream/index.m3u8:Bison - USA
-#DESCRIPTION Bison - USA
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.youtube.com/watch?v=4epjv-pxpRo:Niedźwiedź brunatny - Alutaguse Forest - Estland (YT)
-#DESCRIPTION Niedźwiedź brunatny - Alutaguse Forest - Estland (YT)
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//videos-3.earthcam.com/fecnetwork/14443.flv/.m3u8:Surykatka
-#DESCRIPTION Surykatka
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//videos-3.earthcam.com/fecnetwork/4337.flv/.m3u8:Słoń I - Indonesien - Bali
-#DESCRIPTION Słoń I - Indonesien - Bali
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//videos-3.earthcam.com/fecnetwork/4338.flv/.m3u8:Słoń II - Indonesien - Bali
-#DESCRIPTION Słoń II - Indonesien - Bali
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//nzp-ms05.si.edu/live_edge_elephant/elephant01_all.smil/.m3u8:Słoń III - Smithsonian National Zoo - USA
-#DESCRIPTION Słoń III - Smithsonian National Zoo - USA
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//56d7ccce550bc.streamlock.net/rtplive/olifanten_buitencam1.sdp/playlist.m3u8:Słoń IV - Zoo Amsterdam
-#DESCRIPTION Słoń IV - Zoo Amsterdam
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//56d7ccce550bc.streamlock.net/rtplive/olifanten_buitencam2.sdp/playlist.m3u8:Słoń V - Zoo Amsterdam
-#DESCRIPTION Słoń V - Zoo Amsterdam
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//elephants.hls.camzonecdn.com/CamzoneStreams/elephants/Playlist.m3u8:Słoń VI
-#DESCRIPTION Słoń VI
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//sochi.camera%3a8080/cam_146/index.m3u8:Gepard - Sochi - Zoo
-#DESCRIPTION Gepard - Sochi - Zoo
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//videos-3.earthcam.com/fecnetwork/4798.flv/.m3u8:Żyrafa I - Greenville Zoo - USA
-#DESCRIPTION Żyrafa I - Greenville Zoo - USA
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//videos-3.earthcam.com/fecnetwork/4597.flv/.m3u8:Żyrafa II - Greenville Zoo - USA
-#DESCRIPTION Żyrafa II - Greenville Zoo - USA
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.youtube.com/watch?v=LKz1cXG-U2Y:Jeleń - Hirv - Estland (YT)
-#DESCRIPTION Jeleń - Hirv - Estland (YT)
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//live.zoosociety.org%3a1935/live/jaguars.stream/.m3u8:Jaguar I - USA
-#DESCRIPTION Jaguar I - USA
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//live.zoosociety.org%3a1935/live/outdoorjaguar.stream/.m3u8:Jaguar II - USA
-#DESCRIPTION Jaguar II - USA
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.youtube.com/watch?v=IeB6NjgroAs:Kasmu - Meeresmuseum - Estland (YT)
-#DESCRIPTION Kasmu - Meeresmuseum - Estland (YT)
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//zssd-koala.hls.camzonecdn.com/CamzoneStreams/zssd-koala/Playlist.m3u8:Koala
-#DESCRIPTION Koala
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//cdn-002.whatsupcams.com/hls/hr_zgzoo04.m3u8:Lew I - Zagreb Zoo
-#DESCRIPTION Lew I - Zagreb Zoo
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//live.zoosociety.org%3a1935/live/lion.stream/.m3u8:Lew II - USA - Milwaukee Zoo
-#DESCRIPTION Lew II - USA - Milwaukee Zoo
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//nzp-ms06.si.edu/live_edge_lion/smil%3alion01_all.smil/.m3u8:Lew III - Smithsonian's National Zoo - USA
-#DESCRIPTION Lew III - Smithsonian's National Zoo - USA
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//sochi.camera%3a8080/cam_156/index.m3u8:Ryś - Sochi - Zoo
-#DESCRIPTION Ryś - Sochi - Zoo
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//56d7ccce550bc.streamlock.net/rtplive/neushoorn-2.sdp/.m3u8:Nosorożec - NL Zoo
-#DESCRIPTION Nosorożec - NL Zoo
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//live.zoosociety.org%3a1935/live/orangutanwest.stream/.m3u8:Orangutan - USA
-#DESCRIPTION Orangutan - USA
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//nzp-ms06.si.edu/live_edge_panda/smil%3apanda02_all.smil/.m3u8:Panda I - USA - Smithsonian National-Zoo
-#DESCRIPTION Panda I - USA - Smithsonian National-Zoo
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//nzp-ms06.si.edu/live_edge_panda/smil%3apanda03_all.smil/.m3u8:Panda II - USA - Smithsonian National-Zoo
-#DESCRIPTION Panda II - USA - Smithsonian National-Zoo
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//ccurlott.optiktv.telus.net/live-spts/pandacam01/transmux/CCURstream3000000.m3u8:Panda III
-#DESCRIPTION Panda III
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//zssd-panda.hls.camzonecdn.com/CamzoneStreams/zssd-panda/.m3u8:Panda IV
-#DESCRIPTION Panda IV
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//hoktastream2.webcamera.pl/klekusiowo_cam_996002/klekusiowo_cam_996002.stream/playlist.m3u8:Rotwild I - Polska - Klekusiowo
-#DESCRIPTION Rotwild I - Polska - Klekusiowo
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//sochi.camera%3a8080/cam_147/index.m3u8:Tygrys I - Sochi - Zoo
-#DESCRIPTION Tygrys I - Sochi - Zoo
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//sochi.camera%3a8080/cam_148/index.m3u8:Tygrys II - Sochi - Zoo
-#DESCRIPTION Tygrys II - Sochi - Zoo
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//sochi.camera%3a8080/cam_149/index.m3u8:Tygrys III - Sochi - Zoo
-#DESCRIPTION Tygrys III - Sochi - Zoo
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//live.zoosociety.org%3a1935/live/tiger.stream/.m3u8:Tygrys IV - USA - Milwaukee Zoo
-#DESCRIPTION Tygrys IV - USA - Milwaukee Zoo
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//595b9deb3d6ac.streamlock.net/qlive/edinburghzootiger1.stream/chunklist_w328320233.m3u8:Tygrys V - Edinburg Zoo
-#DESCRIPTION Tygrys V - Edinburg Zoo
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge03.nginx.hdontap.com/ho1/nywolf_redwolves-charlotteandjack_enclosure-SRT.stream/chunklist.m3u8:Wilk I - USA
-#DESCRIPTION Wilk I - USA
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge03.nginx.hdontap.com/ho1/nywolf_redwolves-tykeandmj_den-SRT.stream/chunklist.m3u8:Wilk II - USA
-#DESCRIPTION Wilk II - USA
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge05.nginx.hdontap.com/ho1/nywolf_redwolves-tykeandmj_enclosure-SRT.stream/chunklist.m3u8:Wilk III - USA
-#DESCRIPTION Wilk III - USA
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge02.nginx.hdontap.com/ho1/nywolf_mexicanwolves-magdalenaanddiego_enclosure-SRT.stream/chunklist.m3u8:Wilk IV - USA
-#DESCRIPTION Wilk IV - USA
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge03.nginx.hdontap.com/ho1/nywolf_mexicanwolves-magdalenaanddiego_den-SRT.stream/chunklist.m3u8:Wilk V - USA
-#DESCRIPTION Wilk V - USA
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge03.nginx.hdontap.com/ho1/nywolf_mexicanwolves-trumpetandlighthawk_enclosure-SRT.stream/chunklist.m3u8:Wilk VI - USA
-#DESCRIPTION Wilk VI - USA
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge01.nginx.hdontap.com/ho1/nywolf_mexicanwolves-rosaandalleno_enclosure-SRT.stream/chunklist.m3u8:Wilk VII - USA
-#DESCRIPTION Wilk VII - USA
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge03.nginx.hdontap.com/ho1/nywolf_mexicanwolves-belleandrhett_enclosure-SRT.stream/chunklist.m3u8:Wilk VIII - USA
-#DESCRIPTION Wilk VIII - USA
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge05.nginx.hdontap.com/ho1/nywolf_graywolves-ambassadors_enclosure-SRT.stream/chunklist.m3u8:Wilk IX - USA
-#DESCRIPTION Wilk IX - USA
-#SERVICE 1:64:0:0:0:0:0:0:0:0::Webcams: Ptaki
-#DESCRIPTION Webcams: Ptaki
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5d881567b7568.streamlock.net/live/Voercam2Tafel.stream/chunklist.m3u8:Ptaki - Karmnik I
-#DESCRIPTION Ptaki - Karmnik I
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//stream.wildlifestreaming.io%3a1935/WildlifeKate/HDMammal.stream/.m3u8:Ptaki - Karmnik II
-#DESCRIPTION Ptaki - Karmnik II
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//584b389d712f9.streamlock.net/live/pindacam.stream/playlist.m3u8:Ptaki - Karmnik III
-#DESCRIPTION Ptaki - Karmnik III
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//584b389d712f9.streamlock.net/live/pindacam2.stream/playlist.m3u8:Ptaki - Karmnik IV
-#DESCRIPTION Ptaki - Karmnik IV
-#SERVICE 4097:0:1:B0A:44BB:EC:0:0:0:0:https%3a//s1.worldcam.live%3a8082/karmnikptaszki/index.m3u8:Ptaki - Karmnik VI (audio)
-#DESCRIPTION Ptaki - Karmnik VI (audio)
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge03.nginx.hdontap.com/ho4/aef-nefl-ptz1_mux.stream/chunklist.m3u8:Ptaki - Orzeł I
-#DESCRIPTION Ptaki - Orzeł I
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge06.nginx.hdontap.com/ho1/cow_standley-lake-eagles_ptz-cam.stream/chunklist.m3u8:Ptaki - Orzeł II
-#DESCRIPTION Ptaki - Orzeł II
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.youtube.com/watch?v=rBy1GbxOw0U:Ptaki - Auerhuhn - Estland (YT)
-#DESCRIPTION Ptaki - Auerhuhn - Estland (YT)
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5d881567b7568.streamlock.net/live/Pimpelmees2.stream/chunklist.m3u8:Ptaki - Sikora
-#DESCRIPTION Ptaki - Sikora
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.youtube.com/watch?v=LIf_navuFuQ:Ptaki - Sowa - Estland (YT)
-#DESCRIPTION Ptaki - Sowa - Estland (YT)
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.youtube.com/watch?v=hUy1jbQDUZQ:Ptaki - Rybołów - Kalakotkas - Estland (YT)
-#DESCRIPTION Ptaki - Rybołów - Kalakotkas - Estland (YT)
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.youtube.com/watch?v=V2XZ4KXtss0:Ptaki - Großer gefleckter Adler - Suur-konnakotkas - Estland (YT)
-#DESCRIPTION Ptaki - Großer gefleckter Adler - Suur-konnakotkas - Estland (YT)
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5d881567b7568.streamlock.net/live/Havik.stream/chunklist.m3u8:Ptaki - Jastrząb
-#DESCRIPTION Ptaki - Jastrząb
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5d881567b7568.streamlock.net/live/Steenuil2Binnen.stream/chunklist.m3u8:Ptaki - Sowa I
-#DESCRIPTION Ptaki - Sowa I
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5d881567b7568.streamlock.net/live/Steenuil2Buiten.stream/chunklist.m3u8:Ptaki - Sowa II
-#DESCRIPTION Ptaki - Sowa II
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//rrr.sz.xlcdn.com/?account=bdl&file=Steenuil1&type=live&service=wowza&protocol=https&output=playlist.m3u8:Ptaki - Sowa III
-#DESCRIPTION Ptaki - Sowa III
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//rrr.sz.xlcdn.com/?account=bdl&file=Steenuil2&type=live&service=wowza&protocol=https&output=playlist.m3u8:Ptaki - Sowa IV
-#DESCRIPTION Ptaki - Sowa IV
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//rrr.sz.xlcdn.com/?account=bdl&file=Steenuil3&type=live&service=wowza&protocol=https&output=playlist.m3u8:Ptaki - Sowa V
-#DESCRIPTION Ptaki - Sowa V
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//rrr.sz.xlcdn.com/?account=bdl&file=Bosuil1&type=live&service=wowza&protocol=https&output=playlist.m3u8:Ptaki - Sowa VI
-#DESCRIPTION Ptaki - Sowa VI
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//rrr.sz.xlcdn.com/?account=bdl&file=Bosuil2&type=live&service=wowza&protocol=https&output=playlist.m3u8:Ptaki - Sowa VII
-#DESCRIPTION Ptaki - Sowa VII
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5d881567b7568.streamlock.net/live/Koolmees2.stream/chunklist.m3u8:Ptaki - Bogatka I
-#DESCRIPTION Ptaki - Bogatka I
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5d881567b7568.streamlock.net/live/BlijdeWei1.stream/chunklist.m3u8:Ptaki - Bogatka II
-#DESCRIPTION Ptaki - Bogatka II
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//zssd-condorhd.hls.camzonecdn.com/CamzoneStreams/zssd-condorhd/.m3u8:Ptaki - Kondor
-#DESCRIPTION Ptaki - Kondor
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5d881567b7568.streamlock.net/live/Lepelaar.stream/chunklist.m3u8:Ptaki - Löffler I
-#DESCRIPTION Ptaki - Löffler I
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//rrr.sz.xlcdn.com/?account=bdl&file=Lepelaar1&type=live&service=wowza&protocol=https&output=playlist.m3u8:Ptaki - Löffler II
-#DESCRIPTION Ptaki - Löffler II
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//rrr.sz.xlcdn.com/?account=bdl&file=Lepelaar2&type=live&service=wowza&protocol=https&output=playlist.m3u8:Ptaki - Löffler III
-#DESCRIPTION Ptaki - Löffler III
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//rrr.sz.xlcdn.com/?account=bdl&file=Kerkuil1&type=live&service=wowza&protocol=https&output=playlist.m3u8:Ptaki - Płomykówka I
-#DESCRIPTION Ptaki - Płomykówka I
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//rrr.sz.xlcdn.com/?account=bdl&file=Kerkuil2&type=live&service=wowza&protocol=https&output=playlist.m3u8:Ptaki - Płomykówka II
-#DESCRIPTION Ptaki - Płomykówka II
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//rrr.sz.xlcdn.com/?account=bdl&file=Kerkuil3&type=live&service=wowza&protocol=https&output=playlist.m3u8:Ptaki - Płomykówka III
-#DESCRIPTION Ptaki - Płomykówka III
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.youtube.com/watch?v=QBSPRB6WrFI:Ptaki - Orzeł morski - Merikotkas - Estland (YT)
-#DESCRIPTION Ptaki - Orzeł morski - Merikotkas - Estland (YT)
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//584b389d712f9.streamlock.net/live/nestkast3.stream/playlist.m3u8:Ptaki - Szpak I
-#DESCRIPTION Ptaki - Szpak I
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5d881567b7568.streamlock.net/live/Spreeuw4Binnen.stream/chunklist.m3u8:Ptaki - Szpak II
-#DESCRIPTION Ptaki - Szpak II
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5d881567b7568.streamlock.net/live/TurkseTortel.stream/chunklist.m3u8:Ptaki - Gołąb
-#DESCRIPTION Ptaki - Gołąb
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5d881567b7568.streamlock.net/live/Torenvalk3.stream/chunklist.m3u8:Ptaki - Pustułka I
-#DESCRIPTION Ptaki - Pustułka I
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5d881567b7568.streamlock.net/live/Torenvalk2.stream/chunklist.m3u8:Ptaki - Pustułka II
-#DESCRIPTION Ptaki - Pustułka II
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5857db5306b83.streamlock.net/heidelberg-rtplive/_definst_/mp4%3acamera3.stream/.m3u8:Ptaki - Sokół wędrowny I - Heidelberg
-#DESCRIPTION Ptaki - Sokół wędrowny I - Heidelberg
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//56f2a99952126.streamlock.net/829/default.stream/.m3u8:Ptaki - Sokół wędrowny II - Heidelberg
-#DESCRIPTION Ptaki - Sokół wędrowny II - Heidelberg
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5d881567b7568.streamlock.net/live/Slechtvalk1Binnen.stream/chunklist.m3u8:Ptaki - Sokół wędrowny III - NL
-#DESCRIPTION Ptaki - Sokół wędrowny III - NL
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5d881567b7568.streamlock.net/live/Slechtvalk1Buiten.stream/chunklist.m3u8:Ptaki - Sokół wędrowny IV - NL
-#DESCRIPTION Ptaki - Sokół wędrowny IV - NL
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//rrr.sz.xlcdn.com/?account=bdl&file=SlechtvalkGemert1&type=live&service=wowza&protocol=https&output=playlist.m3u8:Ptaki - Sokół wędrowny V
-#DESCRIPTION Ptaki - Sokół wędrowny V
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//rrr.sz.xlcdn.com/?account=bdl&file=SlechtvalkGemert2&type=live&service=wowza&protocol=https&output=playlist.m3u8:Ptaki - Sokół wędrowny VI
-#DESCRIPTION Ptaki - Sokół wędrowny VI
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//84.22.110.224/live/cam1/mystream.m3u8:Ptaki - Sokół wędrowny VII - Amsterdam
-#DESCRIPTION Ptaki - Sokół wędrowny VII - Amsterdam
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//84.22.110.224/live/cam2/mystream.m3u8:Ptaki - Sokół wędrowny VIII - Amsterdam
-#DESCRIPTION Ptaki - Sokół wędrowny VIII - Amsterdam
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//videos-3.earthcam.com/fecnetwork/woodmenHD.flv/.m3u8:Ptaki - Sokół wędrowny IX - Woodmen Tower
-#DESCRIPTION Ptaki - Sokół wędrowny IX - Woodmen Tower
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//videos-3.earthcam.com/fecnetwork/370.flv/.m3u8:Ptaki - Sokół wędrowny X - USA
-#DESCRIPTION Ptaki - Sokół wędrowny X - USA
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.youtube.com/watch?v=72DFKhihTpg:Ptaki - Weißkopfseeadler - Kaljukotkas - Estland (YT)
-#DESCRIPTION Ptaki - Weißkopfseeadler - Kaljukotkas - Estland (YT)
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//rrr.sz.xlcdn.com/?account=bdl&file=Vijver1&type=live&service=wowza&protocol=https&output=playlist.m3u8:Ptaki - NL
-#DESCRIPTION Ptaki - NL
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//hls1.webcamera.pl/um_wejherowo_cam_d5888b/um_wejherowo_cam_d5888b.stream/playlist.m3u8:Ptaki - Polska
-#DESCRIPTION Ptaki - Polska
 #SERVICE 1:64:0:0:0:0:0:0:0:0::Webcams: Bar i kamery na żywo
 #DESCRIPTION Webcams: Bar i kamery na żywo
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//213.13.26.11%3a1935/live/santuario.stream/index.m3u8:Portugalia - Sanktuarium Fatima
