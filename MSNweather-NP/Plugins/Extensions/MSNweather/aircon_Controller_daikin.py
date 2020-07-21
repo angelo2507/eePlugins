@@ -23,11 +23,17 @@ from __init__ import _
 
 from Components.ActionMap import ActionMap
 from Components.config import config
+from Components.j00zekAccellPixmap import j00zekAccellPixmap
 from Components.j00zekModHex2strColor import Hex2strColor, clr
+#from Components.Pixmap import Pixmap
 from Components.Label import Label
 #from Components.Sources.StaticText import StaticText
+from enigma import eTimer
 from Screens.Screen import Screen
+
 from daikin_aircon import *
+
+import os
 
 ######################################################################################################
 class DaikinController(Screen):
@@ -41,13 +47,18 @@ class DaikinController(Screen):
         self.AC_info = AC_info
         self.AC = Aircon(self.AC_ADDR)
         
-        # Buttons
+        # Top info
+        self["ac_config_info"] = Label("%s%s%s (%s)" % (clr['G'], self.AC_info, clr['Gray'], self.AC_ADDR))
+        self["ac_name"] = Label("")
+        #middle part
+        self["indoor_temp"] = Label("?")
+        self["outdoor_temp"] = Label("?")
+        self["on_off_icon"] = j00zekAccellPixmap()
+        # Bottom Buttons
         self["key_red"] = Label(_("Fan"))
         self["key_green"] = Label("")
         self["key_yellow"] = Label(_("Direction"))
         self["key_blue"] = Label(_("Mode"))
-        self["ac_config_info"] = Label("%s%s%s (%s)" % (clr['G'], self.AC_info, clr['Gray'], self.AC_ADDR))
-        self["ac_name"] = Label("")
 
         # Define Actions
         self["actions"] = ActionMap(["MSNweatherNPacControllers"],
@@ -58,21 +69,29 @@ class DaikinController(Screen):
                 "keyGreen": self.keySave,
             }
         )
+        self.InitTimer = eTimer()
+        self.InitTimer.callback.append(self.getACstate)
+        self.onShow.append(self._onShow)
 
-        self.onLayoutFinish.append(self.layoutFinished)
-
-    def layoutFinished(self):
+    def _onShow(self):
         self.setTitle(_("Daikin A/C controller"))
+        self.InitTimer.start(1000, True)
+        
+    def getACstate(self):
+        self.InitTimer.stop()
         self["ac_name"].setText( _("%sName:%s %s") % (clr['G'], clr['Gray'], str(self.AC.get_name()) ) )
         self.POWER = self.AC.get_power()
         if self.POWER:
             self["key_green"].setText(_("Turn off"))
+            self.updateICON("on_off_icon", "on_60x60.png")
         else:
             self["key_green"].setText(_("Turn on"))
-          
-
-    def changed(self):
-        pass
+            self.updateICON("on_off_icon", "off_60x60.png")
+    
+    def updateICON(self, iconName, fileName):
+        #self["on_off_icon"].hide()
+        self[iconName].updateIcon("/usr/lib/enigma2/python/Plugins/Extensions/MSNweather/aircon_data/%s" % fileName)
+        self[iconName].show()
 
     def keyCancel(self):
         self.close()
