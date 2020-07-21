@@ -1,6 +1,7 @@
 import logging
 import urllib
 
+
 log = logging.getLogger(__name__)
 
 
@@ -8,8 +9,7 @@ def parse_basic_info(x):
     integers = ['port', 'err', 'pv']
     booleans = ['pow', 'led']
     parse_data(x, integers=integers, booleans=booleans)
-    #x['name'] = urllib.parse.unquote(x['name']) p3
-    x['name'] = urllib.unquote(x['name'])
+    x['name'] = urllib.parse.unquote(x['name'])
     return x
 
 

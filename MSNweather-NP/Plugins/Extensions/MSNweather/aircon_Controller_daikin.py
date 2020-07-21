@@ -27,27 +27,32 @@ from Components.j00zekModHex2strColor import Hex2strColor, clr
 from Components.Label import Label
 #from Components.Sources.StaticText import StaticText
 from Screens.Screen import Screen
-from daikin_aircon import *
 
 ######################################################################################################
 class DaikinController(Screen):
     def __init__(self, session, AC_IP, AC_PORT, AC_info):
-        self.skin = open("/usr/lib/enigma2/python/Plugins/Extensions/MSNweather/aircon_data/aircon_Controller_daikin.xml", "r").read()
+        self.skin = """
+<screen position="center,center" size="640,500" title="Daikin A/C controller" backgroundColor="#20606060" >
+    <eLabel position="10,120" size="620,350" zPosition="-1" backgroundColor="#00222222" /> 
+<!-- header -->
+     <widget name="ac_config_info" position="20,20" size="600,35" font="Roboto_HD; 24" backgroundColor="black" transparent="1"/>
+
+<!-- bottom menu -->
+    <widget name="key_red" position="0,470" zPosition="5" size="320,30" valign="center" halign="center" font="Regular;22" transparent="1" foregroundColor="red" />
+    <widget name="key_green" position="320,470" zPosition="5" size="320,30" valign="center" halign="center" font="Regular;22" transparent="1" foregroundColor="green" />
+</screen> 
+"""
         Screen.__init__(self, session )
         
         self.AC_ADDR = '.'.join((str(i) for i in AC_IP))
         if AC_PORT != 80:
           self.AC_ADDR += ':%s' % AC_PORT
         self.AC_info = AC_info
-        self.AC = Aircon(self.AC_ADDR)
         
         # Buttons
-        self["key_red"] = Label(_("Fan"))
-        self["key_green"] = Label("")
-        self["key_yellow"] = Label(_("Direction"))
-        self["key_blue"] = Label(_("Mode"))
+        self["key_red"] = Label(_("Cancel"))
+        self["key_green"] = Label("OK")
         self["ac_config_info"] = Label("%s%s%s (%s)" % (clr['G'], self.AC_info, clr['Gray'], self.AC_ADDR))
-        self["ac_name"] = Label("")
 
         # Define Actions
         self["actions"] = ActionMap(["MSNweatherNPacControllers"],
@@ -63,13 +68,7 @@ class DaikinController(Screen):
 
     def layoutFinished(self):
         self.setTitle(_("Daikin A/C controller"))
-        self["ac_name"].setText( _("%sName:%s %s") % (clr['G'], clr['Gray'], str(self.AC.get_name()) ) )
-        self.POWER = self.AC.get_power()
-        if self.POWER:
-            self["key_green"].setText(_("Turn off"))
-        else:
-            self["key_green"].setText(_("Turn on"))
-          
+        pass
 
     def changed(self):
         pass
