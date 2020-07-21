@@ -40,7 +40,7 @@
        </widget>
 	 <widget font="Regular;32" halign="center" position="74,850" render="Label" size="1176,40" source="Service" backgroundColor="background" zPosition="2" transparent="1" >
         <convert type="ServiceTime">Duration</convert>
-	    <convert type="ClockToText">Format:%Hh:%Mmin</convert>
+	    <convert type="ClockToText">InMinutes</convert>
         </widget>
     <widget font="Regular;32" halign="right" position="74,850" render="Label" size="1176,50" source="Service" backgroundColor="background" zPosition="2" transparent="1" >
         <convert type="ServiceTime">StartTime</convert>
