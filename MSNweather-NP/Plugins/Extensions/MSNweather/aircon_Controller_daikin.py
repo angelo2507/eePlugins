@@ -66,7 +66,7 @@ class DaikinController(Screen):
                 "keyCancel": self.keyCancel,
                 "keyRed": self.keyCancel,
                 "keyOk": self.keySave,
-                "keyGreen": self.keySave,
+                "keyGreen": self.keyGreen,
             }
         )
         self.InitTimer = eTimer()
@@ -80,6 +80,9 @@ class DaikinController(Screen):
     def getACstate(self):
         self.InitTimer.stop()
         self["ac_name"].setText( _("%sName:%s %s") % (clr['G'], clr['Gray'], str(self.AC.get_name()) ) )
+        self["indoor_temp"].setText(str(self.AC.get_indoor_temp()))
+        self["outdoor_temp"].setText(str(self.AC.get_outdoor_temp()))
+        
         self.POWER = self.AC.get_power()
         if self.POWER:
             self["key_green"].setText(_("Turn off"))
@@ -98,4 +101,9 @@ class DaikinController(Screen):
       
     def keySave(self):
         self.close()
- 
+
+    def keyGreen(self):
+        self.AC.set_power(True)
+        self.getACstate()
+      
+        
