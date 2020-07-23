@@ -415,3 +415,6 @@ msgstr "Wyłącz"
 
 msgid "Turn on"
 msgstr "Włącz"
+
+msgid "%sName:%s %s"
+msgstr "%sNazwa:%s %s"
