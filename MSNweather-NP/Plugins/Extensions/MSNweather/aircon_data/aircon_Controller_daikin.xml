@@ -27,8 +27,8 @@
     <widget name="dry_icon" position="485,376" zPosition="-3" size="72,96" alphatest="blend"/>
     <!-- Wheel -->
     <widget name="back_wheel" position="220,370" zPosition="-4" size="270,270" alphatest="blend"/>
-    <widget name="back_plus_minus" position="220,370" zPosition="-3" size="270,270" alphatest="blend"/>
     <widget name="set_temp" position="270,480" zPosition="-3" size="170,50" font="Roboto_HD; 48" valign="center" halign="center" backgroundColor="black" foregroundColor="black" transparent="1"/>
+    <widget name="temp_button" position="220,370" zPosition="-3" size="44,44" alphatest="blend"/>
         
 <!-- Bottom part -->
     <widget name="fan_speed_icon" position="145,740" zPosition="-4" size="184,96" alphatest="blend"/>

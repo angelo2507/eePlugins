@@ -64,8 +64,8 @@ class Aircon():
     def get_mode(self):
         return self.get_control_info()['mode']
 
-    def set_mode(self, v):
-        self.set_control_info({'mode': v})
+    def set_mode(self, v, t): #to fix error when for switching from fan/dry mode to any other t value has been included
+        self.set_control_info({'mode': v, 'stemp': t })
 
     mode = property(get_mode, set_mode)
 
@@ -100,6 +100,8 @@ class Aircon():
             minimal_cinfo = {k:cinfo[k] for k in cinfo if k in ['pow','mode','stemp', 'shum','f_rate','f_dir']}
             minimal_cinfo.update(params)
             params = minimal_cinfo
+        if params['shum'] == '--': #fix error when for switching from fan/dry mode to any other
+            params['shum'] = 0
         self.send_request('GET', '/aircon/set_control_info', fields=params)
 
     def set_control_info(self, params, update=True):
