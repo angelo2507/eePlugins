@@ -39,7 +39,8 @@ from OMBManagerInstall import OMBManagerInstall, OMB_RM_BIN, BRANDING, BOX_NAME,
 from OMBManagerAbout import OMBManagerAbout
 from OMBManagerCommon import OMB_DATA_DIR, OMB_UPLOAD_DIR
 from Components.Label import Label
-from OMBManagerLocale import _
+try: from OMBManagerLocale import _
+except Exception: pass
 from enigma import eTimer, getDesktop
 import os
 import fileinput

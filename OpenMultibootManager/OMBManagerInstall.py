@@ -32,7 +32,8 @@ from Tools.HardwareInfo import HardwareInfo
 from Screens.ChoiceBox import ChoiceBox
 from Components.config import config
 from OMBManagerCommon import OMB_MAIN_DIR, OMB_DATA_DIR, OMB_UPLOAD_DIR, OMB_TMP_DIR
-from OMBManagerLocale import _
+try: from OMBManagerLocale import _
+except Exception: pass
 from enigma import eTimer, getDesktop
 import os
 import glob

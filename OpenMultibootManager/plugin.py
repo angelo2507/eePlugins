@@ -19,7 +19,8 @@
 # 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 #
 #############################################################################
-from OMBManagerLocale import _
+try: from OMBManagerLocale import _
+except Exception: pass
 from Plugins.Plugin import PluginDescriptor
 from OMBManager import OMBManager, isMounted
 from OMBManagerCommon import OMB_MAIN_DIR, OMB_DATA_DIR, OMB_UPLOAD_DIR
