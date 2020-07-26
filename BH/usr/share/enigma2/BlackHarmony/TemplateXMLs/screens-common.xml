@@ -7354,35 +7354,35 @@
     <ePixmap position="0,0" size="145,120" pixmap="BlackHarmony/bg_design/pvr-bg.png" zPosition="-1" />
     <widget name="state" position="10,10" size="125,100" font="LCD;23" halign="center" valign="center" backgroundColor="transparent" />
   </screen>
-  <screen name="IMDB" title="IMDb Details" position="center,center" size="1522,1022" backgroundColor="transparent" flags="wfNoBorder" transparent="0">
+  <screen name="IMDB" title="IMDb Details" position="center,center" size="1522,1022" backgroundColor="transparent" flags="wfNoBorder">
     <ePixmap name="" position="0, 0" size="1522, 1022" pixmap="BlackHarmony/bg_design/picture.png" zPosition="-1" />
     <widget source="global.CurrentTime" render="Label" position="60,60" size="80,30" font="Roboto_HD; 27" foregroundColor="white" backgroundColor="black" transparent="1">
       <convert type="ClockToText">Default</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="144,60" size="460,30" font="Roboto_HD; 27" foregroundColor="lemon" backgroundColor="black" transparent="1">
+    <widget source="global.CurrentTime" render="Label" position="144,60" size="360,30" font="Roboto_HD; 27" foregroundColor="lemon" backgroundColor="black" transparent="1">
       <convert type="ClockToText">Format:%A %d.%m.%Y</convert>
     </widget>
-    <widget source="Title" render="Label" position="1070,60" size="392,30" font="Roboto_HD; 27" halign="right" backgroundColor="dark_grey" transparent="1" zPosition="1" />
-    <widget source="title" render="Label" position="65,165" size="760,55" font="Arial; 40" foregroundColor="yellow" transparent="1" />
-    <widget name="detailslabel" position="65,260" size="770,30" font="Regular;22" transparent="1" />
-    <widget name="menu" position="75,300" size="590,375" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" />
-    <widget name="starsbg" position="1200,170" size="210,21" pixmap="BlackHarmony/icons/starsbar_empty.png" zPosition="2" alphatest="blend" />
-    <widget name="stars" position="1200,170" size="210,21" pixmap="BlackHarmony/icons/starsbar_filled.png" zPosition="3" transparent="1" />
-    <widget name="ratinglabel" position="1180,210" size="240,35" font="Roboto_HD; 22" halign="center" foregroundColor="yellow" transparent="1" />
-    <widget name="detailslabel" position="65,260" size="540,200" font="Regular;22" transparent="1" />
-    <widget name="castlabel" position="65,480" size="770,345" font="Regular;22" transparent="1" />
-    <widget name="extralabel" position="65,260" size="770,560" font="Regular;22" transparent="1" />
-    <widget name="statusbar" position="55,845" size="790,70" font="Regular;24" halign="center" valign="center" foregroundColor="yellow" zPosition="2" transparent="1" />
+    <eLabel text="IMDb Details" position="1050,60" size="390,35" font="Roboto_HD; 27" halign="right" zPosition="1" foregroundColor="white" backgroundColor="black" transparent="1"/>
+    <widget source="title" render="Label" position="65,165" size="760,55" font="Roboto_HD; 35" halign="center" foregroundColor="#00B7EB" backgroundColor="black" transparent="1"/>
+    <widget name="detailslabel" position="65,260" size="770,30" font="Roboto_HD; 22" backgroundColor="black" transparent="1"/>
+    <widget name="menu" position="75,300" size="750,400" font="Roboto_HD; 27" itemHeight="40" selectionPixmap="BlackHarmony/menu/sel_860_40.png" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="black" transparent="1"/>
+    <widget name="starsbg" position="1200,170" size="210,21" pixmap="BlackHarmony/icons/starsbar_empty.png" zPosition="2" alphatest="blend"/>
+    <widget name="stars" position="1200,170" size="210,21" pixmap="BlackHarmony/icons/starsbar_filled.png" zPosition="3" transparent="1"/>
+    <widget name="ratinglabel" position="1180,210" size="270,55" font="Roboto_HD; 24" halign="center" foregroundColor="yellow" backgroundColor="black" transparent="1"/>
+    <widget name="detailslabel" position="65,260" size="540,200" font="Roboto_HD; 24" backgroundColor="black" transparent="1"/>
+    <widget name="castlabel" position="65,480" size="770,345" font="Roboto_HD; 24" backgroundColor="black" transparent="1"/>
+    <widget name="extralabel" position="65,260" size="770,560" font="Roboto_HD; 24" backgroundColor="black" transparent="1" />
+    <widget name="statusbar" position="55,845" size="790,70" font="Roboto_HD; 25" halign="center" valign="center" zPosition="2" foregroundColor="light_yellow" backgroundColor="black" transparent="1"/>
     <widget name="poster" position="890,170" size="250,364" alphatest="blend" />
-    <ePixmap pixmap="BlackHarmony/buttons/key_red.png" position="70,950" size="35,27" alphatest="on" />
-    <ePixmap pixmap="BlackHarmony/buttons/key_green.png" position="325,950" size="35,27" alphatest="on" />
-    <ePixmap pixmap="BlackHarmony/buttons/key_yellow.png" position="580,950" size="35,27" alphatest="on" />
-    <ePixmap pixmap="BlackHarmony/buttons/key_blue.png" position="835,950" size="35,27" alphatest="on" />
-    <ePixmap position="1390,950" size="60,30" pixmap="BlackHarmony/buttons/key_menu.png" alphatest="on" />
-    <widget name="key_red" position="105,950" size="200,27" font="Roboto_HD; 24" halign="left" backgroundColor="dark_grey" transparent="1" zPosition="1" />
-    <widget name="key_green" position="360,950" size="200,27" font="Roboto_HD; 24" halign="left" backgroundColor="dark_grey" transparent="1" zPosition="1" />
-    <widget name="key_yellow" position="615,950" size="200,27" font="Roboto_HD; 24" halign="left" backgroundColor="dark_grey" transparent="1" zPosition="1" />
-    <widget name="key_blue" position="870,950" size="200,27" font="Roboto_HD; 24" halign="left" backgroundColor="dark_grey" transparent="1" zPosition="1" />
+    <ePixmap pixmap="BlackHarmony/buttons/key_red.png" position="70,950" size="35,27" alphatest="on"/>
+    <ePixmap pixmap="BlackHarmony/buttons/key_green.png" position="305,950" size="35,27" alphatest="on"/>
+    <ePixmap pixmap="BlackHarmony/buttons/key_yellow.png" position="580,950" size="35,27" alphatest="on"/>
+    <ePixmap pixmap="BlackHarmony/buttons/key_blue.png" position="835,950" size="35,27" alphatest="on"/>
+    <ePixmap position="1390,950" size="60,30" pixmap="BlackHarmony/buttons/key_menu.png" alphatest="on"/>
+    <widget name="key_red" position="115,950" size="200,27" font="Roboto_HD; 24" halign="left" backgroundColor="dark_grey" transparent="1" zPosition="1"/>
+    <widget name="key_green" position="350,950" size="200,27" font="Roboto_HD; 24" halign="left" backgroundColor="dark_grey" transparent="1" zPosition="1"/>
+    <widget name="key_yellow" position="625,950" size="200,27" font="Roboto_HD; 24" halign="left" backgroundColor="dark_grey" transparent="1" zPosition="1"/>
+    <widget name="key_blue" position="880,950" size="200,27" font="Roboto_HD; 24" halign="left" backgroundColor="dark_grey" transparent="1" zPosition="1"/>
   </screen>
   <screen name="ButtonSetup" position="center,center" size="1000,820" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap position="0,0" zPosition="-10" size="1000,820" pixmap="BlackHarmony/bg_design/small.png" />

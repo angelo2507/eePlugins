@@ -7858,7 +7858,7 @@ self['config'].l.setSeperation(int(300*f))
     <widget name="speed" position="10,65" size="120,45" font="HD_Thin; 42" halign="right" backgroundColor="black" transparent="1" zPosition="4" text="x128" valign="center" />
   </screen>
   <screen name="IMDB" title="IMDb Details" position="center,center" size="1522,1022" backgroundColor="transparent" flags="wfNoBorder">
-    <ePixmap name="" position="0, 0" size="1522, 1022" pixmap="BlackHarmony/bg_design/picture.png" zPosition="-1"/>
+    <ePixmap name="" position="0, 0" size="1522, 1022" pixmap="BlackHarmony/bg_design/picture.png" zPosition="-1" />
     <widget source="global.CurrentTime" render="Label" position="60,60" size="80,30" font="Roboto_HD; 27" foregroundColor="white" backgroundColor="black" transparent="1">
       <convert type="ClockToText">Default</convert>
     </widget>
