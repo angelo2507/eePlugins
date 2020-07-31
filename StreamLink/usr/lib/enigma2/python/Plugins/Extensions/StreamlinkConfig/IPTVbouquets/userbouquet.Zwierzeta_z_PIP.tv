@@ -451,10 +451,10 @@
 #DESCRIPTION Glizli 2 - Tucson - Reid Park Zoo - USA
 #SERVICE 1:0:7:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//use01-smr04-relay.ozolio.com/hls-live/_definst_/relay01.xsqpcsh.fd0.sm1.av2.at0.sh2.rt15865.rc0.basic.stream/chunklist_w400523182.m3u8|format=mpegts:Grizli - Memphis - Tennessee USA
 #DESCRIPTION Grizli - Memphis - Tennessee USA
-#SERVICE 4097:0:7:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/6NIt6ibAD6I:Hipopotany - Laikipia County - Kenya (YT)
-#DESCRIPTION Hipopotany - Laikipia County - Kenya (YT)
-#SERVICE 1:0:7:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//usw01-smr03-relay.ozolio.com/hls-live/_definst_/relay01.uxqfb3x.fd0.sm1.av2.at0.sh2.rt15865.rc0.basic.stream/chunklist_w86530643.m3u8|format=mpegts:Hipopotan - Memphis - Tennessee USA
-#DESCRIPTION Hipopotan - Memphis - Tennessee USA
+#SERVICE 4097:0:7:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/6NIt6ibAD6I:Hipopotamy - Laikipia County - Kenya (YT)
+#DESCRIPTION Hipopotamy - Laikipia County - Kenya (YT)
+#SERVICE 1:0:7:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//usw01-smr03-relay.ozolio.com/hls-live/_definst_/relay01.uxqfb3x.fd0.sm1.av2.at0.sh2.rt15865.rc0.basic.stream/chunklist_w86530643.m3u8|format=mpegts:Hipopotam - Memphis - Tennessee USA
+#DESCRIPTION Hipopotam - Memphis - Tennessee USA
 #SERVICE 1:0:5:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//live.zoosociety.org%3a1935/live/outdoorjaguar.stream/.m3u8|format=mpegts:Jaguar II - USA
 #DESCRIPTION Jaguar II - USA
 #SERVICE 1:0:7:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//live.zoosociety.org%3a1935/live/jaguars.stream/.m3u8|format=mpegts:Jaguar I - USA
@@ -501,8 +501,8 @@
 #DESCRIPTION Park Zwierząt - Amersfoort - Holandia 3 (YT)
 #SERVICE 4097:0:7:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/GcdN8SomBBY:Park Zwierząt - Amersfoort - Holandia 4 (YT)
 #DESCRIPTION Park Zwierząt - Amersfoort - Holandia 4 (YT)
-#SERVICE 1:0:7:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hoktastream2.webcamera.pl/pszczoly_cam_41eddc/pszczoly_cam_41eddc.stream/playlist.m3u8|format=mpegts:Przczoły - Polska
-#DESCRIPTION Przczoły - Polska
+#SERVICE 1:0:7:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hoktastream2.webcamera.pl/pszczoly_cam_41eddc/pszczoly_cam_41eddc.stream/playlist.m3u8|format=mpegts:Pszczoły - Polska
+#DESCRIPTION Pszczoły - Polska
 #SERVICE 1:0:7:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//ngx.cr6.streamzilla.xlcdn.com/session/64256e39bb3079414eebeb799a079413/sz/streamdays/wowza4/live/dudleyzoo-tigercam/chunklist.m3u8|format=mpegts:Tygrys - Dudley - Zoo (GB)
 #DESCRIPTION Tygrys - Dudley - Zoo (GB)
 #SERVICE 1:0:7:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//nzp-ms06.si.edu/live_edge_panda/smil%3apanda02_all.smil/.m3u8|format=mpegts:Panda - USA - Smithsonian National-Zoo
