@@ -2095,11 +2095,11 @@
 #DESCRIPTION Wolsztyn - Rynek, Fontanna (YT)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/ms54E_hBA1U:Wolsztyn - Rynek  (YT)
 #DESCRIPTION Wolsztyn - Rynek  (YT)
-#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//s9.ipcamlive.com/streams/095eecfc5780422ba/stream.m3u8|format=mpegts:Wrocław - Sky Tower - Panorama
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//g0.ipcamlive.com/player/player.php?alias=5cfe04d66026e&disabledownloadbutton=1:Wrocław - Sky Tower - Panorama
 #DESCRIPTION Wrocław - Sky Tower - Panorama
-#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//s43.ipcamlive.com/streams/2b5f0903cc0f901a9/stream.m3u8|format=mpegts:Wrocław - Sky Tower - Panorama 2
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//g0.ipcamlive.com/player/player.php?alias=5cfe051b79a4c&disabledownloadbutton=1:Wrocław - Sky Tower - Panorama 2
 #DESCRIPTION Wrocław - Sky Tower - Panorama 2
-#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//s17.ipcamlive.com/streams/115eed4a6c34180b3/stream.m3u8|format=mpegts:Wrocław - Sky Tower - Panorama 3
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//g0.ipcamlive.com/player/player.php?alias=5cfe054b44d24&disabledownloadbutton=1:Wrocław - Sky Tower - Panorama 3
 #DESCRIPTION Wrocław - Sky Tower - Panorama 3
 #SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//streaming.airmax.pl/wroclaw_fabryczna_panorama/tracks-v1/mono.m3u8|format=mpegts:Wrocław - Panorama
 #DESCRIPTION Wrocław - Panorama
