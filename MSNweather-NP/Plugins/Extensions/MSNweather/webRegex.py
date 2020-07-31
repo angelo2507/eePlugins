@@ -50,7 +50,7 @@ iconsMap={
     'regen'                 :   '11.png',
     'schnee'                :   '16.png',
     "bewoelkt"              :   '26.png',
-    "meistbewoelkt"         :   '27.png', #28
+    "meistbewoelkt"         :   '28.png',
     "teilweisebewoelkt"     :   '29.png',
     'teilweisesonnig'       :   '30.png',
     'sonnig'                :   '32.png',
