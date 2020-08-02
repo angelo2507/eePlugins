@@ -45,6 +45,8 @@
 #DESCRIPTION TV Toruń
 #SERVICE 4097:0:1:92:1:48:0:0:0:0:http%3a//stream4.nadaje.com%3a15308/live/stream-1/chunklist_w734420720.m3u8:TV Wielkopolska
 #DESCRIPTION TV Wielkopolska
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//tvksm.pl:TVK SM Grudziądz
+#DESCRIPTION TVK SM Grudziądz
 #SERVICE 4097:0:1:217E:4A53:EC:0:0:0:0:http%3a//gargoyle.tomkow.pl/hls/tvt.m3u8:TVT
 #DESCRIPTION TVT
 #SERVICE 4097:0:1:4279:2BC0:13E:820000:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/9wGiObZqIwI:wPolsce.pl (YT)

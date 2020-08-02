@@ -63,6 +63,35 @@ if config.plugins.streamlinksrv.WPusername.value == '' and os.path.exists('/hdd/
 if config.plugins.streamlinksrv.WPpassword.value == '' and os.path.exists('/hdd/User_Configs/WPpassword'):
     config.plugins.streamlinksrv.WPpassword.value =  open('/hdd/User_Configs/WPpassword', 'r').readline().strip()
 
+
+#### streamlink config /etc/streamlink/config ####
+def getFFlist():
+    ffList = []
+    for f in sorted(os.listdir("/usr/bin"), key=str.lower):
+        if f.startswith('ffmpeg'):
+            ffList.append(("/usr/bin/%s" % f, f ))
+    return ffList
+
+def getCurrFF():
+    ff = '/usr/bin/ffmpeg'
+    for c in getStreamlinkConfig():
+        if c.startswith('ffmpeg-ffmpeg='):
+            tmp = c.split('=')[1].strip()
+            if os.path.exists(tmp):
+                ff = tmp
+    return ff
+    
+def getStreamlinkConfig():
+    try:
+        cfg = open('/etc/streamlink/config', 'r').read().splitlines()
+    except Exception:
+        cfg = []
+    return cfg
+
+config.plugins.streamlinksrv.streamlinkconfig = NoSave(ConfigNothing())
+config.plugins.streamlinksrv.streamlinkconfigFFMPEG = NoSave(ConfigSelection(default = getCurrFF(), choices = getFFlist()))
+
+
 class StreamlinkConfiguration(Screen, ConfigListScreen):
     from enigma import getDesktop
     if getDesktop(0).size().width() == 1920: #definicja skin-a musi byc tutaj, zeby vti sie nie wywalalo na labelach, inaczje trzeba uzywasc zrodla statictext
@@ -125,6 +154,16 @@ class StreamlinkConfiguration(Screen, ConfigListScreen):
         Mlist.append(getConfigListEntry(_("Clear log on each start:"), config.plugins.streamlinksrv.ClearLogFile))
         Mlist.append(getConfigListEntry(_("Save log file in:"), config.plugins.streamlinksrv.logPath))
         Mlist.append(getConfigListEntry(_("Buffer path:"), config.plugins.streamlinksrv.bufferPath))
+
+        
+        Mlist.append(getConfigListEntry(""))
+        Mlist.append(getConfigListEntry('\c00289496' + _("*** /etc/streamlink/config ***")))
+        for cfg in getStreamlinkConfig():
+            if cfg.startswith('ffmpeg-ffmpeg='):
+                Mlist.append(getConfigListEntry("ffmpeg-ffmpeg=" , config.plugins.streamlinksrv.streamlinkconfigFFMPEG))
+            else:
+                Mlist.append(getConfigListEntry( cfg , config.plugins.streamlinksrv.streamlinkconfig))
+
         #Mlist.append()
         return Mlist
 

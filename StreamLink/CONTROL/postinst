@@ -43,4 +43,9 @@ if [ `grep -c 'config.plugins.streamlinksrv.enabled=true' < /etc/enigma2/setting
 fi
 touch '/usr/lib/enigma2/python/Plugins/Extensions/StreamlinkConfig/1stRun'
 
+if [ -e /usr/lib/enigma2/python/Plugins/SystemPlugins/VTIPanel ];then
+  sed -i 's/^#\(ffmpeg-ffmpeg=\)/\1/' /etc/streamlink/config.template
+fi
+[ -f /etc/streamlink/config ] || cp /etc/streamlink/config.template /etc/streamlink/config
+
 exit 0
