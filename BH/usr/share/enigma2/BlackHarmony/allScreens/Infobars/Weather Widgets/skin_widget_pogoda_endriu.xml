@@ -1,7 +1,9 @@
 <skin>
 <screen name="InfoBar" position="0,0" size="1920,1080" title="InfoBar" flags="wfNoBorder" backgroundColor="transparent">
 
-<ePixmap pixmap="BlackHarmony/bg_design/infobar_pogoda3.png" position="30,0" zPosition="-10" size="1860,87" />
+<ePixmap pixmap="BlackHarmony/bg_design/infobar_pogoda3.png" position="30,0" zPosition="-2" size="1860,87" />
+  
+  <!--pogoda aktualna-->
   
   <widget source="session.CurrentService" render="Label" position="140,0" size="100,23" font="Regular; 22" valign="center" backgroundColor="black"  transparent="1" foregroundColor="lemon" >
           <convert type="j00zekTranslator">Now</convert>

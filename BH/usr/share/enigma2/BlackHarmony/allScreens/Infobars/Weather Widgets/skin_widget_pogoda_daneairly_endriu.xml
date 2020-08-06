@@ -1,7 +1,7 @@
 <skin>
 <screen name="InfoBar" position="0,0" size="1920,1080" title="InfoBar" flags="wfNoBorder" backgroundColor="transparent">
 
-<ePixmap pixmap="BlackHarmony/bg_design/infobar_pogoda3.png" position="30,0" zPosition="-10" size="1860,87" />
+<ePixmap pixmap="BlackHarmony/bg_design/infobar_pogoda3.png" position="30,0" zPosition="-2" size="1860,87" />
   
   <!--pogoda aktualna-->
   
@@ -66,13 +66,13 @@
     <widget position="810,28" size="50,50" source="session.CurrentService" render="Label" font="Roboto_HD; 25"  backgroundColor="background" halign="center" valign="center" noWrap="1" transparent="1" zPosition="10">
         <convert type="j00zekModABTCAirlyWidget">caqi</convert>
      </widget>
-    <widget position="810,3" size="555,26" source="session.CurrentService" render="j00zekLabel" font="Regular; 25"  backgroundColor="background" foregroundColor="lemon" halign="left" valign="center" noWrap="0" transparent="1" zPosition="10">
+    <widget position="810,3" size="555,26" source="session.CurrentService" render="j00zekLabel" font="Regular; 22"  backgroundColor="background" foregroundColor="lemon" halign="left" valign="center" noWrap="0" transparent="1" zPosition="10">
         <convert type="j00zekModABTCAirlyWidget">pm25</convert>
     </widget>
-    <widget position="810,3" size="555,26" source="session.CurrentService" render="j00zekLabel" font="Regular; 25"  backgroundColor="background" foregroundColor="lemon" halign="center" valign="center" noWrap="0" transparent="1" zPosition="10">
+    <widget position="810,3" size="555,26" source="session.CurrentService" render="j00zekLabel" font="Regular; 22"  backgroundColor="background" foregroundColor="lemon" halign="center" valign="center" noWrap="0" transparent="1" zPosition="10">
         <convert type="j00zekModABTCAirlyWidget">pm10</convert>
     </widget>
-   <widget position="810,3" size="555,26" source="session.CurrentService" render="j00zekLabel" font="Regular; 25"  backgroundColor="background" foregroundColor="lemon" halign="right" valign="center" noWrap="0" transparent="1" zPosition="10">
+   <widget position="810,3" size="555,26" source="session.CurrentService" render="j00zekLabel" font="Regular; 22"  backgroundColor="background" foregroundColor="lemon" halign="right" valign="center" noWrap="0" transparent="1" zPosition="10">
         <convert type="j00zekModABTCAirlyWidget">pm1</convert>
     </widget>
    
