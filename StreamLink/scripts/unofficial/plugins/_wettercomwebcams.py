@@ -16,24 +16,42 @@ class wettercomwebcams(Plugin):
     #data-video-url-hls="https://5811bd721519c.streamlock.net:1936/live/livecam012.stream/playlist.m3u8"
     
     _url_re = re.compile(r"https?://www.wetter.com/hd-live-webcams")
-    _addr_re = re.compile(r'[ ]*data-video-url-hls="([^"]+)"')
 
     @classmethod
     def can_handle_url(cls, url):
         return cls._url_re.match(url) is not None
 
     def _get_streams(self):
-        self.session.set_option('hls-live-edge', 10)
+        #self.session.set_option('hls-live-edge', 10)
+        self.session.http.headers.update({'User-Agent': useragents.CHROME})
         res = self.session.http.get(self.url)
         #log.debug(res.text)
+        address = None
         
-        try:
-            address = self._addr_re.search(res.text).group(1)
-            log.debug("Found address: %s" % address)
-        except Exception as e:
-            log.debug(str(e))
-            return
+        #linki bezposrednie
+        _addrs = [ re.compile(r'[ ]*data-video-url-rtmp="([^"]+)"'),
+                   re.compile(r'[ ]*data-video-url-mp4="([^"]+)"'),
+                   re.compile(r'[ ]*data-video-url-hls="([^"]+)"')                   
+                 ]
+        for _addr in _addrs:
+            _addr = _addr.search(res.text)
+            if not _addr is None and _addr.group(1) <> '':
+                address = _addr.group(1)
+                break
         
-        return {"rtsp_stream": FFMPEGMuxer(self.session, *(address,), is_muxed=False)}
+        #adres z linkiem
+        if address is None:
+            _addr = re.compile(r'[ ]* data-video-url-endpoint="([^"]+)"')
+            _addr = _addr.search(res.text)
+            if not _addr is None and _addr.group(1) <> '':
+                res = self.session.http.get(_addr.group(1))
+                log.debug("res: %s" % res.text)
+                address = re.compile(r'.*"(http[^"]+)"')
+                address = address.search(res.text).group(1)
+                address = address.replace('\/','/')
+
+        log.debug("Found address: %s" % address)
+        
+        return {"rtsp_stream": FFMPEGMuxer(self.session, *(address,), is_muxed=False, format='mpegts', vcodec = 'copy', acodec = 'copy')}
 
 __plugin__ = wettercomwebcams

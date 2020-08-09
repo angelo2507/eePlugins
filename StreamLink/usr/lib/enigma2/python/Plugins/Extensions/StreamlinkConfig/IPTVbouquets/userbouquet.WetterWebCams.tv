@@ -1,0 +1,3 @@
+#NAME Kamery z serwisu wetter.com
+#SERVICE 1:0:1:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.wetter.com/hd-live-webcams/schweiz/paradiso-monte-san-salvatore/5785fdbee1618/:Szwajcaria, Paradiso - Monte San Salvatore
+#DESCRIPTION Szwajcaria, Paradiso - Monte San Salvatore

@@ -10,7 +10,7 @@ log = logging.getLogger(__name__)
 
 
 class skylinewebcams(Plugin):
-    #https://www.skylinewebcams.com/pl/webcam/italia/lazio/roma/piazza-navona.html
+    #https://www.skylinewebcams.com/webcam/italia/lazio/roma/piazza-navona.html
     #source:"https://hddn00.skylinewebcams.com/live.m3u8?a=q92i5fipp4jsk7484kkf2u4nr2",
     
     _url_re = re.compile(r"https?://www.skylinewebcams.com/")
@@ -21,7 +21,8 @@ class skylinewebcams(Plugin):
         return cls._url_re.match(url) is not None
 
     def _get_streams(self):
-        self.session.set_option('hls-live-edge', 10)
+        #self.session.set_option('hls-live-edge', 10)
+        self.session.http.headers.update({'User-Agent': useragents.CHROME})
         res = self.session.http.get(self.url)
         #log.debug(res.text)
         
@@ -32,6 +33,6 @@ class skylinewebcams(Plugin):
             log.debug(str(e))
             return
         
-        return {"rtsp_stream": FFMPEGMuxer(self.session, *(address,), is_muxed=False)}
+        return {"rtsp_stream": FFMPEGMuxer(self.session, *(address,), is_muxed=False, format='mpegts', vcodec = 'copy', acodec = 'copy' )}
 
 __plugin__ = skylinewebcams
