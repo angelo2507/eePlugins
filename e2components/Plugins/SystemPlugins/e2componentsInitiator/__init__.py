@@ -137,4 +137,5 @@ config.plugins.j00zekCC.ciFormat = ConfigSelection(default = "", choices = [("",
                                                                              (h2c(0x0000FF00) + " CAID: %C " + h2c(0x00FFCC00) + " PROV: %p " + h2c(0x0000CC99) + " FROM: %S %SP " + h2c(0x0000FF00) + " HOPS: %H " + h2c(0x00FFCC00) + " TIME: %T", '%s %s %s %s %s %s %s %s %s %s' %( h2c(0x0000FF00), _('CAID:'), h2c(0x00FFCC00), _('PROV:'), h2c(0x0000CC99), _('FROM:'), h2c(0x0000FF00), _('HOPS:'), h2c(0x00FFCC00), _('TIME:')))
                                                                             ])
 
+config.plugins.j00zekCC.iconsANDanims = ConfigYesNo(default = False)
 #ConfigText(default = _("none")) #("", _(""))

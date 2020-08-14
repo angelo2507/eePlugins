@@ -80,6 +80,11 @@ def buildMlist():
     Mlist.append(getConfigListEntry('\c00289496' + _("---User paths---")))
     Mlist.append(getConfigListEntry(_("Picons animations user path:"), config.plugins.j00zekCC.PiconAnimation_UserPath ))
     Mlist.append(getConfigListEntry(_("Alternate user icons path:"), config.plugins.j00zekCC.AlternateUserIconsPath))
+    
+    Mlist.append(getConfigListEntry(""))
+    Mlist.append(getConfigListEntry('\c00289496' + _("---EXPERIMANTAL OPTIONS---")))
+    Mlist.append(getConfigListEntry(_("Own icons and anims renderer:"), config.plugins.j00zekCC.iconsANDanims))
+    
     return Mlist
   
 ######################################################################################

@@ -721,6 +721,8 @@ class UserSkin_Config(Screen, ConfigListScreen):
                         rename("mySkin", "UserSkin_Selections")
   
             self.update_user_skin()
+            if config.plugins.j00zekCC.iconsANDanims.value == True:
+                system('ln -sf /usr/lib/enigma2/python/Components/j00zekSystemModificator.sh /usr/bin/enigma2_pre_start.sh')
             self.restartGUI()
         else:
             self.close()
