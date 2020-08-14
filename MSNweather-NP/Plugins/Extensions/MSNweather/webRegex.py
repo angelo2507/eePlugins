@@ -55,6 +55,7 @@ iconsMap={
     'teilweisesonnig'       :   '30.png',
     'sonnig'                :   '32.png',
     'ueberwiegendsonnig'    :   '34.png',
+    'gewitter'              :   '35.png',
     }
 
 def utfTOansi(text):
