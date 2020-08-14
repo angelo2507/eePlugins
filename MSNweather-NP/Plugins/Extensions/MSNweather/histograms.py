@@ -1,4 +1,5 @@
 from . import _
+from Components.j00zekModHex2strColor import Hex2strColor as h2c, clr
 from Components.ActionMap import ActionMap
 from datetime import datetime
 from enigma import getDesktop, ePoint, eSize
@@ -68,7 +69,7 @@ class MSNweatherHistograms(Screen):
         
         self.setTitle(_("What happened in weather during last %s hours?") % ( self.maxItems))
         self['TitlePressure'] = Label(_('Pressure'))
-        self['TitleTemperature'] = Label(_('Temperature | Feelng temperature'))
+        self['TitleTemperature'] = Label(clr['R'] + _('Temperature') + clr['Y'] + ' | ' + clr['B'] + _('Feelng temperature'))
 
         self.currTime = int(time.time())
         i = 0
@@ -194,7 +195,7 @@ class MSNweatherHistograms(Screen):
                         self['bar%s' % index].instance.setPixmap(self.barBlue)
                         self['bar%s' % index].show()
                     if temp is not None and currtemp is not None:
-                        self['tempName%s' % index].text = '%s|%s' % (str(currtemp), str(temp))
+                        self['tempName%s' % index].text = '%s%s%s|%s%s' % (clr['R'], str(currtemp), clr['Y'], clr['B'], str(temp))
                         barX = self['tempBar%s' % index].instance.position().x()
                         self.DEBUG('\t\t tempBar=%s, self.TempBarPosY=%s, newY=%s' % (barX, self.TempBarPosY, int(self.TempBarPosY - (int(temp) - minTemp) * stepTemp)))
                         self['tempBar%s' % index].instance.move(ePoint(int(barX), int(self.TempBarPosY - (int(temp) - minTemp) * stepTemp)))
