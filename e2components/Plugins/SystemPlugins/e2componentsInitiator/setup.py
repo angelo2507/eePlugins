@@ -20,13 +20,16 @@ from Components.ActionMap import ActionMap
 from version import Version
 import os
 ######################################################################################
-#config.plugins.j00zekCC.FakeEntry = NoSave(ConfigNothing())
+config.plugins.j00zekCC.FakeEntry = NoSave(ConfigNothing())
 ######################################################################################
-def buildMlist():
+def buildMlist( FirstAsSelectable = False ):
     Mlist = []
     #
-    #self.list.append(getConfigListEntry(_(" "), config.plugins.j00zekCC.FakeEntry))
-    Mlist.append(getConfigListEntry('\c00289496' + _("---Dynamic Font Size---")))
+    if FirstAsSelectable:
+        Mlist.append(getConfigListEntry('\c00289496' + _("---Dynamic Font Size---")))
+    else:
+        Mlist.append(getConfigListEntry('\c00289496' + _("---Dynamic Font Size---"), config.plugins.j00zekCC.FakeEntry))
+
     Mlist.append(getConfigListEntry(_("Service Name minimum font size"), config.plugins.j00zekCC.j00zekLabelSN ))
     Mlist.append(getConfigListEntry(_("Event Name minimum font size"), config.plugins.j00zekCC.j00zekLabelEN ))
     #
