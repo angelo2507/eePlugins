@@ -54,28 +54,28 @@
     <widget position="1440,207" size="120,120" source="session.CurrentService" render="j00zekABTCAirlyPixmap" alphatest="blend" transparent="1" zPosition="9">
         <convert type="j00zekModABTCAirlyWidget">indexBackPNG</convert>
     </widget>
-    <widget position="1420,189" size="160,160" source="session.CurrentService" render="Label" font="Roboto_HD; 50" foregroundColor="foreground" backgroundColor="background" halign="center" valign="center" noWrap="1" transparent="1" zPosition="10">
+    <widget position="1420,189" size="160,160" source="session.CurrentService" render="Label" font="Roboto_HD; 50" foregroundColor="foreground" backgroundColor="background" halign="center" noWrap="1" transparent="1" zPosition="10">
         <convert type="j00zekModABTCAirlyWidget">caqi</convert>
     </widget>
-    <widget position="1590,204" size="240,35" source="session.CurrentService" render="Label" font="HD_Thin; 27" foregroundColor="foreground" backgroundColor="background" halign="left" valign="center" noWrap="1" transparent="1" zPosition="10">
+    <widget position="1590,204" size="240,30" source="session.CurrentService" render="Label" font="HD_Thin; 27" foregroundColor="foreground" backgroundColor="background" halign="left" noWrap="1" transparent="1" zPosition="10">
         <convert type="j00zekModABTCAirlyWidget">pm25</convert>
     </widget>
-    <widget position="1590,235" size="240,35" source="session.CurrentService" render="Label" font="HD_Thin; 27" foregroundColor="foreground" backgroundColor="background" halign="left" valign="center" noWrap="1" transparent="1" zPosition="10">
+    <widget position="1590,235" size="240,30" source="session.CurrentService" render="Label" font="HD_Thin; 27" foregroundColor="foreground" backgroundColor="background" halign="left" noWrap="1" transparent="1" zPosition="10">
         <convert type="j00zekModABTCAirlyWidget">pm10</convert>
     </widget>
-    <widget position="1590,266" size="240,35" source="session.CurrentService" render="Label" font="HD_Thin; 27" foregroundColor="foreground" backgroundColor="background" halign="left" valign="center" noWrap="1" transparent="1" zPosition="10">
+    <widget position="1590,266" size="240,30" source="session.CurrentService" render="Label" font="HD_Thin; 27" foregroundColor="foreground" backgroundColor="background" halign="left"  noWrap="1" transparent="1" zPosition="10">
         <convert type="j00zekModABTCAirlyWidget">pm1</convert>
     </widget>
-    <widget position="1590,307" size="240,35" source="session.CurrentService" render="Label" font="Roboto_HD; 26" foregroundColor="green" backgroundColor="background" halign="left" noWrap="1" transparent="1" zPosition="10">
+    <widget position="1590,297" size="240,30" source="session.CurrentService" render="Label" font="Roboto_HD; 26" foregroundColor="green" backgroundColor="background" halign="left" noWrap="1" transparent="1" zPosition="10">
         <convert type="j00zekModABTCAirlyWidget">schtime</convert>
     </widget>
-    <widget position="1430,342" size="390,35" source="session.CurrentService" render="Label" font="HD_Thin; 25" foregroundColor="light_yellow" backgroundColor="background" halign="center" valign="center" noWrap="1" transparent="1" zPosition="10">
+    <widget position="1430,328" size="390,30" source="session.CurrentService" render="Label" font="HD_Thin; 25" foregroundColor="light_yellow" backgroundColor="background" halign="center" noWrap="1" transparent="1" zPosition="10">
         <convert type="j00zekModABTCAirlyWidget">homeid</convert>
     </widget>
-    <widget position="1430,371" size="390,35" source="session.CurrentService" render="Label" font="HD_Thin; 25" foregroundColor="light_yellow" backgroundColor="background" halign="center" valign="center" noWrap="1" transparent="1" zPosition="10">
+    <widget position="1430,359" size="390,30" source="session.CurrentService" render="Label" font="HD_Thin; 25" foregroundColor="light_yellow" backgroundColor="background" halign="center" noWrap="1" transparent="1" zPosition="10">
         <convert type="j00zekModABTCAirlyWidget">city</convert>
     </widget>
-    <widget position="1430,399" size="390,35" source="session.CurrentService" render="Label" font="HD_Thin; 25" foregroundColor="light_yellow" backgroundColor="background" halign="center" valign="center" noWrap="1" transparent="1" zPosition="10">
+    <widget position="1430,400" size="390,50" source="session.CurrentService" render="Label" font="HD_Thin; 24" foregroundColor="light_yellow" backgroundColor="background" halign="center" noWrap="0" transparent="1" zPosition="10">
         <convert type="j00zekModABTCAirlyWidget">street</convert>
     </widget>
 <!--HOURLY DATA-->
