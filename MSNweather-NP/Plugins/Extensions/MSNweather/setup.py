@@ -56,6 +56,7 @@ def initWeatherPluginEntryConfig(i=0):
 
     s.airlylatitude = ConfigText(default = "", visible_width = 100, fixed_size = False)
     s.airlylongitude = ConfigText(default = "", visible_width = 100, fixed_size = False)
+    s.airlyID = ConfigText(default = "", visible_width = 100, fixed_size = False)
 
     s.Fcity =  ConfigText(default = "Poland/Warsaw", visible_width = 100, fixed_size = False)
     config.plugins.WeatherPlugin.Entry.append(s)
@@ -504,6 +505,7 @@ class MSNWeatherConfiguration(Screen, ConfigListScreen):
     def runSetup(self):
         ConfigList = []
         ConfigList.append(getConfigListEntry('\c00289496' + _("*** Basic settings ***")))
+        ConfigList.append(getConfigListEntry(_("Airly API key:"), config.plugins.WeatherPlugin.airlyAPIKEY))
         ConfigList.append(getConfigListEntry(_("Icons type:"), config.plugins.WeatherPlugin.IconsType))
         ConfigList.append(getConfigListEntry(_("Icons scaling engine:"), config.plugins.WeatherPlugin.ScalePicType))
         ConfigList.append(getConfigListEntry(_("Build histograms:"), config.plugins.WeatherPlugin.BuildHistograms))

@@ -67,6 +67,14 @@ config.plugins.WeatherPlugin.AC2_IP = ConfigIP(default = [0,0,0,0])
 config.plugins.WeatherPlugin.AC2_PORT = ConfigInteger(default = 80,limits=(80,999))
 config.plugins.WeatherPlugin.AC2inf = ConfigText(default = _("AC in the bedroom"), visible_width = 100, fixed_size = False)
 
+
+config.plugins.WeatherPlugin.airlyAPIKEY = ConfigText(default = "", visible_width = 100, fixed_size = False)
+if config.plugins.WeatherPlugin.airlyAPIKEY.value == '':
+    if os.path.exists('/hdd/User_Configs/airlyAPIKEY'):
+        config.plugins.WeatherPlugin.airlyAPIKEY.value =  open('/hdd/User_Configs/airlyAPIKEY', 'r').readline().strip()
+    elif os.path.exists('/etc/enigma2/Airly/api.txt'):
+        config.plugins.WeatherPlugin.airlyAPIKEY.value =  open('/etc/enigma2/Airly/api.txt', 'r').readline().strip()
+
 config.plugins.WeatherPlugin.DebugEnabled = ConfigEnableDisable(default = False)
 config.plugins.WeatherPlugin.DebugSize = ConfigSelection(choices = [ ("10000", "10KB"), ("100000", "100KB"), ("1000000", "1MB"), ], default = "10000")
 
