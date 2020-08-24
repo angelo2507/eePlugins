@@ -1,6 +1,6 @@
 #NAME Zwierzęta live z PIP 
-#SERVICE 1:64:E:0:0:0:0:0:0:0:(endriu 18.07.20)
-#DESCRIPTION (endriu 18.07.20)
+#SERVICE 1:64:E:0:0:0:0:0:0:0:Aktualizacja(endriu 17.08.20)
+#DESCRIPTION Aktualizacja(endriu 17.08.20)
 #SERVICE 1:64:0:0:0:0:0:0:0:0::Akwaria i zwierzęta morskie
 #DESCRIPTION Akwaria i zwierzęta morskie
 #SERVICE 1:0:1:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//s3.ipcamlive.com/streams/035f10b565e1fb010/stream.m3u8|format=mpegts:Akwarium - Florida Keys Aquarium Encounters - USA
@@ -115,8 +115,8 @@
 #DESCRIPTION Ługi
 #SERVICE 1:0:0:0:0:0:0:0:0:2:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//1311441818.rsc.cdn77.org/live/Urv776.stream/chunklist.m3u8|format=mpegts:Nowe Opole
 #DESCRIPTION Nowe Opole
-#SERVICE 4097:0:4:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/eDQifImrJBM:Olszewo-Borki (YT)
-#DESCRIPTION Olszewo-Borki (YT)
+#SERVICE 4097:0:4:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/MLiFuwIdxU8:Ostrołęka (YT)
+#DESCRIPTION Ostrołęka (YT)
 #SERVICE 1:0:0:0:0:0:0:0:0:2:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hoktastream1.webcamera.pl/gminapaslek_cam_7d31ac/gminapaslek_cam_7d31ac.stream/chunks.m3u8|format=mpegts:Pasłęk
 #DESCRIPTION Pasłęk
 #SERVICE 1:0:0:0:0:0:0:0:0:2:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//78.31.90.123/hls/bocian_high/index.m3u8|format=mpegts:Pietrowice Wielkie
@@ -135,88 +135,20 @@
 #DESCRIPTION Sidorówka (YT)
 #SERVICE 4097:0:4:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/I-G6jDcVWYE:Sokółka (YT)
 #DESCRIPTION Sokółka (YT)
-#SERVICE 1:0:0:0:0:0:0:0:0:2:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hoktastream2.webcamera.pl/klekusiowo_cam_b05c8d/klekusiowo_cam_b05c8d.stream/chunks.m3u8|format=mpegts:Tomaszów Bolesławiecki (Klekusiowo)
-#DESCRIPTION Tomaszów Bolesławiecki (Klekusiowo)
-#SERVICE 1:0:0:0:0:0:0:0:0:2:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hoktastream2.webcamera.pl/klekusiowo_cam_cd36d8/klekusiowo_cam_cd36d8.stream/playlist.m3u8|format=mpegts:Tomaszów Bolesławiecki (Klekusiowo 2)
-#DESCRIPTION Tomaszów Bolesławiecki (Klekusiowo 2)
 #SERVICE 4097:0:4:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/_Lw96b9mceg:Sławacinek Stary (YT)
 #DESCRIPTION Sławacinek Stary (YT)
-#SERVICE 4097:0:4:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/4ce--6pZtFo :Strzelce (YT)
-#DESCRIPTION Strzelce (YT)
-#SERVICE 4097:0:4:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/DKy8yzmTCr4:Strzelce - widok na staw (YT)
-#DESCRIPTION Strzelce - widok na staw (YT)
+#SERVICE 1:0:0:0:0:0:0:0:0:2:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//big-edge01.cdn.wolfcloud.pl/lookcam/1k0XBbawjK5mopX4VGPQM1Nynb8dkl6XEjWYRaBOzwAxqZeJ7E30gL9v2p3KEZP2/tracks-v1a1/mono.m3u8?token=Tw_gUHXa0X3IpZedIuiyGw|format=mpegts:Strzelce
+#DESCRIPTION Strzelce
+#SERVICE 1:0:0:0:0:0:0:0:0:2:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//big-edge01.cdn.wolfcloud.pl/lookcam/jAk568qd3zxPwlaR2WyNdvLDbkr5jEJ6R1Jg9GnmBe4qOXQZ76KY80o1AebzN4n0/tracks-v1a1/mono.m3u8?token=ORxAqCUKwgg4lJEzC-v49Q|format=mpegts:Strzelce - widok na staw
+#DESCRIPTION Strzelce - widok na staw
 #SERVICE 1:0:0:0:0:0:0:0:0:2:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//s1.worldcam.live%3a8082/slesin/tracks-v1/mono.m3u8|format=mpegts:Ślesin
 #DESCRIPTION Ślesin
 #SERVICE 1:0:0:0:0:0:0:0:0:2:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//streaming.airmax.pl/gmswierklaniec1/tracks-v1/mono.m3u8|format=mpegts:Świerklaniec
 #DESCRIPTION Świerklaniec
-#SERVICE 1:0:0:0:0:0:0:0:0:2:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//s1.worldcam.live%3a8082/trzciniec/tracks-v1/index-1362504585-now.m3u8|format=mpegts:Trzciniec
-#DESCRIPTION Trzciniec
-#SERVICE 1:0:0:0:0:0:0:0:0:2:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//5d84fe297ee2b.streamlock.net/wegleszyn/wegleszyn.stream/chunklist_w2071960766.m3u8|format=mpegts:Węgleszyn
-#DESCRIPTION Węgleszyn
-#SERVICE 1:0:0:0:0:0:0:0:0:2:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//stream1.stimotion.pl/live/frampol1.m3u8|format=mpegts:Wola Radzięcka
-#DESCRIPTION Wola Radzięcka
-#SERVICE 1:0:0:0:0:0:0:0:0:2:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//1914843022.rsc.cdn77.org/live/BCw1178.stream/chunklist.m3u8|format=mpegts:Wola Suchożebrska
-#DESCRIPTION Wola Suchożebrska
-#SERVICE 1:0:0:0:0:0:0:0:0:2:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//s1.worldcam.live%3a8082/zastawki/tracks-v1a1/index-1362504585-now.m3u8|format=mpegts:Zastawki
-#DESCRIPTION Zastawki
-#SERVICE 1:0:0:0:0:0:0:0:0:2:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//stream5.nadaje.com%3a8324/live/YgL921.stream/chunklist_w1411557585.m3u8|format=mpegts:Brzozów
-#DESCRIPTION Brzozów
-#SERVICE 1:0:0:0:0:0:0:0:0:2:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//streaming.airmax.pl/umigwc/tracks-v1/mono.m3u8|format=mpegts:Borzykowa
-#DESCRIPTION Borzykowa
-#SERVICE 1:0:0:0:0:0:0:0:0:2:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//hoktastream1.webcamera.pl/burnit_cam_fb8ba3/burnit_cam_fb8ba3.stream/chunks.m3u8|format=mpegts:Gniew
-#DESCRIPTION Gniew
-#SERVICE 4097:0:4:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/B_w-ebltUEM:Kozubszczyzna - Bociani Azyl (YT)
-#DESCRIPTION Kozubszczyzna - Bociani Azyl (YT)
-#SERVICE 4097:0:4:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/-0IfZDEsgfw:Kozubszczyzna - Bociani Azyl - Oczko wodne (YT)
-#DESCRIPTION Kozubszczyzna - Bociani Azyl - Oczko wodne (YT)
-#SERVICE 4097:0:4:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/-Y2grSpxr4Q:Kozubszczyzna - gniazda na stodole (YT)
-#DESCRIPTION Kozubszczyzna - gniazda na stodole (YT)
-#SERVICE 1:0:0:0:0:0:0:0:0:2:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//77.89.89.9%3a1935/live/lewkow.stream/chunklist_w331565958.m3u8|format=mpegts:Lewków
-#DESCRIPTION Lewków
-#SERVICE 4097:0:4:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/0htIws-aboE:Lublewo Gdańskie (YT)
-#DESCRIPTION Lublewo Gdańskie (YT)
-#SERVICE 1:0:0:0:0:0:0:0:0:2:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//5d84fe297ee2b.streamlock.net/lask/lask.stream/chunklist_w974200873.m3u8|format=mpegts:Łask
-#DESCRIPTION Łask
-#SERVICE 4097:0:4:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/IavRetMqfBk:Łódź - Bociany czarne (YT)
-#DESCRIPTION Łódź - Bociany czarne (YT)
-#SERVICE 1:0:0:0:0:0:0:0:0:2:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//streaming.airmax.pl/integro/tracks-v1/mono.m3u8|format=mpegts:Ługi
-#DESCRIPTION Ługi
-#SERVICE 1:0:0:0:0:0:0:0:0:2:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//1311441818.rsc.cdn77.org/live/Urv776.stream/chunklist.m3u8|format=mpegts:Nowe Opole
-#DESCRIPTION Nowe Opole
-#SERVICE 4097:0:4:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/eDQifImrJBM:Olszewo-Borki (YT)
-#DESCRIPTION Olszewo-Borki (YT)
-#SERVICE 1:0:0:0:0:0:0:0:0:2:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hoktastream1.webcamera.pl/gminapaslek_cam_7d31ac/gminapaslek_cam_7d31ac.stream/chunks.m3u8|format=mpegts:Pasłęk
-#DESCRIPTION Pasłęk
-#SERVICE 1:0:0:0:0:0:0:0:0:2:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//78.31.90.123/hls/bocian_high/index.m3u8|format=mpegts:Pietrowice Wielkie
-#DESCRIPTION Pietrowice Wielkie
-#SERVICE 1:0:0:0:0:0:0:0:0:2:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//1724745499.rsc.cdn77.org/live/przygodzice5.stream/chunklist.m3u8|format=mpegts:Przygodzice
-#DESCRIPTION Przygodzice
-#SERVICE 1:0:0:0:0:0:0:0:0:2:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//stream5.nadaje.com%3a34778/live/Tfw820.stream/chunklist_w102790107.m3u8|format=mpegts:Radłów
-#DESCRIPTION Radłów
-#SERVICE 1:0:0:0:0:0:0:0:0:2:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//5d84fe297ee2b.streamlock.net/rakowo/rakowo.stream_720p/chunklist_w516678558.m3u8|format=mpegts:Rakowo-Czachy
-#DESCRIPTION Rakowo-Czachy
-#SERVICE 1:0:0:0:0:0:0:0:0:2:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//77.89.89.9%3a1935/live/raszkow.stream/chunklist_w773149223.m3u8|format=mpegts:Raszków
-#DESCRIPTION Raszków
-#SERVICE 1:0:0:0:0:0:0:0:0:2:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//stream1.stimotion.pl/live/bocian1.m3u8|format=mpegts:Rzepedź
-#DESCRIPTION Rzepedź
-#SERVICE 4097:0:4:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/elSzSLRKCtw:Sidorówka (YT)
-#DESCRIPTION Sidorówka (YT)
-#SERVICE 4097:0:4:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/I-G6jDcVWYE:Sokółka (YT)
-#DESCRIPTION Sokółka (YT)
 #SERVICE 1:0:0:0:0:0:0:0:0:2:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hoktastream2.webcamera.pl/klekusiowo_cam_b05c8d/klekusiowo_cam_b05c8d.stream/chunks.m3u8|format=mpegts:Tomaszów Bolesławiecki (Klekusiowo)
 #DESCRIPTION Tomaszów Bolesławiecki (Klekusiowo)
 #SERVICE 1:0:0:0:0:0:0:0:0:2:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hoktastream2.webcamera.pl/klekusiowo_cam_cd36d8/klekusiowo_cam_cd36d8.stream/playlist.m3u8|format=mpegts:Tomaszów Bolesławiecki (Klekusiowo 2)
 #DESCRIPTION Tomaszów Bolesławiecki (Klekusiowo 2)
-#SERVICE 4097:0:4:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/_Lw96b9mceg:Sławacinek Stary (YT)
-#DESCRIPTION Sławacinek Stary (YT)
-#SERVICE 4097:0:4:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/4ce--6pZtFo :Strzelce (YT)
-#DESCRIPTION Strzelce (YT)
-#SERVICE 4097:0:4:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/DKy8yzmTCr4:Strzelce - widok na staw (YT)
-#DESCRIPTION Strzelce - widok na staw (YT)
-#SERVICE 1:0:0:0:0:0:0:0:0:2:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//s1.worldcam.live%3a8082/slesin/tracks-v1/mono.m3u8|format=mpegts:Ślesin
-#DESCRIPTION Ślesin
-#SERVICE 1:0:0:0:0:0:0:0:0:2:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//streaming.airmax.pl/gmswierklaniec1/tracks-v1/mono.m3u8|format=mpegts:Świerklaniec
-#DESCRIPTION Świerklaniec
 #SERVICE 1:0:0:0:0:0:0:0:0:2:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//s1.worldcam.live%3a8082/trzciniec/tracks-v1/index-1362504585-now.m3u8|format=mpegts:Trzciniec
 #DESCRIPTION Trzciniec
 #SERVICE 1:0:0:0:0:0:0:0:0:2:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//5d84fe297ee2b.streamlock.net/wegleszyn/wegleszyn.stream/chunklist_w2071960766.m3u8|format=mpegts:Węgleszyn
@@ -451,10 +383,10 @@
 #DESCRIPTION Glizli 2 - Tucson - Reid Park Zoo - USA
 #SERVICE 1:0:7:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//use01-smr04-relay.ozolio.com/hls-live/_definst_/relay01.xsqpcsh.fd0.sm1.av2.at0.sh2.rt15865.rc0.basic.stream/chunklist_w400523182.m3u8|format=mpegts:Grizli - Memphis - Tennessee USA
 #DESCRIPTION Grizli - Memphis - Tennessee USA
-#SERVICE 4097:0:7:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/6NIt6ibAD6I:Hipopotamy - Laikipia County - Kenya (YT)
-#DESCRIPTION Hipopotamy - Laikipia County - Kenya (YT)
-#SERVICE 1:0:7:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//usw01-smr03-relay.ozolio.com/hls-live/_definst_/relay01.uxqfb3x.fd0.sm1.av2.at0.sh2.rt15865.rc0.basic.stream/chunklist_w86530643.m3u8|format=mpegts:Hipopotam - Memphis - Tennessee USA
-#DESCRIPTION Hipopotam - Memphis - Tennessee USA
+#SERVICE 4097:0:7:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/6NIt6ibAD6I:Hipopotany - Laikipia County - Kenya (YT)
+#DESCRIPTION Hipopotany - Laikipia County - Kenya (YT)
+#SERVICE 1:0:7:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//usw01-smr03-relay.ozolio.com/hls-live/_definst_/relay01.uxqfb3x.fd0.sm1.av2.at0.sh2.rt15865.rc0.basic.stream/chunklist_w86530643.m3u8|format=mpegts:Hipopotan - Memphis - Tennessee USA
+#DESCRIPTION Hipopotan - Memphis - Tennessee USA
 #SERVICE 1:0:5:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//live.zoosociety.org%3a1935/live/outdoorjaguar.stream/.m3u8|format=mpegts:Jaguar II - USA
 #DESCRIPTION Jaguar II - USA
 #SERVICE 1:0:7:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//live.zoosociety.org%3a1935/live/jaguars.stream/.m3u8|format=mpegts:Jaguar I - USA
@@ -501,8 +433,8 @@
 #DESCRIPTION Park Zwierząt - Amersfoort - Holandia 3 (YT)
 #SERVICE 4097:0:7:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/GcdN8SomBBY:Park Zwierząt - Amersfoort - Holandia 4 (YT)
 #DESCRIPTION Park Zwierząt - Amersfoort - Holandia 4 (YT)
-#SERVICE 1:0:7:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hoktastream2.webcamera.pl/pszczoly_cam_41eddc/pszczoly_cam_41eddc.stream/playlist.m3u8|format=mpegts:Pszczoły - Polska
-#DESCRIPTION Pszczoły - Polska
+#SERVICE 1:0:7:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//hoktastream2.webcamera.pl/pszczoly_cam_41eddc/pszczoly_cam_41eddc.stream/playlist.m3u8|format=mpegts:Przczoły - Polska
+#DESCRIPTION Przczoły - Polska
 #SERVICE 1:0:7:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//ngx.cr6.streamzilla.xlcdn.com/session/64256e39bb3079414eebeb799a079413/sz/streamdays/wowza4/live/dudleyzoo-tigercam/chunklist.m3u8|format=mpegts:Tygrys - Dudley - Zoo (GB)
 #DESCRIPTION Tygrys - Dudley - Zoo (GB)
 #SERVICE 1:0:7:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//nzp-ms06.si.edu/live_edge_panda/smil%3apanda02_all.smil/.m3u8|format=mpegts:Panda - USA - Smithsonian National-Zoo

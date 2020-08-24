@@ -1,8 +1,12 @@
 #NAME IPTV Webcams
-#SERVICE 1:64:14:0:0:0:0:0:0:0::Webcams:  (endriu 13.08.20)
-#DESCRIPTION Webcams:  (endriu 13.08.20)
-#SERVICE 1:64:16:0:0:0:0:0:0:0::Webcams: Austria (AT)
-#DESCRIPTION Webcams: Austria (AT)
+#SERVICE 1:64:14:0:0:0:0:0:0:0::Aktualizacja: (endriu 17.08.20)
+#DESCRIPTION Aktualizacja: (endriu 17.08.20)
+#SERVICE 1:64:0:0:0:0:0:0:0:0::Algieria (DZ)
+#DESCRIPTION Algieria (DZ)
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.wetter.com/hd-live-webcams/algerien/puerto-de-la-duquesa-marina/5ae2764b38f78842c47c0b94/:DZ - Puerto de la Duquesa - Marina
+#DESCRIPTION DZ - Puerto de la Duquesa - Marina
+#SERVICE 1:64:16:0:0:0:0:0:0:0::Austria (AT)
+#DESCRIPTION Austria (AT)
 #SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/pl/webcam/austria/salzburg/altenmarkt-im-pongau/altenmarkt-im-pongau.html:AT - Altenmarkt im Pongau
 #DESCRIPTION AT - Altenmarkt im Pongau
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//badbleiberg.it-wms.com/clip_current_720p.mp4:AT - Bad Bleiberg
@@ -45,7 +49,7 @@
 #DESCRIPTION AT - Innsbruck - Altstadt
 #SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.wetter.com/hd-live-webcams/oesterreich/kuehtai/59efb7eb38f78836f341e782/:AT - Innsbruck - Kühtai - Sellraintal
 #DESCRIPTION AT - Innsbruck - Kühtai - Sellraintal
-#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.wetter.com/hd-live-webcams/oesterreich/innsbruck-mutters/5b9fd71238f78814cd6b0403/:AT -  Innsbruck - Mutters - Mutterer Alm Bergstation
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.wetter.com/hd-live-webcams/oesterreich/innsbruck-mutters/5b9fd71238f78814cd6b0403/:AT - Innsbruck - Mutters - Mutterer Alm Bergstation
 #DESCRIPTION AT - Innsbruck - Mutters - Mutterer Alm Bergstation
 #SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.wetter.com/hd-live-webcams/oesterreich/innsbruck-pema-tower/59ba53b638f78814173800d2/:AT - Innsbruck - Zentrum - PEMA-Turm
 #DESCRIPTION AT - Innsbruck - Zentrum - PEMA-Turm
@@ -117,8 +121,8 @@
 #DESCRIPTION AT - Wien - Haus des Meeres
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//s1.live-panorama.com/keblivestreaming/streams/schmittenTVLow.sdp.stream.m3u8:AT - Zell am See - Schmitten
 #DESCRIPTION AT - Zell am See - Schmitten
-#SERVICE 1:64:17:0:0:0:0:0:0:0::Webcams: Niemcy (DE)
-#DESCRIPTION Webcams: Niemcy (DE)
+#SERVICE 1:64:17:0:0:0:0:0:0:0::Niemcy (DE)
+#DESCRIPTION Niemcy (DE)
 #SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.wetter.com/hd-live-webcams/deutschland/augsburg-old-town/5295e07add0f7/:DE - Augsburg - Altstadt - Hotel Augusta
 #DESCRIPTION DE - Augsburg - Altstadt - Hotel Augusta
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//ch-fra-n6.livespotting.com/vpu/to4d3rza/3d2d2tcm.m3u8:DE - Bad Brückenau
@@ -505,12 +509,12 @@
 #DESCRIPTION DE - Würzburg - Festung Marienberg - Hotel Alter Kranen
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//osltv.stream24.net/osltv3/_definst_/mp4%3azinnowitz.stream/master.m3u8:DE - Zinnowitz
 #DESCRIPTION DE - Zinnowitz
-#SERVICE 1:64:18:0:0:0:0:0:0:0::Webcams: Albania
-#DESCRIPTION Webcams: Albania
+#SERVICE 1:64:18:0:0:0:0:0:0:0::Albania (AL)
+#DESCRIPTION Albania (AL)
 #SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.wetter.com/hd-live-webcams/albanien/gjirokaster-view-of-the-old-city/5954271cc8c7cc2ce04e2532/:AL - Gjirokastër - view of the old city
 #DESCRIPTION AL - Gjirokastër - view of the old city
-#SERVICE 1:64:19:0:0:0:0:0:0:0::Webcams: Belgia
-#DESCRIPTION Webcams: Belgia
+#SERVICE 1:64:19:0:0:0:0:0:0:0::Belgia (BE)
+#DESCRIPTION Belgia (BE)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//s25.ipcamlive.com/streams/195f0e6606b717ea4/stream.m3u8:BE - Blankenberge - Plaża
 #DESCRIPTION BE - Blankenberge - Plaża
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//s25.ipcamlive.com/streams/195f0e6616f2b4e76/stream.m3u8:BE - Bougnies
@@ -563,8 +567,8 @@
 #DESCRIPTION BE - Zeebrugge - port jachtowy
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/BTYXpHelk8M:BE - Zandvoort - Strand (Centerparcs)(YT)
 #DESCRIPTION BE - Zandvoort - Strand (Centerparcs)(YT)
-#SERVICE 1:64:1A:0:0:0:0:0:0:0::Webcams: Bośnia & Herzegowina (BH)
-#DESCRIPTION Webcams: Bośnia & Herzegowina (BH)
+#SERVICE 1:64:1A:0:0:0:0:0:0:0::Bośnia & Herzegowina (BH)
+#DESCRIPTION Bośnia & Herzegowina (BH)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//mob.webtvstream.bhtelecom.ba/hls10/bihac_cam_1200.m3u8:BH - Bihać - Bosanska
 #DESCRIPTION BH - Bihać - Bosanska
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//mob.webtvstream.bhtelecom.ba/hls10/cazin_cam_1200.m3u8:BH - Cazin - Panorama miasta
@@ -605,8 +609,8 @@
 #DESCRIPTION BH - Tuzla - Panorama
 #SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.wetter.com/hd-live-webcams/bosnien-und-herzegowina/zenica-mokusnice/5b4d3fd638f7883b2a165e94/:BH - Zenica – Mokušnice
 #DESCRIPTION BH - Zenica – Mokušnice
-#SERVICE 1:64:0:0:0:0:0:0:0:0::Webcams: Bułgaria (BG)
-#DESCRIPTION Webcams: Bułgaria (BG)
+#SERVICE 1:64:0:0:0:0:0:0:0:0::Bułgaria (BG)
+#DESCRIPTION Bułgaria (BG)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//frn.rtsp.me/9ardCe-6JirpGTUOi8FZWg/1597322215/hls/s2h4hhki.m3u8:BG - Asenowgrad - ul. 6 Stycznia
 #DESCRIPTION BG - Asenowgrad - ul. 6 Stycznia
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//msk.rtsp.me/GhLjeA528rFRw0gsd7WlQQ/1597322411/hls/eDKcvpQB.m3u8:BG - Burgas - Port jachtowy
@@ -629,8 +633,8 @@
 #DESCRIPTION BG - Warna - bul. Vladislav Varnenchik (YT)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//streamer103.neterra.tv/radiovidin/live/chunklist_w690248742.m3u8?hash=:BG - Widyń - Plac Bdintsi
 #DESCRIPTION BG - Widyń - Plac Bdintsi
-#SERVICE 1:64:1B:0:0:0:0:0:0:0::Webcams: Szwajcaria (CH)
-#DESCRIPTION Webcams: Szwajcaria (CH)
+#SERVICE 1:64:1B:0:0:0:0:0:0:0::Szwajcaria (CH)
+#DESCRIPTION Szwajcaria (CH)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/-LVdmZniiDM:CH - Adelboden - Adler Hotel Adelboden (YT)
 #DESCRIPTION CH - Adelboden - Adler Hotel Adelboden (YT)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/jtLh8BdmHUU:CH - Bazylea - Mittlere Brücke (YT)
@@ -693,8 +697,8 @@
 #DESCRIPTION CH - Zürich
 #SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.wetter.com/hd-live-webcams/schweiz/zuerich-uetliberg/526675e55b1a2/:CH - Zürich - Uetliberg - Stallikon
 #DESCRIPTION CH - Zürich - Uetliberg - Stallikon
-#SERVICE 1:64:1C:0:0:0:0:0:0:0::Webcams: Czechy (CZ)
-#DESCRIPTION Webcams: Czechy (CZ)
+#SERVICE 1:64:1C:0:0:0:0:0:0:0::Czechy (CZ)
+#DESCRIPTION Czechy (CZ)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//breclav.e.smartcams.cz/smartcam-breclav/bb81f0a83eb0ac57a86a8f528655f6e8/1.smil/chunklist_b2592768.m3u8:CZ - Brecłav - Třída 1. máje, pohled k centru
 #DESCRIPTION CZ - Brecłav - Třída 1. máje, pohled k centru
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//breclav.e.smartcams.cz/smartcam-breclav/eedb369a91d5b292ccba6a81262340df/2.smil/chunklist_b2592768.m3u8:CZ - Brecłav - Lidická ulice, pohled k centru
@@ -937,16 +941,42 @@
 #DESCRIPTION CZ - Zubří
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//s14.ipcamlive.com/streams/0e5f2153499d93e8c/stream.m3u8:CZ - Žatec - Rynek
 #DESCRIPTION CZ - Žatec - Rynek
-#SERVICE 1:64:1D:0:0:0:0:0:0:0::Webcams: Dania (DK)
-#DESCRIPTION Webcams: Dania (DK)
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//cdn-003.whatsupcams.com/hls/dk_hedeland01.m3u8:DK - Hedeland - Skicenter
+#SERVICE 1:64:1D:0:0:0:0:0:0:0::Dania (DK)
+#DESCRIPTION Dania (DK)
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.wetter.com/hd-live-webcams/daenemark/hedeland-skicenter/5ae2764d38f78842c26369c6/:DK - Hedeland - Skicenter
 #DESCRIPTION DK - Hedeland - Skicenter
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.youtube.com/watch?v=63LZZrM4miI:DK - Henne Strand (YT)
 #DESCRIPTION DK - Henne Strand (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//stream.waves4you.com%3a1935/w4y/ngrp%3aHSN.stream_all/chunklist_w483633956_b1300000.m3u8:DK - Hvide Sande
+#DESCRIPTION DK - Hvide Sande
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/etGxOCbeACw:DK - Hvide Sande - Kabelpark (YT)
+#DESCRIPTION DK - Hvide Sande - Kabelpark (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/lUTgGRv7SHI:DK - Hvide Sande - Kabelpark 2 (YT)
+#DESCRIPTION DK - Hvide Sande - Kabelpark 2 (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/5Z6Nhw6USVw:DK - Hvide Sande - Panorama (YT)
+#DESCRIPTION DK - Hvide Sande - Panorama (YT)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//stream.waves4you.com%3a1935/w4y/ngrp%3aHSW.stream_all/.m3u8:DK - Hvide Sande West - Waves4you
 #DESCRIPTION DK - Hvide Sande West - Waves4you
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//stream.waves4you.com%3a1935/w4y/ngrp%3aVorupoer.stream_all/chunklist_w412748238_b1300000.m3u8:DK - Klitmøller - Vorupør
+#DESCRIPTION DK - Klitmøller - Vorupør
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//stream.waves4you.com%3a1935/w4y/ngrp%3aklitmoeller_all/.m3u8:DK - Klitmøller - Waves4you
 #DESCRIPTION DK - Klitmøller - Waves4you
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//stream.sob.m-dn.net/live/sb1/720p/index.m3u8:DK - Most Storebæltsbroen
+#DESCRIPTION DK - Most Storebæltsbroen
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//stream.sob.m-dn.net/live/sb2/720p/index.m3u8:DK - Most Storebæltsbroen 2
+#DESCRIPTION DK - Most Storebæltsbroen 2
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//ngx.cr1.streamzilla.xlcdn.com/session/bb04ed4d835d6ae6561cf4934472f8c8/sz/streamdays/wowza4/live/geocenter-geocenter/chunklist.m3u8:DK - Møn - Klif Møns Klint
+#DESCRIPTION DK - Møn - Klif Møns Klint
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//ngx.cr1.streamzilla.xlcdn.com/session/046c343654b1e85d1c350a7242761270/sz/streamdays/wowza4/live/geocenter-klint/chunklist.m3u8:DK - Møn - Klif Møns Klint 2
+#DESCRIPTION DK - Møn - Klif Møns Klint 2
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//s22.ipcamlive.com/streams/165f119cfae33371d/stream.m3u8:DK - Roslev - Harre Vig Golf Club
+#DESCRIPTION DK - Roslev - Harre Vig Golf Club
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/GnqV11nnWBs:DK - Rødbyhavn - Tunel pod Bełtem Fehmarn (YT)
+#DESCRIPTION DK - Rødbyhavn - Tunel pod Bełtem Fehmarn (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//s2.ipcamlive.com/streams/025f339d4aa701c08/stream.m3u8:DK - Rungsted - Marina
+#DESCRIPTION DK - Rungsted - Marina
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//s58.ipcamlive.com/streams/3a5f2069f5648b8e6/stream.m3u8:DK - Vedersø Klitvej - Panorama
+#DESCRIPTION DK - Vedersø Klitvej - Panorama
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//stream.sob.m-dn.net/live/sb1/index.m3u8:DK - Storebaelt I
 #DESCRIPTION DK - Storebaelt I
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//stream.sob.m-dn.net/live/sb2/index.m3u8:DK - Storebaelt II
@@ -955,60 +985,810 @@
 #DESCRIPTION DK - Thyborøn - Waves4you
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//stream.waves4you.com%3a1935/w4y/ngrp%3aVorupoer.stream_all/.m3u8:DK - Vorupør - Waves4you
 #DESCRIPTION DK - Vorupør - Waves4you
-#SERVICE 1:64:1E:0:0:0:0:0:0:0::Webcams: Finlandia (FI)
-#DESCRIPTION Webcams: Finlandia (FI)
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.youtube.com/watch?v=Fy_osMNs3f4&list=PLFrsWoRoFYdLS30nXGB4Pim_GL4rGthxI&index=462:FI- Helsinki Hafen (YT)
-#DESCRIPTION FI- Helsinki Hafen (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//s29.ipcamlive.com/streams/1d5f34f8983610b1e/stream.m3u8:DK - Wyspy Owcze - Eiði
+#DESCRIPTION DK - Wyspy Owcze - Eiði
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//s15.ipcamlive.com/streams/0f5f11177bccdc888/stream.m3u8:DK - Wyspy Owcze - Eiði 2
+#DESCRIPTION DK - Wyspy Owcze - Eiði 2
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//s27.ipcamlive.com/streams/1b5f0fae7c90d7318/stream.m3u8:DK - Wyspy Owcze - Eiði 3
+#DESCRIPTION DK - Wyspy Owcze - Eiði 3
+#SERVICE 1:64:1E:0:0:0:0:0:0:0::Finlandia (FI)
+#DESCRIPTION Finlandia (FI)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//streaming.videosync.fi/metsagroup/cam4/chunklist.m3u8:FI - Äänekoski - Bioproduct mill
+#DESCRIPTION FI - Äänekoski - Bioproduct mill
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//streaming.videosync.fi/metsagroup/cam3/chunklist.m3u8:FI - Äänekoski - Bioproduct mill 2
+#DESCRIPTION FI - Äänekoski - Bioproduct mill 2
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/TCRfLzO3NbY:FI - Espoo - Nokkalan Venesatama (YT)
+#DESCRIPTION FI - Espoo - Nokkalan Venesatama (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/CvOB-Is_yYU:FI- Helsinki Port (YT)
+#DESCRIPTION FI- Helsinki Port (YT)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.youtube.com/watch?v=7vGlyYYvMqA:FI- Helsinki Seeseite (YT)
 #DESCRIPTION FI- Helsinki Seeseite (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge01.balticlivecam.com/blc/Helsing/tracks-v1/mono.m3u8?token=d69117b174c069e56bd0232487f5f410%3a1597327507420:FI - Helsinki - Teatr Szwedzki
+#DESCRIPTION FI - Helsinki - Teatr Szwedzki
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.youtube.com/watch?v=rRWLn17cUus:FI - Pori (YT)
 #DESCRIPTION FI - Pori (YT)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.youtube.com/watch?v=fADwivDwZeI:FI - Pori Hafen (YT)
 #DESCRIPTION FI - Pori Hafen (YT)
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.youtube.com/watch?v=2V-9PMsPotk:FI - IISALMI Live WEB (YT)
-#DESCRIPTION FI - IISALMI Live WEB (YT)
-#SERVICE 1:64:1F:0:0:0:0:0:0:0::Webcams: Francja (FR)
-#DESCRIPTION Webcams: Francja (FR)
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.youtube.com/watch?v=CbiEV00Dhy0:FR - Le Havre (YT)
-#DESCRIPTION FR - Le Havre (YT)
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//live.webcam-hd.fr/64connections/Pariscam3.stream/playlist.m3u8:FR - Paris - Eiffelturm
-#DESCRIPTION FR - Paris - Eiffelturm
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/xq_XOBNrzAw:FI - Iisalmi - Panorama (YT)
+#DESCRIPTION FI - Iisalmi - Panorama (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/cBSbTyivZpY:FI - Jämijärvi - Lotnisko (YT)
+#DESCRIPTION FI - Jämijärvi - Lotnisko (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/_Oh2hhAnihg:FI - Jämin hiihtotunnelin (YT)
+#DESCRIPTION FI - Jämin hiihtotunnelin (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/Cp4RRAEgpeU:FI - Laponia - Wioska Świętego Mikołaja (YT)
+#DESCRIPTION FI - Laponia - Wioska Świętego Mikołaja (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/PplYMvi3_g8:FI - Levi - Activity Park (YT)
+#DESCRIPTION FI - Levi - Activity Park (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/x6dja6Iz4tI:FI - Levi - Panorama (YT)
+#DESCRIPTION FI - Levi - Panorama (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/Er0T6KHdPck:FI - Livonsaari - Teersalo - Marina (YT)
+#DESCRIPTION FI - Livonsaari - Teersalo - Marina (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/AlUa1IhA4cE:FI - Loviisa - Rynek (YT)
+#DESCRIPTION FI - Loviisa - Rynek (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/NNDif60zvjg:FI - Park Narodowy Oulanka - Kiutaköngäs rapids (YT)
+#DESCRIPTION FI - Park Narodowy Oulanka - Kiutaköngäs rapids (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//stream-eu1-delta.dropcam.com/nexus_aac/850cf64a59344ae8ae157cbf352bd810/chunklist_w499126987.m3u8?public=iS0NI93C6m:FI - Pori - Toejoenpuistikko
+#DESCRIPTION FI - Pori - Toejoenpuistikko
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//camsecure.co/HLS/vitaly.m3u8:FI - Porvoo
+#DESCRIPTION FI - Porvoo
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/zLwLZKVWpHw:FI - Rauma - Syväraumanlahti (YT)
+#DESCRIPTION FI - Rauma - Syväraumanlahti (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/QTFDbItInOc:FI - Rauma - Kylmäpihlaja (YT)
+#DESCRIPTION FI - Rauma - Kylmäpihlaja (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/fNvbDkoYG5E:FI - Rauma - Reksaari  (YT)
+#DESCRIPTION FI - Rauma - Reksaari  (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/0bnWDbQbcu4:FI - Rauma - Kauppatori  (YT)
+#DESCRIPTION FI - Rauma - Kauppatori  (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/0fXcs7WcIGk:FI - Replot - Most Replot  (YT)
+#DESCRIPTION FI - Replot - Most Replot  (YT)
+#SERVICE 1:64:1F:0:0:0:0:0:0:0::Francja (FR)
+#DESCRIPTION Francja (FR)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/2oaDsumZKDE:FR - Agen (YT)
+#DESCRIPTION FR - Agen (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/hrWQii3pXGA:FR - Agon Coutainville (YT)
+#DESCRIPTION FR - Agon Coutainville (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/gN6jSCClZZI:FR - Ajaccio (YT)
+#DESCRIPTION FR - Ajaccio (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/yrR0XDHAa14:FR - Ajaccio 2 (YT)
+#DESCRIPTION FR - Ajaccio 2 (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/9rYZ3RLirdQ:FR - Amiens - Place de l'Hôtel de ville (YT)
+#DESCRIPTION FR - Amiens - Place de l'Hôtel de ville (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5ef477949826a.streamlock.net%3a444/live/arrensmarsous.stream/chunklist_w1987905425.m3u8:FR - Arrens-Marsous
+#DESCRIPTION FR - Arrens-Marsous
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/29CxrL316Ck:FR - Audierne - Le Port (YT)
+#DESCRIPTION FR - Audierne - Le Port (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/ZJZWxxB1b_Q:FR - Audierne - Le Pouldu (YT)
+#DESCRIPTION FR - Audierne - Le Pouldu (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5ef477949826a.streamlock.net%3a444/live/esquibien.stream/chunklist_w691100278.m3u8:FR - Audierne - Sein
+#DESCRIPTION FR - Audierne - Sein
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/_S3IkQLiquY:FR - Auron - Las Donnas (YT)
+#DESCRIPTION FR - Auron - Las Donnas (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/ckNqX0moR0Q:FR - Aussois (YT)
+#DESCRIPTION FR - Aussois (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5ef477949826a.streamlock.net%3a444/live/portbastia2.stream/chunklist_w303795553.m3u8:FR - Bastia
+#DESCRIPTION FR - Bastia
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/l-shw7kIn7M:FR - Baie des Trépassés - Plogoff - Finistère (YT)
+#DESCRIPTION FR - Baie des Trépassés - Plogoff - Finistère (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/LmQIRhYMxmY:FR - Beaumont-du-Ventoux - Stacja Mont Serein (YT)
+#DESCRIPTION FR - Beaumont-du-Ventoux - Stacja Mont Serein (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/3C_tQYDuFvk:FR - Belfort-Chaux LFGG (YT)
+#DESCRIPTION FR - Belfort-Chaux LFGG (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/8DThsr2fxwk:FR - Binic (YT)
+#DESCRIPTION FR - Binic (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/MkbD1at6FIU:FR - Brest (YT)
+#DESCRIPTION FR - Brest (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/4UySgdAAEJA:FR - Brest - Moulin Blanc (YT)
+#DESCRIPTION FR - Brest - Moulin Blanc (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//frn.rtsp.me/mBwatIsYBnrJitOLqKK7kQ/1597435613/hls/28Frz6b7.m3u8:FR - Brioude
+#DESCRIPTION FR - Brioude
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/w5xmMBft5DY:FR - Broadstrairs - Angleterre (YT)
+#DESCRIPTION FR - Broadstrairs - Angleterre (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/3A9HLPwM5wk:FR - Cabourg - Charles Bertrand - Normandie (YT)
+#DESCRIPTION FR - Cabourg - Charles Bertrand - Normandie (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/2a6PsBwqspM:FR - Cabourg - Marcel Proust - Normandie (YT)
+#DESCRIPTION FR - Cabourg - Marcel Proust - Normandie (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/XHrycgn1EuQ:FR - Cancale - Bretagne (YT)
+#DESCRIPTION FR - Cancale - Bretagne (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/dEnv64AMAcs:FR - Cannes - Plage Thales - Provence-Alpes-Côte d'Azur (YT)
+#DESCRIPTION FR - Cannes - Plage Thales - Provence-Alpes-Côte d'Azur (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/doIjVX1ZINA:FR - Cannes - Plaża Thalès (YT)
+#DESCRIPTION FR - Cannes - Plaża Thalès (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//livecdn-de-earthtv-com.global.ssl.fastly.net/edge1/cdnedge/HpK-KYwABts/chunklist.m3u8?token=EAIY6wE469S5J0CIHUgF.CgdlYXJ0aHR2EAEyC0hwSy1LWXNBQnRvOgtIcEstS1l3QUJ0cw.toMvi-PhV3kLaRsEnWNuS2uVTfOU3ZMbF4Yb2deIdUKsuiz77FaPrE-D0JkUOj4VAjoKnZDOoysaiAaryYH3Xw&domain=www.earthtv.com:FR - Cannes - Port
+#DESCRIPTION FR - Cannes - Port
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/oFClaB0ksR8:FR - Carantec - Bretagne (YT)
+#DESCRIPTION FR - Carantec - Bretagne (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5ef477949826a.streamlock.net%3a444/live/carro.stream/chunklist_w590180025.m3u8:FR - Carro - Provence-Alpes-Côte d'Azur
+#DESCRIPTION FR - Carro - Provence-Alpes-Côte d'Azur
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/3OZm_H6QIYY:FR - Châtel - Auvergne-Rhône-Alpes (YT)
+#DESCRIPTION FR - Châtel - Auvergne-Rhône-Alpes (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/WDHphLHhoYQ:FR - Champeaux - Normandie (YT)
+#DESCRIPTION FR - Champeaux - Normandie (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/qpMWLCtqDXY:FR - Cordemais - Pays de la Loire (YT)
+#DESCRIPTION FR - Cordemais - Pays de la Loire (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/0Xd9oxSzKRA:FR - Criel-sur-Mer (YT)
+#DESCRIPTION FR - Criel-sur-Mer (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/_uZfe9riYZE:FR - Douarnenez - le Port Rhu - Bretagne (YT)
+#DESCRIPTION FR - Douarnenez - le Port Rhu - Bretagne (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/EEUiT7coVK8:FR - Douarnenez - Les Sables Blancs - Bretagne (YT)
+#DESCRIPTION FR - Douarnenez - Les Sables Blancs - Bretagne (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/4nQHfIUCQkU:FR - Douarnenez - Port Rosmeur - Bretagne (YT)
+#DESCRIPTION FR - Douarnenez - Port Rosmeur - Bretagne (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5ef477949826a.streamlock.net%3a444/live/egletons.stream/chunklist_w1840561072.m3u8:FR - Egletons - Auvergne-Rhône-Alpes
+#DESCRIPTION FR - Egletons - Auvergne-Rhône-Alpes
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/5YLn9AViHBs:FR - Erquy - Bretagne (YT)
+#DESCRIPTION FR - Erquy - Bretagne (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5ef477949826a.streamlock.net%3a444/live/esquibien.stream/chunklist_w279740313.m3u8:FR - Esquibien - Bretagne
+#DESCRIPTION FR - Esquibien - Bretagne
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5ef477949826a.streamlock.net%3a444/live/essay.stream/chunklist_w887263515.m3u8:FR - Essay - Ouest Karting - Normandie
+#DESCRIPTION FR - Essay - Ouest Karting - Normandie
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/4b2NDbyw5ZQ:FR - Etables-sur-Mer - Bretagne (YT)
+#DESCRIPTION FR - Etables-sur-Mer - Bretagne (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/-Nt6jCN4NXA:FR - Eus - Le Canigou - Occitanie (YT)
+#DESCRIPTION FR - Eus - Le Canigou - Occitanie (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//s2.ipcamlive.com/streams/025f13ddf0c2b1560/stream.m3u8:FR - Faaa - Tahiti
+#DESCRIPTION FR - Faaa - Tahiti
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/SOlad2gSLLY:FR - Font Romeu - Occitanie (YT)
+#DESCRIPTION FR - Font Romeu - Occitanie (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/http%3a//127.0.0.1%3a8088/https%3a//youtu.be/UdykW9_2yNk:FR - Folkestone - Angleterre (YT)
+#DESCRIPTION FR - Folkestone - Angleterre (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/5tZQPh18rmk:FR - Forbach - Centre - Grand Est (YT)
+#DESCRIPTION FR - Forbach - Centre - Grand Est (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/Sa_HZc1jjFQ:FR - Forbach - Grand Est (YT)
+#DESCRIPTION FR - Forbach - Grand Est (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//fortmahon.webcam/stream/index.m3u8:FR - Fort-Mahon-Plage - Plaża
+#DESCRIPTION FR - Fort-Mahon-Plage - Plaża
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/5g3Hv2XDva4:FR - Fumay - Grand Est (YT)
+#DESCRIPTION FR - Fumay - Grand Est (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/VLmkwyqrVx0:FR - Gourette - Nouvelle-Aquitaine (YT)
+#DESCRIPTION FR - Gourette - Nouvelle-Aquitaine (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/rB-Zai3CiW8:FR - Gravelines - Hauts-de-France (YT)
+#DESCRIPTION FR - Gravelines - Hauts-de-France (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/x5KIuqv7cg8:FR - Hameau de la Mûre - Auvergne-Rhône-Alpes (YT)
+#DESCRIPTION FR - Hameau de la Mûre - Auvergne-Rhône-Alpes (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/Gwap5HPuqTE:FR - Hyères - Provence-Alpes-Côte d'Azur (YT)
+#DESCRIPTION FR - Hyères - Provence-Alpes-Côte d'Azur (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/SMU1c0obR5g:FR - Hyères - Giens - La Madrague - Provence-Alpes-Côte d'Azur (YT)
+#DESCRIPTION FR - Hyères - Giens - La Madrague - Provence-Alpes-Côte d'Azur (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/SRFk2fuP1CU:FR - Hyères - l'Almanarre - Provence-Alpes-Côte d'Azur (YT)
+#DESCRIPTION FR - Hyères - l'Almanarre - Provence-Alpes-Côte d'Azur (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/_oxb_LWh5Uk:FR - Hyères - Plage les Estagniers - Provence-Alpes-Côte d'Azur (YT)
+#DESCRIPTION FR - Hyères - Plage les Estagniers - Provence-Alpes-Côte d'Azur (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/lIWGYEVsVgQ:FR - Hyères - Porquerolles - Provence-Alpes-Côte d'Azur (YT)
+#DESCRIPTION FR - Hyères - Porquerolles - Provence-Alpes-Côte d'Azur (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/MNBU-t4NqJs:FR - Hyères - Port Saint-Pierre - Provence-Alpes-Côte d'Azur (YT)
+#DESCRIPTION FR - Hyères - Port Saint-Pierre - Provence-Alpes-Côte d'Azur (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5ef477949826a.streamlock.net%3a444/live/hyeres_circulation.stream/chunklist_w1803762867.m3u8:FR - Hyères - Rond Point Majastre - Provence-Alpes-Côte d'Azur
+#DESCRIPTION FR - Hyères - Rond Point Majastre - Provence-Alpes-Côte d'Azur
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/kcLWAlL7Nxw:FR - Illkirch-Graffenstaden - Grand Est (YT)
+#DESCRIPTION FR - Illkirch-Graffenstaden - Grand Est (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/On0p2hgTK4E:FR - Isola 2000 - Provence-Alpes-Côte d'Azur (YT)
+#DESCRIPTION FR - Isola 2000 - Provence-Alpes-Côte d'Azur (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/hdy5hT2jDHM:FR - Île de Sein (YT)
+#DESCRIPTION FR - Île de Sein (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/IrZpPvREMyk:FR - Jard sur Mer - Pays de la Loire (YT)
+#DESCRIPTION FR - Jard sur Mer - Pays de la Loire (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/B_IKKLt-gzg:FR - Jullouville - Normandie (YT)
+#DESCRIPTION FR - Jullouville - Normandie (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5ef477949826a.streamlock.net%3a444/live/ilerousse.stream/chunklist_w1077802520.m3u8:FR - L'Ile Rousse - Corse
+#DESCRIPTION FR - L'Ile Rousse - Corse
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/iCK-uYd58oU:FR - La Baule - Hôtel Le Régent - Pays de la Loire (YT)
+#DESCRIPTION FR - La Baule - Hôtel Le Régent - Pays de la Loire (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/KMqC0nO4TDQ:FR - La Bresse - Grand Est (YT)
+#DESCRIPTION FR - La Bresse - Grand Est (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/ruCEKgNAqSY:FR - La Chaux de Gilley - Bourgogne-Franche-Comté (YT)
+#DESCRIPTION FR - La Chaux de Gilley - Bourgogne-Franche-Comté (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/W5JlqSYsPYs:FR - La Clusaz - Auvergne-Rhône-Alpes (YT)
+#DESCRIPTION FR - La Clusaz - Auvergne-Rhône-Alpes (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/l7DftwLgOpM:FR - La Digne d'Aval - Occitanie (YT)
+#DESCRIPTION FR - La Digne d'Aval - Occitanie (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/ihJLQrOtYsE:FR - La Rosière 1850 - Auvergne-Rhône-Alpes (YT)
+#DESCRIPTION FR - La Rosière 1850 - Auvergne-Rhône-Alpes (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/rSpdLD3RDHo:FR - Lac des Settons - Bourgogne-Franche-Comté (YT)
+#DESCRIPTION FR - Lac des Settons - Bourgogne-Franche-Comté (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/Olae_11UVVc:FR - Le Corbier - Auvergne-Rhône-Alpes (YT)
+#DESCRIPTION FR - Le Corbier - Auvergne-Rhône-Alpes (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/UFRF32Z2N68:FR - Le Crotoy - Port de Plaisance (YT)
+#DESCRIPTION FR - Le Crotoy - Port de Plaisance (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/DkoiD0QRiO8:FR - Le Crotoy - Plage (YT)
+#DESCRIPTION FR - Le Crotoy - Plage (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//s22.ipcamlive.com/streams/165f2ea396db9fb55/stream.m3u8:FR - Le Gaschney - Grand Est
+#DESCRIPTION FR - Le Gaschney - Grand Est
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/kUhhWS-5fkg:FR - Le Havre - Hôtel de Ville (YT)
+#DESCRIPTION FR - Le Havre - Hôtel de Ville (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/CbiEV00Dhy0:FR - Le Havre - Musée Malraux - Normandie (YT)
+#DESCRIPTION FR - Le Havre - Musée Malraux - Normandie (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/GMekf3sCpKo:FR - Le Lavandou - Aiguebelle - Provence-Alpes-Côte d'Azur (YT)
+#DESCRIPTION FR - Le Lavandou - Aiguebelle - Provence-Alpes-Côte d'Azur (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5ef477949826a.streamlock.net%3a444/live/lavandouc.stream/chunklist_w911367614.m3u8:FR - Le Lavandou - Cavalière - Provence-Alpes-Côte d'Azur
+#DESCRIPTION FR - Le Lavandou - Cavalière - Provence-Alpes-Côte d'Azur
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/pB9oozpY3Cw:FR - Le Lavandou - La Fosette - Provence-Alpes-Côte d'Azur (YT)
+#DESCRIPTION FR - Le Lavandou - La Fosette - Provence-Alpes-Côte d'Azur (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5ef477949826a.streamlock.net%3a444/live/lavandouport.stream/chunklist_w696408338.m3u8:FR - Le Lavandou - Le Port - Provence-Alpes-Côte d'Azur
+#DESCRIPTION FR - Le Lavandou - Le Port - Provence-Alpes-Côte d'Azur
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/0NtvZFLPB54:FR - Le Lioran - Auvergne-Rhône-Alpes (YT)
+#DESCRIPTION FR - Le Lioran - Auvergne-Rhône-Alpes (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/unpklRPT_c0:FR - Le Lioran - Sommet 1800 - Auvergne-Rhône-Alpes (YT)
+#DESCRIPTION FR - Le Lioran - Sommet 1800 - Auvergne-Rhône-Alpes (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/XqSH5idFREg:FR - Les 2 Alpes - La Grande Aiguille - Auvergne-Rhône-Alpes (YT)
+#DESCRIPTION FR - Les 2 Alpes - La Grande Aiguille - Auvergne-Rhône-Alpes (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/_LOyS_0BqRI:FR - Les Anses d'Arlet - Martinique (YT)
+#DESCRIPTION FR - Les Anses d'Arlet - Martinique (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/YsLlAS6EUOE:FR - Les Arcs - Vagère - Auvergne-Rhône-Alpes (YT)
+#DESCRIPTION FR - Les Arcs - Vagère - Auvergne-Rhône-Alpes (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/zqlrvrKyohE:FR - Les Arcs 2000 - Auvergne-Rhône-Alpes (YT)
+#DESCRIPTION FR - Les Arcs 2000 - Auvergne-Rhône-Alpes (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/Lx9dTHlIZq0:FR - Les Gets - Auvergne-Rhône-Alpes (YT)
+#DESCRIPTION FR - Les Gets - Auvergne-Rhône-Alpes (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/_VPpiOWbuv8:FR - Les Karellis - Auvergne-Rhône-Alpes (YT)
+#DESCRIPTION FR - Les Karellis - Auvergne-Rhône-Alpes (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//stream-us1-foxtrot.dropcam.com/nexus_aac/faa25ca669f7496db9bc4f653a6876f2/chunklist_w802838444.m3u8?public=q6hvGwWFBt:FR - Les Orres - Provence-Alpes-Côte d'Azur
+#DESCRIPTION FR - Les Orres - Provence-Alpes-Côte d'Azur
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/4nOn4fNEZhk:FR - Les Sables d'Olonne - Pays de la Loire (YT)
+#DESCRIPTION FR - Les Sables d'Olonne - Pays de la Loire (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/sBdElfvcn1s:FR - Limoges - Nouvelle-Aquitaine (YT)
+#DESCRIPTION FR - Limoges - Nouvelle-Aquitaine (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/baURl-dylZY:FR - Locquirec - Bretagne (YT)
+#DESCRIPTION FR - Locquirec - Bretagne (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/PTmOhTn12u8:FR - Loguivy - Bretagne (YT)
+#DESCRIPTION FR - Loguivy - Bretagne (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/BbFRgMR8Urk:FR - Lourdes - Occitanie (YT)
+#DESCRIPTION FR - Lourdes - Occitanie (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/yIoY-edup8w:FR - Lyon - La Pape - Auvergne-Rhône-Alpes (YT)
+#DESCRIPTION FR - Lyon - La Pape - Auvergne-Rhône-Alpes (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/hkMPESRDoTM:FR - Lyon - Luizet - Auvergne-Rhône-Alpes (YT)
+#DESCRIPTION FR - Lyon - Luizet - Auvergne-Rhône-Alpes (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/EBhCrTPpdBI:FR - Lyon - Saint Clair - Auvergne-Rhône-Alpes (YT)
+#DESCRIPTION FR - Lyon - Saint Clair - Auvergne-Rhône-Alpes (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/z4vQEMiD3VI:FR - Lyon - Vaise - Auvergne-Rhône-Alpes (YT)
+#DESCRIPTION FR - Lyon - Vaise - Auvergne-Rhône-Alpes (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//streaming.novazion.com/HotelCarre/hotelcarre.stream/chunklist_w2140083353.m3u8:FR - Marsylia - Port
+#DESCRIPTION FR - Marsylia - Port
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/E9YKUmVFs3E:FR - Marseille - Calanque samena (YT)
+#DESCRIPTION FR - Marseille - Calanque samena (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/DH0OGftulTk:FR - Mers-les-Bains (YT)
+#DESCRIPTION FR - Mers-les-Bains (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/cOXPs4cRbgA:FR - Mont-Dore (YT)
+#DESCRIPTION FR - Mont-Dore (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/IQQNKm_fiDQ:FR - Montclar - La Brèche (YT)
+#DESCRIPTION FR - Montclar - La Brèche (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/nz8LCgPM8vk:FR - Mornac-sur-Seudre (YT)
+#DESCRIPTION FR - Mornac-sur-Seudre (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//s22.ipcamlive.com/streams/165f35fe5d2b8f8ca/stream.m3u8:FR - Muhlbach-sur-Munster - Gaschney360
+#DESCRIPTION FR - Muhlbach-sur-Munster - Gaschney360
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/h8--ZIwTpWg:FR - Nancy-sur-Cluses (YT)
+#DESCRIPTION FR - Nancy-sur-Cluses (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/q_4TfntRps4:FR - Noirmoutier - Barbâtre (YT)
+#DESCRIPTION FR - Noirmoutier - Barbâtre (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/LoCAC3typXw:FR - Noirmoutier - L'Herbaudière (YT)
+#DESCRIPTION FR - Noirmoutier - L'Herbaudière (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/q6Emb4RodNM:FR - Noirmoutier - Passage du Gois (YT)
+#DESCRIPTION FR - Noirmoutier - Passage du Gois (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/Pj84-0bRazs:FR - Noirmoutier en l'Île (YT)
+#DESCRIPTION FR - Noirmoutier en l'Île (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5ef477949826a.streamlock.net%3a444/live/cumulus2.stream/chunklist_w2005754459.m3u8:FR - Oderen - Grand Est
+#DESCRIPTION FR - Oderen - Grand Est
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/qbLd93Wfii0:FR - Oléron - La Cotinière - Nouvelle-Aquitaine (YT)
+#DESCRIPTION FR - Oléron - La Cotinière - Nouvelle-Aquitaine (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/XH8vaFef3Sc:FR - Oléron - Les Huttes - Nouvelle-Aquitaine (YT)
+#DESCRIPTION FR - Oléron - Les Huttes - Nouvelle-Aquitaine (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/kpzKmQUMh4E:FR - Oléron - Phare de Chassiron (YT)
+#DESCRIPTION FR - Oléron - Phare de Chassiron (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/Pb5ljitmUqQ:FR - Ouistreham - Normandie (YT)
+#DESCRIPTION FR - Ouistreham - Normandie (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//live.webcam-hd.fr/64connections/Pariscam3.stream/playlist.m3u8:FR - Paris - Wieża Eiffla
+#DESCRIPTION FR - Paris - Wieża Eiffla
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//live.webcam-hd.fr/64connections/Pariscam1.stream/playlist.m3u8:FR - Paris - La Defense
 #DESCRIPTION FR - Paris - La Defense
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//live.webcam-hd.fr/64connections/Pariscam4.stream/playlist.m3u8:FR - Paris - Montparnasse
 #DESCRIPTION FR - Paris - Montparnasse
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//live.webcam-hd.fr/64connections/Pariscam2.stream/playlist.m3u8:FR - Paris - Seine
 #DESCRIPTION FR - Paris - Seine
-#SERVICE 1:64:20:0:0:0:0:0:0:0::Webcams: Grecja (GR)
-#DESCRIPTION Webcams: Grecja (GR)
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.youtube.com/watch?v=iAxwIl7KV7g:GR - Kos - Neptune Hotels (YT)
-#DESCRIPTION GR - Kos - Neptune Hotels (YT)
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//cdn-002.whatsupcams.com/hls/gr_mykonos01.m3u8:GR - Mykonos - Alter Hafen I
-#DESCRIPTION GR - Mykonos - Alter Hafen I
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//cdn-001.whatsupcams.com/hls/gr_mykonos03.m3u8:GR - Mykonos - Alter Hafen III
-#DESCRIPTION GR - Mykonos - Alter Hafen III
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//58f14b372a413.streamlock.net%3a444/rhodesairport/rhodesairport.stream/.m3u8:GR - Rhodos - Airport I
-#DESCRIPTION GR - Rhodos - Airport I
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5b8462eb3469a.streamlock.net%3a444/rhodesairport2/rhodesairport2.stream/.m3u8:GR - Rhodos - Airport II
-#DESCRIPTION GR - Rhodos - Airport II
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//58f14b372a413.streamlock.net%3a444/visitrhodes1/visitrhodes1.stream/.m3u8:GR - Rhodos - Lindos
-#DESCRIPTION GR - Rhodos - Lindos
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.youtube.com/watch?v=49Uyt7XBvWw:GR - Rhodos - Palladium Beach (YT)
-#DESCRIPTION GR - Rhodos - Palladium Beach (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/mmkXbwaXww8:FR - Paryż - Bazylika Sacré-Cœur (YT)
+#DESCRIPTION FR - Paryż - Bazylika Sacré-Cœur (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/UGpAxuxdONY:FR - Pau - Nouvelle-Aquitaine (YT)
+#DESCRIPTION FR - Pau - Nouvelle-Aquitaine (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/ui_9qAoosls:FR - Perros-Guirec - Bretagne (YT)
+#DESCRIPTION FR - Perros-Guirec - Bretagne (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5ef477949826a.streamlock.net%3a444/live/pc2.stream/chunklist_w1669196263.m3u8:FR - Pic De Nore - Occitanie
+#DESCRIPTION FR - Pic De Nore - Occitanie
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/VG_EagU1WOk:FR - Pirou - Normandie (YT)
+#DESCRIPTION FR - Pirou - Normandie (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/_3ZiwJrbldk:FR - Plogoff - Bretagne (YT)
+#DESCRIPTION FR - Plogoff - Bretagne (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/r7w9vNhbwbM:FR - Plogoff - La Pointe Du Raz (YT)
+#DESCRIPTION FR - Plogoff - La Pointe Du Raz (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/L0i_vJ1in_I:FR - Ploudalmézeau - Portsall (YT)
+#DESCRIPTION FR - Ploudalmézeau - Portsall (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/XCvqJ0_SxUs:FR - Plouescat - Bretagne (YT)
+#DESCRIPTION FR - Plouescat - Bretagne (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/TP5LJd1KyWI:FR - Plouhinec - Pors Poulhan (YT)
+#DESCRIPTION FR - Plouhinec - Pors Poulhan (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/rYp5WOLF9rU:FR - Plouescat - Porsguen - Bretagne (YT)
+#DESCRIPTION FR - Plouescat - Porsguen - Bretagne (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/GDOAkO17P0A:FR - Plouezec - Bretagne (YT)
+#DESCRIPTION FR - Plouezec - Bretagne (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/9W-34wQ4S-o:FR - Plouezec - Bréhec - Bretagne (YT)
+#DESCRIPTION FR - Plouezec - Bréhec - Bretagne (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/cGOBCiqyBmU:FR - Plougasnou - Bretagne (YT)
+#DESCRIPTION FR - Plougasnou - Bretagne (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/WD70LWFz-n4:FR - Plougonvelin - Le Trez Hir - Bretagne (YT)
+#DESCRIPTION FR - Plougonvelin - Le Trez Hir - Bretagne (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/BMKQqgjy2dc:FR - Porto Vecchio - Corse (YT)
+#DESCRIPTION FR - Porto Vecchio - Corse (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5a4af05b13bd0.streamlock.net%3a7443/Lamigeste/smil%3aLamigeste.smil/chunklist_w695560722_b1003000_slnld.m3u8:FR - Pouzols Minervois - Occitanie
+#DESCRIPTION FR - Pouzols Minervois - Occitanie
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5ef477949826a.streamlock.net%3a444/live/pc.stream/chunklist_w44754531.m3u8:FR - Pradelles-Cabardès - Occitanie
+#DESCRIPTION FR - Pradelles-Cabardès - Occitanie
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5ef477949826a.streamlock.net%3a444/live/provins.stream/chunklist_w643220592.m3u8:FR - Provins - La Tour César
+#DESCRIPTION FR - Provins - La Tour César
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge8.vedge.infomaniak.com/livecast/ik%3aninaalaplage/chunklist_w1194916599.m3u8?spark=fd117e97-5bf2-4d1a-9064-ae51d62b367e&token=:FR - Pornichet - Plaża
+#DESCRIPTION FR - Pornichet - Plaża
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5ef477949826a.streamlock.net%3a444/live/pc.stream/chunklist_w614608626.m3u8:FR - Pradelles-Cabardès - Montagne Noire
+#DESCRIPTION FR - Pradelles-Cabardès - Montagne Noire
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/france/corsica/porto-vecchio/porto-vecchio-folacca-beach.html:FR - Porto-Vecchio - Plaża Folacca
+#DESCRIPTION FR - Porto-Vecchio - Plaża Folacca
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5ef477949826a.streamlock.net%3a444/live/psp.stream/chunklist_w1141683906.m3u8:FR - Puy-Saint-Pierre - Briançon
+#DESCRIPTION FR - Puy-Saint-Pierre - Briançon
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/ysSRemi4LsE:FR - Puy-Saint-Vincent 1600 (YT)
+#DESCRIPTION FR - Puy-Saint-Vincent 1600 (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/EndoMoF-_5U:FR - Puy-Saint-Vincent 2400 (YT)
+#DESCRIPTION FR - Puy-Saint-Vincent 2400 (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/XsIFH8HHH-I:FR - Pyrénées 2000 (YT)
+#DESCRIPTION FR - Pyrénées 2000 (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/VjkGI-ENZyQ:FR - Roscoff - Bretagne (YT)
+#DESCRIPTION FR - Roscoff - Bretagne (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/89zlO1MvqEY:FR - Roscoff - Île de Batz - Bretagne (YT)
+#DESCRIPTION FR - Roscoff - Île de Batz - Bretagne (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/jTNC9hfQhto:FR - Saint-Aubin-sur-Mer (YT)
+#DESCRIPTION FR - Saint-Aubin-sur-Mer (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/WWGIjLmGFE4:FR - Saint-Barth - Aéroport - St-Barth (YT)
+#DESCRIPTION FR - Saint-Barth - Aéroport - St-Barth (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/8VOZJhA-T1g:FR - Saint-Denis-d'Oléron - Nouvelle (YT)
+#DESCRIPTION FR - Saint-Denis-d'Oléron - Nouvelle (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/2hoKagQCY3I:FR - Saint-Germain-sur-Ay - Normandie (YT)
+#DESCRIPTION FR - Saint-Germain-sur-Ay - Normandie (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/tfr7ELQVBWQ:FR - Saint-Hilaire-de-Riez - Pays de la Loire (YT)
+#DESCRIPTION FR - Saint-Hilaire-de-Riez - Pays de la Loire (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/afflrgxMmOw:FR - Saint-Jouin-Bruneval (YT)
+#DESCRIPTION FR - Saint-Jouin-Bruneval (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/8yAgaVi8CAc:FR - Saint-Laurent-du-Var - Provence (YT)
+#DESCRIPTION FR - Saint-Laurent-du-Var - Provence (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5ef477949826a.streamlock.net%3a444/live/smbeaufort.stream/chunklist_w1802551137.m3u8:FR - Saint-Malo - Hôtel Beaufort
+#DESCRIPTION FR - Saint-Malo - Hôtel Beaufort
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/p6nAlz4_bdI:FR - Saint-Malo - Le Port (YT)
+#DESCRIPTION FR - Saint-Malo - Le Port (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/2uznaTjvb7I:FR - Saint-Malo - Les Forts (YT)
+#DESCRIPTION FR - Saint-Malo - Les Forts (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/OetL01QjfBs:FR - Saint-Malo - Les Thermes Marins (YT)
+#DESCRIPTION FR - Saint-Malo - Les Thermes Marins (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/b78gfKXOCT8:FR - Saint-Martin d'Ardèche (YT)
+#DESCRIPTION FR - Saint-Martin d'Ardèche (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/QpKdhbccQ3M:FR - Saint-Pair-Sur-Mer (YT)
+#DESCRIPTION FR - Saint-Pair-Sur-Mer (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//streaming-sp-01.cheznoo.net/live/Saint-pierre.stream/chunklist_w1159628593.m3u8:FR - Saint-Pierre - Saint-Pierre-et
+#DESCRIPTION FR - Saint-Pierre - Saint-Pierre-et
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/rvzTR826SSo:FR - Saint-Pol-de-Léon (YT)
+#DESCRIPTION FR - Saint-Pol-de-Léon (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/lWPgeICToUk:FR - Saint-Quay-Portrieux (YT)
+#DESCRIPTION FR - Saint-Quay-Portrieux (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/gcj5PRg6yRY:FR - Saint-Trojan - Novotel (YT)
+#DESCRIPTION FR - Saint-Trojan - Novotel (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/OAXDQlATQ-g:FR - Saint-Trojan-les-Bains (YT)
+#DESCRIPTION FR - Saint-Trojan-les-Bains (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/rteOiYBfu5c:FR - Saint-Véran - Provence-Alpes (YT)
+#DESCRIPTION FR - Saint-Véran - Provence-Alpes (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/ZmJJH9rqjeY:FR - Saint-Valéry-en-Caux - Capitainerie (YT)
+#DESCRIPTION FR - Saint-Valéry-en-Caux - Capitainerie (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5ef477949826a.streamlock.net%3a444/live/sveccasino.stream/chunklist_w217150647.m3u8:FR - Saint-Valery-en-Caux - Plage
+#DESCRIPTION FR - Saint-Valery-en-Caux - Plage
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/bHLJNI6AGMs:FR - Saint-Valéry-en-Caux - Plaisance (YT)
+#DESCRIPTION FR - Saint-Valéry-en-Caux - Plaisance (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/_r19rwEfPAg:FR - Santec - Le Dossen (YT)
+#DESCRIPTION FR - Santec - Le Dossen (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/2SgT9eFRA9g:FR - Sault - Aroma Plantes (YT)
+#DESCRIPTION FR - Sault - Aroma Plantes (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5ef477949826a.streamlock.net%3a444/live/semur.stream/chunklist_w1242385853.m3u8:FR - Semur-en-Auxois
+#DESCRIPTION FR - Semur-en-Auxois
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/tkADOB9qWWc:FR - St-Barth - Baie de Saint Jean (YT)
+#DESCRIPTION FR - St-Barth - Baie de Saint Jean (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/o5pr9vOC5ok:FR - St-Barth - Col de la Tourmente (YT)
+#DESCRIPTION FR - St-Barth - Col de la Tourmente (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/HDP7hAuBIeY:FR - St-Barth - Flamand Beach (YT)
+#DESCRIPTION FR - St-Barth - Flamand Beach (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/WDCOwI5OWf0:FR - St-Barth - Plaine de Saint-Jean (YT)
+#DESCRIPTION FR - St-Barth - Plaine de Saint-Jean (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/6NXrFApPurE:FR - St-Barth - Rade de Gustavia (YT)
+#DESCRIPTION FR - St-Barth - Rade de Gustavia (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/XWmQtBOaSXQ:FR - Superbesse - Auvergne-Rhône-Alpes (YT)
+#DESCRIPTION FR - Superbesse - Auvergne-Rhône-Alpes (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/SvkzcMVWhkA:FR - Trouville-sur-Mer (YT)
+#DESCRIPTION FR - Trouville-sur-Mer (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5ef477949826a.streamlock.net%3a444/live/troyes3.stream/chunklist_w1727465819.m3u8:FR - Troyes - Cathédrale Saint-Pierre
+#DESCRIPTION FR - Troyes - Cathédrale Saint-Pierre
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5ef477949826a.streamlock.net%3a444/live/troyes.stream/chunklist_w634750478.m3u8:FR - Troyes - Hôtel de Ville
+#DESCRIPTION FR - Troyes - Hôtel de Ville
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5ef477949826a.streamlock.net%3a444/live/troyes5.stream/chunklist_w1068203824.m3u8:FR - Troyes - Place Alexandre III
+#DESCRIPTION FR - Troyes - Place Alexandre III
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/vaExhsA1GkE:FR - Val Cenis (YT)
+#DESCRIPTION FR - Val Cenis (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/0cSfLcjXbB0:FR - Val d´Europe (YT)
+#DESCRIPTION FR - Val d´Europe (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/CID1jFHJ7sc:FR - Vannes (YT)
+#DESCRIPTION FR - Vannes (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/_iDeHxqe86U:FR - Vars - Provence-Alpes-Côte d'Azur (YT)
+#DESCRIPTION FR - Vars - Provence-Alpes-Côte d'Azur (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5ef477949826a.streamlock.net%3a444/live/vervins.stream/chunklist_w637617263.m3u8:FR - Vervins
+#DESCRIPTION FR - Vervins
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/VKoz4m8wh7Y:FR - Veules-les-Roses (YT)
+#DESCRIPTION FR - Veules-les-Roses (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5ef477949826a.streamlock.net%3a444/live/veulettes.stream/chunklist_w1675189260.m3u8:FR - Veulettes-sur-Mer
+#DESCRIPTION FR - Veulettes-sur-Mer
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/M2lvVGOFQgw:FR - Yzeron - Auvergne-Rhône-Alpes (YT)
+#DESCRIPTION FR - Yzeron - Auvergne-Rhône-Alpes (YT)
+#SERVICE 1:64:20:0:0:0:0:0:0:0::Grecja (GR)
+#DESCRIPTION Grecja (GR)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/Bw8Ixie68Mg:GR - Alonisos - Port (YT)
+#DESCRIPTION GR - Alonisos - Port (YT)
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/ellada/thessalia/sporades/alonnisos.html:GR - Alonnisos - Votsi - Port
+#DESCRIPTION GR - Alonnisos - Votsi - Port
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/ellada/naigaio/dodecanisa/astypalaia.html:GR - Astipalea - Panorama
+#DESCRIPTION GR - Astipalea - Panorama
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/it/webcam/ellada/atiki/athina/acropolis-athens.html:GR - Ateny - Akropol ateński
+#DESCRIPTION GR - Ateny - Akropol ateński
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//s1.worldcam.live%3a8082/galatsi/tracks-v1/mono.m3u8:GR - Ateny - Panorama miasta
+#DESCRIPTION GR - Ateny - Panorama miasta
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/ellada/atiki/athina/hellenic-parliament.html:GR - Ateny - Plac Sindagma - Parlament Hellenów
+#DESCRIPTION GR - Ateny - Plac Sindagma - Parlament Hellenów
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/it/webcam/ellada/atiki/athina/ermou-street-syntagma-square.html:GR - Ateny - Via Ermou e Piazza Syntagma
+#DESCRIPTION GR - Ateny - Via Ermou e Piazza Syntagma
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/pl/webcam/ellada/mount-athos/karyes/mount-athos.html:GR - Athos - Wielka Ławra
+#DESCRIPTION GR - Athos - Wielka Ławra
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/ellada/makedonia/chalkidiki/nea-roda.html:GR - Chalkidiki - Nea Roda
+#DESCRIPTION GR - Chalkidiki - Nea Roda
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/xUCJZeytGXg:GR - Chios - Plateia Vounaki (YT)
+#DESCRIPTION GR - Chios - Plateia Vounaki (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//mediacp.alphastream.eu/drosochori/drosochori.stream/chunklist_w952798267.m3u8:GR - Drosochori - Panorama
+#DESCRIPTION GR - Drosochori - Panorama
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/ellada/peloponnese/laconia/elafonisos.html:GR - Elafonisos - Port
+#DESCRIPTION GR - Elafonisos - Port
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//e1-eu8.angelcam.com/m1-eu8/cameras/5924/streams/hls/playlist.m3u8?token=eyJjYW1lcmFfaWQiOiI1OTI0IiwidGltZSI6MTU5NzUyMzQ3NTM0MDIwMCwidGltZW91dCI6MzYwMH0%3D%2E27f5fa1fb7304c249509c02a00cd68dd8e331d19d37e4f48f4d9caaecfddeb2c:GR - Eubea - Chalkida - Evripou
+#DESCRIPTION GR - Eubea - Chalkida - Evripou
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/ellada/evrytania/agrafa/granitsa.html:GR - Eurytania - Granitsa
+#DESCRIPTION GR - Eurytania - Granitsa
 #SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.youtube.com/watch?v=z0sZNeSnqGU:GR - Hotel Thassos (YT)
 #DESCRIPTION GR - Hotel Thassos (YT)
-#SERVICE 1:64:21:0:0:0:0:0:0:0::Webcams: Wielka Brytania (GB)
-#DESCRIPTION Webcams: Wielka Brytania (GB)
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//videos3.earthcam.com/fecnetwork/AbbeyRoadHD1.flv/.m3u8:GB - London - Abbey Road
-#DESCRIPTION GB - London - Abbey Road
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/NH-O4gTnsqs:GB - London - Panorama (YT)
-#DESCRIPTION GB - London - Panorama (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//mediacp.alphastream.eu/meteorakor/MeteoraUp.stream/chunklist_w2108086250.m3u8:GR - Kalambaka - Meteory
+#DESCRIPTION GR - Kalambaka - Meteory
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//e1-eu8.angelcam.com/m6-eu5/cameras/610/streams/hls/playlist.m3u8?token=eyJjYW1lcmFfaWQiOiI2MTAiLCJ0aW1lIjoxNTk3NTI0MTc3MjI3NjMzLCJ0aW1lb3V0IjozNjAwfQ%3D%3D%2E121518972bbbce9e4f050bf6fcdee775ed8a59a7d0848aa3544509787140c00e:GR - Karpenisi
+#DESCRIPTION GR - Karpenisi
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/ellada/makedonia/kavala/kavala.html:GR - Kawala - Port
+#DESCRIPTION GR - Kawala - Port
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/ellada/ionian-islands/kefalonia/fiskardo.html:GR - Kefalonia - Fiskardo - Port
+#DESCRIPTION GR - Kefalonia - Fiskardo - Port
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/j4lwhbJYHXk:GR - Korfu - Agios Georgios Pagon (YT)
+#DESCRIPTION GR - Korfu - Agios Georgios Pagon (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//corfulive.gr/akti_kontogialos/akti_kontogialos.m3u8:GR - Korfu - Kontogialos
+#DESCRIPTION GR - Korfu - Kontogialos
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/ellada/ionian-islands/corfu/corfu-palaiokastritsa.html:GR - Korfu - Palaiokastritsa
+#DESCRIPTION GR - Korfu - Palaiokastritsa
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//corfulive.gr/Akron/Akron.m3u8:GR - Korfu - Paleokastritsa - Akron
+#DESCRIPTION GR - Korfu - Paleokastritsa - Akron
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//corfulive.gr/vrachos/vrachos.m3u8:GR - Korfu - Paleokastritsa - Plaża
+#DESCRIPTION GR - Korfu - Paleokastritsa - Plaża
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//corfulive.gr/aktaion/aktaion.m3u8:GR - Korfu - Stara twierdza
+#DESCRIPTION GR - Korfu - Stara twierdza
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//corfulive.gr/nautilos/nautilos.m3u8:GR - Korfu - Zatoka
+#DESCRIPTION GR - Korfu - Zatoka
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.youtube.com/watch?v=iAxwIl7KV7g:GR - Kos - Neptune Hotels (YT)
+#DESCRIPTION GR - Kos - Neptune Hotels (YT)
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/ellada/crete/lasithi/agios-nikolaos-kitroplatia-beach.html:GR - Kreta - Ajos Nikolaos - Plaża Kitroplatia
+#DESCRIPTION GR - Kreta - Ajos Nikolaos - Plaża Kitroplatia
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/ellada/crete/chania/chania.html:GR - Kreta - Chania - Panorama
+#DESCRIPTION GR - Kreta - Chania - Panorama
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/ellada/crete/chania/chania-old-port.html:GR - Kreta - Chania - Port, Akti Tompazi
+#DESCRIPTION GR - Kreta - Chania - Port, Akti Tompazi
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/L2MYCLb86ao:GR - Kreta - Heraklion - Plac Venizelou (YT)
+#DESCRIPTION GR - Kreta - Heraklion - Plac Venizelou (YT)
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/ellada/crete/heraklion/heraklion-ligaria-beach.html:GR - Kreta - Heraklion - Plaża Ligaria
+#DESCRIPTION GR - Kreta - Heraklion - Plaża Ligaria
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/ellada/crete/heraklion/heraklion.html:GR - Kreta - Heraklion - Port, Koules
+#DESCRIPTION GR - Kreta - Heraklion - Port, Koules
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/ellada/crete/heraklion/hersonissos-stalida.html:GR - Kreta - Limin Chersonisu - Stalida
+#DESCRIPTION GR - Kreta - Limin Chersonisu - Stalida
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/ellada/crete/heraklion/matala-beach.html:GR - Kreta - Matala - Plaża
+#DESCRIPTION GR - Kreta - Matala - Plaża
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//hddn00.liveincam.com/live.m3u8?a=tgj7h9bde9388nfumnu8pfthn4:GR - Kreta - Tympaki
+#DESCRIPTION GR - Kreta - Tympaki
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/ellada/north-aegean/lesbos/lesbos-mithymna-molyvos.html:GR - Lesbos - Mithimna
+#DESCRIPTION GR - Lesbos - Mithimna
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//cdn-002.whatsupcams.com/hls/gr_mykonos01.m3u8:GR - Mykonos - Stary Port i plaża
+#DESCRIPTION GR - Mykonos - Stary Port i plaża
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//cdn-001.whatsupcams.com/hls/gr_mykonos03.m3u8:GR - Mykonos - Alter Hafen III
+#DESCRIPTION GR - Mykonos - Alter Hafen III
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/ellada/naigaio/kyklades/mykonos.html:GR - Mykonos - Wiatraki
+#DESCRIPTION GR - Mykonos - Wiatraki
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/en/webcam/ellada/naigaio/dodecanisa/nisyros.html:GR - Nisyros - Dodecanese
+#DESCRIPTION GR - Nisyros - Dodecanese
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//e1-eu8.angelcam.com/m2-eu8/cameras/40082/streams/hls/playlist.m3u8?token=eyJjYW1lcmFfaWQiOiI0MDA4MiIsInRpbWUiOjE1OTc1Nzc5Mjk1ODIxMDMsInRpbWVvdXQiOjM2MDB9%2E8f945de4190fa1cd740fb9434956194b27593705c89ebe5627e4c25eec53464b:GR - Paksos - Gaios
+#DESCRIPTION GR - Paksos - Gaios
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/r6FkOwx_jX0:GR - Paleo Faliro - Plaża (YT)
+#DESCRIPTION GR - Paleo Faliro - Plaża (YT)
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/ellada/crete/chania/paleochora-beach.html:GR - Paleochora - Plaża Pachia Ammos
+#DESCRIPTION GR - Paleochora - Plaża Pachia Ammos
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/ellada/makedonia/katerini/paralia.html:GR - Paralia Katerinis
+#DESCRIPTION GR - Paralia Katerinis
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/ellada/epirus/preveza/parga.html:GR - Parga - Preveza
+#DESCRIPTION GR - Parga - Preveza
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/ellada/naigaio/kyklades/paros-naoussa-harbour.html:GR - Paros - Naousa - Port
+#DESCRIPTION GR - Paros - Naousa - Port
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/ellada/naigaio/kyklades/paros-beach.html:GR - Paros - Piso Livadi - Port i plaża
+#DESCRIPTION GR - Paros - Piso Livadi - Port i plaża
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/ellada/peloponnese/patras/rio-antirio-bridge.html:GR - Patras - Most Rio-Andirio
+#DESCRIPTION GR - Patras - Most Rio-Andirio
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/ellada/peloponnese/patras/patras.html:GR - Patras - Plac Jerzego I Greckiego
+#DESCRIPTION GR - Patras - Plac Jerzego I Greckiego
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//mediacp.alphastream.eu/pertouli1/Pertoulimount.stream/chunklist_w1955680200.m3u8:GR - Pertouli - Ski Center
+#DESCRIPTION GR - Pertouli - Ski Center
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/ellada/atiki/piraeus/piraeus.html:GR - Pireus - Port
+#DESCRIPTION GR - Pireus - Port
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/49Uyt7XBvWw:GR - Rodos - Ammoudes - Plaża (YT)
+#DESCRIPTION GR - Rodos - Ammoudes - Plaża (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//58f14b372a413.streamlock.net%3a444/visitrhodes1/visitrhodes1.stream/.m3u8:GR - Rodos - Lindos
+#DESCRIPTION GR - Rodos - Lindos
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//s17.ipcamlive.com/streams/115f39113e446d17e/stream.m3u8:GR - Rodos - Marina
+#DESCRIPTION GR - Rodos - Marina
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.youtube.com/watch?v=49Uyt7XBvWw:GR - Rodos - Palladium Plaża (YT)
+#DESCRIPTION GR - Rodos - Palladium Plaża (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//s25.ipcamlive.com/streams/195f35f2a266e70ec/stream.m3u8:GR - Rodos - Pl. Archiepiskopou Chrisanthou - Plaża
+#DESCRIPTION GR - Rodos - Pl. Archiepiskopou Chrisanthou - Plaża
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//s31.ipcamlive.com/streams/1f5f39213f5cdcb4a/stream.m3u8:GR - Rodos - Plaża Pefkos
+#DESCRIPTION GR - Rodos - Plaża Pefkos
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/ellada/naigaio/dodecanisa/rhodes.html:GR - Rodos - Trianta
+#DESCRIPTION GR - Rodos - Trianta
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/ellada/makedonia/thessaloniki/thessaloniki.html:GR - Saloniki - Nadmorska promenada
+#DESCRIPTION GR - Saloniki - Nadmorska promenada
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/ellada/makedonia/thessaloniki/plateia-aristotelous.html:GR - Saloniki - Plac Arystotelesa
+#DESCRIPTION GR - Saloniki - Plac Arystotelesa
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/ellada/makedonia/thessaloniki/thermaikos.html:GR - Saloniki - Zatoka Termajska
+#DESCRIPTION GR - Saloniki - Zatoka Termajska
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/ellada/naigaio/kyklades/santorini-firostefani.html:GR - Santoryn - Firostefani Settlement
+#DESCRIPTION GR - Santoryn - Firostefani Settlement
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//s46.ipcamlive.com/streams/2e5f38715b545a0b6/stream.m3u8:GR - Santoryn - Oia - Evmenia Luxury Cave Villa
+#DESCRIPTION GR - Santoryn - Oia - Evmenia Luxury Cave Villa
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/ellada/naigaio/kyklades/santorini.html:GR - Santoryn - Panorama
+#DESCRIPTION GR - Santoryn - Panorama
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//hddn00.skylinewebcams.com/live.m3u8?a=li19qv69pjd66dk21966h7dsv3:GR - Santoryn - Villa Ilias
+#DESCRIPTION GR - Santoryn - Villa Ilias
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/ellada/naigaio/kyklades/syros.html:GR - Siros - Ermupoli - Plac Miaouli
+#DESCRIPTION GR - Siros - Ermupoli - Plac Miaouli
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/ellada/peloponnese/sparta/sparta.html:GR - Sparta - Centrum miasta
+#DESCRIPTION GR - Sparta - Centrum miasta
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/z0sZNeSnqGU:GR - Tasos - Limenas (YT)
+#DESCRIPTION GR - Tasos - Limenas (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//s21.ipcamlive.com/streams/155f390426534dc93/stream.m3u8:GR - Thassos - Golden Beach
+#DESCRIPTION GR - Thassos - Golden Beach
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/ellada/naigaio/kyklades/tinos.html:GR - Tinos - Promenada
+#DESCRIPTION GR - Tinos - Promenada
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//frn.rtsp.me/Fdq79o8SdNjBripFiUAn0w/1597671839/hls/S2Tr48nF.m3u8:GR - Zakinthos - House Marathia
+#DESCRIPTION GR - Zakinthos - House Marathia
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//cdn-005.whatsupcams.com/hls/gr_zakynthos01.m3u8:GR - Zakintos - Marathias
+#DESCRIPTION GR - Zakintos - Marathias
+#SERVICE 1:64:21:0:0:0:0:0:0:0::Wielka Brytania (GB)
+#DESCRIPTION Wielka Brytania (GB)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/nv4l77y4cro:GB - Ammanford - Pen-Y-Banc Rd (YT)
+#DESCRIPTION GB - Ammanford - Pen-Y-Banc Rd (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//e1-eu8.angelcam.com/m2-eu8/cameras/89860/streams/hls/playlist.m3u8?token=eyJjYW1lcmFfaWQiOiI4OTg2MCIsInRpbWUiOjE1OTc2MDQyNTA5MzkxMTQsInRpbWVvdXQiOjM2MDB9%2E13ccdafe8a5450431e1fdbbf5b061dd4cdecd42e68f1114c7a790ab35c1b963a:GB - Arran - Kildonan
+#DESCRIPTION GB - Arran - Kildonan
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//e1-eu8.angelcam.com/m2-eu8/cameras/89856/streams/hls/playlist.m3u8?token=eyJjYW1lcmFfaWQiOiI4OTg1NiIsInRpbWUiOjE1OTc2MDQzNTkwMTYwOTIsInRpbWVvdXQiOjM2MDB9%2Ee1ab384155872438cb0251ce371890a97a160a30cacdf210b3370461b4a545dd:GB - Arran - Kildonan 2
+#DESCRIPTION GB - Arran - Kildonan 2
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/BVxGvBdO5Po:GB - Barry - Whitmore Bay (YT)
+#DESCRIPTION GB - Barry - Whitmore Bay (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//e1-eu8.angelcam.com/m5-eu5/cameras/79560/streams/hls/playlist.m3u8?token=eyJjYW1lcmFfaWQiOiI3OTU2MCIsInRpbWUiOjE1OTc2MDQ1NjQ2ODM4MDksInRpbWVvdXQiOjM2MDB9%2E8cc8bc0fda822c0a7f738653297f5c9e17734572063dd3fab540921db35dd5c4:GB - Birmingham - Port lotniczy Birmingham
+#DESCRIPTION GB - Birmingham - Port lotniczy Birmingham
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//maybach.railcam.co.uk/BishopsLydeard_59234/tracks-v1a1/mono.m3u8:GB - Bishops Lydeard Station
+#DESCRIPTION GB - Bishops Lydeard Station
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/united-kingdom/england/blackpool/blackpool-tower.html:GB - Blackpool - Blackpool Tower
+#DESCRIPTION GB - Blackpool - Blackpool Tower
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/united-kingdom/england/blackpool/blackpool-chapel-street.html:GB - Blackpool - Chapel Street
+#DESCRIPTION GB - Blackpool - Chapel Street
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/united-kingdom/england/blackpool/blackpool.html:GB - Blackpool - Plaża
+#DESCRIPTION GB - Blackpool - Plaża
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//maybach.railcam.co.uk/BlueAnchor_68938/tracks-v1a1/mono.m3u8:GB - Blue Anchor - Stacja kolejowa
+#DESCRIPTION GB - Blue Anchor - Stacja kolejowa
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//videos-3.earthcam.com/fecnetwork/5288.flv/chunklist_w963109209.m3u8?t=WOc99w%2FE1JOzc6aDb8Z%2BONbVNPp7jz1sWX%2F%2ByMFspYk%3D:GB - Bognor Regis - Plaża
+#DESCRIPTION GB - Bognor Regis - Plaża
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//cams.cdn-surfline.com/cdn-int/uk-boscombe/chunklist.m3u8:GB - Bournemouth - Boscombe
+#DESCRIPTION GB - Bournemouth - Boscombe
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//cams.cdn-surfline.com/cdn-int/uk-bournemoutheast/chunklist.m3u8:GB - Bournemouth - Molo
+#DESCRIPTION GB - Bournemouth - Molo
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//cams.cdn-surfline.com/cdn-int/uk-bracklesham/chunklist.m3u8:GB - Bracklesham - Plaża
+#DESCRIPTION GB - Bracklesham - Plaża
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/united-kingdom/england/brighton/brighton-pier.html:GB - Brighton - Palace pier
+#DESCRIPTION GB - Brighton - Palace pier
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//camsecure.co/HLS/potandbarrel.m3u8:GB - Bude - Plaża
+#DESCRIPTION GB - Bude - Plaża
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//camsecure.co/HLS/bo1.m3u8:GB - Burnham Overy - River Burn
+#DESCRIPTION GB - Burnham Overy - River Burn
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//stream-eu1-bravo.dropcam.com/nexus_aac/36f529218066407dbd9917bfb7525254/chunklist_w278178075.m3u8?public=UUcFjlDGIk:GB - Camberley - Blackbushe Airport
+#DESCRIPTION GB - Camberley - Blackbushe Airport
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//eu01-smr01-relay.ozolio.com/hls-live/_definst_/relay01.brskb0q.fd0.sm1.av2.at0.sh2.rt8635.rc0.basic.stream/chunklist_w1420414161.m3u8:GB - Carbis Bay
+#DESCRIPTION GB - Carbis Bay
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/united-kingdom/wales/cardiff/cardiff.html:GB - Cardiff - St. Mary Street
+#DESCRIPTION GB - Cardiff - St. Mary Street
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/lZ1aRKKn4nQ:GB - Dawlish - Marine Parade (YT)
+#DESCRIPTION GB - Dawlish - Marine Parade (YT)
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/united-kingdom/england/deal/deal.html:GB - Deal - Molo
+#DESCRIPTION GB - Deal - Molo
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//camsecure.co/HLS/news03.m3u8:GB - Dornoch - Royal Dornoch
+#DESCRIPTION GB - Dornoch - Royal Dornoch
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/united-kingdom/england/dover/dover-beach-kent.html:GB - Dover - Plaża
+#DESCRIPTION GB - Dover - Plaża
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//s1.ipcamlive.com/streams/015f38b4e5e4f39a5/stream.m3u8:GB - Dymchurch - Plaża
+#DESCRIPTION GB - Dymchurch - Plaża
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//eu01-smr02-relay.ozolio.com/hls-live/_definst_/relay01.mncjccd.fd0.sm1.av1.at0.sh2.rt8635.rc0.basic.stream/chunklist_w1165277337.m3u8:GB - Falmouth - Marina
+#DESCRIPTION GB - Falmouth - Marina
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//eu01-smr02-relay.ozolio.com/hls-live/_definst_/relay01.rknkb8n.fd0.sm1.av2.at0.sh2.rt8635.rc0.basic.stream/chunklist_w1896475271.m3u8:GB - Falmouth - Port
+#DESCRIPTION GB - Falmouth - Port
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//camsecure.co/HLS/felix.m3u8:GB - Felixstowed - South Beach
+#DESCRIPTION GB - Felixstowed - South Beach
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//camsecure.co/HLS/felix2.m3u8:GB - Felixstowed - North Beach
+#DESCRIPTION GB - Felixstowed - North Beach
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/nd50--ao6n4:GB - Folkestone - Port (YT)
+#DESCRIPTION GB - Folkestone - Port (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//cams.cdn-surfline.com/cdn-int/uk-gwithian/chunklist.m3u8:GB - Gwithian - Sunset Surf
+#DESCRIPTION GB - Gwithian - Sunset Surf
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/c3Rn8FktXjQ:GB - Hastings - Molo (YT)
+#DESCRIPTION GB - Hastings - Molo (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//s2.ipcamlive.com/streams/025f38e7008019fb9/stream.m3u8:GB - Haverfordwest - Roch Castle
+#DESCRIPTION GB - Haverfordwest - Roch Castle
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//camsecure.co/HLS/cem2.m3u8:GB - Holy Island - Cemaes - Port
+#DESCRIPTION GB - Holy Island - Cemaes - Port
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//camsecure.co/HLS/dagan.m3u8:GB - Holy Island - Zamek Lindisfarne
+#DESCRIPTION GB - Holy Island - Zamek Lindisfarne
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//camsecure.co/HLS/derwentwater.m3u8:GB - Keswick - Derwent Water Marina
+#DESCRIPTION GB - Keswick - Derwent Water Marina
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//camsecure.uk/HLS/visitcumbriacam.m3u8:GB - Keswick - Market Square
+#DESCRIPTION GB - Keswick - Market Square
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//camsecure.co/HLS/nci2.m3u8:GB - Kingsbridge - Prawle Point
+#DESCRIPTION GB - Kingsbridge - Prawle Point
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//camsecure.co/HLS/nci1.m3u8:GB - Kingsbridge - Prawle Point 2
+#DESCRIPTION GB - Kingsbridge - Prawle Point 2
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//eu01-smr01-relay.ozolio.com/hll-live/_definst_/relay01.flztb0l.fd0.sm1.av2.at0.sh2.rt8635.rc0.basic.stream/chunklist_w206818819.m3u8:GB - Langland Bay
+#DESCRIPTION GB - Langland Bay
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/united-kingdom/england/leicester/leicester.html:GB - Leicester - Jubilee Square
+#DESCRIPTION GB - Leicester - Jubilee Square
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//camsecure.co/HLS/leicesterair.m3u8:GB - Leicester - Lotnisko
+#DESCRIPTION GB - Leicester - Lotnisko
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//camsecure.co/HLS/lizard.m3u8:GB - Lizard - Panorama
+#DESCRIPTION GB - Lizard - Panorama
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/q29jNDSdAzQ:GB - Lochgelly - Panorama (YT)
+#DESCRIPTION GB - Lochgelly - Panorama (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//videos3.earthcam.com/fecnetwork/AbbeyRoadHD1.flv/chunklist_w262640390.m3u8:GB - Londyn - Abbey Road
+#DESCRIPTION GB - Londyn - Abbey Road
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/ytPsiuXqcNY:GB - Londyn - London Eye (YT)
+#DESCRIPTION GB - Londyn - London Eye (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//livecdn-de-earthtv-com.global.ssl.fastly.net/edge2/cdnedge/HpKDg0eABYY/chunklist.m3u8:GB - Londyn - Panorama
+#DESCRIPTION GB - Londyn - Panorama
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/NH-O4gTnsqs:GB - Londyn - Panorama (YT)
+#DESCRIPTION GB - Londyn - Panorama (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/8elbbK-smK0:GB - Londyn - Panorama 2 (YT)
+#DESCRIPTION GB - Londyn - Panorama 2 (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/LdDpaSYMEPc:GB - Londyn - Snakes Lane East (YT)
+#DESCRIPTION GB - Londyn - Snakes Lane East (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//s55.ipcamlive.com/streams/375f387f5416a630e/stream.m3u8:GB - Looe - Rzeka Looe
+#DESCRIPTION GB - Looe - Rzeka Looe
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//eu01-smr02-relay.ozolio.com/hls-live/_definst_/relay01.lvfrb8d.fd0.sm1.av2.at0.sh2.rt8635.rc0.basic.stream/chunklist_w339329010.m3u8:GB - Lyme Regis - Plaża
+#DESCRIPTION GB - Lyme Regis - Plaża
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/rBwTRW4z6I0:GB - Lyme Regis - Port (YT)
+#DESCRIPTION GB - Lyme Regis - Port (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/Yx2rgSF4SIs:GB - Manchester - Salford Quays (YT)
+#DESCRIPTION GB - Manchester - Salford Quays (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//130.88.230.220%3a1935/live/media.amp.stream/chunklist_w1052905931.m3u8:GB - Manchester - Uniwersytet
+#DESCRIPTION GB - Manchester - Uniwersytet
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//eu01-smr02-relay.ozolio.com/hls-live/_definst_/relay01.pvuob60.fd0.sm1.av2.at0.sh2.rt8635.rc0.basic.stream/chunklist_w702148238.m3u8:GB - Marazion - St Michael’s Mount
+#DESCRIPTION GB - Marazion - St Michael’s Mount
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//maybach.railcam.co.uk/Minehead_05286/tracks-v1a1/mono.m3u8:GB - Minehead - Stacja kolejowa
+#DESCRIPTION GB - Minehead - Stacja kolejowa
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//camsecure.co/HLS/kingsrest.m3u8:GB - Molesey - Hampton Court Village
+#DESCRIPTION GB - Molesey - Hampton Court Village
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//s29.ipcamlive.com/streams/1d5f3a3e00705a679/stream.m3u8:GB - Morecambe - Plaża
+#DESCRIPTION GB - Morecambe - Plaża
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//eu01-smr02-relay.ozolio.com/hls-live/_definst_/relay01.ncdfb2t.fd0.sm1.av2.at0.sh2.rt8635.rc0.basic.stream/chunklist_w84102349.m3u8:GB - Mousehole - Port
+#DESCRIPTION GB - Mousehole - Port
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//uk2.streamcaster.io/playlist.m3u8?stream=911A7B6D-71D7-470D-B60A-73C318671DA0&token=5f3a5570d8628:GB - Mullion - Port
+#DESCRIPTION GB - Mullion - Port
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//eu01-smr01-relay.ozolio.com/hls-live/_definst_/relay01.ifweb0g.fd0.sm1.av2.at0.sh2.rt8635.rc0.basic.stream/chunklist_w1686479504.m3u8:GB - Mumbles - Plaża
+#DESCRIPTION GB - Mumbles - Plaża
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//s44.ipcamlive.com/streams/2c5f36a085d5b01fe/stream.m3u8:GB - New Scone - Port lotniczy Perth
+#DESCRIPTION GB - New Scone - Port lotniczy Perth
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/united-kingdom/england/newlyn/newlyn.html:GB - Newlyn - Port
+#DESCRIPTION GB - Newlyn - Port
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//cams.cdn-surfline.com/cdn-int/uk-fistralsouth/chunklist.m3u8:GB - Newquay - Fistral Beach
+#DESCRIPTION GB - Newquay - Fistral Beach
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//cams.cdn-surfline.com/cdn-int/uk-tolcarne/chunklist.m3u8:GB - Newquay - Great Western
+#DESCRIPTION GB - Newquay - Great Western
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//e1-eu2.angelcam.com/m4-eu5/cameras/5375/streams/hls/playlist.m3u8?token=eyJjYW1lcmFfaWQiOiI1Mzc1IiwidGltZSI6MTU5NzY1OTE4NzYwNTQ3NiwidGltZW91dCI6MzYwMH0%3D%2E00a42fa9ac3e2bd0152c1aca0ca5b87b318eb69d4db7452c784bd6d7ca7f2a94:GB - Newquay - Porth Beach
+#DESCRIPTION GB - Newquay - Porth Beach
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//video1.earthcam.com/myearthcamclips/_definst_/MP4%3a20190215/32f3bd72a9d215b8fd51f079a1e12faa.mp4/chunklist_w552823871.m3u8:GB - Nottingham
+#DESCRIPTION GB - Nottingham
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/xh48dJYojmE:GB - Oksford (YT)
+#DESCRIPTION GB - Oksford (YT)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/St7aTfoIdYQ:GB - Oxford - Broad street (YT)
 #DESCRIPTION GB - Oxford - Broad street (YT)
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/united-kingdom/england/oxford/oxford-high-street.html:GB - Oksford - High Street
+#DESCRIPTION GB - Oksford - High Street
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//eu01-smr02-relay.ozolio.com/hls-live/_definst_/relay01.xhfgb7j.fd0.sm1.av2.at0.sh2.rt8635.rc0.basic.stream/chunklist_w687433752.m3u8:GB - Padstow - port
+#DESCRIPTION GB - Padstow - port
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//camsecure.co/HLS/broadsands.m3u8:GB - Paignton - Broadsands Beach
+#DESCRIPTION GB - Paignton - Broadsands Beach
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//camsecure.co/HLS/cwsports.m3u8:GB - Pentewan - Plaża
+#DESCRIPTION GB - Pentewan - Plaża
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//eu01-smr02-relay.ozolio.com/hls-live/_definst_/relay01.opccb79.fd0.sm1.av2.at0.sh2.rt8635.rc0.basic.stream/chunklist_w1511213108.m3u8:GB - Penzance - Mount’s Bay
+#DESCRIPTION GB - Penzance - Mount’s Bay
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//camsecure.co/HLS/pzsc2.m3u8:GB - Penzance - Port
+#DESCRIPTION GB - Penzance - Port
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//eu01-smr01-relay.ozolio.com/hls-live/_definst_/relay01.qqjbcdm.fd0.sm1.av2.at0.sh2.rt8635.rc0.basic.stream/chunklist_w1379239115.m3u8:GB - Penzance - Promenada
+#DESCRIPTION GB - Penzance - Promenada
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//e1-eu8.angelcam.com/m1-eu8/cameras/1065/streams/hls/playlist.m3u8?token=eyJjYW1lcmFfaWQiOiIxMDY1IiwidGltZSI6MTU5NzY2Mjk1OTMwMTU5OSwidGltZW91dCI6MzYwMH0%3D%2E3ebd13653f7181f3c7dd29cba35e884f88794ec502b761ce76acd6c8fba0ed01:GB - Perranporth - plaża
+#DESCRIPTION GB - Perranporth - plaża
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//cams.cdn-surfline.com/cdn-int/uk-perranporth/chunklist.m3u8:GB - Perranporth - Plaża 2
+#DESCRIPTION GB - Perranporth - Plaża 2
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//s21.ipcamlive.com/streams/155f334d52c873f1a/stream.m3u8:GB - Pitlochry
+#DESCRIPTION GB - Pitlochry
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//s24.ipcamlive.com/streams/185f36df5ee45f7ab/stream.m3u8:GB - Pitlochry 2
+#DESCRIPTION GB - Pitlochry 2
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//s58.ipcamlive.com/streams/3a5f33cef3881afcd/stream.m3u8:GB - Pitlochry 3
+#DESCRIPTION GB - Pitlochry 3
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/zXpV8pbrrAo:GB - Polzeath - Plaża (YT)
+#DESCRIPTION GB - Polzeath - Plaża (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge02.hdontap.com/ingest03-hd3/havenhotel_fjbhotels.stream/chunklist_w1338782936.m3u8:GB - Poole - Harbour entrance
+#DESCRIPTION GB - Poole - Harbour entrance
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge04.hdontap.com/ingest03-hd3/harbourheightshotel_fjbhotels.stream/chunklist_w1358159254.m3u8:GB - Poole - Panorama
+#DESCRIPTION GB - Poole - Panorama
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge04.hdontap.com/ingest03-hd3/havenhotel_fjbhotels.stream/chunklist_w1585817675.m3u8:GB - Poole - Panorama 2
+#DESCRIPTION GB - Poole - Panorama 2
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/a9B_rxYsji0:GB - Porthcawl - Latarnia morska (YT)
+#DESCRIPTION GB - Porthcawl - Latarnia morska (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//camsecure.co/HLS/portmeirion2.m3u8:GB - Portmeirion - Battery Square
+#DESCRIPTION GB - Portmeirion - Battery Square
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//camsecure.co/HLS/portmeirion3.m3u8:GB - Portmeirion - Hotel
+#DESCRIPTION GB - Portmeirion - Hotel
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//camsecure.co/HLS/portmeirion1.m3u8:GB - Portmeirion - Piazza
+#DESCRIPTION GB - Portmeirion - Piazza
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//camsecure.co/HLS/portmeirion4.m3u8:GB - Portmeirion - Townhall
+#DESCRIPTION GB - Portmeirion - Townhall
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//eu01-smr01-relay.ozolio.com/hls-live/_definst_/relay01.zccrb7e.fd0.sm1.av2.at0.sh2.rt8635.rc0.basic.stream/chunklist_w293918484.m3u8:GB - Porthleven - Port
+#DESCRIPTION GB - Porthleven - Port
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//cams.cdn-surfline.com/cdn-int/uk-portreath/chunklist.m3u8:GB - Portreath - Plaża
+#DESCRIPTION GB - Portreath - Plaża
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//55507e0501d25.streamlock.net/live/hmswarrior.stream/chunklist_w737253292.m3u8:GB - Portsmouth - HMS Warrior
+#DESCRIPTION GB - Portsmouth - HMS Warrior
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//s29.ipcamlive.com/streams/1d5f35f45de0a22e5/stream.m3u8:GB - Purfleet - Queen Elizabeth II Bridge
+#DESCRIPTION GB - Purfleet - Queen Elizabeth II Bridge
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//camsecure.co/HLS/cubair.m3u8:GB - Redhill - Lotnisko
+#DESCRIPTION GB - Redhill - Lotnisko
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/q=720p/https%3a//www.youtube.com/watch?v=uSVbPvnjxb4:GB - Railway Dawlish Devon - San Remo Cam (YT)
 #DESCRIPTION GB - Railway Dawlish Devon - San Remo Cam (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//eu01-smr02-relay.ozolio.com/hls-live/_definst_/relay01.ugsochd.fd0.sm1.av2.at0.sh2.rt8635.rc0.basic.stream/chunklist_w1300365197.m3u8:GB - Rhossili, Llangennith - Plaża
+#DESCRIPTION GB - Rhossili, Llangennith - Plaża
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//camsecure.uk/HLS/ianalexander3.m3u8:GB - Robin Hood's Bay
+#DESCRIPTION GB - Robin Hood's Bay
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//camsecure.uk/HLS/ianalexander2.m3u8:GB - Robin Hood's Bay 2
+#DESCRIPTION GB - Robin Hood's Bay 2
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//camsecure.co/HLS/ianalexander.m3u8:GB - Robin Hood's Bay 3
+#DESCRIPTION GB - Robin Hood's Bay 3
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//uk2.streamcaster.io/playlist.m3u8?stream=7B686F2C-3399-4E20-9D7D-951397E8E831&token=5f3a719b4d839:GB - Rock - Rzeka Camel
+#DESCRIPTION GB - Rock - Rzeka Camel
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//eu01-smr02-relay.ozolio.com/hls-live/_definst_/relay01.gvgxb7t.fd0.sm1.av2.at0.sh2.rt8635.rc0.basic.stream/chunklist_w2035626837.m3u8:GB - Ryde - Plaża Appley
+#DESCRIPTION GB - Ryde - Plaża Appley
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/s7hega58ZPk:GB - Saundersfoot - Plaża (YT)
+#DESCRIPTION GB - Saundersfoot - Plaża (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//eu01-smr01-relay.ozolio.com/hls-live/_definst_/relay01.qqayb8s.fd0.sm1.av2.at0.sh2.rt8635.rc0.basic.stream/chunklist_w67524649.m3u8:GB - Sennen Cove - Plaża
+#DESCRIPTION GB - Sennen Cove - Plaża
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//143.167.1.98%3a1935/SheffieldPeregrineWebcast/Perch.stream/chunklist_w2038970171.m3u8:GB - Sheffield - Peregrines
 #DESCRIPTION GB - Sheffield - Peregrines
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//camsecure.co/HLS/sbragg.m3u8:GB - Skelton-in-Cleveland - Skelton Green
+#DESCRIPTION GB - Skelton-in-Cleveland - Skelton Green
 #SERVICE 1:64:22:0:0:0:0:0:0:0::Webcams: Irlandia (IRL)
 #DESCRIPTION Webcams: Irlandia (IRL)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//videos3.earthcam.com/fecnetwork/4054.flv/.m3u8:IRL - Dublin - The Temple Bar
@@ -2224,7 +3004,7 @@
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//videos-3.earthcam.com/fecnetwork/7524.flv/.m3u8:USA - TX - Dallas - Reunion Tower
 #DESCRIPTION USA - TX - Dallas - Reunion Tower
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.earthcam.com/usa/texas/dallas/gasmonkey/?cam=gmgarage:USA - TX - Gas Monkey Garage
-#DESCRIPTION USA - TX - Gas Monkey Garage 
+#DESCRIPTION USA - TX - Gas Monkey Garage
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//wse1.resortcams.com%3a80/live/massresort3.stream/playlist.m3u8:USA - Virginia - Massanutten Resort Tubing
 #DESCRIPTION USA - Virginia - Massanutten Resort Tubing
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//videos-3.earthcam.com/fecnetwork/libertyHD1.flv/chunklist_w1934873416.m3u8:USA - W. D.C. - Liberty Island
