@@ -529,3 +529,6 @@ msgstr "Zmiany"
 
 msgid "Diagnostic"
 msgstr "Diagnostyka"
+
+msgid "VTI Update Info"
+msgstr "Informacja o aktualizacjach VTI"
