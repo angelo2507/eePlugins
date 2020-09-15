@@ -140,7 +140,6 @@ def getWeather(webContent, DBGnow = False, DBGhourly = False, DBGdaily = False, 
 #for tests outside e2
 if __name__ == '__main__':
     import os
-    os.system('touch /tmp/aqwerty')
     import urllib2
     #webContent = urllib2.urlopen('http://www.msn.com/weather/we-city?culture=pl-PL&form=PRWLAS&q=Warszawa%2C%20Polska').read()
     webContent = urllib2.urlopen('https://www.msn.com/pl-PL/weather?culture=pl-PL&form=PRWLAS&q=Warszawa%2C%20Polska').read()
