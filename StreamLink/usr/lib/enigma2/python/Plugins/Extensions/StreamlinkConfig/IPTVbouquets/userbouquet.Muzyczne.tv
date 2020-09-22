@@ -1,0 +1,41 @@
+#NAME Muzyczne IPTV
+#SERVICE 4097:0:1:1B61:7DA:2:11A0000:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.twitch.tv/pul2etv:PUL2E.RU
+#DESCRIPTION PUL2E.RU
+#SERVICE 4097:0:1:F79D:1E5F:EC:0:0:0:0:https%3a//hls.myvideocontent.ru/hls2/vivarussia/index.m3u8:VIVA Rusia
+#DESCRIPTION VIVA Rusia
+#SERVICE 4097:0:1:2D05:B795:EC:0:0:0:0:https%3a//hls.myvideocontent.ru/hls2/tv12/index.m3u8:MAFI2A MUSIC
+#DESCRIPTION MAFI2A MUSIC
+#SERVICE 4097:0:1:135F:ED5C:EC:0:0:0:0:http%3a//telekomtv-ro.akamaized.net/shls/LIVE$MoozDanceHD/227.m3u8/Level(545259)?start=LIVE&end=END&time=1472768812494:Mooz Dance
+#DESCRIPTION Mooz Dance
+#SERVICE 4097:0:1:732B:E574:EC:0:0:0:0:https%3a//eurodance.catcast.tv/content/36987/index.m3u8:Eurodance 90
+#DESCRIPTION Eurodance 90
+#SERVICE 4097:0:1:81C9:F89E:EC:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/WFofeGZnCG4:Kaukaz Music (YT)
+#DESCRIPTION Kaukaz Music (YT)
+#SERVICE 4097:0:1:DAD1:1C81:EC:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/C6_ql03n-vQ:Raz Nitzan Music (YT)
+#DESCRIPTION Raz Nitzan Music (YT)
+#SERVICE 4097:0:1:8D36:86D5:EC:0:0:0:0:http%3a//vcndstv.teleosmedia.com/stream/dstv/dstv/seglist_720p.m3u8:Dancestar TV
+#DESCRIPTION Dancestar TV
+#SERVICE 4097:0:1:CF77:8DF8:EC:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|https%3a//m2otv-lh.akamaihd.net/i/m2oTv_1@186074/index_600_av-p.m3u8|format=mpegts:m2o TV
+#DESCRIPTION m2o TV
+#SERVICE 4097:0:1:C72C:4A7D:EC:0:0:0:0:http%3a//ocko-live.ssl.cdn.cra.cz/channels/ocko_expres/playlist/cze/live_hq.m3u8?offsetSeconds=0:Ocko Expres
+#DESCRIPTION Ocko Expres
+#SERVICE 4097:0:1:8782:35D1:EC:0:0:0:0:https%3a//bitcdn-kronehit.bitmovin.com/v2/hls/chunklist_b3128000.m3u8:Kronehit TV
+#DESCRIPTION Kronehit TV
+#SERVICE 4097:0:1:A5A:93:EC:0:0:0:0:http%3a//live-edge01.telecentro.net.ar/live/smil%3amusictop.smil/chunklist_w767435128_b2028000_sleng.m3u8:MusicTop
+#DESCRIPTION MusicTop
+#SERVICE 4097:0:1:3EEA:97D4:EC:0:0:0:0:http%3a//s02.diazol.hu%3a10190/stream.m3u8:MusicPlus
+#DESCRIPTION MusicPlus
+#SERVICE 4097:0:1:9941:C4AC:EC:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//ok.ru/video/1077196103291:Muz.play
+#DESCRIPTION Muz.play
+#SERVICE 4097:0:1:A095:BE27:EC:0:0:0:0:https%3a//a-mobile.camera/cams/RITSA/tracks-v1a1/mono.m3u8:RITSA TV
+#DESCRIPTION RITSA TV
+#SERVICE 4097:0:1:D2CC:3FFC:EC:0:0:0:0:http%3a//flash8.streaming.xdevel.com/fmitalia/fmitalia/chunklist_w1306569031.m3u8:FM ITALIA TV
+#DESCRIPTION FM ITALIA TV
+#SERVICE 4097:0:1:E88E:6067:EC:0:0:0:0:https%3a//edge126.rcs-rds.ro/utvedge/musicchannelhq.stream/chunklist_w613488818.m3u8:1 MUSIC CHANNEL
+#DESCRIPTION 1 MUSIC CHANNEL
+#SERVICE 4097:0:1:A2FF:1BC2:EC:0:0:0:0:https%3a//content-aeui1.uplynk.com/channel/36953f5b6546464590d2fcd954bc89cf/f.m3u8?pbs=b2de0dfa6d834b5590ffc3e9f12a7445:VH1
+#DESCRIPTION VH1
+#SERVICE 4097:0:1:34A5:5C2E:EC:0:0:0:0:https%3a//59f2354c05961.streamlock.net%3a1443/retroplustv/_definst_/retroplustv/chunklist_w321073727.m3u8:Retro PLUS TV
+#DESCRIPTION Retro PLUS TV
+#SERVICE 4097:0:1:E458:EF7A:EC:0:0:0:0:http%3a//stream.mediawork.cz%3a1935/retrotv/retrotvHQ1/chunklist_w877554018.m3u8:Retro MUSIC TV
+#DESCRIPTION Retro MUSIC TV
