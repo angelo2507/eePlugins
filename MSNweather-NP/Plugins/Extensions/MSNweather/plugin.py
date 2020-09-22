@@ -21,7 +21,7 @@
 
 from . import _
 from Components.ActionMap import ActionMap
-from Components.config import ConfigSubsection, ConfigSubList, ConfigInteger, config, NoSave, ConfigEnableDisable, ConfigSelection, ConfigText, ConfigIP, ConfigYesNo
+from Components.config import ConfigSubsection, ConfigSubList, ConfigInteger, config, NoSave, ConfigEnableDisable, ConfigSelection, ConfigText, ConfigIP, ConfigYesNo, ConfigNothing
 #from Components.Pixmap import Pixmap
 from Components.j00zekAccellPixmap import j00zekAccellPixmap
 from Components.Label import Label
@@ -46,13 +46,19 @@ config.plugins.WeatherPlugin = ConfigSubsection()
 config.plugins.WeatherPlugin.entrycount =  ConfigInteger(0)
 config.plugins.WeatherPlugin.currEntry =  NoSave(ConfigInteger(0))
 config.plugins.WeatherPlugin.callbacksCount =  NoSave(ConfigInteger(0))
+config.plugins.WeatherPlugin.FakeEntry = NoSave(ConfigNothing())
 config.plugins.WeatherPlugin.Entry = ConfigSubList()
 
 availableOptions = [("serviceIcons", _("MSN service icons"))]
-if os.path.exists(os.path.dirname(resolveFilename(SCOPE_SKIN, config.skin.primary_skin.value)) + '/weather_icons/'): availableOptions.append(("weatherIcons", _("skin Icons")))
-if os.path.exists('/usr/share/enigma2/animatedWeatherIcons'): availableOptions.append(("animIcons", _("animated Icons")))
+if os.path.exists(os.path.dirname(resolveFilename(SCOPE_SKIN, config.skin.primary_skin.value)) + '/weather_icons/'):
+    availableOptions.append(("weatherIcons", _("skin Icons")))
+if os.path.exists('/usr/share/enigma2/animatedWeatherIcons'):
+    availableOptions.append(("animIcons", _("animated Icons")))
+
 config.plugins.WeatherPlugin.IconsType = ConfigSelection(choices = availableOptions, default = "serviceIcons")
-config.plugins.WeatherPlugin.ScalePicType = ConfigSelection(choices = [ ("self.instance.setScale", _("internal E2")), ("ePicLoad", _("ePicLoad (E.g. Vu+ org)")) ], default = "self.instance.setScale")
+config.plugins.WeatherPlugin.ScalePicType = ConfigSelection(choices = [ ("self.instance.setScale", _("internal E2")),
+                                                                        ("ePicLoad", _("ePicLoad (E.g. Vu+ org)")) ],
+                                                            default = "self.instance.setScale")
 
 config.plugins.WeatherPlugin.BuildHistograms = ConfigEnableDisable(default = False)
 config.plugins.WeatherPlugin.CurrentValuesSource = ConfigSelection(choices = [ ("msn", _("MSN service")), ("airly", _("Airly service")) , ("msnarly", _("MSN or Airly depending which latest"))], default = "msn")
@@ -68,12 +74,12 @@ config.plugins.WeatherPlugin.AC2_PORT = ConfigInteger(default = 80,limits=(80,99
 config.plugins.WeatherPlugin.AC2inf = ConfigText(default = _("AC in the bedroom"), visible_width = 100, fixed_size = False)
 
 
-config.plugins.WeatherPlugin.airlyAPIKEY = ConfigText(default = "", visible_width = 100, fixed_size = False)
-if config.plugins.WeatherPlugin.airlyAPIKEY.value == '':
-    if os.path.exists('/hdd/User_Configs/airlyAPIKEY'):
-        config.plugins.WeatherPlugin.airlyAPIKEY.value =  open('/hdd/User_Configs/airlyAPIKEY', 'r').readline().strip()
-    elif os.path.exists('/etc/enigma2/Airly/api.txt'):
-        config.plugins.WeatherPlugin.airlyAPIKEY.value =  open('/etc/enigma2/Airly/api.txt', 'r').readline().strip()
+if os.path.exists('/hdd/User_Configs/airlyAPIKEY'):
+    config.plugins.WeatherPlugin.airlyAPIKEY = ConfigText(default = open('/hdd/User_Configs/airlyAPIKEY', 'r').readline().strip(), visible_width = 100, fixed_size = False)
+elif os.path.exists('/etc/enigma2/Airly/api.txt'):
+    config.plugins.WeatherPlugin.airlyAPIKEY = ConfigText(default = open('/etc/enigma2/Airly/api.txt', 'r').readline().strip(), visible_width = 100, fixed_size = False)
+else:
+    config.plugins.WeatherPlugin.airlyAPIKEY = ConfigText(default = "", visible_width = 100, fixed_size = False)
 
 config.plugins.WeatherPlugin.DebugEnabled = ConfigEnableDisable(default = False)
 config.plugins.WeatherPlugin.DebugSize = ConfigSelection(choices = [ ("10000", "10KB"), ("100000", "100KB"), ("1000000", "1MB"), ], default = "10000")
@@ -231,8 +237,7 @@ class MSNweather(Screen):
                                             self.weatherPluginEntry.weatherSearchFullName.value,
                                             self.weatherPluginEntry.thingSpeakChannelID.value,
                                             self.weatherPluginEntry.Fcity.value,
-                                            self.weatherPluginEntry.airlylatitude.value,
-                                            self.weatherPluginEntry.airlylongitude.value,
+                                            self.weatherPluginEntry.airlyID.value,
                                             self.getWeatherDataCallback,
                                             None) #self.showIcon)
         else:

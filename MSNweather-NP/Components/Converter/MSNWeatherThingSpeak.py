@@ -117,7 +117,7 @@ class MSNWeatherThingSpeak(Converter, object):
                     self.EXCEPTIONDEBUG('MSNWeatherThingSpeak:getText Exception="%s"' % str(e))
         else:
             self.DEBUG('MSNWeatherThingSpeak:getText','>>> self.configReady="%s"' % (str(self.configReady)))
-        return retTXT
+        return str(retTXT)
         
     text = property(getText)
     

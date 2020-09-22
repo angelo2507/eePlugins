@@ -24,6 +24,8 @@ from Components.Converter.Converter import Converter
 from Components.Element import cached
 from Plugins.Extensions.MSNweather.__init__ import _
 
+DBG=False #to simplify quick dev
+
 class MSNWeatherWebCurrent(Converter, object):
     def __init__(self, type):
         self.DEBUG('MSNWeatherWebCurrent(Converter).__init__')
@@ -42,7 +44,7 @@ class MSNWeatherWebCurrent(Converter, object):
             
     def DEBUG(self, myFUNC = '' , myText = '' ):
         try:
-            if config.plugins.WeatherPlugin.DebugMSNWeatherWebCurrentConverter.value:
+            if config.plugins.WeatherPlugin.DebugMSNWeatherWebCurrentConverter.value or DBG == True:
                 from Plugins.Extensions.MSNweather.debug import printDEBUG
                 printDEBUG( myFUNC , myText )
         except Exception:
@@ -76,10 +78,11 @@ class MSNWeatherWebCurrent(Converter, object):
                     retTXT = retTXT[:-1].replace('Temperatura', 'Temp.')
                 elif self.mode.lower() == 'barometr':
                     line = self.WebCurrentItems.get('nowData', [])[2]
+                    val = str(line[1].strip())
                     if self.valueOnly:
-                        retTXT = str(line[1].strip())
+                        retTXT = val
                     else:
-                        retTXT = str(_('Pressure %s') % (line[1].strip()))
+                        retTXT = str(_('Pressure %s') % val)
                 else:
                     for line in self.WebCurrentItems.get('nowData', []):
                         if line[0].lower() == self.mode.lower(): #available: 'Temperatura odczuwalna','Wiatr','Barometr','Widoczno\xc5\x9b\xc4\x87','Wilgotno\xc5\x9b\xc4\x87','Temperatura punktu rosy'
@@ -90,6 +93,6 @@ class MSNWeatherWebCurrent(Converter, object):
             except Exception as e:
                 self.EXCEPTIONDEBUG('\t','Exception %s' % str(e))
         self.DEBUG('\t','retTXT="%s"' % retTXT)
-        return retTXT.replace('.00','')
+        return str(retTXT.replace('.00','').replace('mbar','hPa'))
         
     text = property(getText)

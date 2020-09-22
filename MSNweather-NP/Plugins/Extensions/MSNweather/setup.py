@@ -50,13 +50,16 @@ def initWeatherPluginEntryConfig(i=0):
     s.geolatitude = ConfigText(default = "auto", visible_width = 100, fixed_size = False)
     s.geolongitude = ConfigText(default = "auto", visible_width = 100, fixed_size = False)
     s.weatherSearchFullName = ConfigText(default = "", visible_width = 100, fixed_size = False)
-    s.thingSpeakChannelID = ConfigText(default = "", visible_width = 100, fixed_size = False)
-    if s.thingSpeakChannelID.value == '' and os.path.exists('/hdd/User_Configs/thingSpeakChannelID.%s' % i):
-        s.thingSpeakChannelID.value =  open('/hdd/User_Configs/thingSpeakChannelID.%s' % i, 'r').readline().strip()
-
-    s.airlylatitude = ConfigText(default = "", visible_width = 100, fixed_size = False)
-    s.airlylongitude = ConfigText(default = "", visible_width = 100, fixed_size = False)
-    s.airlyID = ConfigText(default = "", visible_width = 100, fixed_size = False)
+    #thingspeak
+    if os.path.exists('/hdd/User_Configs/thingSpeakChannelID.%s' % i):
+        s.thingSpeakChannelID = ConfigText(default = open('/hdd/User_Configs/thingSpeakChannelID.%s' % i, 'r').readline().strip(), visible_width = 100, fixed_size = False)
+    else:
+        s.thingSpeakChannelID = ConfigText(default = "", visible_width = 100, fixed_size = False)
+    #airly
+    if os.path.exists('/hdd/User_Configs/airlyID.%s' % i):
+        s.airlyID = ConfigText(default = open('/hdd/User_Configs/airlyID.%s' % i, 'r').readline().strip(), visible_width = 100, fixed_size = False)
+    else:
+        s.airlyID = ConfigText(default = '', visible_width = 100, fixed_size = False)
 
     s.Fcity =  ConfigText(default = "Poland/Warsaw", visible_width = 100, fixed_size = False)
     config.plugins.WeatherPlugin.Entry.append(s)
@@ -256,8 +259,7 @@ class MSNWeatherEntryConfigScreen(ConfigListScreen, Screen):
             getConfigListEntry(_("Geo Latitude"), self.current.geolatitude),
             getConfigListEntry(_("Geo Longitude"), self.current.geolongitude),
             getConfigListEntry(_("thingSpeak meteo channel ID"), self.current.thingSpeakChannelID),
-            #getConfigListEntry(_("Airly sensor Latitude"), self.current.airlylatitude),
-            #getConfigListEntry(_("Airly sensor Longitude"), self.current.airlylongitude),
+            getConfigListEntry(_("Airly sensor ID"), self.current.airlyID),
             getConfigListEntry(_("Location in www.foreca.com/<this part>"), self.current.Fcity),
         ]
 
@@ -504,7 +506,7 @@ class MSNWeatherConfiguration(Screen, ConfigListScreen):
             
     def runSetup(self):
         ConfigList = []
-        ConfigList.append(getConfigListEntry('\c00289496' + _("*** Basic settings ***")))
+        ConfigList.append(getConfigListEntry('\c00289496' + _("*** Basic settings ***"), config.plugins.WeatherPlugin.FakeEntry))
         ConfigList.append(getConfigListEntry(_("Airly API key:"), config.plugins.WeatherPlugin.airlyAPIKEY))
         ConfigList.append(getConfigListEntry(_("Icons type:"), config.plugins.WeatherPlugin.IconsType))
         ConfigList.append(getConfigListEntry(_("Icons scaling engine:"), config.plugins.WeatherPlugin.ScalePicType))

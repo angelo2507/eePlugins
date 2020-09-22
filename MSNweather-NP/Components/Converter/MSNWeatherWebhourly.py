@@ -26,6 +26,8 @@ from enigma import eTimer
 
 import os
 
+DBG=False #to simplify quick dev
+
 class MSNWeatherWebhourly(Converter, object):
     def __init__(self, type):
         self.DEBUG('MSNWeatherWebhourly(Converter).__init__ >>>')
@@ -40,7 +42,7 @@ class MSNWeatherWebhourly(Converter, object):
             
     def DEBUG(self, myFUNC = '' , myText = '' ):
         try:
-            if config.plugins.WeatherPlugin.DebugMSNWeatherWebhourlyConverter.value:
+            if config.plugins.WeatherPlugin.DebugMSNWeatherWebhourlyConverter.value or DBG == True:
                 from Plugins.Extensions.MSNweather.debug import printDEBUG
                 printDEBUG( myFUNC , myText )
         except Exception:
@@ -80,8 +82,8 @@ class MSNWeatherWebhourly(Converter, object):
                             retTXT = str('%s' % line[int(item)].strip())
             except Exception as e:
                 self.EXCEPTIONDEBUG('MSNWeatherWebhourly(Converter).getText Exception %s' % str(e))
-        self.DEBUG('MSNWeatherWebhourly(Converter).getText retTXT=%s' % retTXT)
-        return retTXT
+        self.DEBUG('MSNWeatherWebhourly(Converter).getText retTXT=%s' % str(retTXT))
+        return str(retTXT)
         
     text = property(getText)
     
@@ -105,6 +107,6 @@ class MSNWeatherWebhourly(Converter, object):
             except Exception as e:
                 self.EXCEPTIONDEBUG('MSNWeatherWebhourly(Converter).getIconFilename Exception %s' % str(e))
         self.DEBUG('MSNWeatherWebhourly(Converter).getIconFilename iconFileName=%s' % iconFileName)
-        return iconFileName
+        return str(iconFileName)
             
     iconfilename = property(getIconFilename)

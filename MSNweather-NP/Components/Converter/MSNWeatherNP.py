@@ -159,7 +159,7 @@ class MSNWeatherNP(Converter, object):
             retText = self.source.getDate(self.index)
         elif self.mode == self.FULLDATE and self.index is not None:
             retText = self.source.getFullDate(self.index)
-        return retText
+        return str(retText)
     
     text = property(getText)
     
@@ -182,6 +182,6 @@ class MSNWeatherNP(Converter, object):
                     retVal = self.source.getIconPath() + retVal
         
         self.DEBUG('\t Finally converter returns for index "%s" than icon is "%s"' % (self.index,retVal))
-        return retVal
+        return str(retVal)
             
     iconfilename = property(getIconFilename)

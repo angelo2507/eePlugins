@@ -27,6 +27,8 @@ from Plugins.Extensions.MSNweather.__init__ import _
 import os
 import datetime
 
+DBG=False #to simplify quick dev
+
 class MSNWeatherWebDaily(Converter, object):
     def __init__(self, type):
         self.DEBUG('MSNWeatherWebDaily(Converter).__init__')
@@ -42,7 +44,7 @@ class MSNWeatherWebDaily(Converter, object):
             
     def DEBUG(self, myFUNC = '' , myText = '' ):
         try:
-            if config.plugins.WeatherPlugin.DebugMSNWeatherWebDailyConverter.value:
+            if config.plugins.WeatherPlugin.DebugMSNWeatherWebDailyConverter.value or DBG == True:
                 from Plugins.Extensions.MSNweather.debug import printDEBUG
                 printDEBUG( myFUNC , myText )
         except Exception:
@@ -81,7 +83,7 @@ class MSNWeatherWebDaily(Converter, object):
             except Exception as e:
                 self.EXCEPTIONDEBUG('\t','Exception %s' % str(e))
         self.DEBUG('\t','retTXT="%s"' % retTXT)
-        return retTXT
+        return str(retTXT)
         
     text = property(getText)
     
@@ -112,6 +114,6 @@ class MSNWeatherWebDaily(Converter, object):
                     self.DEBUG('MSNWeatherWebDaily(Converter).getIconFilenameiconFileName=%s' % (iconFileName))
             except Exception as e:
                 self.EXCEPTIONDEBUG('MSNWeatherWebDaily(Converter).getIconFilename Exception %s' % str(e))
-        return iconFileName
+        return str(iconFileName)
             
     iconfilename = property(getIconFilename)

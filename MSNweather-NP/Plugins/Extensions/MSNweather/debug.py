@@ -33,7 +33,7 @@ def printDEBUG( myFUNC = '' , myText = '' , logFileName = 'MSNweather.log'):
         printDebugEnabled = getE2config('DebugEnabled', False)
         printDebugSize = getE2config('DebugSize', 100000)
         
-    if printDebugEnabled or myFUNC == 'devDBG':
+    if printDebugEnabled or myFUNC == 'devDBG' or 'EXCEPTION' in myFUNC:
         myDEBUGfile = '%s/%s' % (myPATH, logFileName)
         print ("[%s] %s" % (myFUNC,myText))
         if myFUNC == 'INIT':
