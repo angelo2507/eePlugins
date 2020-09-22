@@ -2047,7 +2047,7 @@
     <widget source="key_blue" render="Label" position="952,849" size="200,27" zPosition="1" font="Roboto_HD; 24" halign="left" backgroundColor="dark_grey" transparent="1"/>
   </screen>
   <screen name="VideoFinetune" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
-    <widget source="Canvas" render="Canvas" position="600,200" size="1000,700"/>
+    <widget source="Canvas" render="Canvas" position="0,0" size="1920,1080" />
   </screen>
   <screen name="e2ComponentsConfig" position="345,93" size="1232,908" title=" " flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap position="0,0" zPosition="-10" size="1232,908" pixmap="BlackHarmony/bg_design/mainbg.png"/>
@@ -4234,54 +4234,6 @@
     <widget name="key_green" position="440,988" size="200,27" zPosition="1" font="Roboto_HD; 24" halign="left" backgroundColor="dark_grey" transparent="1"/>
     <widget name="key_yellow" position="750,990" size="250,27" zPosition="1" font="Roboto_HD; 24" halign="left" backgroundColor="dark_grey" transparent="1"/>
     <widget name="key_blue" position="1114,988" size="280,27" zPosition="1" font="Roboto_HD; 24" halign="left" backgroundColor="dark_grey" transparent="1"/>
-  </screen>
-  <screen name="DMnapi" position="345,93" size="1232,908" title=" " flags="wfNoBorder" backgroundColor="transparent">
-    <ePixmap position="0,0" zPosition="-10" size="1232,908" pixmap="BlackHarmony/bg_design/mainbg.png"/>
-    <widget source="global.CurrentTime" render="Label" position="40,25" size="80,30" font="Roboto_HD; 27" backgroundColor="black" transparent="1">
-      <convert type="ClockToText">Default</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="125,25" size="460,30" font="Roboto_HD; 27" foregroundColor="lemon" backgroundColor="black" transparent="1">
-      <convert type="ClockToText">Format:%A %d.%m.%Y</convert>
-    </widget>
-    <widget name="info" position="560,25" size="620,30" font="Roboto_HD; 27" halign="right" backgroundColor="dark_grey" transparent="1"/>
-    <widget name="label" position="65,135" size="1095,66" font="HD_Thin; 24" halign="left" backgroundColor="background" foregroundColor="light_yellow"/>
-    <widget name="menu" position="67,215" size="1095,280" itemHeight="35" font="Roboto_HD; 27" scrollbarMode="showOnDemand" enableWrapAround="1" scrollbarWidth="10" scrollbarSliderBorderWidth="1" scrollbarSliderForegroundColor="#e6e6e6" scrollbarSliderBorderColor="#3b3e3f" selectionPixmap="BlackHarmony/menu/sel_1095_35.png" backgroundColor="transpBlack" transparent="1"/>
-    <widget name="status" position="64,765" size="1095,30" font="Roboto_HD; 20" halign="left" backgroundColor="background" foregroundColor="green"/>
-    <widget name="right" position="65,530" size="1095,210" font="Roboto_HD; 24" halign="left" backgroundColor="black" transparent="1"/>
-  </screen>
-  <screen name="DMnapisubs" position="345,93" size="1232,908" title=" " flags="wfNoBorder" backgroundColor="transparent">
-    <ePixmap position="0,0" zPosition="-10" size="1232,908" pixmap="BlackHarmony/bg_design/mainbg.png"/>
-    <widget source="global.CurrentTime" render="Label" position="40,25" size="80,30" font="Roboto_HD; 27" backgroundColor="black" transparent="1">
-      <convert type="ClockToText">Default</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="125,25" size="460,30" font="Roboto_HD; 27" foregroundColor="lemon" backgroundColor="black" transparent="1">
-      <convert type="ClockToText">Format:%A %d.%m.%Y</convert>
-    </widget>
-    <widget name="info" position="560,25" size="620,30" font="Roboto_HD; 27" halign="right" backgroundColor="dark_grey" transparent="1"/>
-    <widget name="label" position="65,135" size="1095,66" font="HD_Thin; 24" halign="left" backgroundColor="background" foregroundColor="light_yellow"/>
-    <widget name="menu" position="67,215" size="1095,280" itemHeight="35" font="Roboto_HD; 27" scrollbarMode="showOnDemand" enableWrapAround="1" scrollbarWidth="10" scrollbarSliderBorderWidth="1" scrollbarSliderForegroundColor="#e6e6e6" scrollbarSliderBorderColor="#3b3e3f" selectionPixmap="BlackHarmony/menu/sel_1095_35.png" backgroundColor="transpBlack" transparent="1"/>
-    <widget name="status" position="64,765" size="1095,30" font="Roboto_HD; 20" halign="left" backgroundColor="background" foregroundColor="green"/>
-    <widget name="right" position="65,530" size="1095,210" font="Roboto_HD; 24" halign="left" backgroundColor="black" transparent="1"/>
-  </screen>
-  <screen name="ConfigScreen" position="462,128" size="1000,820" title=" " flags="wfNoBorder" backgroundColor="transparent">
-    <ePixmap position="0,0" zPosition="-10" size="1000,820" pixmap="BlackHarmony/bg_design/small.png"/>
-    <widget source="global.CurrentTime" render="Label" position="45,30" size="80,30" font="Roboto_HD; 27" backgroundColor="black" transparent="1">
-      <convert type="ClockToText">Default</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="130,30" size="260,30" font="Roboto_HD; 27" foregroundColor="lemon" backgroundColor="black" transparent="1">
-      <convert type="ClockToText">Format:%A %d.%m.%Y</convert>
-    </widget>
-    <eLabel text="DMnapi by areq" position="460,30" size="480,30" font="Roboto_HD; 27" halign="right" backgroundColor="dark_grey" transparent="1"/>
-    <widget name="config" position="73,205" size="850,480" itemHeight="35" font="Roboto_HD; 27" scrollbarMode="showOnDemand" selectionPixmap="BlackHarmony/menu/sel_850_35.png" enableWrapAround="1" scrollbarWidth="10" scrollbarSliderBorderWidth="1" scrollbarSliderForegroundColor="#e6e6e6" scrollbarSliderBorderColor="#3b3e3f" backgroundColor="transpBlack" transparent="1"/>
-    <widget name="info" position="73,140" size="850,35" font="Roboto_HD; 27" halign="center" backgroundColor="black" transparent="1" foregroundColor="light_yellow"/>
-    <ePixmap pixmap="BlackHarmony/buttons/key_red.png" position="47,760" size="35,27" alphatest="blend"/>
-    <ePixmap pixmap="BlackHarmony/buttons/key_green.png" position="273,760" size="35,27" alphatest="blend"/>
-    <ePixmap pixmap="BlackHarmony/buttons/key_yellow.png" position="499,760" size="35,27" alphatest="blend"/>
-    <ePixmap pixmap="BlackHarmony/buttons/key_blue.png" position="723,760" size="35,27" alphatest="blend"/>
-    <widget name="buttonred" position="87,759" size="180,27" zPosition="1" font="Roboto_HD; 24" halign="left" foregroundColor="white" backgroundColor="dark_grey" transparent="1"/>
-    <widget name="buttongreen" position="313,759" size="180,27" zPosition="1" font="Roboto_HD; 24" halign="left" foregroundColor="white" backgroundColor="dark_grey" transparent="1"/>
-    <widget name="buttonyellow" position="538,759" size="180,26" zPosition="1" font="Roboto_HD;24" halign="left" foregroundColor="white" backgroundColor="dark_grey" transparent="1"/>
-    <widget name="buttonblue" position="763,759" size="180,26" zPosition="1" font="Roboto_HD;24" halign="left" foregroundColor="white" backgroundColor="dark_grey" transparent="1"/>
   </screen>
   <screen name="DreamExplorerII" position="345,93" size="1232,908" title=" " flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap position="0,0" zPosition="-10" size="1232,908" pixmap="BlackHarmony/bg_design/mainbg.png"/>
@@ -9129,7 +9081,9 @@ self.instance.move(ePoint(orgWindowPos.x() , orgWindowPos.y() + (windowHeight - 
     <widget source="global.CurrentTime" render="Label" position="125,25" size="460,30" font="Roboto_HD; 27" foregroundColor="lemon" backgroundColor="black" transparent="1">
       <convert type="ClockToText">Format:%A %d.%m.%Y</convert>
     </widget>
-        <eLabel text="Wybierz Cam" position="860,25" size="320,30" font="Roboto_HD; 30" halign="center" backgroundColor="dark_grey" transparent="1" />
+    <widget source="Title" render="Label" position="665,25" size="520,35" font="Roboto_HD; 27" halign="right" backgroundColor="dark_grey" transparent="1" >
+      <convert type="j00zekAlternateTitle">Select Cam</convert>
+    </widget>
     <widget name="config"  position="228,116" size="730,250" font="Roboto_HD;35" itemHeight="50" selectionPixmap="BlackHarmony/menu/sel_735_50.png" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="1"  transparent="1" enableWrapAround="1"/>
     <eLabel name="linia" position="228,400" size="730,1" backgroundColor="foreground" foregroundColor="foreground"  />
     <widget name="info" position="248,435" size="690,400" font="Regular;25"/>
