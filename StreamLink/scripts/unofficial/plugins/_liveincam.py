@@ -10,11 +10,12 @@ log = logging.getLogger(__name__)
 
 
 class liveincam(Plugin):
-    #<iframe width="960" height="540" src="https://lookcam.live/player/GQpmGYCbbA/" frameborder="0" scrolling="no" allowfullscreen></iframe>
-    #https://lookcam.live/player/GQpmGYCbbA/
+    #https://www.liveincam.com/en/cam/nosy-be-nosy-be-andilana
+    # >>>
+    # >>>
     
-    _url_re = re.compile(r"https?://BLABLA")
-    _addr_re = re.compile(r'[ ]*source src="([^"]+)"')
+    _url_re = re.compile(r"https?://www.liveincam.com")
+    _addr_re = re.compile(r'[ ]*source:"([^"]+)"')
 
     @classmethod
     def can_handle_url(cls, url):
@@ -28,6 +29,8 @@ class liveincam(Plugin):
         
         try:
             address = self._addr_re.search(res.text).group(1)
+            if not address.startswith('https:') or not address.startswith('http:'):
+                address = 'https:' + address
             log.debug("Found address: %s" % address)
         except Exception as e:
             log.debug(str(e))

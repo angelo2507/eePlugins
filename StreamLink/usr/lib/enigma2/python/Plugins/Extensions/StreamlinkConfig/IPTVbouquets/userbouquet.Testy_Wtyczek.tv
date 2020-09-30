@@ -1,4 +1,6 @@
 #NAME Testy wtyczek i przykłady wywołania
+#SERVICE 1:0:1:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.liveincam.com/en/cam/nosy-be-nosy-be-andilana:Test serwisu liveincam.com
+#DESCRIPTION Test serwisu liveincam.com
 #SERVICE 1:0:1:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//lookcam.live/warszawa-plac-zamkowy/:Test serwisu lookcam.pl
 #DESCRIPTION Test serwisu lookcam.pl
 #SERVICE 1:0:1:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//webcam-hd.fr/webcam?id=146&camera=la-sauzaie--bretignolles-sur-mer:Test serwisu webcam-hd.fr
