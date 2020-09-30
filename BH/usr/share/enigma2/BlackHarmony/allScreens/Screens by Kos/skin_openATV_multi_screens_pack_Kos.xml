@@ -1329,8 +1329,12 @@ self.instance.resize(eSize(*wsize))
     <widget name="videofps" position="60,650" size="880,50" zPosition="2" font="Roboto_HD; 24" valign="center" halign="center" foregroundColor="light_yellow" backgroundColor="black" transparent="1"/>
     <ePixmap pixmap="BlackHarmony/buttons/key_red.png" position="70,750" size="35,27" alphatest="blend" />
     <ePixmap pixmap="BlackHarmony/buttons/key_ok.png" position="270,750" size="60,40" alphatest="blend" />
-    <eLabel text="Exit" position="120,749" size="200,30" zPosition="1" font="Roboto_HD; 24" halign="left" noWrap="1" backgroundColor="dark_grey" transparent="1" />
-    <eLabel text="Save" position="350,750" size="200,30" zPosition="1" font="Roboto_HD; 24" halign="left" noWrap="1" backgroundColor="dark_grey" transparent="1" />
+    <widget source="session.CurrentService" render="j00zekLabel" position="120,749" size="200,30" zPosition="1" font="Roboto_HD; 24" halign="left" noWrap="1" backgroundColor="dark_grey" transparent="1" >
+      <convert type="j00zekTranslator">Exit</convert>
+    </widget> 
+    <widget source="session.CurrentService" render="j00zekLabel" position="350,750" size="200,30" zPosition="1" font="Roboto_HD; 24" halign="left" noWrap="1" backgroundColor="dark_grey" transparent="1" >
+      <convert type="j00zekTranslator">Save</convert>
+    </widget> 
   </screen>
   <screen name="HarddiskSelection" position="345,93" size="1232,908" title="Select HDD" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap position="0,0" zPosition="-10" size="1232,908" pixmap="BlackHarmony/bg_design/mainbg.png"/>
@@ -1934,7 +1938,9 @@ self.instance.resize(eSize(*wsize))
     <widget source="TranslatorName" render="Label" position="60,120" size="860,35" font="Roboto_HD; 27" foregroundColor="light_yellow" backgroundColor="black" transparent="1"/>
     <widget source="TranslationInfo" render="Label" position="60,180" size="860,200" font="Roboto_HD;27" foregroundColor="white" backgroundColor="black" transparent="1"/>
     <ePixmap pixmap="BlackHarmony/buttons/key_red.png" position="45,430" size="35,27" alphatest="blend" />
-    <eLabel text="Exit" position="85,429" size="150,27" zPosition="1" font="Roboto_HD; 24" halign="left" backgroundColor="black" transparent="1" />
+    <widget source="session.CurrentService" render="j00zekLabel" position="85,429" size="150,27" zPosition="1" font="Roboto_HD; 24" halign="left" backgroundColor="black" transparent="1" >
+      <convert type="j00zekTranslator">Exit</convert>
+    </widget> 
   </screen>
   <!--screen name="Devices" position="center,center" size="700,550">
     <widget source="TunerHeader" render="Label" position="0,0" size="560,30" font="Bold; 23" zPosition="1" halign="left" backgroundColor="black" transparent="1"/>
@@ -1955,7 +1961,9 @@ self.instance.resize(eSize(*wsize))
     </widget>
 	<widget name="allinonedevices" position="70,120" size="900,600" font="Roboto_HD; 25" itemHeight="40" enableWrapAround="1" scrollbarWidth="10" scrollbarSliderBorderWidth="1" scrollbarSliderForegroundColor="#e6e6e6" scrollbarSliderBorderColor="#3b3e3f" scrollbarMode="showOnDemand" selectionPixmap="BlackHarmony/menu/sel_920_40.png" backgroundColor="black" transparent="1"/>
 	<ePixmap pixmap="BlackHarmony/buttons/key_red.png" position="70,750" size="35,27" alphatest="blend" />
-    <eLabel text="Exit" position="120,749" size="200,30" zPosition="1" font="Roboto_HD;24" halign="left" backgroundColor="black" transparent="1" />
+    <widget source="session.CurrentService" render="j00zekLabel" position="120,749" size="200,30" zPosition="1" font="Roboto_HD;24" halign="left" backgroundColor="black" transparent="1" >
+      <convert type="j00zekTranslator">Exit</convert>
+    </widget> 
   </screen>
   <screen name="SystemMemoryInfo" position="center,center" size="850,1080" title=" " backgroundColor="transparent" flags="wfNoBorder">
     <ePixmap position="0,0" zPosition="-10" size="850,1080" pixmap="BlackHarmony/bg_design/zap_history.png"/>
