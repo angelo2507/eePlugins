@@ -238,12 +238,12 @@ class Host:
            if config.plugins.iptvplayer.religia.value:
               valTab.append(CDisplayListItem('Religijne', 'Religijne', CDisplayListItem.TYPE_CATEGORY, ['Religijne'], 'Religijne', 'http://wakcji24.pl/wp-content/uploads/2019/01/RELIGIA-e1548150968793.png', None)) 
            Image = 'http://newsblog.pl/wp-content/uploads/2019/09/Najlepszy-VPN-IPTV-w-2019-roku-aby-odblokowac-szybkie-predkosci.jpg'
-           #valTab.insert(0,CDisplayListItem('Info o E2iPlayer - samsamsam', 'Wersja hostinfoversion: '+self.infoversion, CDisplayListItem.TYPE_CATEGORY, ['http://www.e2iplayer.gitlab.io/update2/log.txt'], 'info', Image, None)) 
-           #valTab.insert(0,CDisplayListItem('Info o E2iPlayer - fork maxbambi', 'Wersja hostinfoversion: '+self.infoversion, CDisplayListItem.TYPE_CATEGORY, ['https://gitlab.com/maxbambi/e2iplayer/commits/master.atom'], 'info', Image, None)) 
-           #valTab.insert(0,CDisplayListItem('Info o E2iPlayer - fork mosz_nowy', 'Wersja hostinfoversion: '+self.infoversion, CDisplayListItem.TYPE_CATEGORY, ['https://gitlab.com/mosz_nowy/e2iplayer/commits/master.atom'], 'info', Image, None)) 
-           #valTab.insert(0,CDisplayListItem('Info o E2iPlayer - fork -=Mario=-', 'Wersja hostinfoversion: '+self.infoversion, CDisplayListItem.TYPE_CATEGORY, ['https://gitlab.com/zadmario/e2iplayer/commits/master.atom'], 'info', Image, None)) 
-           ##valTab.insert(0,CDisplayListItem('Info o E2iPlayer - projekt zamknięty 19 maja 2019r', 'Wersja hostinfoversion: '+self.infoversion, CDisplayListItem.TYPE_CATEGORY, ['https://gitlab.com/e2i/e2iplayer/commits/master.atom'], 'info', 'http://www.cam-sats.com/images/forumicons/ip.png', None)) 
-           if self.infoversion <> self.inforemote and 1==0:
+           valTab.insert(0,CDisplayListItem('Info o E2iPlayer - samsamsam', 'Wersja hostinfoversion: '+self.infoversion, CDisplayListItem.TYPE_CATEGORY, ['http://www.e2iplayer.gitlab.io/update2/log.txt'], 'info', Image, None)) 
+           valTab.insert(0,CDisplayListItem('Info o E2iPlayer - fork maxbambi', 'Wersja hostinfoversion: '+self.infoversion, CDisplayListItem.TYPE_CATEGORY, ['https://gitlab.com/maxbambi/e2iplayer/commits/master.atom'], 'info', Image, None)) 
+           valTab.insert(0,CDisplayListItem('Info o E2iPlayer - fork mosz_nowy', 'Wersja hostinfoversion: '+self.infoversion, CDisplayListItem.TYPE_CATEGORY, ['https://gitlab.com/mosz_nowy/e2iplayer/commits/master.atom'], 'info', Image, None)) 
+           valTab.insert(0,CDisplayListItem('Info o E2iPlayer - fork -=Mario=-', 'Wersja hostinfoversion: '+self.infoversion, CDisplayListItem.TYPE_CATEGORY, ['https://gitlab.com/zadmario/e2iplayer/commits/master.atom'], 'info', Image, None)) 
+           #valTab.insert(0,CDisplayListItem('Info o E2iPlayer - projekt zamknięty 19 maja 2019r', 'Wersja hostinfoversion: '+self.infoversion, CDisplayListItem.TYPE_CATEGORY, ['https://gitlab.com/e2i/e2iplayer/commits/master.atom'], 'info', 'http://www.cam-sats.com/images/forumicons/ip.png', None)) 
+           if self.infoversion <> self.inforemote and self.inforemote <> "0.0.0":
               valTab.insert(0,CDisplayListItem('---UPDATE---','UPDATE MENU',        CDisplayListItem.TYPE_CATEGORY,           [''], 'UPDATE',  '', None)) 
            if config.plugins.iptvplayer.infoupdate.value:
                valTab.append(CDisplayListItem('ZMIANY W WERSJI',                    'ZMIANY W WERSJI',   CDisplayListItem.TYPE_CATEGORY, ['https://gitlab.com/mosz_nowy/infoversion/commits/master.atom'], 'UPDATE-ZMIANY', '', None)) 

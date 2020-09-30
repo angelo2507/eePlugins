@@ -29,7 +29,7 @@ def getinfo():
 	if hst=='': hst = 'https://akwam.net'
 	info_['host']= hst
 	info_['name']=name
-	info_['version']='1.1.01 05/07/2020'
+	info_['version']='1.2.01 29/09/2020'
 	info_['dev']='RGYSoft'
 	info_['cat_id']='201'
 	info_['desc']='أفلام, مسلسلات و انمي عربية و اجنبية'
@@ -70,23 +70,26 @@ class TSIPHost(TSCBaseHostClass):
 
 
 	def showmenu0(self,cItem):
-		self.addDir({'import':cItem['import'],'category' :'host2','title':'أفلام'   ,'icon':cItem['icon'],'mode':'20','sub_mode':0})
-		self.addDir({'import':cItem['import'],'category' :'host2','title':'مسلسلات' ,'icon':cItem['icon'],'mode':'20','sub_mode':1})	
-		self.addDir({'import':cItem['import'],'category' :'host2','title':'تلفزيون'  ,'icon':cItem['icon'],'mode':'20','sub_mode':2})
-		self.addDir({'import':cItem['import'],'category' :'host2','title':'المميزة'  ,'icon':cItem['icon'],'url':self.MAIN_URL,'mode':'21'})	
+		self.addDir({'import':cItem['import'],'category' :'host2','title':'أفلام'   ,'icon':cItem['icon'],'mode':'20','sub_mode':0,'url':self.MAIN_URL+'/movies'})
+		self.addDir({'import':cItem['import'],'category' :'host2','title':'مسلسلات' ,'icon':cItem['icon'],'mode':'20','sub_mode':1,'url':self.MAIN_URL+'/series'})	
+		self.addDir({'import':cItem['import'],'category' :'host2','title':'تلفزيون'  ,'icon':cItem['icon'],'mode':'20','sub_mode':2,'url':self.MAIN_URL+'/shows'})
+#		self.addDir({'import':cItem['import'],'category' :'host2','title':'المميزة'  ,'icon':cItem['icon'],'url':self.MAIN_URL,'mode':'21'})	
+		self.addDir({'import':cItem['import'],'category' :'host2','title':'منوعات'  ,'icon':cItem['icon'],'url':self.MAIN_URL+'/shows','mode':'30'})	
 		self.addDir({'import':cItem['import'],'category' :'search','title':tscolor('\c00????30') + _('Search'),'search_item':True,'page':1,'hst':'tshost','icon':cItem['icon']})
 
 	def showmenu1(self,cItem):
 		sub_mode=cItem.get('sub_mode', 0)
-		sts, data = self.getPage(self.MAIN_URL)
-		if sts:
-			lst_data = re.findall('class="menu">(.*?)</div>',data, re.S)
-			if  lst_data:
-				lst_data1 = re.findall('<a.*?href="(.*?)".*?>(.*?)<',lst_data[sub_mode], re.S)
-				for (url,titre) in lst_data1:
-					self.addDir({'import':cItem['import'],'category' : 'host2','title':cItem['title'] +' | '+ titre,'url':url,'desc':'','icon':cItem['icon'],'mode':'30'})		
-			self.addDir({'import':cItem['import'],'category' : 'host2','title':'By Filtre','desc':'','icon':cItem['icon'],'mode':'22','sub_mode':sub_mode})		
-		
+		if False:
+			sts, data = self.getPage(self.MAIN_URL)
+			if sts:
+				lst_data = re.findall('class="menu">(.*?)</div>',data, re.S)
+				if  lst_data:
+					lst_data1 = re.findall('<a.*?href="(.*?)".*?>(.*?)<',lst_data[sub_mode], re.S)
+					for (url,titre) in lst_data1:
+						self.addDir({'import':cItem['import'],'category' : 'host2','title':cItem['title'] +' | '+ titre,'url':url,'desc':'','icon':cItem['icon'],'mode':'30'})		
+		self.addDir({'import':cItem['import'],'category' : 'host2','title':'ALL','url':cItem['url'],'desc':'','icon':cItem['icon'],'mode':'30'})
+		self.addDir({'import':cItem['import'],'category' : 'host2','title':'By Filtre','desc':'','icon':cItem['icon'],'mode':'22','sub_mode':sub_mode})		
+			
 	def showfilter(self,cItem):
 		count=cItem.get('count',0)
 		data=cItem.get('data',[])
@@ -142,7 +145,11 @@ class TSIPHost(TSCBaseHostClass):
 		#printDBG('citem='+str(cItem))
 		page = cItem.get('page', 1)
 		if page==1: Url = cItem['url']
-		else: Url = cItem['url']+'&page='+str(page)
+		else:
+			if '?' in cItem['url']:
+				Url = cItem['url']+'&page='+str(page)
+			else:
+				Url = cItem['url']+'?page='+str(page)
 		sts, data = self.getPage(Url)
 		if sts:
 			lst_data=re.findall('class="entry-box.*?>(.*?)-src="(.*?)".*?href="(.*?)".*?<h3.*?>(.*?)</h3>', data, re.S)
@@ -181,7 +188,7 @@ class TSIPHost(TSCBaseHostClass):
 		url_=self.MAIN_URL+'/search?q='+str_ch+'&page='+str(page)
 		sts, data = self.getPage(url_)
 		if sts:
-			lst_data=re.findall('class="entry-box.*?>(.*?)src="(.*?)".*?href="(.*?)".*?<h3.*?>(.*?)</h3>', data, re.S)		
+			lst_data=re.findall('class="entry-box.*?>(.*?)data-src="(.*?)".*?href="(.*?)".*?<h3.*?>(.*?)</h3>', data, re.S)		
 			for (desc,image,url,titre) in lst_data:
 				rating = ''
 				quality = ''
@@ -248,7 +255,7 @@ class TSIPHost(TSCBaseHostClass):
 					url = url_dat[0]
 					if url.startswith('http'): sts, data = self.getPage(url)
 					if sts:
-						printDBG('data='+data)
+						#printDBG('data='+data)
 						url_dat=re.findall('</video>.*?class="container">.*?href="(.*?)"', data, re.S)
 						if url_dat:	
 							URL_= url_dat[0].replace('vlc://','')							
@@ -256,30 +263,44 @@ class TSIPHost(TSCBaseHostClass):
 						else:
 							url_dat=re.findall('class="btn-loader">.*?href="(.*?)"', data, re.S)
 							if url_dat:
-								URL_= url_dat[0]					
+								URL_= url_dat[0]
+								
 								urlTab.append((URL_,'0'))							
 		return urlTab
 		
 	def getVideos(self,videoUrl):
 		urlTab = []	
 		if True:
+			
 			sts, data = self.getPage(videoUrl)
 			if sts:
-				url_dat=re.findall('<h2.*?href="(.*?)"', data, re.S)
+				url_dat=re.findall('<source.*?src=["\'](.*?)["\'].*?size=["\'](.*?)["\']', data, re.S)
 				if url_dat:
-					url = url_dat[0]
-					if url.startswith('http'): sts, data = self.getPage(url)
-				if sts:
-					#printDBG('data='+data)
-					url_dat=re.findall('<source.*?src=["\'](.*?)["\'].*?size=["\'](.*?)["\']', data, re.S)
+					for url,size in url_dat:
+						URL_ = strwithmeta(size+'P|'+url,{'Referer':videoUrl})
+						urlTab.append((URL_,'4'))
+				else:
+					url_dat=re.findall('class="btn-loader">.*?href="(.*?)"', data, re.S)
 					if url_dat:
-						for url,size in url_dat:							
-							urlTab.append((size+'P|'+url,'4'))
+						URL_= strwithmeta(url_dat[0],{'Referer':videoUrl})					
+						urlTab.append((URL_,'0'))
 					else:
-						url_dat=re.findall('class="btn-loader">.*?href="(.*?)"', data, re.S)
+						url_dat=re.findall('<h2.*?href="(.*?)"', data, re.S)
 						if url_dat:
-							URL_= url_dat[0]					
-							urlTab.append((URL_,'0'))							
+							url1 = url_dat[0]
+							if url1.startswith('http'): sts, data = self.getPage(url1)
+							if sts:
+								#printDBG('data='+data)
+								url_dat=re.findall('<source.*?src=["\'](.*?)["\'].*?size=["\'](.*?)["\']', data, re.S)
+								if url_dat:
+									for url,size in url_dat:							
+										URL_ = strwithmeta(size+'P|'+url,{'Referer':url1})
+										urlTab.append((URL_,'4'))
+								else:
+									url_dat=re.findall('class="btn-loader">.*?href="(.*?)"', data, re.S)
+									if url_dat:
+										URL_= strwithmeta(url_dat[0],{'Referer':url1})					
+										urlTab.append((URL_,'0'))									
 		return urlTab
 		
 	def getArticle(self,cItem):

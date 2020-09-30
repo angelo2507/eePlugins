@@ -11,7 +11,7 @@ def getinfo():
 	info_={}
 	name = 'Movizland.Com'
 	hst = tshost(name)	
-	if hst=='': hst = 'https://on.movizland.com'
+	if hst=='': hst = 'https://sa.movizland.online'
 	info_['host']= hst
 	info_['name']=name
 	info_['version']='1.2.01 05/07/2020'

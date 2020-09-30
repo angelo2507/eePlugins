@@ -154,8 +154,11 @@ class TSIPHost(TSCBaseHostClass):
 		if sts:
 			data=data.replace('\\"','"')	
 			data=data.replace('\\/','/')				
-			lst_data=re.findall('<a href="(.*?)".*?rating">(.*?)</i>.*?src="(.*?)".*?title">(.*?)<.*?ribbon.*?<span>(.*?)<', data, re.S)			
+			lst_data=re.findall('<a href="(.*?)"(.*?)src="(.*?)".*?title">(.*?)<.*?ribbon.*?<span>(.*?)<', data, re.S)			
 			for (url1,rate,image,name_eng,qual) in lst_data:
+				lst_data0=re.findall('rating">(.*?)</i>', rate, re.S)
+				if lst_data0: rate=lst_data0[0]
+				else: rate = ''
 				desc=tscolor('\c00????00')+'Rating: '+tscolor('\c00??????')+self.cleanHtmlStr(rate)+'/10 | '+tscolor('\c00????00')+'Qual: '+tscolor('\c00??????')+qual
 				x1,titre=self.uniform_titre(str(name_eng.decode('unicode_escape')))
 				titre=titre.replace('()','')

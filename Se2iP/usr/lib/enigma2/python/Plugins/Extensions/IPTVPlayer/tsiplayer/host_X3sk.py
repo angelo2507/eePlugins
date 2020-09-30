@@ -14,7 +14,7 @@ def getinfo():
 	info_['host']= hst
 	info_['name']=name
 	info_['name']='Esheeq.Com'
-	info_['version']='1.1.01 05/07/2020'
+	info_['version']='1.2.02 27/08/2020'
 	info_['dev']='RGYSoft'
 	info_['cat_id']='201'
 	info_['desc']='أفلام و مسلسلات تركية'
@@ -52,15 +52,24 @@ class TSIPHost(TSCBaseHostClass):
 		if page>1: url = url+'?page='+str(page)+'/'
 		sts, data = self.getPage(url)
 		if sts:		
-			if ('/episodes/' in  url) or ('/category/' in  url):
-				lst_data=re.findall('<li class="EpisodeBlock.*?href="(.*?)".*?Title">(.*?)<.*?url\((.*?)\)', data, re.S)
+			if True:# ('/episodes/' in  url) or ('/category/' in  url):
+				#pat = '<li class="EpisodeBlock.*?href="(.*?)".*?Title">(.*?)<.*?bg="(.*?)"'
+				#pat = '<li class="EpisodeBlock.*?href="(.*?)".*?Title">(.*?)<.*?url\((.*?)\)'
+				pat = 'class="block-post.*?href="(.*?)".*?title="(.*?)".*?url\((.*?)\)'
+				lst_data=re.findall(pat, data, re.S)
 				for (url1,titre,image) in lst_data:
 					titre = ph.clean_html(titre)
 					image=self.std_url(image)
-					self.addVideo({'import':cItem['import'],'category' : 'host2','title':titre,'url':url1,'desc':'','icon':image,'hst':'tshost','good_for_fav':True})	
-				self.addDir({'import':cItem['import'],'category' : 'host2','title':tscolor('\c00????00')+_("Next page"),'url':cItem['url'],'page':page+1,'mode':'30'})			
+					if '/series/' in url1:
+						self.addDir({'import':cItem['import'],'category' : 'host2','title':titre,'url':url1,'desc':'','icon':image,'hst':'tshost','good_for_fav':True,'mode':'30'})			
+					else:
+						self.addVideo({'import':cItem['import'],'category' : 'host2','title':titre,'url':url1,'desc':'','icon':image,'hst':'tshost','good_for_fav':True})	
+				if '/series/' not in url:
+					self.addDir({'import':cItem['import'],'category' : 'host2','title':tscolor('\c00????00')+_("Next page"),'url':cItem['url'],'page':page+1,'mode':'30'})			
 			else:
-				lst_data=re.findall('class="SerieBox".*?href="(.*?)".*?url\((.*?)\).*?>(.*?)</a>', data, re.S)
+				pat = 'class="SerieBox".*?href="(.*?)".*?bg="(.*?)".*?>(.*?)</a>'
+				pat = 'class="SerieBox".*?href="(.*?)".*?url\((.*?)\).*?>(.*?)</a>'
+				lst_data=re.findall(pat, data, re.S)
 				for (url1,image,titre) in lst_data:
 					image=self.std_url(image)
 					titre = ph.clean_html(titre)
@@ -72,24 +81,41 @@ class TSIPHost(TSCBaseHostClass):
 	def get_links(self,cItem): 	
 		urlTab = []
 		baseUrl=cItem['url']
+		if '/vid/post.php?' in baseUrl:
+			sts, data = self.getPage(baseUrl)
+			if sts:	
+				lst_data = re.findall('top_banner">.*?href="(.*?)"',data, re.S)			
+				if lst_data:
+					baseUrl = lst_data[0]
 		sts, data = self.getPage(baseUrl)
 		if sts:	
 			lst_data = re.findall('data-server="(.*?)"(.*?)</li>',data, re.S)
-			for host,url in lst_data:
-				lst_url = re.findall('(true">|href=\')(.*?)[<\']',url, re.S)
-				if lst_url:
-					local = ''
-					if 'turk' in host.lower():
-						host  = '|Local| arabveturk'
-						local = 'local'
-					if 'daily' in host.lower(): host  = 'dailymotion'
-					Url = lst_url[0][1]
-					if Url.startswith('//'): Url='http:'+Url
-					if 'esheeq' in Url: Url = 'hst#tshost#'+Url
-					urlTab.append({'url':Url, 'name':host, 'need_resolve':1,type:local})
+			if lst_data:
+				for host,url in lst_data:
+					if '<em>ok</em>' in url: 
+						url = 'https://www.ok.ru/videoembed/'+host
+						host = 'OK.RU'
+					elif '<em>tune</em>' in url:
+						url = 'https://tune.pk/js/open/embed.js?vid='+host+'&userid=827492&_=1601112672793'
+						host = 'TUNE.PK'
+					elif '<em>turk</em>' in url:
+						url = 'https://arabveturk.com/embed-'+host+'.html'
+						host = 'ARABVETURK'
+					elif '<em>daily</em>' in url:
+						lst_data0 = re.findall('href="(.*?)"',url, re.S)	
+						if lst_data0:
+							url = lst_data0[0]
+							#if '?' in url: url = url.split('?',1)[0]
+							#url = url.replace('www.dailymotion.com/video/','www.dailymotion.com/embed/video/')
+						host = 'DAILYMOTION'
+					urlTab.append({'url':url, 'name':host, 'need_resolve':1,type:''})
+			else:
+				lst_data = re.findall('iframe.*?src="(.*?)"',data, re.S)
+				if lst_data: urlTab.append({'url':lst_data[0], 'name':'Iframe', 'need_resolve':1,type:''})	
 		return urlTab	
 
 	def getVideos(self,videoUrl):
+		printDBG(videoUrl)
 		urlTab = []	
 		sts, data = self.getPage(videoUrl)
 		if sts:	
@@ -105,11 +131,14 @@ class TSIPHost(TSCBaseHostClass):
 		url=self.MAIN_URL+'/search/'+str_ch+'/?page='+str(page)+'/'
 		sts, data = self.getPage(url)
 		if sts:
-			lst_data=re.findall('<li class="EpisodeBlock.*?href="(.*?)".*?Title">(.*?)<.*?url\((.*?)\)', data, re.S)
+			lst_data=re.findall('class="block-post.*?href="(.*?)".*?title="(.*?)".*?url\((.*?)\)', data, re.S)
 			for (url,titre,image) in lst_data:
 				image=self.std_url(image)
 				titre = ph.clean_html(titre)
-				self.addVideo({'import':extra,'category' : 'host2','title':titre,'url':url,'desc':'','icon':image,'hst':'tshost','good_for_fav':True})	
+				if '/series/' in url:
+					self.addDir({'import':extra,'category' : 'host2','title':titre,'url':url,'desc':'','icon':image,'hst':'tshost','good_for_fav':True,'mode':'30'})			
+				else:
+					self.addVideo({'import':extra,'category' : 'host2','title':titre,'url':url,'desc':'','icon':image,'hst':'tshost','good_for_fav':True})	
 			
 	def start(self,cItem):      
 		mode=cItem.get('mode', None)

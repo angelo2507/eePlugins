@@ -26,10 +26,10 @@ def getinfo():
 	info_={}
 	name = 'Akoam'
 	hst = tshost(name)	
-	if hst=='': hst = 'https://akwam.org'
+	if hst=='': hst = 'https://old.akwam.net'
 	info_['host']= hst
 	info_['name']=name
-	info_['version']='1.9 09/06/2020'
+	info_['version']='1.9.1 22/07/2020'
 	info_['dev']='RGYSoft'
 	info_['cat_id']='201'
 	info_['desc']='أفلام, مسلسلات و انمي عربية و اجنبية'
@@ -123,15 +123,15 @@ class TSIPHost(TSCBaseHostClass):
 			lst_data=re.findall('class="subject_box shape".*?href="(.*?)".*?src="(.*?)".*?<h3>(.*?)<.*?desc">(.*?)<', data, re.S)
 			count=0			
 			for (url1,image,name_eng,desc) in lst_data:
-				name_eng=ph.clean_html(name_eng.strip())
-				desc0,name_eng = self.uniform_titre(name_eng)
-				if desc.strip()!='':
-					desc = tscolor('\c00????00')+'Info: '+tscolor('\c00??????')+desc
-				desc=desc0+desc
-				
-				self.addDir({'import':cItem['import'],'category' : 'host2','title':name_eng,'url':url1.strip(),'desc':desc,'icon':image,'mode':'31','good_for_fav':True,'EPG':True,'hst':'tshost'})
-				printDBG('name='+ph.clean_html(name_eng.strip())+' url=#'+url1+'#')
-				count=count+1
+				if 'توضيح هام لمتابعي' not in name_eng:
+					name_eng=ph.clean_html(name_eng.strip())
+					desc0,name_eng = self.uniform_titre(name_eng)
+					if desc.strip()!='':
+						desc = tscolor('\c00????00')+'Info: '+tscolor('\c00??????')+desc
+					desc=desc0+desc
+					self.addDir({'import':cItem['import'],'category' : 'host2','title':name_eng,'url':url1.strip(),'desc':desc,'icon':image,'mode':'31','good_for_fav':True,'EPG':True,'hst':'tshost'})
+					printDBG('name='+ph.clean_html(name_eng.strip())+' url=#'+url1+'#')
+					count=count+1
 			if count>38:	
 				self.addDir({'import':cItem['import'],'category' : 'host2','title':'Page Suivante','url':cItem['url'],'page':page+1,'mode':'30'})
 
@@ -161,7 +161,8 @@ class TSIPHost(TSCBaseHostClass):
 				if trailer_data:
 					self.addVideo({'category' : 'host2','title':'TRAILER','url':'https://www.youtube.com/watch?v='+trailer_data[0],'desc':'','icon':cItem['icon'],'hst':'none'})	
 				if ('الانتقال إلي التصميم الجديد' in data) or ('على التصميم الجديد' in data):
-					lst_data=re.findall('class="sub_desc">.*?href="(.*?)"', data, re.S)
+					lst_data=re.findall('sub_extra_desc">.*?href="(.*?)"', data, re.S)
+					if not lst_data: lst_data=re.findall('class="sub_desc">.*?href="(.*?)"', data, re.S)
 					if lst_data:
 						Url=lst_data[0]
 						import_ = 'from Plugins.Extensions.IPTVPlayer.tsiplayer.host_akwam import '
@@ -243,14 +244,14 @@ class TSIPHost(TSCBaseHostClass):
 
 
 
-	def get_links2(self,cItem): 	
+	def get_links(self,cItem): 	
 		urlTab = []
 		URL=cItem['url']
 		URL = URL.replace('download','watching')
 		printDBG('url='+URL)
 		sts, data = self.getPage(URL)
 		if sts:
-			#printDBG('data='+data)
+			printDBG('start')
 			url_dat=re.findall('<iframe[^>]+?src=[\'"]([^"^\']+?)[\'"]', data, re.S | re.IGNORECASE)
 			if not url_dat:
 				lst_dat=re.findall('file:.*?"(.*?)"', data, re.S)	
@@ -258,15 +259,29 @@ class TSIPHost(TSCBaseHostClass):
 					urlTab.append({'name':'direct_link', 'url':lst_dat[0]})
 			else:
 				urL_=url_dat[0]
-				if urL_.startswith('//'):
-					urL_='http:'+urL_
-				if not urL_.startswith('http'):
-					urL_='http://'+urL_	
-				urlTab.append({'name':'link', 'url':urL_, 'need_resolve':1})				
+				if 'mellowads' not in urL_:
+					if urL_.startswith('//'):
+						urL_='http:'+urL_
+					if not urL_.startswith('http'):
+						urL_='http://'+urL_	
+					urlTab.append({'name':'link', 'url':urL_, 'need_resolve':1})						
+					
+			if len(urlTab) == 0:
+				paramsUrl = dict(self.defaultParams)
+				URL = URL.replace('watching','download')
+				paramsUrl['header']['Referer'] = URL
+				paramsUrl['header']['X-Requested-With'] = 'XMLHttpRequest'
+				sts, data = self.getPage(URL,paramsUrl,post_data={})
+				if sts:
+					url_dat0=re.findall('direct_link":"(.*?)"', data, re.S | re.IGNORECASE)
+					if url_dat0:
+						urlTab.append({'name':'direct_link', 'url':url_dat0[0].replace('\\','')})
+						printDBG('datafdfdfd='+url_dat0[0])
+			
 		return urlTab
 
 
-	def get_links(self,cItem): 	
+	def get_links3(self,cItem): 	
 		urlTab = []
 		try:
 			URL=cItem['url']

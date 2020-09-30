@@ -405,6 +405,7 @@ class urlparser:
                        'tusfiles.com':         self.pp.parserUSERSCLOUDCOM ,
                        'hdgo.cc':              self.pp.parserHDGOCC        ,
                        'hdgo.cx':              self.pp.parserHDGOCC        ,
+                       'vio.to':               self.pp.parserHDGOCC        ,
                        'liveonlinetv247.info': self.pp.parserLIVEONLINETV247,
                        'streamable.com':       self.pp.parserSTREAMABLECOM  ,
                        'matchat.online':       self.pp.parserMATCHATONLINE  ,
@@ -423,6 +424,7 @@ class urlparser:
                        'clicknupload.org':     self.pp.parserUPLOAD         ,
                        'suprafiles.org':       self.pp.parserUPLOAD         ,
                        'sfiles.org':           self.pp.parserUPLOAD         ,
+                       'file-up.org':          self.pp.parserUPLOAD         ,
                        'kingfiles.net':        self.pp.parserKINGFILESNET   ,
                        'thevideobee.to':       self.pp.parserTHEVIDEOBEETO  ,
                        'vidabc.com':           self.pp.parserVIDABCCOM      ,
@@ -1257,7 +1259,7 @@ class pageParser(CaptchaHelper):
             vplayerData = ''
             tmp = []
             ret = js_execute( jscode )
-            if ret['sts'] and 0 == ret['code']:
+            if ret['sts'] and 0 == ret['code'] or 'sources' in ret.get('data', ''):
                 vplayerData = ret['data'].strip()
         
         if vplayerData != '':
@@ -3693,16 +3695,16 @@ class pageParser(CaptchaHelper):
             if not sts: return False
             
             linksData = []
-            tmp = self.cm.ph.getSearchGroups(data, '''\(([^)]+?)\)''')[0].split(',')
-            for t in tmp:
-                linksData.append(t.replace('"', '').strip())
+            tmp = re.compile('''['"]([^'^"]+?)['"]''').findall(data)
             printDBG(linksData)
-            
-            for idx in [1, 2]:
+
+            for t in tmp:
                 try:
-                    linkData = base64.b64decode(linksData[idx])
+                    linkData = base64.b64decode(t).strip()
+                    if linkData[0] == '{' and '"ct"' in linkData: break
                 except Exception:
-                    pass
+                    printExc()
+
             linkData   = json_loads(linkData)
             
             ciphertext = base64.b64decode(linkData['ct'])

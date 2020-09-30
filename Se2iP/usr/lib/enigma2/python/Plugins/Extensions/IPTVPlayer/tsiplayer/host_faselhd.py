@@ -64,6 +64,7 @@ class TSIPHost(TSCBaseHostClass):
 		if sts:
 			lst_data=re.findall('postDiv">.*?href="(.*?)".*?-src="(.*?)"(.*?)h1">(.*?)<', data, re.S)			
 			for (url1,image,desc1,titre) in lst_data:
+				titre = titre.replace('&#8211;','-')
 				desc0,titre = self.uniform_titre(titre)
 				desc = desc0
 				mode = '31'
@@ -103,8 +104,10 @@ class TSIPHost(TSCBaseHostClass):
 			lst_data=re.findall('postDiv">.*?href="(.*?)".*?-src="(.*?)"(.*?)h1">(.*?)<', data, re.S)			
 			for (url1,image,desc1,name_eng) in lst_data:
 				desc=''
-				name_eng=name_eng.replace('&#8211;','-')				
-				self.addDir({'import':extra,'good_for_fav':True,'EPG':True, 'hst':'tshost', 'category':'host2', 'url':url1, 'title':str(name_eng), 'desc':desc, 'icon':image, 'mode':'32'} )	
+				name_eng=name_eng.replace('&#8211;','-')
+				mode = '31'
+				if 'movies_collections' in url1: mode = '30'				
+				self.addDir({'import':extra,'good_for_fav':True,'EPG':True, 'hst':'tshost', 'category':'host2', 'url':url1, 'title':str(name_eng), 'desc':desc, 'icon':image, 'mode':mode} )	
 
 	def MediaBoxResult(self,str_ch,year_,extra):
 		urltab=[]
@@ -151,8 +154,12 @@ class TSIPHost(TSCBaseHostClass):
 						titre = '|Server 01| FaselHD'
 						local = 'local'
 					elif 'سيرفر #07' in titre: titre = '|Server 07| Vidfast.Co'	
-					if url.startswith('http'):
-						urlTab.append({'name':titre, 'url':'hst#tshost#'+url, 'need_resolve':1,'type':local})	
+					
+					if 'moshahda.online' in url:
+						urlTab.append({'name':'|Local| Moshahda', 'url':url, 'need_resolve':1,'type':'local'})	
+					else:
+						if url.startswith('http'):
+							urlTab.append({'name':titre, 'url':'hst#tshost#'+url, 'need_resolve':1,'type':local})	
 		return urlTab
 		 
 	def getVideos(self,videoUrl):
@@ -208,7 +215,9 @@ class TSIPHost(TSCBaseHostClass):
 				if sts: data = tmp
 
 			data = self.cm.ph.getDataBeetwenNodes(data, ('<header', '>'), ('<style', '>'))[1]
-			desc = self.cleanHtmlStr(self.cm.ph.getDataBeetwenMarkers(data, '<p', '</p>')[1])
+			#desc = self.cleanHtmlStr(self.cm.ph.getDataBeetwenMarkers(data, '<p', '</p>')[1])
+			Liste_els_3 = re.findall('singleDesc">(.*?)</div>', data, re.S)	
+			if Liste_els_3:	desc = self.cleanHtmlStr(Liste_els_3[0])		
 			title = self.cleanHtmlStr(self.cm.ph.getDataBeetwenMarkers(data, '<h1', '</h1>')[1])
 			icon  = self.getFullIconUrl(self.cm.ph.getSearchGroups(data, '''\ssrc=['"]([^'^"]+?)['"]''')[0])
 

@@ -270,6 +270,10 @@ class urlparser:
 						'okanime.com'     : self.pp.parserUNI01, 
 						'filesload.xyz'   : self.pp.parserUNI01,
 						'mightyupload.com': self.pp.parserUNI01,
+						'vidlo.us'        : self.pp.parserUNI01,
+						'aparat.cam'      : self.pp.parserUNI01,
+						'movs4u.club'     : self.pp.parserMOVS4U,
+						'vid4up.com'      : self.pp.parserZIMABDKO,						
 						'gofile.io'       : self.pp.parserGOFILE,
 						'okstream.cc'     : self.pp.parserOKSTREAM,
 						'saruch.co'       : self.pp.parserSARUCH,
@@ -292,7 +296,7 @@ class urlparser:
 						'jawcloud.co'     : self.pp.parserJAWCLOUDCO,						
 						'vidtodo.com'     : self.pp.parserVIDTODOCOM,						
 						'tune.pk'         : self.pp.parseTUNEPK,
-						'dailymotion.com' : self.pp.parserDAILYMOTION,
+						#'dailymotion.com' : self.pp.parserDAILYMOTION,
 						'youtube.com'     : self.pp.parserYOUTUBE, 
 						'youtu.be'        : self.pp.parserYOUTUBE,
 						'ok.ru'           : self.pp.parserOKRU,						
@@ -2401,6 +2405,22 @@ class pageParser(CaptchaHelper):
 					elif 'mp4' in url:
 						mp4Tab.append({'name':'[MP4] '+label, 'url':url})
 						
+	def parserMOVS4U(self, baseUrl):
+		printDBG("parserMOVS4U baseUrl[%r]" % baseUrl)
+		printDBG("parserUNI01"+str(strwithmeta(baseUrl).meta))
+		videoTab = []
+		url = baseUrl
+		HTTP_HEADER= {'User-Agent':'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0','Referer':''}
+		COOKIE_FILE = GetCookieDir('UNI01.cookie')	
+		self.cm.clearCookie(COOKIE_FILE, ['__cfduid', 'cf_clearance'])
+		urlParams = {'header': HTTP_HEADER, 'use_cookie': True, 'save_cookie': True, 'load_cookie': True, 'cookiefile': COOKIE_FILE}
+		sts, data = self.getPageCF(url, urlParams)
+		if not sts: return False
+		lst_data = re.findall('<source src="(.*?)".*?label="(.*?)"', data, re.S)
+		for (url,label) in lst_data:
+			videoTab.append({'name':label, 'url':url})	
+		return videoTab	
+
 	def parserUNI01(self, baseUrl):
 		printDBG("parserUNI01 baseUrl[%r]" % baseUrl)
 		printDBG("parserUNI01"+str(strwithmeta(baseUrl).meta))
@@ -2409,8 +2429,9 @@ class pageParser(CaptchaHelper):
 		HTTP_HEADER= {'User-Agent':'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'}
 		if 'Referer' in strwithmeta(baseUrl).meta:
 			HTTP_HEADER['Referer'] = strwithmeta(baseUrl).meta['Referer']
-		if 'arabveturk' in baseUrl: HTTP_HEADER['Referer'] = ''
+		if 'arabveturk'  in baseUrl: HTTP_HEADER['Referer'] = ''
 		if 'gounlimited' in baseUrl: HTTP_HEADER['Referer'] = ''
+		if 'movs4u'      in baseUrl: HTTP_HEADER['Referer'] = ''
 		#printDBG("parserUNI01"+str(HTTP_HEADER))
 		COOKIE_FILE = GetCookieDir('UNI01.cookie')	
 		self.cm.clearCookie(COOKIE_FILE, ['__cfduid', 'cf_clearance'])
@@ -2459,6 +2480,9 @@ class pageParser(CaptchaHelper):
 			if 'Video is processing now.' in data: SetIPTVPlayerLastHostError('Video is processing now.')
 			elif 'Video not available!' in data: SetIPTVPlayerLastHostError('Video not available!')	
 		return videoTab	
+
+
+
 
 	def parserUNI01_GET(self, lst_data,baseUrl,HTTP_HEADER):
 		hlsTab  = []
@@ -2701,7 +2725,6 @@ class pageParser(CaptchaHelper):
 					videoTab.append({'name':'[MP4]', 'url':link})
 		return videoTab
 
-		
 	def parserZIMABDKO(self, baseUrl):
 		videoTab = []
 		UA = 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:53.0) Gecko/20100101 Firefox/66.0'

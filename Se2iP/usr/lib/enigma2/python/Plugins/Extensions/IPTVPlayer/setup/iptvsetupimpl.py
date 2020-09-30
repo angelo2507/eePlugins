@@ -474,8 +474,7 @@ class IPTVSetupImpl:
                 if '.' == self.ffmpegVersion[-1]: self.ffmpegVersion = self.ffmpegVersion[:-1]
             except Exception: self.ffmpegVersion = ""
         else: self.ffmpegVersion = ""
-        #self.wgetStep()
-        self.finish()
+        self.wgetStep()
             
     ###################################################
     # STEP: WGET

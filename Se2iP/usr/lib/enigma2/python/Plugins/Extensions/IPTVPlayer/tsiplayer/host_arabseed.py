@@ -13,13 +13,13 @@ def getinfo():
 	if hst=='': hst = 'https://m2.arabseed.net'
 	info_['host']= hst
 	info_['name']=name
-	info_['version']='1.5.1 07/11/2019'
+	info_['version']='1.5.2 11/07/2020'
 	info_['dev']='RGYSoft'
 	info_['cat_id']='201'#'201'
 	info_['desc']='أفلام و مسلسلات عربية و اجنبية'
 	info_['icon']='https://m2.arabseed.net/wp-content/themes/ArbSeed/logo-white.png'
 	info_['recherche_all']='1'
-	info_['update']='Add Filter section'
+	#info_['update']='Add Filter section'
 	return info_
 	
 	
@@ -130,6 +130,7 @@ class TSIPHost(TSCBaseHostClass):
 			data1=re.findall('class="BlockItem.*?href="(.*?)"(.*?)src="(.*?)".*?Title">(.*?)(<.*?)</div>', data, re.S)		
 			i=0
 			for (url,x1,image,titre,desc) in data1:
+				image=self.std_url(image)
 				desc = desc .replace ('<li>','rgyrgy')
 				desc=ph.clean_html(desc)
 				desc = desc .replace ('rgyrgy','\n')
@@ -248,18 +249,18 @@ class TSIPHost(TSCBaseHostClass):
 		desc = cItem['desc']
 		sts, data = self.getPage(cItem['url'])
 		if sts:
-			lst_dat=re.findall('<div class="content">(.*?)<ul>(.*?)</ul>', data, re.S)
+			lst_dat=re.findall('class="taxList">(.*?)class="WatchNow">', data, re.S)
 			if lst_dat:
-				desc = ph.clean_html(lst_dat[0][0])
-				lst_dat0=re.findall("<li>(.*?):(.*?)</li>", lst_dat[0][1], re.S)
+				lst_dat0=re.findall("<li>(.*?):(.*?)</li>", lst_dat[0], re.S)
 				for (x1,x2) in lst_dat0:
 					if 'الجودة'     in x1: otherInfo1['quality'] = ph.clean_html(x2)
-					if 'تأليف'      in x1: otherInfo1['writer'] = ph.clean_html(x2)				
-					if 'إخراج'      in x1: otherInfo1['director'] = ph.clean_html(x2)	
+					if 'تاريخ'      in x1: otherInfo1['year'] = ph.clean_html(x2)				
+					if 'اللغة'      in x1: otherInfo1['language'] = ph.clean_html(x2)	
 					if 'النوع'      in x1: otherInfo1['genres'] = ph.clean_html(x2)				
-					if 'المشاهدات'  in x1: otherInfo1['views'] = ph.clean_html(x2)
-					if 'طاقم العمل' in x1: otherInfo1['actors'] = ph.clean_html(x2)
-					if 'البلد'      in x1: otherInfo1['country'] = ph.clean_html(x2)	
+					if 'الدولة'      in x1: otherInfo1['country'] = ph.clean_html(x2)	
+			lst_dat=re.findall('plotArea">(.*?)</div>', data, re.S)
+			if lst_dat: desc = ph.clean_html(lst_dat[0])
+		
 		icon = cItem.get('icon')
 		title = cItem['title']	
 		
