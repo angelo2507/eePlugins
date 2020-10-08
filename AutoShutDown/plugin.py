@@ -24,6 +24,7 @@ from Plugins.Plugin import PluginDescriptor
 from Screens.MessageBox import MessageBox
 from Screens.Screen import Screen
 from time import time, localtime, mktime
+from Tools.Directories import resolveFilename, SCOPE_PLUGINS, pathExists
 from Tools import Notifications
 
 import gettext
@@ -417,7 +418,8 @@ class AutoShutDownConfiguration(Screen, ConfigListScreen):
             self.session.openWithCallback(self.cancelConfirm, MessageBox, _("Really close without saving settings?"), MessageBox.TYPE_YESNO, default = False)
         else:
             for x in self["config"].list:
-                x[1].cancel()
+                if len(x) >= 2:
+                    x[1].cancel()
             self.close(False,self.session)
 
     def cancelConfirm(self, result):
@@ -426,7 +428,8 @@ class AutoShutDownConfiguration(Screen, ConfigListScreen):
         else:
             print("[AutoShutDown] Cancel confirmed. Configchanges will be lost.")
             for x in self["config"].list:
-                x[1].cancel()
+                if len(x) >= 2:
+                    x[1].cancel()
             self.close(False,self.session)
 
     def revert(self):
