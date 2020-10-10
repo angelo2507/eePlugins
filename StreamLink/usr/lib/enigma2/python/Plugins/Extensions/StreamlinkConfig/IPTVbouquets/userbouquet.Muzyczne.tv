@@ -39,3 +39,13 @@
 #DESCRIPTION Retro PLUS TV
 #SERVICE 4097:0:1:E458:EF7A:EC:0:0:0:0:http%3a//stream.mediawork.cz%3a1935/retrotv/retrotvHQ1/chunklist_w877554018.m3u8:Retro MUSIC TV
 #DESCRIPTION Retro MUSIC TV
+#SERVICE 4097:0:1:A5D1:D242:EC:0:0:0:0:https%3a//bozztv.com/36bay2/gin/giniko_ramusic_1200kb_36bay2/tracks-v1a1/mono.m3u8:Relaxing Music TV
+#DESCRIPTION Relaxing Music TV
+#SERVICE 4097:0:1:11F0:8EA3:EC:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/Dx5qFachd3A:JAZZ TV (YT)
+#DESCRIPTION JAZZ TV (YT)
+#SERVICE 1:0:1:DFD9:22EA:EC:0:0:0:0:http%3a//127.0.0.1%3a8088/ffmpeg|http%3a//deejay_tv-lh.akamaihd.net/i/DeejayTv_1@129866/index_600_av-p.m3u8?sd=10|rebase=on|format=mpegts:DeeJay TV
+#DESCRIPTION DeeJay TV
+#SERVICE 4097:0:1:F55:DE34:EC:0:0:0:0:http%3a//telekomtv-ro.akamaized.net/shls/LIVE$MoozHitsSD/167.m3u8/Level(545259)?start=LIVE&end=END:Mooz Hits
+#DESCRIPTION Mooz Hits
+#SERVICE 4097:0:1:E725:BD64:EC:0:0:0:0:https%3a//cdnlive.radiou.com/LS-ATL-43240-1/tracks-v2a1/mono.m3u8:RADIO U TV
+#DESCRIPTION RADIO U TV

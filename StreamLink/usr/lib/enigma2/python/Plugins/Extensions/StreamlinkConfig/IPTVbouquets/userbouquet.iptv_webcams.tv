@@ -1,6 +1,6 @@
 #NAME IPTV Webcams
-#SERVICE 1:64:14:0:0:0:0:0:0:0::Aktualizacja: endriu 28.09.20 (thx.rappek)
-#DESCRIPTION Aktualizacja: endriu 28.09.20 (thx.rappek)
+#SERVICE 1:64:14:0:0:0:0:0:0:0::Aktualizacja: endriu 04.10.20 (thx.rappek)
+#DESCRIPTION Aktualizacja: endriu 04.10.20 (thx.rappek)
 #SERVICE 1:64:0:0:0:0:0:0:0:0::Europa
 #DESCRIPTION Europa
 #SERVICE 1:64:18:0:0:0:0:0:0:0::Albania (AL)
@@ -135,6 +135,8 @@
 #DESCRIPTION Belgia (BE)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//g0.ipcamlive.com/player/player.php?alias=oneillbeachclub&autoplay=1:BE - Blankenberge - Plaża
 #DESCRIPTION BE - Blankenberge - Plaża
+#SERVICE 4097:0:1:6ADF:A501:EC:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//ipcamlive.com/player/player.php?alias=oneillbeachclub&autoplay=1:BE - Blankenberge - O’neill Beachclub
+#DESCRIPTION BE - Blankenberge - O’neill Beachclub
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//g0.ipcamlive.com/player/player.php?alias=5c18bd72dcd9d&skin=white&autoplay=1&mute=1 &timelapseplayerenabled=1&disablevideofit=1&disablefullscreen=1&disabledownloadbutton=0:BE - Bougnies
 #DESCRIPTION BE - Bougnies
 #SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/pl/webcam/belgique/flandres/bruges/markt.html:BE - Brugia - Rynek
@@ -153,6 +155,8 @@
 #DESCRIPTION BE - De Panne
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//g2.ipcamlive.com/player/player.php?alias=leopold1axis:BE - De Panne 2
 #DESCRIPTION BE - De Panne 2
+#SERVICE 4097:0:1:9928:FCC5:EC:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//ipcamlive.com/player/player.php?alias=oostende:BE - Flanders - Plaża Ostend
+#DESCRIPTION BE - Flanders - Plaża Ostend
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//g0.ipcamlive.com/player/player.php?alias=rbsclangerbrugge&autoplay=0&mute=1:BE - Gandawa - Port jachtowy
 #DESCRIPTION BE - Gandawa - Port jachtowy
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//g0.ipcamlive.com/player/player.php?alias=knokkeheist:BE - Knokke-Heist - Duinbergen
@@ -161,7 +165,7 @@
 #DESCRIPTION BE - Knokke-Heist - plaża (YT)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/ThVtj7egCKY:BE - Knokke-Heist - Plaża 2 (YT)
 #DESCRIPTION BE - Knokke-Heist - Plaża 2 (YT)
-#SERVICE 1:0:0:0:0:0:0:0:0:0:https%3a//s4.ipcamlive.com/streams/045f140933d90d186/stream.m3u8:BE - Knokke-Heist - Zoute
+#SERVICE 4097:0:0:4D87:A673:EC:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//g0.ipcamlive.com/player/player.php?alias=rbsczoute&autoplay=0&mute=1:BE - Knokke-Heist - Zoute
 #DESCRIPTION BE - Knokke-Heist - Zoute
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/Xlc17UqnS3g:BE - Koksijde - Plaża (YT)
 #DESCRIPTION BE - Koksijde - Plaża (YT)
@@ -761,14 +765,10 @@
 #DESCRIPTION CZ - Dolna Beczwa - Panorama
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/egpjsqcFIHI:CZ - Dolní Lhota (YT)
 #DESCRIPTION CZ - Dolní Lhota (YT)
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//s2.ipcamlive.com/streams/025f4d3afa535d20c/stream.m3u8:CZ - Dolní Morava - Areál Větrný Vrch - terasa
+#SERVICE 4097:0:0:D010:7333:EC:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.ipcamlive.com/player/player.php?alias=arealvetrnyvrch&autoplay=1&&token=f5724335:CZ - Dolní Morava - Areál Větrný Vrch - terasa
 #DESCRIPTION CZ - Dolní Morava - Areál Větrný Vrch - terasa
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//s25.ipcamlive.com/streams/195f4d3b63a98b3aa/stream.m3u8:CZ - Dolní Morava - Areál Větrný Vrch - sjezdovka
-#DESCRIPTION CZ - Dolní Morava - Areál Větrný Vrch - sjezdovka
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//streaming.hvfree.net/hls/eroplan.m3u8:CZ - Eroplán Rožnov p.R.
 #DESCRIPTION CZ - Eroplán Rožnov p.R.
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//e1-eu2.angelcam.com/m4-eu5/cameras/2054/streams/hls/playlist.m3u8?token=eyJjYW1lcmFfaWQiOiIyMDU0IiwidGltZSI6MTU5NzI1MzgxNzY3NjYzMiwidGltZW91dCI6MzYwMH0=.2434149a52defa72c448decacbdce7996b9311faa0ebf781a7e2fa1c262abdb6:CZ - Franciszkowe Łaźnie - Národní třída
-#DESCRIPTION CZ - Franciszkowe Łaźnie - Národní třída
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//frn.rtsp.me/B5VO39YnDlJGpZlR6-oh1Q/1597344765/hls/QKh9EkDG.m3u8:CZ - Frydlant nad Ostrawicą - Basen
 #DESCRIPTION CZ - Frydlant nad Ostrawicą - Basen
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//stream.silesnet.net/webcams/rondel.m3u8:CZ - Hawierzów - Rondo
@@ -817,8 +817,6 @@
 #DESCRIPTION CZ - Mariańskie Łaźnie - Panorama
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/jNeymq4-rsI:CZ - Nowy Bór - Náměstí Míru (YT)
 #DESCRIPTION CZ - Nowy Bór - Náměstí Míru (YT)
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//e1-eu3.angelcam.com/m1-eu3/cameras/6422/streams/hls/playlist.m3u8?token=eyJjYW1lcmFfaWQiOiI2NDIyIiwidGltZSI6MTU5NzI2MTE3MjQwMDU3MCwidGltZW91dCI6MzYwMH0=.ee96d513bee4d955ce8312d477c7dd413ba31d68ff41be6a17a453a9e91e29ce:CZ - Ołomuniec - Horní náměstí
-#DESCRIPTION CZ - Ołomuniec - Horní náměstí
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//stream.silesnet.net/webcams/orlova.m3u8:CZ - Orłowa - Rondo
 #DESCRIPTION CZ - Orłowa - Rondo
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//stream.silesnet.net/webcams/hrabuvka.m3u8:CZ - Ostrawa - Hrabůvka
@@ -877,10 +875,8 @@
 #DESCRIPTION CZ - Šlapanov - Kamera před Obecním úřadem (YT)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/Ep2JwfvalyI:CZ - Šlapanov - Kamera před prodejnou COOP (YT)
 #DESCRIPTION CZ - Šlapanov - Kamera před prodejnou COOP (YT)
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//s29.ipcamlive.com/streams/1d5f4d0f2e18c0baf/stream.m3u8:CZ - Šlapanov - Náměstí Přibyslav
+#SERVICE 4097:0:0:9AB5:7497:EC:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.ipcamlive.com/player/player.php?alias=56cb0461842b0&autoplay=1&&token=56f27b53:CZ - Šlapanov - Náměstí Přibyslav
 #DESCRIPTION CZ - Šlapanov - Náměstí Přibyslav
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//e1-eu3.angelcam.com/m3-eu3/cameras/55/streams/hls/playlist.m3u8?token=eyJjYW1lcmFfaWQiOiI1NSIsInRpbWUiOjE1OTczMDM2MjYwNjA1NDgsInRpbWVvdXQiOjM2MDB9.28f2662de333bc5ac8b84f24cb70a94b5e2de2533f0e924354549027aae01c08:CZ - Stupava - Stok narciarski
-#DESCRIPTION CZ - Stupava - Stok narciarski
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//streaming.hvfree.net/hls/stracka.m3u8:CZ - Stračka v Zašové
 #DESCRIPTION CZ - Stračka v Zašové
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//wstream.comanet.cz%3a1943/live/Spindl-Chata2.stream_720p/chunklist_w1284759622.m3u8:CZ - Szpindlerowy Młyn - Hotel Erlebachova bouda
@@ -985,8 +981,6 @@
 #DESCRIPTION DK - Most Storebæltsbroen
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//stream.sob.m-dn.net/live/sb2/720p/index.m3u8:DK - Most Storebæltsbroen 2
 #DESCRIPTION DK - Most Storebæltsbroen 2
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//ngx.cr1.streamzilla.xlcdn.com/session/046c343654b1e85d1c350a7242761270/sz/streamdays/wowza4/live/geocenter-klint/chunklist.m3u8:DK - Møn - Klif Møns Klint 2
-#DESCRIPTION DK - Møn - Klif Møns Klint 2
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//g0.ipcamlive.com/player/player.php?alias=58a20dbc2c9c5:DK - Roslev - Harre Vig Golf Club
 #DESCRIPTION DK - Roslev - Harre Vig Golf Club
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/GnqV11nnWBs:DK - Rødbyhavn - Tunel pod Bełtem Fehmarn (YT)
@@ -1481,6 +1475,8 @@
 #DESCRIPTION FR - Saint-Jouin-Bruneval (YT)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/8yAgaVi8CAc:FR - Saint-Laurent-du-Var - Provence (YT)
 #DESCRIPTION FR - Saint-Laurent-du-Var - Provence (YT)
+#SERVICE 4097:0:1:55BC:89CE:EC:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/J3xg6-S2bFU:FR - Saint-Malo - Brittany (YT)
+#DESCRIPTION FR - Saint-Malo - Brittany (YT)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5ef477949826a.streamlock.net%3a444/live/smbeaufort.stream/chunklist_w1802551137.m3u8:FR - Saint-Malo - Hôtel Beaufort
 #DESCRIPTION FR - Saint-Malo - Hôtel Beaufort
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/p6nAlz4_bdI:FR - Saint-Malo - Le Port (YT)
@@ -1609,8 +1605,6 @@
 #DESCRIPTION GR - Drosochori - Panorama
 #SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/ellada/peloponnese/laconia/elafonisos.html:GR - Elafonisos - Port
 #DESCRIPTION GR - Elafonisos - Port
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//e1-eu8.angelcam.com/m1-eu8/cameras/5924/streams/hls/playlist.m3u8?token=eyJjYW1lcmFfaWQiOiI1OTI0IiwidGltZSI6MTU5NzUyMzQ3NTM0MDIwMCwidGltZW91dCI6MzYwMH0=.27f5fa1fb7304c249509c02a00cd68dd8e331d19d37e4f48f4d9caaecfddeb2c:GR - Eubea - Chalkida - Evripou
-#DESCRIPTION GR - Eubea - Chalkida - Evripou
 #SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/ellada/evrytania/agrafa/granitsa.html:GR - Eurytania - Granitsa
 #DESCRIPTION GR - Eurytania - Granitsa
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.liveincam.com/en/cam/argolis-fichtia-mycenae:GR - Fichtia - Mycenae
@@ -1619,8 +1613,6 @@
 #DESCRIPTION GR - Hotel Thassos (YT)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//mediacp.alphastream.eu/meteorakor/MeteoraUp.stream/chunklist_w2108086250.m3u8:GR - Kalambaka - Meteory
 #DESCRIPTION GR - Kalambaka - Meteory
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//e1-eu8.angelcam.com/m6-eu5/cameras/610/streams/hls/playlist.m3u8?token=eyJjYW1lcmFfaWQiOiI2MTAiLCJ0aW1lIjoxNTk3NTI0MTc3MjI3NjMzLCJ0aW1lb3V0IjozNjAwfQ==.121518972bbbce9e4f050bf6fcdee775ed8a59a7d0848aa3544509787140c00e:GR - Karpenisi
-#DESCRIPTION GR - Karpenisi
 #SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/ellada/makedonia/kavala/kavala.html:GR - Kawala - Port
 #DESCRIPTION GR - Kawala - Port
 #SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/ellada/ionian-islands/kefalonia/fiskardo.html:GR - Kefalonia - Fiskardo - Port
@@ -1677,8 +1669,6 @@
 #DESCRIPTION GR - Nisyros - Dodecanese
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.liveincam.com/en/cam/chania-omalos:GR - Omalos - płaskowyż na Krecie
 #DESCRIPTION GR - Omalos - płaskowyż na Krecie
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//e1-eu8.angelcam.com/m2-eu8/cameras/40082/streams/hls/playlist.m3u8?token=eyJjYW1lcmFfaWQiOiI0MDA4MiIsInRpbWUiOjE1OTc1Nzc5Mjk1ODIxMDMsInRpbWVvdXQiOjM2MDB9.8f945de4190fa1cd740fb9434956194b27593705c89ebe5627e4c25eec53464b:GR - Paksos - Gaios
-#DESCRIPTION GR - Paksos - Gaios
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/r6FkOwx_jX0:GR - Paleo Faliro - Plaża (YT)
 #DESCRIPTION GR - Paleo Faliro - Plaża (YT)
 #SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/ellada/crete/chania/paleochora-beach.html:GR - Paleochora - Plaża Pachia Ammos
@@ -1705,7 +1695,7 @@
 #DESCRIPTION GR - Rodos - Ammoudes - Plaża (YT)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//58f14b372a413.streamlock.net%3a444/visitrhodes1/visitrhodes1.stream/.m3u8:GR - Rodos - Lindos
 #DESCRIPTION GR - Rodos - Lindos
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//s17.ipcamlive.com/streams/115f4d39d21a31ad0/stream.m3u8:GR - Rodos - Marina
+#SERVICE 4097:0:0:6470:7388:EC:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.ipcamlive.com/player/player.php?alias=rhodesmarina&autoplay=1&&token=f572ec36:GR - Rodos - Marina
 #DESCRIPTION GR - Rodos - Marina
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.youtube.com/watch?v=49Uyt7XBvWw:GR - Rodos - Palladium Plaża (YT)
 #DESCRIPTION GR - Rodos - Palladium Plaża (YT)
@@ -1745,10 +1735,12 @@
 #DESCRIPTION GR - Zakintos - Marathias
 #SERVICE 1:64:36:0:0:0:0:0:0:0::Hiszpania (ES)
 #DESCRIPTION Hiszpania (ES)
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//58f14c0895a20.streamlock.net/camaramar/35_lanzadasur.stream/chunklist_w1444761214.m3u8:ES - A Lanzada - Plaża
-#DESCRIPTION ES - A Lanzada - Plaża
 #SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/espana/region-de-murcia/murcia/aguilas.html:ES - Águilas - Panorama
 #DESCRIPTION ES - Águilas - Panorama
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//58f14c0895a20.streamlock.net/camaramar/35_lanzadasur.stream/chunklist_w1444761214.m3u8:ES - A Lanzada - Plaża
+#DESCRIPTION ES - A Lanzada - Plaża
+#SERVICE 4097:0:1:31A3:EAF6:EC:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/vZf1sPN_fDQ:ES - Alicante - Morze, port rybacki i przystań (YT)
+#DESCRIPTION ES - Alicante - Morze, port rybacki i przystań (YT)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.liveincam.com/en/cam/cadiz-algodonales:ES - Algodonales - Panorama miasta
 #DESCRIPTION ES - Algodonales - Panorama miasta
 #SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/espana/comunidad-valenciana/alicante/alicante-playa-almadraba.html:ES - Alicante - Playa de la Almadraba
@@ -2041,7 +2033,7 @@
 #DESCRIPTION ES - Gran Canaria - Patalavaca - Plaża
 #SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/espana/canarias/las-palmas-gran-canaria/playa-las-canteras.html:ES - Gran Canaria - Playa Grande
 #DESCRIPTION ES - Gran Canaria - Playa Grande
-#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/espana/canarias/las-palmas-gran-canaria/la-cicer-las-canteras.html:ES - Gran Canaria - Las Canteras -La Cicer
+#SERVICE 1:0:0:9A9C:13A6:EC:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/espana/canarias/las-palmas-gran-canaria/la-cicer-las-canteras.html:ES - Gran Canaria - Las Canteras -La Cicer
 #DESCRIPTION ES - Gran Canaria - Las Canteras -La Cicer
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//g0.ipcamlive.com/player/player.php?alias=5c0fd772efa48&autoplay=1&disabledownloadbutton=1:ES - Gran Canaria - Playa del Inglés
 #DESCRIPTION ES - Gran Canaria - Playa del Inglés
@@ -2081,8 +2073,12 @@
 #DESCRIPTION ES - Lanzarote - Port lotniczy (YT)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/mpd2CHIgJ9A:ES - Lanzarote - Puerto del Carmen (YT)
 #DESCRIPTION ES - Lanzarote - Puerto del Carmen (YT)
+#SERVICE 4097:0:1:9027:7D8E:EC:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/OxYs24pAiUw:ES - Lanzarote - Puerto del Carmen - Plaża (YT)
+#DESCRIPTION ES - Lanzarote - Puerto del Carmen - Plaża (YT)
 #SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/espana/canarias/las-palmas/lanzarote-puerto-del-carmen.html:ES - Lanzarote - Puerto del Carmen - Los Pocillos Beach
 #DESCRIPTION ES - Lanzarote - Puerto del Carmen - Los Pocillos Beach
+#SERVICE 4097:0:1:44A4:20F8:EC:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/fiVItA1y0WA:ES - Los Gigantes - Royal Sun Resort (YT)
+#DESCRIPTION ES - Los Gigantes - Royal Sun Resort (YT)
 #SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/espana/canarias/santa-cruz-de-tenerife/plaza-de-espana.html:ES - Santa Cruz de Tenerife - Plaza de España
 #DESCRIPTION ES - Santa Cruz de Tenerife - Plaza de España
 #SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/espana/canarias/santa-cruz-de-tenerife/plaza-de-la-candelaria.html:ES - Santa Cruz de Tenerife - Plaza de la Candelaria
@@ -2533,8 +2529,8 @@
 #DESCRIPTION NL - Zandvoort - De Haven (YT)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/nmRRzgVUeoY:NL - Zandvoort - Plaża (YT)
 #DESCRIPTION NL - Zandvoort - Plaża (YT)
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//g0.ipcamlive.com/player/player.php?alias=rbsczeebrugge&autoplay=1&mute=1:NL - Zeebrugge
-#DESCRIPTION NL - Zeebrugge
+#SERVICE 4097:0:0:3C3:536F:EC:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//ipcamlive.com/player/player.php?alias=zeebrugge:NL - Zeebrugge - Plaża
+#DESCRIPTION NL - Zeebrugge - Plaża
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/9yYWoKgoscM:NL - Zoutelande - Camping Janse (YT)
 #DESCRIPTION NL - Zoutelande - Camping Janse (YT)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/FesxRAaHkq4:NL - Zoetermeer - SnowWorld (YT)
@@ -2607,8 +2603,6 @@
 #DESCRIPTION IRL - Limerick - Rzeka Shannon (YT)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//g0.ipcamlive.com/player/player.php?alias=strandhillsurfsch:IRL - Strandhill - Beach Front
 #DESCRIPTION IRL - Strandhill - Beach Front
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//use01-smr05-relay.ozolio.com/hls-live/_definst_/relay01.jchmg5.fd0.sm1.av2.at0.sh2.rt8635.rc0.basic.stream/chunklist_w1196488181.m3u8:IRL - Wyspy Aran - Lower Kilronan
-#DESCRIPTION IRL - Wyspy Aran - Lower Kilronan
 #SERVICE 1:64:23:0:0:0:0:0:0:0::Islandia (IS)
 #DESCRIPTION Islandia (IS)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//bang.snerpa.is/live/live/alvidra2.stream/chunklist_w1413881347.m3u8:IS - Dýrafjörður - Alviðra Suður
@@ -3361,8 +3355,6 @@
 #DESCRIPTION NO - Puddefjordsbroen
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//salive-lh.akamaihd.net/i/20171206x102037_01@388791/master.m3u8:NO - Randaberg torg
 #DESCRIPTION NO - Randaberg torg
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//e1-eu8.angelcam.com/m6-eu5/cameras/1045/streams/hls/playlist.m3u8?token=eyJjYW1lcmFfaWQiOiIxMDQ1IiwidGltZSI6MTU5ODU1NjMyMTU2MTcwOSwidGltZW91dCI6MzYwMH0=.ecbabc49f7b34106170d5cb130d65e3d31c82932a7685fd8609d627dce0abe26:NO - Riksvei 555
-#DESCRIPTION NO - Riksvei 555
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/GimxrnigQtE:NO - Rognan (YT)
 #DESCRIPTION NO - Rognan (YT)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/tRnroS4tsrU:NO - Slattum - Hauger Golfklubb (YT)
@@ -3371,8 +3363,6 @@
 #DESCRIPTION NO - Stavanger - Norsk Oljemuseum
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//kamera.vegvesen.no/public/1229038_2/hls_1_stream_1_orig.m3u8:NO - Straume
 #DESCRIPTION NO - Straume
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//e1-eu3.angelcam.com/m3-eu3/cameras/1299/streams/hls/playlist.m3u8?token=eyJjYW1lcmFfaWQiOiIxMjk5IiwidGltZSI6MTU5ODU1NjYzMzE4OTEwNSwidGltZW91dCI6MzYwMH0=.11642491e9444d89c645dc8698f13b12ecd7d3f6d48bd29e6cab334b8a18d815:NO - Sotrabrua
-#DESCRIPTION NO - Sotrabrua
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/Ks1wfO8JIko:NO - Sør-Varanger - Himmelstigen (YT)
 #DESCRIPTION NO - Sør-Varanger - Himmelstigen (YT)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.youtube.com/watch?v=bdEYa2oBtII:NO - Sør-Varanger - Kirkenes - Sentrum (YT)
@@ -3547,6 +3537,8 @@
 #DESCRIPTION PT - Praia da Luz
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//video-auth1.iol.pt/beachcam/praiagrande/chunks.m3u8:PT - Praia Grande
 #DESCRIPTION PT - Praia Grande
+#SERVICE 4097:0:1:84B6:1CD3:EC:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/474m3prRZDY:PT - Praia da Bahia - Plaża
+#DESCRIPTION PT - Praia da Bahia - Plaża
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//webcam-hd.fr/webcam?id=91&camera=praia-da-barra:PT - Praia Da Barra
 #DESCRIPTION PT - Praia Da Barra
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//webcam-hd.fr/webcam?id=105&camera=praia-da-calada:PT - Praia da Calada
@@ -5339,16 +5331,8 @@
 #DESCRIPTION Wielka Brytania (GB)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/nv4l77y4cro:GB - Ammanford - Pen-Y-Banc Rd (YT)
 #DESCRIPTION GB - Ammanford - Pen-Y-Banc Rd (YT)
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//e1-eu8.angelcam.com/m2-eu8/cameras/89860/streams/hls/playlist.m3u8?token=eyJjYW1lcmFfaWQiOiI4OTg2MCIsInRpbWUiOjE1OTc2MDQyNTA5MzkxMTQsInRpbWVvdXQiOjM2MDB9.13ccdafe8a5450431e1fdbbf5b061dd4cdecd42e68f1114c7a790ab35c1b963a:GB - Arran - Kildonan
-#DESCRIPTION GB - Arran - Kildonan
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//e1-eu8.angelcam.com/m2-eu8/cameras/89856/streams/hls/playlist.m3u8?token=eyJjYW1lcmFfaWQiOiI4OTg1NiIsInRpbWUiOjE1OTc2MDQzNTkwMTYwOTIsInRpbWVvdXQiOjM2MDB9.e1ab384155872438cb0251ce371890a97a160a30cacdf210b3370461b4a545dd:GB - Arran - Kildonan 2
-#DESCRIPTION GB - Arran - Kildonan 2
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/BVxGvBdO5Po:GB - Barry - Whitmore Bay (YT)
 #DESCRIPTION GB - Barry - Whitmore Bay (YT)
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//e1-eu8.angelcam.com/m5-eu5/cameras/79560/streams/hls/playlist.m3u8?token=eyJjYW1lcmFfaWQiOiI3OTU2MCIsInRpbWUiOjE1OTc2MDQ1NjQ2ODM4MDksInRpbWVvdXQiOjM2MDB9.8cc8bc0fda822c0a7f738653297f5c9e17734572063dd3fab540921db35dd5c4:GB - Birmingham - Port lotniczy Birmingham
-#DESCRIPTION GB - Birmingham - Port lotniczy Birmingham
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//maybach.railcam.co.uk/BishopsLydeard_59234/tracks-v1a1/mono.m3u8:GB - Bishops Lydeard Station
-#DESCRIPTION GB - Bishops Lydeard Station
 #SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/united-kingdom/england/blackpool/blackpool-tower.html:GB - Blackpool - Blackpool Tower
 #DESCRIPTION GB - Blackpool - Blackpool Tower
 #SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/united-kingdom/england/blackpool/blackpool-chapel-street.html:GB - Blackpool - Chapel Street
@@ -5357,8 +5341,6 @@
 #DESCRIPTION GB - Blackpool - Galeria sztuki odpadów papierosów
 #SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/united-kingdom/england/blackpool/blackpool.html:GB - Blackpool - Plaża
 #DESCRIPTION GB - Blackpool - Plaża
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//maybach.railcam.co.uk/BlueAnchor_68938/tracks-v1a1/mono.m3u8:GB - Blue Anchor - Stacja kolejowa
-#DESCRIPTION GB - Blue Anchor - Stacja kolejowa
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.earthcam.com/world/uk/bognorregis/:GB - Bognor Regis - Plaża
 #DESCRIPTION GB - Bognor Regis - Plaża
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//cams.cdn-surfline.com/cdn-int/uk-boscombe/chunklist.m3u8:GB - Bournemouth - Boscombe
@@ -5377,8 +5359,6 @@
 #DESCRIPTION GB - Burnham Overy - River Burn
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//stream-eu1-bravo.dropcam.com/nexus_aac/36f529218066407dbd9917bfb7525254/chunklist_w278178075.m3u8?public=UUcFjlDGIk:GB - Camberley - Blackbushe Airport
 #DESCRIPTION GB - Camberley - Blackbushe Airport
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//eu01-smr01-relay.ozolio.com/hls-live/_definst_/relay01.brskb0q.fd0.sm1.av2.at0.sh2.rt8635.rc0.basic.stream/chunklist_w1420414161.m3u8:GB - Carbis Bay
-#DESCRIPTION GB - Carbis Bay
 #SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/united-kingdom/wales/cardiff/cardiff.html:GB - Cardiff - St. Mary Street
 #DESCRIPTION GB - Cardiff - St. Mary Street
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/lZ1aRKKn4nQ:GB - Dawlish - Marine Parade (YT)
@@ -5391,10 +5371,6 @@
 #DESCRIPTION GB - Dover - Plaża
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//g0.ipcamlive.com/player/player.php?alias=dymchurchbeach:GB - Dymchurch - Plaża
 #DESCRIPTION GB - Dymchurch - Plaża
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//eu01-smr02-relay.ozolio.com/hls-live/_definst_/relay01.mncjccd.fd0.sm1.av1.at0.sh2.rt8635.rc0.basic.stream/chunklist_w1165277337.m3u8:GB - Falmouth - Marina
-#DESCRIPTION GB - Falmouth - Marina
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//eu01-smr02-relay.ozolio.com/hls-live/_definst_/relay01.rknkb8n.fd0.sm1.av2.at0.sh2.rt8635.rc0.basic.stream/chunklist_w1896475271.m3u8:GB - Falmouth - Port
-#DESCRIPTION GB - Falmouth - Port
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//camsecure.co/HLS/felix.m3u8:GB - Felixstowed - South Beach
 #DESCRIPTION GB - Felixstowed - South Beach
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//camsecure.co/HLS/felix2.m3u8:GB - Felixstowed - North Beach
@@ -5419,8 +5395,6 @@
 #DESCRIPTION GB - Kingsbridge - Prawle Point
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//camsecure.co/HLS/nci1.m3u8:GB - Kingsbridge - Prawle Point 2
 #DESCRIPTION GB - Kingsbridge - Prawle Point 2
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//eu01-smr01-relay.ozolio.com/hll-live/_definst_/relay01.flztb0l.fd0.sm1.av2.at0.sh2.rt8635.rc0.basic.stream/chunklist_w206818819.m3u8:GB - Langland Bay
-#DESCRIPTION GB - Langland Bay
 #SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/united-kingdom/england/leicester/leicester.html:GB - Leicester - Jubilee Square
 #DESCRIPTION GB - Leicester - Jubilee Square
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//camsecure.co/HLS/leicesterair.m3u8:GB - Leicester - Lotnisko
@@ -5441,28 +5415,18 @@
 #DESCRIPTION GB - Londyn - Snakes Lane East (YT)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//g0.ipcamlive.com/player/player.php?alias=5811f1255240d:GB - Looe - Rzeka Looe
 #DESCRIPTION GB - Looe - Rzeka Looe
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//eu01-smr02-relay.ozolio.com/hls-live/_definst_/relay01.lvfrb8d.fd0.sm1.av2.at0.sh2.rt8635.rc0.basic.stream/chunklist_w339329010.m3u8:GB - Lyme Regis - Plaża
-#DESCRIPTION GB - Lyme Regis - Plaża
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/rBwTRW4z6I0:GB - Lyme Regis - Port (YT)
 #DESCRIPTION GB - Lyme Regis - Port (YT)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/Yx2rgSF4SIs:GB - Manchester - Salford Quays (YT)
 #DESCRIPTION GB - Manchester - Salford Quays (YT)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//130.88.230.220%3a1935/live/media.amp.stream/chunklist_w1052905931.m3u8:GB - Manchester - Uniwersytet
 #DESCRIPTION GB - Manchester - Uniwersytet
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//eu01-smr02-relay.ozolio.com/hls-live/_definst_/relay01.pvuob60.fd0.sm1.av2.at0.sh2.rt8635.rc0.basic.stream/chunklist_w702148238.m3u8:GB - Marazion - St Michael’s Mount
-#DESCRIPTION GB - Marazion - St Michael’s Mount
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//maybach.railcam.co.uk/Minehead_05286/tracks-v1a1/mono.m3u8:GB - Minehead - Stacja kolejowa
-#DESCRIPTION GB - Minehead - Stacja kolejowa
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//camsecure.co/HLS/kingsrest.m3u8:GB - Molesey - Hampton Court Village
 #DESCRIPTION GB - Molesey - Hampton Court Village
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//g0.ipcamlive.com/player/player.php?alias=marineroad:GB - Morecambe - Plaża
 #DESCRIPTION GB - Morecambe - Plaża
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//eu01-smr02-relay.ozolio.com/hls-live/_definst_/relay01.ncdfb2t.fd0.sm1.av2.at0.sh2.rt8635.rc0.basic.stream/chunklist_w84102349.m3u8:GB - Mousehole - Port
-#DESCRIPTION GB - Mousehole - Port
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//uk2.streamcaster.io/playlist.m3u8?stream=911A7B6D-71D7-470D-B60A-73C318671DA0&token=5f3a5570d8628:GB - Mullion - Port
 #DESCRIPTION GB - Mullion - Port
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//eu01-smr01-relay.ozolio.com/hls-live/_definst_/relay01.ifweb0g.fd0.sm1.av2.at0.sh2.rt8635.rc0.basic.stream/chunklist_w1686479504.m3u8:GB - Mumbles - Plaża
-#DESCRIPTION GB - Mumbles - Plaża
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//g0.ipcamlive.com/player/player.php?alias=5beaa1dc1687a:GB - New Scone - Port lotniczy Perth
 #DESCRIPTION GB - New Scone - Port lotniczy Perth
 #SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/united-kingdom/england/newlyn/newlyn.html:GB - Newlyn - Port
@@ -5471,28 +5435,18 @@
 #DESCRIPTION GB - Newquay - Fistral Beach
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//cams.cdn-surfline.com/cdn-int/uk-tolcarne/chunklist.m3u8:GB - Newquay - Great Western
 #DESCRIPTION GB - Newquay - Great Western
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//e1-eu2.angelcam.com/m4-eu5/cameras/5375/streams/hls/playlist.m3u8?token=eyJjYW1lcmFfaWQiOiI1Mzc1IiwidGltZSI6MTU5NzY1OTE4NzYwNTQ3NiwidGltZW91dCI6MzYwMH0=.00a42fa9ac3e2bd0152c1aca0ca5b87b318eb69d4db7452c784bd6d7ca7f2a94:GB - Newquay - Porth Beach
-#DESCRIPTION GB - Newquay - Porth Beach
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/xh48dJYojmE:GB - Oksford (YT)
 #DESCRIPTION GB - Oksford (YT)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/St7aTfoIdYQ:GB - Oxford - Broad street (YT)
 #DESCRIPTION GB - Oxford - Broad street (YT)
 #SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/united-kingdom/england/oxford/oxford-high-street.html:GB - Oksford - High Street
 #DESCRIPTION GB - Oksford - High Street
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//eu01-smr02-relay.ozolio.com/hls-live/_definst_/relay01.xhfgb7j.fd0.sm1.av2.at0.sh2.rt8635.rc0.basic.stream/chunklist_w687433752.m3u8:GB - Padstow - port
-#DESCRIPTION GB - Padstow - port
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//camsecure.co/HLS/broadsands.m3u8:GB - Paignton - Broadsands Beach
 #DESCRIPTION GB - Paignton - Broadsands Beach
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//camsecure.co/HLS/cwsports.m3u8:GB - Pentewan - Plaża
 #DESCRIPTION GB - Pentewan - Plaża
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//eu01-smr02-relay.ozolio.com/hls-live/_definst_/relay01.opccb79.fd0.sm1.av2.at0.sh2.rt8635.rc0.basic.stream/chunklist_w1511213108.m3u8:GB - Penzance - Mount’s Bay
-#DESCRIPTION GB - Penzance - Mount’s Bay
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//camsecure.co/HLS/pzsc2.m3u8:GB - Penzance - Port
 #DESCRIPTION GB - Penzance - Port
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//eu01-smr01-relay.ozolio.com/hls-live/_definst_/relay01.qqjbcdm.fd0.sm1.av2.at0.sh2.rt8635.rc0.basic.stream/chunklist_w1379239115.m3u8:GB - Penzance - Promenada
-#DESCRIPTION GB - Penzance - Promenada
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//e1-eu8.angelcam.com/m1-eu8/cameras/1065/streams/hls/playlist.m3u8?token=eyJjYW1lcmFfaWQiOiIxMDY1IiwidGltZSI6MTU5NzY2Mjk1OTMwMTU5OSwidGltZW91dCI6MzYwMH0=.3ebd13653f7181f3c7dd29cba35e884f88794ec502b761ce76acd6c8fba0ed01:GB - Perranporth - plaża
-#DESCRIPTION GB - Perranporth - plaża
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//cams.cdn-surfline.com/cdn-int/uk-perranporth/chunklist.m3u8:GB - Perranporth - Plaża 2
 #DESCRIPTION GB - Perranporth - Plaża 2
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//g0.ipcamlive.com/player/player.php?alias=victoriasrestaurant:GB - Pitlochry
@@ -5519,8 +5473,6 @@
 #DESCRIPTION GB - Portmeirion - Piazza
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//camsecure.co/HLS/portmeirion4.m3u8:GB - Portmeirion - Townhall
 #DESCRIPTION GB - Portmeirion - Townhall
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//eu01-smr01-relay.ozolio.com/hls-live/_definst_/relay01.zccrb7e.fd0.sm1.av2.at0.sh2.rt8635.rc0.basic.stream/chunklist_w293918484.m3u8:GB - Porthleven - Port
-#DESCRIPTION GB - Porthleven - Port
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//cams.cdn-surfline.com/cdn-int/uk-portreath/chunklist.m3u8:GB - Portreath - Plaża
 #DESCRIPTION GB - Portreath - Plaża
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//55507e0501d25.streamlock.net/live/hmswarrior.stream/chunklist_w737253292.m3u8:GB - Portsmouth - HMS Warrior
@@ -5531,8 +5483,6 @@
 #DESCRIPTION GB - Redhill - Lotnisko
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/q=720p/https%3a//www.youtube.com/watch?v=uSVbPvnjxb4:GB - Railway Dawlish Devon - San Remo Cam (YT)
 #DESCRIPTION GB - Railway Dawlish Devon - San Remo Cam (YT)
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//eu01-smr02-relay.ozolio.com/hls-live/_definst_/relay01.ugsochd.fd0.sm1.av2.at0.sh2.rt8635.rc0.basic.stream/chunklist_w1300365197.m3u8:GB - Rhossili, Llangennith - Plaża
-#DESCRIPTION GB - Rhossili, Llangennith - Plaża
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//camsecure.uk/HLS/ianalexander3.m3u8:GB - Robin Hood's Bay
 #DESCRIPTION GB - Robin Hood's Bay
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//camsecure.uk/HLS/ianalexander2.m3u8:GB - Robin Hood's Bay 2
@@ -5541,12 +5491,8 @@
 #DESCRIPTION GB - Robin Hood's Bay 3
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//uk2.streamcaster.io/playlist.m3u8?stream=7B686F2C-3399-4E20-9D7D-951397E8E831&token=5f3a719b4d839:GB - Rock - Rzeka Camel
 #DESCRIPTION GB - Rock - Rzeka Camel
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//eu01-smr02-relay.ozolio.com/hls-live/_definst_/relay01.gvgxb7t.fd0.sm1.av2.at0.sh2.rt8635.rc0.basic.stream/chunklist_w2035626837.m3u8:GB - Ryde - Plaża Appley
-#DESCRIPTION GB - Ryde - Plaża Appley
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/s7hega58ZPk:GB - Saundersfoot - Plaża (YT)
 #DESCRIPTION GB - Saundersfoot - Plaża (YT)
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//eu01-smr01-relay.ozolio.com/hls-live/_definst_/relay01.qqayb8s.fd0.sm1.av2.at0.sh2.rt8635.rc0.basic.stream/chunklist_w67524649.m3u8:GB - Sennen Cove - Plaża
-#DESCRIPTION GB - Sennen Cove - Plaża
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//143.167.1.98%3a1935/SheffieldPeregrineWebcast/Perch.stream/chunklist_w2038970171.m3u8:GB - Sheffield - Peregrines
 #DESCRIPTION GB - Sheffield - Peregrines
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//camsecure.co/HLS/sbragg.m3u8:GB - Skelton-in-Cleveland - Skelton Green
@@ -5559,24 +5505,8 @@
 #DESCRIPTION GB - St Ives - Panorama portu
 #SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/united-kingdom/england/st-ives/porthmeor-beach.html:GB - St Ives - Plaża Porthgwidden
 #DESCRIPTION GB - St Ives - Plaża Porthgwidden
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//eu01-smr01-relay.ozolio.com/hls-live/_definst_/relay01.xnqtb7o.fd0.sm1.av2.at0.sh2.rt8635.rc0.basic.stream/chunklist_w155233538.m3u8:GB - St Ives - Port
-#DESCRIPTION GB - St Ives - Port
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//eu01-smr01-relay.ozolio.com/hls-live/_definst_/relay01.aidcb74.fd0.sm1.av2.at0.sh2.rt8635.rc0.basic.stream/chunklist_w555639050.m3u8:GB - St Ives - Port 2
-#DESCRIPTION GB - St Ives - Port 2
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//ngx.of1.streamzilla.xlcdn.com/session/3afd7203d44c412adc7d10e9c78d9361/sz/streamdays/wowza4/live/tremorna-inns-sloop/chunklist.m3u8:GB - St Ives - Port 3
-#DESCRIPTION GB - St Ives - Port 3
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//eu01-smr01-relay.ozolio.com/hls-live/_definst_/relay01.rprzb65.fd0.sm1.av2.at0.sh2.rt8635.rc0.basic.stream/chunklist_w1614566031.m3u8:GB - St Ives - Porthmeor Beach
-#DESCRIPTION GB - St Ives - Porthmeor Beach
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//usw01-smr04-relay.ozolio.com/hll-live/_definst_/relay01.thznci2.fd0.sm1.av1.at0.sh2.rt8635.rc0.basic.stream/chunklist_w1645454909.m3u8:GB - Swansea - Plaża
-#DESCRIPTION GB - Swansea - Plaża
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/united-kingdom/england/torquay/torquay.html:GB - Torquay - Marina
 #DESCRIPTION GB - Torquay - Marina
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//maybach.railcam.co.uk/PendreYard_58347/tracks-v1/mono.m3u8:GB - Tywyn -  Pendre Yard
-#DESCRIPTION GB - Tywyn -  Pendre Yard
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//paxman.railcam.co.uk/TywynWharf_24712/tracks-v1/mono.m3u8:GB - Tywyn - Tywyn Wharf
-#DESCRIPTION GB - Tywyn - Tywyn Wharf
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//maybach.railcam.co.uk/Abergynolwyn_68473/tracks-v1/mono.m3u8:GB - Tywyn - Abergynolwyn Station
-#DESCRIPTION GB - Tywyn - Abergynolwyn Station
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//camsecure.uk/HLS/watchet.m3u8:GB - Watchet - Pomnik marynarza
 #DESCRIPTION GB - Watchet - Pomnik marynarza
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/3finObLBYDI:GB - West Bay - Bridport Harbour (YT)
@@ -5593,14 +5523,10 @@
 #DESCRIPTION GB - Whitstable - Plaża
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//camsecure.co/HLS/iowpearl.m3u8:GB - Wight - Brighstone
 #DESCRIPTION GB - Wight - Brighstone
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//eu01-smr02-relay.ozolio.com/hls-live/_definst_/relay01.ccanb7y.fd0.sm1.av2.at0.sh2.rt8635.rc0.basic.stream/chunklist_w555103553.m3u8:GB - Wight - Freshwater
-#DESCRIPTION GB - Wight - Freshwater
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//camsecure.co/HLS/iwsteam2.m3u8:GB - Wight - Havenstreet - Stacja kolejowa
 #DESCRIPTION GB - Wight - Havenstreet - Stacja kolejowa
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//camsecure.co/HLS/iwsteam.m3u8:GB - Wight - Havenstreet - Stacja kolejowa 2
 #DESCRIPTION GB - Wight - Havenstreet - Stacja kolejowa 2
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//maybach.railcam.co.uk/Williton1_17337/tracks-v1a1/mono.m3u8:GB - Williton - Stacja kolejowa
-#DESCRIPTION GB - Williton - Stacja kolejowa
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//frn.rtsp.me/XxB-dc_8fIseR0hRgdDz9Q/1597786024/hls/AGR7H77z.m3u8:GB - Worthing - Plaża
 #DESCRIPTION GB - Worthing - Plaża
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/O9JmP0Zwz1s:GB - York - Stacja kolejowa (YT)
@@ -5915,8 +5841,6 @@
 #DESCRIPTION IT - Favignana - Cala Rossa
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//server1.webcamturismo.com%3a8543/live/Fav-porto-turist.stream/chunklist_w805436236.m3u8:IT - Favignana - Port - Molo
 #DESCRIPTION IT - Favignana - Port - Molo
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//ngx.cr1.streamzilla.xlcdn.com/session/310a1a677898d5b52afb538b7a34d456/sz/streamdays/wowza4/live/fisheyes-crocedemalta/chunklist.m3u8:IT - Florencja - Hotel Croce Di Malta
-#DESCRIPTION IT - Florencja - Hotel Croce Di Malta
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.liveincam.com/en/cam/florence-florence-cathedral:IT - Florencja - Katedra Matki Boskiej Kwietnej
 #DESCRIPTION IT - Florencja - Katedra Matki Boskiej Kwietnej
 #SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/italia/toscana/firenze/piazza-duomo-firenze.html:IT - Florencja - Katedra Santa Maria del Fiore
@@ -6001,6 +5925,10 @@
 #DESCRIPTION IT - Isernia - Piazza Giosuè Carducci (YT)
 #SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/italia/puglia/foggia/isole-tremiti.html:IT - Isole Tremiti - San Domino
 #DESCRIPTION IT - Isole Tremiti - San Domino
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/http%3a//cdn-001.whatsupcams.com/hls/it_aqualandiajesolo01.m3u8:IT - Jesolo - Aqualandia
+#DESCRIPTION IT - Jesolo - Aqualandia
+#SERVICE 4097:0:1:3E09:9186:EC:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/1-6FHrCJKtA:IT - Jesolo - Green Beach (YT)
+#DESCRIPTION IT - Jesolo - Green Beach (YT)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/SDIPtTeTUdA:IT - Jesolo - Jesolo International Club Camping (YT)
 #DESCRIPTION IT - Jesolo - Jesolo International Club Camping (YT)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/zE_yzuxFiMo:IT - Jesolo - Oro Beach (YT)
@@ -6011,8 +5939,6 @@
 #DESCRIPTION IT - Jesolo - Piazza Milano
 #SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/italia/veneto/venezia/spiaggia-jesolo.html:IT - Jesolo - Plaża
 #DESCRIPTION IT - Jesolo - Plaża
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/http%3a//cdn-001.whatsupcams.com/hls/it_aqualandiajesolo01.m3u8:IT - Jesolo - Aqualandia
-#DESCRIPTION IT - Jesolo - Aqualandia
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.liveincam.com/en/cam/rome-ladispoli:IT - Ladispoli - Torre Flavia
 #DESCRIPTION IT - Ladispoli - Torre Flavia
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.liveincam.com/en/cam/province-of-l-aquila-l-aquila-aterno-valley:IT - L'Aquila - Aterno Valley
@@ -6049,6 +5975,8 @@
 #DESCRIPTION IT - Levanzo - Port
 #SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/italia/trentino-alto-adige/trento/levico-terme.html:IT - Levico Terme - Jezioro Levico
 #DESCRIPTION IT - Levico Terme - Jezioro Levico
+#SERVICE 4097:0:1:92DA:E182:EC:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/ROQY0gHijG8:IT - Lignano  - Plaż Sabbiadoro (YT)
+#DESCRIPTION IT - Lignano  - Plaż Sabbiadoro (YT)
 #SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/italia/lombardia/sondrio/livigno-ski-center.html:IT - Livigno
 #DESCRIPTION IT - Livigno
 #SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/italia/sardegna/olbia-tempio/porto-san-paolo.html:IT - Loiri Porto San Paolo - Plaża Porto Taverna
@@ -6161,8 +6089,6 @@
 #DESCRIPTION IT - Palermo - Addaura
 #SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/italia/sicilia/palermo/punta-celesi.html:IT - Palermo - Mondello - Punta Celesi
 #DESCRIPTION IT - Palermo - Mondello - Punta Celesi
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//s25.ipcamlive.com/streams/195f3f1cd5a1245e2/stream.m3u8:IT - Palermo - Mondello Beach
-#DESCRIPTION IT - Palermo - Mondello Beach
 #SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/italia/sicilia/palermo/piazza-mondello.html:IT - Palermo - Piazza Mondello, Monte Pellegrino
 #DESCRIPTION IT - Palermo - Piazza Mondello, Monte Pellegrino
 #SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/italia/campania/salerno/palinuro-spiaggia.html:IT - Palinuro - Ficocella Beach
@@ -6527,18 +6453,6 @@
 #DESCRIPTION IT - Val Ferret - Foyer de Fond Planpincieux
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//server1.webcamturismo.com%3a8543/live/TP-Bonagia.stream/chunklist_w223461315.m3u8:IT - Valderice - Bonagia - Marina
 #DESCRIPTION IT - Valderice - Bonagia - Marina
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.youtube.com/watch?v=eE6VVJ3hvv8:IT - Venedig - Markusplatz (YT)
-#DESCRIPTION IT - Venedig - Markusplatz (YT)
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/http%3a//cdn-001.whatsupcams.com/hls/it_venezia01.m3u8:IT - Venedig - Rialtobrücke
-#DESCRIPTION IT - Venedig - Rialtobrücke
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.youtube.com/watch?v=JqUREqYduHw:IT - Venedig - Hotel American Dinesen (YT)
-#DESCRIPTION IT - Venedig - Hotel American Dinesen (YT)
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.youtube.com/watch?v=cjCmsRjxVL0:IT - Venedig - Hotel Cassiano (YT)
-#DESCRIPTION IT - Venedig - Hotel Cassiano (YT)
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.youtube.com/watch?v=GgLRWs8OyMs:IT - Venedig - Hotel Pausania (YT)
-#DESCRIPTION IT - Venedig - Hotel Pausania (YT)
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.youtube.com/watch?v=WjOGhNDX51M:IT - Venedig - Hotel Ruzzini Palace (YT)
-#DESCRIPTION IT - Venedig - Hotel Ruzzini Palace (YT)
 #SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/italia/liguria/imperia/ventimiglia.html:IT - Ventimiglia - Plaża
 #DESCRIPTION IT - Ventimiglia - Plaża
 #SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/italia/piemonte/verbania/lago-maggiore.html:IT - Verbania - Jezioro Maggiore
@@ -6557,6 +6471,22 @@
 #DESCRIPTION IT - Vinchio - Winnice
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.liveincam.com/en/cam/viterbo-viterbo-mounts-cimini:IT - Viterbo - Mounts Cimini
 #DESCRIPTION IT - Viterbo - Mounts Cimini
+#SERVICE 4097:0:0:EA33:9E1F:EC:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.youtube.com/watch?v=JqUREqYduHw:IT - Wenecja - Hotel American Dinesen (YT)
+#DESCRIPTION IT - Wenecja - Hotel American Dinesen (YT)
+#SERVICE 4097:0:0:991B:F31A:EC:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.youtube.com/watch?v=cjCmsRjxVL0:IT - Wenecja - Hotel Cassiano (YT)
+#DESCRIPTION IT - Wenecja - Hotel Cassiano (YT)
+#SERVICE 4097:0:1:88DD:9253:EC:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/HpZAez2oYsA:IT - Wenecja - Hotel Filu (YT)
+#DESCRIPTION IT - Wenecja - Hotel Filu (YT)
+#SERVICE 4097:0:0:544C:7E4:EC:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.youtube.com/watch?v=GgLRWs8OyMs:IT - Wenecja - Hotel Pausania (YT)
+#DESCRIPTION IT - Wenecja - Hotel Pausania (YT)
+#SERVICE 4097:0:0:7A4:129B:EC:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.youtube.com/watch?v=WjOGhNDX51M:IT - Wenecja - Hotel Ruzzini Palace (YT)
+#DESCRIPTION IT - Wenecja - Hotel Ruzzini Palace (YT)
+#SERVICE 4097:0:0:B001:617B:EC:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.youtube.com/watch?v=eE6VVJ3hvv8:IT - Wenecja - Markusplatz (YT)
+#DESCRIPTION IT - Wenecja - Markusplatz (YT)
+#SERVICE 4097:0:0:258:6815:EC:0:0:0:0:http%3a//127.0.0.1%3a8088/http%3a//cdn-001.whatsupcams.com/hls/it_venezia01.m3u8:IT - Wenecja - Rialtobrücke
+#DESCRIPTION IT - Wenecja - Rialtobrücke
+#SERVICE 4097:0:1:624C:AE1E:EC:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/eE6VVJ3hvv8:IT - Wenecja - Saint Mark’s Basin (YT)
+#DESCRIPTION IT - Wenecja - Saint Mark’s Basin (YT)
 #SERVICE 1:64:37:0:0:0:0:0:0:0::Węgry (HU)
 #DESCRIPTION Węgry (HU)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/MICEQzHIGJE:HU - Ábrahámhegy - Plaża (YT)
@@ -6653,69 +6583,977 @@
 #DESCRIPTION TZ - Zanzibar - Pwani Mchangani
 #SERVICE 1:64:3A:0:0:0:0:0:0:0::Ameryka Północna
 #DESCRIPTION Ameryka Północna
+#SERVICE 1:64:0:0:0:0:0:0:0:0::Republika Dominikana (DO)
+#DESCRIPTION Republika Dominikana (DO)
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/dominican-republic/peravia/bani/las-calderas-bay.html:DO - Baní - Zatoka Las Calderas
+#DESCRIPTION DO - Baní - Zatoka Las Calderas
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//stream-uc2-charlie.dropcam.com/nexus_aac/771897a70d8d49ddad22064aa7541c51/chunklist_w28933620.m3u8?public=86zgOFHuw2:DO - Cabarete - Kite Beach
+#DESCRIPTION DO - Cabarete - Kite Beach
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//ipcamlive.com/player/player.php?alias=5c5a42a001226:DO - Cabarete - Palm Beach Condos
+#DESCRIPTION DO - Cabarete - Palm Beach Condos
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/dominican-republic/puerto-plata/cabarete/cabarete-dominican-republic.html:DO - Cabarete - Nanny Estate - Plaża
+#DESCRIPTION DO - Cabarete - Nanny Estate - Plaża
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//g1.ipcamlive.com/player/player.php?alias=57b46c9ad2666:DO - Cabarete - Plaża
+#DESCRIPTION DO - Cabarete - Plaża
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/dominican-republic/samana/las-terrenas/el-paseo.html:DO - Las Terrenas - El Paseo
+#DESCRIPTION DO - Las Terrenas - El Paseo
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/dominican-republic/samana/las-terrenas/playa-bonita.html:DO - Las Terrenas - Playa La Bonita
+#DESCRIPTION DO - Las Terrenas - Playa La Bonita
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/dominican-republic/la-altagracia/higuey/punta-cana.html:DO - Punta Cana - Plaża
+#DESCRIPTION DO - Punta Cana - Plaża
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//cdn-002.whatsupcams.com/hls/do_cabarete01.m3u8:DO - Punta Goleta - Kite Club Cabarete
+#DESCRIPTION DO - Punta Goleta - Kite Club Cabarete
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/dominican-republic/puerto-plata/punta-rucia/punta-rucia.html:DO - Punta Rucia - Plaża
+#DESCRIPTION DO - Punta Rucia - Plaża
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/dominican-republic/distrito-nacional/santo-domingo/santo-domingo-parque-colon.html:DO - Santo Domingo - Parque Colon
+#DESCRIPTION DO - Santo Domingo - Parque Colon
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/dominican-republic/distrito-nacional/santo-domingo/santo-domingo-plaza-de-espana.html:DO - Santo Domingo - Plaza de España
+#DESCRIPTION DO - Santo Domingo - Plaza de España
+#SERVICE 1:64:0:0:0:0:0:0:0:0::Honduras (HN)
+#DESCRIPTION Honduras (HN)
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/honduras/bay-islands/guanaja/sandy-bay-caribbean.html:HN - Guanaja - Sandy Bay
+#DESCRIPTION HN - Guanaja - Sandy Bay
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5ddd47d64e730.streamlock.net%3a444/cocoview1/cocoview1.stream/chunklist_w2027335988.m3u8:HN - Roatán - Coco View Resort
+#DESCRIPTION HN - Roatán - Coco View Resort
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5ddd47d64e730.streamlock.net%3a444/cocoview2/cocoview2.stream/chunklist_w1776937562.m3u8:HN - Roatán - Coco View Resort 2
+#DESCRIPTION HN - Roatán - Coco View Resort 2
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//g1.ipcamlive.com/player/player.php?alias=lrbeachcam&autoplay=1:HN - Roatán - Las Rocas Resort and Dive Center
+#DESCRIPTION HN - Roatán - Las Rocas Resort and Dive Center
+#SERVICE 1:64:0:0:0:0:0:0:0:0::Jamajka (JM)
+#DESCRIPTION Jamajka (JM)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.earthcam.com/cams/jamaica/negril/?cam=rickscafe:JM - Negril - Rick's Cafe
+#DESCRIPTION JM - Negril - Rick's Cafe
+#SERVICE 1:64:0:0:0:0:0:0:0:0::Kanada (CA)
+#DESCRIPTION Kanada (CA)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/oT4s0SlQ89E:CA - Banff - International Hostel (YT)
+#DESCRIPTION CA - Banff - International Hostel (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/2FC794xcbIo:CA - Blue Mountain Ski Resort (YT)
+#DESCRIPTION CA - Blue Mountain Ski Resort (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/rw9w8OjWiNA:CA - Brockville - Waterfront (YT)
+#DESCRIPTION CA - Brockville - Waterfront (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/QWYf44HjBPo:CA - Brockville - Waterfront 2 (YT)
+#DESCRIPTION CA - Brockville - Waterfront 2 (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//b10.hdrelay.com/camera/CID_JQML00000026/relay/chunklist_w170039568.m3u8:CA - Calabogie Peaks Resort - Golf & Beachfront
+#DESCRIPTION CA - Calabogie Peaks Resort - Golf & Beachfront
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//g1.ipcamlive.com/player/player.php?alias=west&autoplay=1:CA - Caledon Ski Club
+#DESCRIPTION CA - Caledon Ski Club
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/xsRDTfuksyI:CA - Calgary - Central Memorial Park (YT)
+#DESCRIPTION CA - Calgary - Central Memorial Park (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/iGxFLjqhkSA:CA - Calgary - 11 Street SW (YT)
+#DESCRIPTION CA - Calgary - 11 Street SW (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/CwriDd8STdI:CA - Churchill - Zorza polarna (YT)
+#DESCRIPTION CA - Churchill - Zorza polarna (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.earthcam.com/world/canada/alberta/edmonton/?cam=edmonton:CA - Edmonton - Downtown
+#DESCRIPTION CA - Edmonton - Downtown
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//stream3.novascotiawebcams.com/live/westin_1152x720/chunklist_w193559063_DVR.m3u8:CA - Halifax - Pier 21
+#DESCRIPTION CA - Halifax - Pier 21
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/yK5ntRdD1X8:CA - Hanson Island - Rubbing Beach (YT)
+#DESCRIPTION CA - Hanson Island - Rubbing Beach (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//tccmediasvr.kamloops.ca/bridge-webcam/_definst_/construction11.stream/chunklist_w1972956775.m3u8:CA - Kamloops - Tranquille & 12th Street
+#DESCRIPTION CA - Kamloops - Tranquille & 12th Street
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//tccmediasvr.kamloops.ca/bridge-webcam/_definst_/construction12.stream/chunklist_w775414838.m3u8:CA - Kamloops - Tranquille & Holt Street
+#DESCRIPTION CA - Kamloops - Tranquille & Holt Street
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//tccmediasvr.kamloops.ca/bridge-webcam/_definst_/construction13.stream/chunklist_w1176719536.m3u8:CA - Kamloops - Tranquille & Desmond Street
+#DESCRIPTION CA - Kamloops - Tranquille & Desmond Street
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//tccmediasvr.kamloops.ca/bridge-webcam/_definst_/construction14.stream/chunklist_w804366826.m3u8:CA - Kamloops - Tranquille & Southill Street
+#DESCRIPTION CA - Kamloops - Tranquille & Southill Street
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//tccmediasvr.kamloops.ca/bridge-webcam/_definst_/construction7.stream/chunklist_w609326301.m3u8:CA - Kamloops - Columbia Street & 3rd Avenue
+#DESCRIPTION CA - Kamloops - Columbia Street & 3rd Avenue
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//tccmediasvr.kamloops.ca/bridge-webcam/_definst_/construction10.stream/chunklist_w813765135.m3u8:CA - Kamloops - Lansdowne at 3rd Ave
+#DESCRIPTION CA - Kamloops - Lansdowne at 3rd Ave
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge02.hdontap.com/ingest03-hd3/water_tower_securcom.stream/chunklist_w1786191387.m3u8:CA - Lethbridge - Panorama
+#DESCRIPTION CA - Lethbridge - Panorama
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//b10.hdrelay.com/camera/CID_DXUS000000A6/relay/chunklist_w1048815463.m3u8:CA - Lethbridge - Whoop-Up Drive
+#DESCRIPTION CA - Lethbridge - Whoop-Up Drive
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/z6AF-4OZ0cw:CA - Mont Tremblant Ski Resort (YT)
+#DESCRIPTION CA - Mont Tremblant Ski Resort (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/v5qKwjDMOdM:CA - Most Konfederacji (YT)
+#DESCRIPTION CA - Most Konfederacji (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/pfwlDxqQbr:CA - Orangeville - Broadway (YT)
+#DESCRIPTION CA - Orangeville - Broadway (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//g1.ipcamlive.com/player/player.php?alias=watermark1:CA - Osoyoos - Watermark Beach Resort Hotel
+#DESCRIPTION CA - Osoyoos - Watermark Beach Resort Hotel
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/NveskAtF9cI:CA - Parksville - Strait of Georgia (YT)
+#DESCRIPTION CA - Parksville - Strait of Georgia (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//stream.novascotiawebcams.com/live/peggyscove/chunklist_w657928600_DVR.m3u8:CA - Peggy’s Cove - Peggys Point Lighthouse
+#DESCRIPTION CA - Peggy’s Cove - Peggys Point Lighthouse
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/239MXvvWEvY:CA - Port Dover - Marina (YT)
+#DESCRIPTION CA - Port Dover - Marina (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//mia.rtsp.me/dMnDskfzOXW6OwYsdylvjQ/1601844542/hls/ykK6EiGA.m3u8:CA - Port Stanley
+#DESCRIPTION CA - Port Stanley
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/PoDb04HdZ84:CA - Prince George - Downtown - West (YT)
+#DESCRIPTION CA - Prince George - Downtown - West (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/fDpNeUvss30:CA - Prince George - Downtown - North (YT)
+#DESCRIPTION CA - Prince George - Downtown - North (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/0tm5Fpgl39Y:CA - Québec - Centre Vidéotron (YT)
+#DESCRIPTION CA - Québec - Centre Vidéotron (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/xVGqgekHMQ8:CA - Québec - Château Frontenac et fleuve Saint-Laurent (YT)
+#DESCRIPTION CA - Québec - Château Frontenac et fleuve Saint-Laurent (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/SJivTwHT0IU:CA - Québec - Hôtel du Parlement (YT)
+#DESCRIPTION CA - Québec - Hôtel du Parlement (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/a2s73_5HnNM:CA - Québec - Place D'Youville (YT)
+#DESCRIPTION CA - Québec - Place D'Youville (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/JLJGvIRRWkw:CA - Québec - Port (YT)
+#DESCRIPTION CA - Québec - Port (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/Qjp1KP7sHpw:CA - Québec - Wodospad Montmorency (YT)
+#DESCRIPTION CA - Québec - Wodospad Montmorency (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/VvZFRbo2KIg:CA - Saguenay - La Baie (YT)
+#DESCRIPTION CA - Saguenay - La Baie (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/Pkl6l9aie6U:CA - Saint John - Summerville Ferry (YT)
+#DESCRIPTION CA - Saint John - Summerville Ferry (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//stream-us1-alfa.dropcam.com/nexus_aac/a5365c01ea244a6eb2ef498e50d5f858/chunklist_w483395062.m3u8?public=nCBFEmMt1d:CA - Sharbot Lake - Elizabeth St
+#DESCRIPTION CA - Sharbot Lake - Elizabeth St
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//stream.novascotiawebcams.com/live/shelburne/chunklist_w906791675_DVR.m3u8:CA - Shelburne - Dock St
+#DESCRIPTION CA - Shelburne - Dock St
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//g1.ipcamlive.com/player/player.php?alias=chwebcam&autoplay=1:CA - Timmins - City Hall
+#DESCRIPTION CA - Timmins - City Hall
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.earthcam.com/world/canada/toronto/cntower/?cam=towerview:CA - Toronto - CN Tower
+#DESCRIPTION CA - Toronto - CN Tower
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.earthcam.com/world/canada/toronto/cntower/?cam=cntower2:CA - Toronto - CN Tower - West
+#DESCRIPTION CA - Toronto - CN Tower - West
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.earthcam.com/world/canada/toronto/cntower/?cam=cntower1:CA - Toronto - CN Tower - East
+#DESCRIPTION CA - Toronto - CN Tower - East
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//stream-us1-bravo.dropcam.com/nexus_aac/bd0ce09eb2304e5987d03a2fe9771b02/chunklist_w1289023632.m3u8?public=RoDfMBGsP5:CA - Toronto - High Park Village
+#DESCRIPTION CA - Toronto - High Park Village
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/ZTIcZbs0Zwo:CA - Toronto - North York (YT)
+#DESCRIPTION CA - Toronto - North York (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/fYfUc05nxuk:CA - Vancouver - False Creek, Burrard Street Bridge (YT)
+#DESCRIPTION CA - Vancouver - False Creek, Burrard Street Bridge (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//58f14b372a413.streamlock.net%3a444/marinedrive1/marinedrive1.stream/chunklist_w2047143349.m3u8:CA - Vancouver - Marine Drive Golf Club
+#DESCRIPTION CA - Vancouver - Marine Drive Golf Club
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/DgDmYIK-6pc:CA - Victoria - Johnson Street Bridge (YT)
+#DESCRIPTION CA - Victoria - Johnson Street Bridge (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//tccmediasvr.kamloops.ca/bridge-webcam/_definst_/construction15.stream/chunklist_w221347584.m3u8:CA - West Victoria & Seymour Street
+#DESCRIPTION CA - West Victoria & Seymour Street
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//tccmediasvr.kamloops.ca/bridge-webcam/_definst_/construction9.stream/chunklist_w1260438147.m3u8:CA - West Victoria - Overlanders Bridge
+#DESCRIPTION CA - West Victoria - Overlanders Bridge
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//tccmediasvr.kamloops.ca/bridge-webcam/_definst_/construction8.stream/chunklist_w1352427121.m3u8:CA - West Victoria at Overlanders Bridge
+#DESCRIPTION CA - West Victoria at Overlanders Bridge
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/F0GmYDgR0r0:CA - Whistler - Olympic Plaza (YT)
+#DESCRIPTION CA - Whistler - Olympic Plaza (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/JVQaZtahjwg:CA - Whistler - Golf Club - 1st hole (YT)
+#DESCRIPTION CA - Whistler - Golf Club - 1st hole (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/Ixs2Cu_Xe7c:CA - Whistler - Ski Resort (YT)
+#DESCRIPTION CA - Whistler - Ski Resort (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//stream.novascotiawebcams.com/live/whitepointbeach/chunklist_w1783657860_DVR.m3u8:CA - White Point - White Point Beach Resort
+#DESCRIPTION CA - White Point - White Point Beach Resort
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.earthcam.com/canada/niagarafalls/?cam=niagarafalls_str:CA - Wodospad Niagara
+#DESCRIPTION CA - Wodospad Niagara
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.earthcam.com/canada/niagarafalls/thefalls/?cam=niagarafalls2:CA - Wodospad Niagara 2
+#DESCRIPTION CA - Wodospad Niagara 2
 #SERVICE 1:64:0:0:0:0:0:0:0:0::Stany zjednoczone (USA)
 #DESCRIPTION Stany zjednoczone (USA)
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/hMYIc5ZPJL4:USA - AL - Auburn - College Street (YT)
-#DESCRIPTION USA - AL - Auburn - College Street (YT)
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/72o5amStoJ8:USA - AL - Gulf Shores - Plaża (YT)
-#DESCRIPTION USA - AL - Gulf Shores - Plaża (YT)
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/lcpGfcMnbbk:USA - AL - Orange Beach - Turquoise Place (YT)
-#DESCRIPTION USA - AL - Orange Beach - Turquoise Place (YT)
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5b9eaf88d7205.streamlock.net/liveedge/jhwmux.stream/chunklist_w1858197684_tkUFRadGtlbmR0aW1lPTE2MDEwODU2NzImUFRadGtoYXNoPUpFQXRCOHg0TUhCODhSTUlYbHBGa0JTelB4SDRHSHo3ejY5VnpWVTZIR289.m3u8:USA - AK - Juneau - Port
-#DESCRIPTION USA - AK - Juneau - Port
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//videos-3.earthcam.com/fecnetwork/8620.flv/chunklist_w1047755454.m3u8:USA - AZ - Sedona - Red Rock Country
-#DESCRIPTION USA - AZ - Sedona - Red Rock Country
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//edge02.hdontap.com/ingest03-hd3/elephant-exhibit_rpz.stream/chunklist_w1021068369.m3u8:USA - AZ - Tucson - Reid Park Zoo
-#DESCRIPTION USA - AZ - Tucson - Reid Park Zoo
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge04.hdontap.com/ingest03-hd3/sandhill-cranes_azgf.stream/chunklist_w87010015.m3u8:USA - AZ - Whitewater Draw - Sandhill Crane
-#DESCRIPTION USA - AZ - Whitewater Draw - Sandhill Crane
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/d66NPsy_MPg:USA - ND - Sturgis - Main St (YT)
-#DESCRIPTION USA - ND - Sturgis - Main St (YT)
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.earthcam.com/usa/northdakota/cavalier/?cam=cavalier:USA - SD - Cavalier - Main St.
-#DESCRIPTION USA - SD - Cavalier - Main St.
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//58bdb48e25cf1.streamlock.net%3a19350/live/vcde006.stream/chunklist_w1049344048.m3u8:USA - DE - Bethany Beach - Centrum
-#DESCRIPTION USA - DE - Bethany Beach - Centrum
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//58bdb48e25cf1.streamlock.net%3a19350/dvr/vcde009.stream/chunklist_w1462545971.m3u8:USA - DE - Bethany Beach - North Surf
-#DESCRIPTION USA - DE - Bethany Beach - North Surf
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//58bdb48e25cf1.streamlock.net%3a19350/live/vcde004.stream/chunklist_w529569359.m3u8:USA - DE - Bethany Beach - Ocean View
-#DESCRIPTION USA - DE - Bethany Beach - Ocean View
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//e1-na8.angelcam.com/cameras/65391/streams/hls/playlist.m3u8?token=eyJjYW1lcmFfaWQiOiI2NTM5MSIsInRpbWUiOjE2MDEwNjg0MDg1MjY2MzAsInRpbWVvdXQiOjM2MDB9%2E88a149fadee8e942a2ba646954e0c8017c29e60467c56900140d9e081876c4a2:USA - DE - Bethany Beach - Sea Colony Beach
-#DESCRIPTION USA - DE - Bethany Beach - Sea Colony Beach
-#SERVICE 4097:0:1:C6FF:51D1:EC:0:0:0:0:https%3a//58bdb48e25cf1.streamlock.net%3a19350/live/vcde005.stream/chunklist_w981382646.m3u8:USA - DE - Bethany Beach - Boardwalk South
-#DESCRIPTION USA - DE - Bethany Beach - Boardwalk South
-#SERVICE 4097:0:1:5D3D:98:EC:0:0:0:0:https%3a//58bdb48e25cf1.streamlock.net%3a19350/dvr/vcde008.stream/chunklist_w1095333315.m3u8:USA - DE - Bethany Beach - South Surf
-#DESCRIPTION USA - DE - Bethany Beach - South Surf
-#SERVICE 4097:0:1:F72:CC25:EC:0:0:0:0:https%3a//58bdb48e25cf1.streamlock.net%3a19350/live/vcde001.stream/chunklist_w1002388017.m3u8:USA - DE - Bethany Beach - Coastal Kayak Webcam
-#DESCRIPTION USA - DE - Bethany Beach - Coastal Kayak Webcam
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.youtube.com/watch?v=KGuCGd726RA:USA - New York - Brooklyn Bridge (YT)
-#DESCRIPTION USA - New York - Brooklyn Bridge (YT)
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.youtube.com/watch?v=KRkxvTAeFu4:USA - New York - George Washington Bridge (YT)
-#DESCRIPTION USA - New York - George Washington Bridge (YT)
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/q=720p/https%3a//www.youtube.com/watch?v=38ozvar-PNw:USA - New York - Hafen & Lower Manhattan (YT)
-#DESCRIPTION USA - New York - Hafen & Lower Manhattan (YT)
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.earthcam.com/usa/texas/dallas/gasmonkey/?cam=gmgarage:USA - TX - Gas Monkey Garage
-#DESCRIPTION USA - TX - Gas Monkey Garage
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.youtube.com/watch?v=uqk1HU_GLVk:USA - W. D.C. - Reagan National Airport I (YT)
-#DESCRIPTION USA - W. D.C. - Reagan National Airport I (YT)
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.youtube.com/watch?v=LGUFNagY9OI:USA - W. D.C. - Reagan National Airport II (YT)
-#DESCRIPTION USA - W. D.C. - Reagan National Airport II (YT)
+#SERVICE 1:64:0:0:0:0:0:0:0:0::Alabama (US-AL)
+#DESCRIPTION Alabama (US-AL)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/hMYIc5ZPJL4:US-AL - Auburn - College Street (YT)
+#DESCRIPTION US-AL - Auburn - College Street (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/72o5amStoJ8:US-AL - Gulf Shores - Plaża (YT)
+#DESCRIPTION US-AL - Gulf Shores - Plaża (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/lcpGfcMnbbk:US-AL - Orange Beach - Turquoise Place (YT)
+#DESCRIPTION US-AL - Orange Beach - Turquoise Place (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//58f14b372a413.streamlock.net%3a444/beachmerch1/beachmerch1.stream/chunklist_w1040465246.m3u8:US-AL - Sea and Suds Beach
+#DESCRIPTION US-AL - Sea and Suds Beach
+#SERVICE 1:64:0:0:0:0:0:0:0:0::Alaska (US-AK)
+#DESCRIPTION Alaska (US-AK)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//g1.ipcamlive.com/player/player.php?alias=akairmensouthcam&autoplay=1:US-AK - Anchorage - Alaska Airmen
+#DESCRIPTION US-AK - Anchorage - Alaska Airmen
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//g1.ipcamlive.com/player/player.php?alias=akairmennorthcam&autoplay=1:US-AK - Anchorage - Alaska Airmen 2
+#DESCRIPTION US-AK - Anchorage - Alaska Airmen 2
+#SERVICE 1:64:0:0:0:0:0:0:0:0::Arizona (US-AZ)
+#DESCRIPTION Arizona (US-AZ)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//videos-3.earthcam.com/fecnetwork/8620.flv/chunklist_w1047755454.m3u8:US-AZ - Sedona - Red Rock Country
+#DESCRIPTION US-AZ - Sedona - Red Rock Country
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//edge02.hdontap.com/ingest03-hd3/elephant-exhibit_rpz.stream/chunklist_w1021068369.m3u8:US-AZ - Tucson - Reid Park Zoo
+#DESCRIPTION US-AZ - Tucson - Reid Park Zoo
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge04.hdontap.com/ingest03-hd3/sandhill-cranes_azgf.stream/chunklist_w87010015.m3u8:US-AZ - Whitewater Draw - Sandhill Crane
+#DESCRIPTION US-AZ - Whitewater Draw - Sandhill Crane
+#SERVICE 1:64:0:0:0:0:0:0:0:0::Kalifornia (US-CA)
+#DESCRIPTION Kalifornia (US-CA)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge04.hdontap.com/ingest03-hd3/river-ranch_ttv.stream/chunklist_w1947947473.m3u8:US-CA - Alpine Meadows - River Ranch Lodge
+#DESCRIPTION US-CA - Alpine Meadows - River Ranch Lodge
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/zOfBhttA3Dk:US-CA - Anaheim - Disneyland Resort (YT)
+#DESCRIPTION US-CA - Anaheim - Disneyland Resort (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge04.hdontap.com/ingest03-hd3/seascape_ttv.stream/chunklist_w1900742220.m3u8:US-CA - Aptos - Seascape Beach Resort
+#DESCRIPTION US-CA - Aptos - Seascape Beach Resort
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge02.hdontap.com/ingest03-hd3/bbad_ptz.stream/chunklist_w512734650.m3u8:US-CA - Big Bear City - Port lotniczy
+#DESCRIPTION US-CA - Big Bear City - Port lotniczy
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//2-fss-2.streamhoster.com/pl_126/202594-1354530-1/chunklist.m3u8:US-CA - Camino - Carson Road
+#DESCRIPTION US-CA - Camino - Carson Road
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge07.nginx.hdontap.com/ho3/hdontap_carlsbad_terra-mar-pt.stream/chunklist.m3u8:US-CA - Cardiff-by-the-Sea
+#DESCRIPTION US-CA - Cardiff-by-the-Sea
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge04.hdontap.com/ingest02-hd2/cardiffreef_hansens.stream/chunklist_w1887635143.m3u8:US-CA - Cardiff-Del Mar
+#DESCRIPTION US-CA - Cardiff-Del Mar
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge04.hdontap.com/ingest02-hd2/north-delmar_hansens.stream/chunklist_w420824869.m3u8:US-CA - Cardiff - Del Mar Dog Beach
+#DESCRIPTION US-CA - Cardiff - Del Mar Dog Beach
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge04.hdontap.com/ingest02-hd2/17th-delmar-ptz_hansens.stream/chunklist_w1640497794.m3u8:US-CA - Cardiff - Terra Mar Pt.
+#DESCRIPTION US-CA - Cardiff - Terra Mar Pt.
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge07.nginx.hdontap.com/ho3/carlsbad_seashoreonthesand.stream/chunklist.m3u8:US-CA - Carlsbad - Plaża
+#DESCRIPTION US-CA - Carlsbad - Plaża
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//mia.rtsp.me/RFxGcT16hS5Fl3KGMrtxEQ/1601741870/hls/y3hKTZ2k.m3u8:US-CA - Caspar Beach
+#DESCRIPTION US-CA - Caspar Beach
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//cams.cdn-surfline.com/cdn-wc/wc-cayucosov/chunklist.m3u8:US-CA - Cayucos - Pier
+#DESCRIPTION US-CA - Cayucos - Pier
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/PHjb-u0VcWk:US-CA - Cayucos - Plaża (YT)
+#DESCRIPTION US-CA - Cayucos - Plaża (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/XKu1-q7Q2YE:US-CA - Cayucos - Plaża 2 (YT)
+#DESCRIPTION US-CA - Cayucos - Plaża 2 (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/CFNxVVSH5cc:US-CA - Cayucos - Surf (YT)
+#DESCRIPTION US-CA - Cayucos - Surf (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//b10.hdrelay.com/camera/CID_UEPX00000099/relay/chunklist_w1175147949.m3u8:US-CA - Coronado Municipal Golf Course
+#DESCRIPTION US-CA - Coronado Municipal Golf Course
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge04.hdontap.com/ingest03-hd3/danapoint-harbor_lgm.stream/chunklist_w1626562454.m3u8:US-CA - Dana Point - Marina
+#DESCRIPTION US-CA - Dana Point - Marina
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//wowzaprod234-i.akamaihd.net/hls/live/1019427/021c34bd/021c34bd_1_1391000/chunklist.m3u8:US-CA - Dana Point - Salt Creek Beach
+#DESCRIPTION US-CA - Dana Point - Salt Creek Beach
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge04.hdontap.com/ingest02-hd2/lauberge-delmar.stream/chunklist_w1778169923.m3u8:US-CA - Del Mar - Panorama wybrzeża
+#DESCRIPTION US-CA - Del Mar - Panorama wybrzeża
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge02.hdontap.com/ingest02-hd2/17th_delmar-ptz_hdontap.stream/chunklist_w69731564.m3u8:US-CA - Del Mar Beach
+#DESCRIPTION US-CA - Del Mar Beach
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge04.hdontap.com/ingest02-hd2/delmar-north_ptz_hdontap.stream/chunklist_w422819323.m3u8:US-CA - Del Mar North Beach - River Mouth
+#DESCRIPTION US-CA - Del Mar North Beach - River Mouth
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.earthcam.com/usa/california/discoverybay/?cam=discoverybay:US-CA - Discovery Bay
+#DESCRIPTION US-CA - Discovery Bay
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//b7.hdrelay.com/camera/cf6a6d4a-f2c0-45ca-9ca4-8dbb490eb08b/relay/chunklist_w1021106816.m3u8:US-CA - Dodge Ridge Ski Resort
+#DESCRIPTION US-CA - Dodge Ridge Ski Resort
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge06.nginx.hdontap.com/ho2/chinquapin_choa.stream/chunklist.m3u8:US-CA - Dollar Point - Jezioro Tahoe
+#DESCRIPTION US-CA - Dollar Point - Jezioro Tahoe
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge02.hdontap.com/ingest02-hd2/dlvr_svl.stream/chunklist_w2078332573.m3u8:US-CA - Donner Lake Village
+#DESCRIPTION US-CA - Donner Lake Village
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge03.nginx.hdontap.com/ho3/swellmagnet_hermosa-static_north.stream/chunklist.m3u8:US-CA - Hermosa - South Beach
+#DESCRIPTION US-CA - Hermosa - South Beach
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge06.nginx.hdontap.com/ho3/hermosa3_swellmagnet.stream/chunklist.m3u8:US-CA - Hermosa Beach - Pier
+#DESCRIPTION US-CA - Hermosa Beach - Pier
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//wowza.hollywoodsign.org/hollywoodsignlower/lower.stream/chunklist_w1642315166.m3u8:US-CA - Hollywood Sign
+#DESCRIPTION US-CA - Hollywood Sign
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//wowza.hollywoodsign.org/hollywoodsignupper/upper.stream/chunklist_w1596185999.m3u8:US-CA - Hollywood Sign 2
+#DESCRIPTION US-CA - Hollywood Sign 2
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//56cdb389b57ec.streamlock.net%3a1935/live/hbsouth.stream/chunklist_w1727719434.m3u8:US-CA - Huntington Beach
+#DESCRIPTION US-CA - Huntington Beach
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//56cdb389b57ec.streamlock.net%3a1935/live/hbnorth.stream/chunklist_w325562763.m3u8:US-CA - Huntington Beach 2
+#DESCRIPTION US-CA - Huntington Beach 2
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//56cdb389b57ec.streamlock.net%3a1935/live/hbwest.stream/chunklist_w363190863.m3u8:US-CA - Huntington Beach 3
+#DESCRIPTION US-CA - Huntington Beach 3
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//56cdb389b57ec.streamlock.net%3a1935/live/hbeast.stream/chunklist_w605900258.m3u8:US-CA - Huntington Beach 4
+#DESCRIPTION US-CA - Huntington Beach 4
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//56cdb389b57ec.streamlock.net%3a1935/live/hbnorth.stream/chunklist_w1398405497.m3u8:US-CA - Huntington Beach - Pier
+#DESCRIPTION US-CA - Huntington Beach - Pier
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/DbY00xhcrgU:US-CA - Huntington Beach Pier (YT)
+#DESCRIPTION US-CA - Huntington Beach Pier (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//g1.ipcamlive.com/player/player.php?alias=5802bf385639a&autoplay=1:US-CA - Huntington Beach Surf
+#DESCRIPTION US-CA - Huntington Beach Surf
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//cams.cdn-surfline.com/cdn-wc/wc-hbss/chunklist.m3u8:US-CA - Huntington Beach Surf 2
+#DESCRIPTION US-CA - Huntington Beach Surf 2
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//56cdb389b57ec.streamlock.net%3a1935/live/hbsouth.stream/chunklist_w1173630352.m3u8:US-CA - Huntington Beach Surf 3
+#DESCRIPTION US-CA - Huntington Beach Surf 3
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//56cdb389b57ec.streamlock.net%3a1935/live/hbwest.stream/chunklist_w1595576214.m3u8:US-CA - Huntington Beach Surf 4
+#DESCRIPTION US-CA - Huntington Beach Surf 4
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//56cdb389b57ec.streamlock.net%3a1935/live/hbeast.stream/chunklist_w396056256.m3u8:US-CA - Huntington Beach Surf 5
+#DESCRIPTION US-CA - Huntington Beach Surf 5
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/oKU1NkoU5T4:US-CA - Huntington Beach Lifeguard (YT)
+#DESCRIPTION US-CA - Huntington Beach Lifeguard (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge06.nginx.hdontap.com/ho3/waterfront_swellmagnet.stream/chunklist.m3u8:US-CA - Huntington - The Waterfront Beach Resort
+#DESCRIPTION US-CA - Huntington - The Waterfront Beach Resort
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge02.hdontap.com/ingest03-hd3/kingsbeach_ttv.stream/chunklist_w1582890017.m3u8:US-CA - Kings Beach - Lake Tahoe
+#DESCRIPTION US-CA - Kings Beach - Lake Tahoe
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge02.hdontap.com/ingest02-hd2/julian-coc.stream/chunklist_w2050663497.m3u8:US-CA - Julian - Main St.
+#DESCRIPTION US-CA - Julian - Main St.
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge02.hdontap.com/ingest03-hd3/lajollainnbythesea_bw.stream/chunklist_w1887217687.m3u8:US-CA - La Jolla - Inn by the Sea
+#DESCRIPTION US-CA - La Jolla - Inn by the Sea
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/united-states/california/laguna-beach/laguna-beach.html:US-CA - Laguna Beach - Plaża
+#DESCRIPTION US-CA - Laguna Beach - Plaża
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge07.nginx.hdontap.com/ho3/hdontap_lgbharbor_fixed.stream/chunklist.m3u8:US-CA - Long Beach - Port
+#DESCRIPTION US-CA - Long Beach - Port
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//cams.cdn-surfline.com/cdn-wc/wc-charthouse/chunklist.m3u8:US-CA - Los Angeles - Chart House
+#DESCRIPTION US-CA - Los Angeles - Chart House
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//wowzaprod124-i.akamaihd.net/hls/live/503942/63258da0/63258da0_1_1190000/chunklist.m3u8:US-CA - Los Angeles - Playa Del Rey
+#DESCRIPTION US-CA - Los Angeles - Playa Del Rey
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/v60vKF71oIw:US-CA - Los Angeles - Port (YT)
+#DESCRIPTION US-CA - Los Angeles - Port (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge03.nginx.hdontap.com/ho3/sunset_swellmagnet.stream/chunklist.m3u8:US-CA - Los Angeles - Sunset Boulevard
+#DESCRIPTION US-CA - Los Angeles - Sunset Boulevard
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//cams.cdn-surfline.com/cdn-wc/wc-topangabeach/chunklist.m3u8:US-CA - Los Angeles - Topanga Beach
+#DESCRIPTION US-CA - Los Angeles - Topanga Beach
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge07.nginx.hdontap.com/ho3/malibu_swellmagnet.stream/chunklist.m3u8:US-CA - Malibu Point
+#DESCRIPTION US-CA - Malibu Point
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge06.nginx.hdontap.com/ho3/elporto_swellmagnet.stream/chunklist.m3u8:US-CA - Manhattan Beach
+#DESCRIPTION US-CA - Manhattan Beach
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge07.nginx.hdontap.com/ho5/swellmagnet_manhattan-pier_north.stream/chunklist.m3u8:US-CA - Manhattan Beach - Pier
+#DESCRIPTION US-CA - Manhattan Beach - Pier
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge04.hdontap.com/ingest03-hd3/bahia-ptz_evanshotels.stream/chunklist_w125718769.m3u8:US-CA - Mission Bay, San Diego - plaża
+#DESCRIPTION US-CA - Mission Bay, San Diego - plaża
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//cams.cdn-surfline.com/cdn-wc/wc-pacificalindamar/chunklist.m3u8:US-CA - Monterey - Plaża
+#DESCRIPTION US-CA - Monterey - Plaża
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge02.hdontap.com/ingest03-hd3/portola_ttv.stream/chunklist_w75137514.m3u8:US-CA - Monterey - Port
+#DESCRIPTION US-CA - Monterey - Port
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//cams.cdn-surfline.com/cdn-wc/wc-montereybay/chunklist.m3u8:US-CA - Monterey Bay
+#DESCRIPTION US-CA - Monterey Bay
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/kNcV9Gy5lQc:US-CA - Monterey Bay (YT)
+#DESCRIPTION US-CA - Monterey Bay (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//cams.cdn-surfline.com/cdn-wc/wc-morrobayharbor/chunklist.m3u8:US-CA - Morro Bay - Port
+#DESCRIPTION US-CA - Morro Bay - Port
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/k--zJFObUjc:US-CA - Morro Bay (YT)
+#DESCRIPTION US-CA - Morro Bay (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//g1.ipcamlive.com/player/player.php?alias=blackiessurfcam1&skin=white:US-CA - Newport - Blackie’s By the Sea Surf
+#DESCRIPTION US-CA - Newport - Blackie’s By the Sea Surf
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//g1.ipcamlive.com/player/player.php?alias=blackiessurfcam2&skin=white:US-CA - Newport - Blackie’s By the Sea Surf 2
+#DESCRIPTION US-CA - Newport - Blackie’s By the Sea Surf 2
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/xRQ-pNLhfhA:US-CA - Newport - Innovation Institute Newport Beach (YT)
+#DESCRIPTION US-CA - Newport - Innovation Institute Newport Beach (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.earthcam.com/usa/california/newportcoast/?cam=newportcoast:US-CA - Newport - Beach
+#DESCRIPTION US-CA - Newport - Beach
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//cams.cdn-surfline.com/cdn-wc/wc-wedge/chunklist.m3u8:US-CA - Newport - The Wedge Surf
+#DESCRIPTION US-CA - Newport - The Wedge Surf
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//cams.cdn-surfline.com/cdn-wc/wc-thirtysixnewport/chunklist.m3u8:US-CA - Newport - Beach Surf
+#DESCRIPTION US-CA - Newport - Beach Surf
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge07.nginx.hdontap.com/ho3/waterfront_swellmagnet.stream/chunklist.m3u8:US-CA - Newport - Huntington Beach
+#DESCRIPTION US-CA - Newport - Huntington Beach
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/zYi_5AF6B2A:US-CA - Pacifica - Pacifica Municipal Pier (YT)
+#DESCRIPTION US-CA - Pacifica - Pacifica Municipal Pier (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/G_GvJqITbOM:US-CA - Pacifica - Sharp Park Beach (YT)
+#DESCRIPTION US-CA - Pacifica - Sharp Park Beach (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//56cf3370d8dd3.streamlock.net%3a1935/aw/aw-psat1.stream/chunklist_w1806463121.m3u8:US-CA - Palm Springs
+#DESCRIPTION US-CA - Palm Springs
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/n4BCeeYz8mc:US-CA - Palm Springs - Palm Springs Air Museum (YT)
+#DESCRIPTION US-CA - Palm Springs - Palm Springs Air Museum (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//56cdb389b57ec.streamlock.net/live/yosfalls.stream/chunklist_w180916310.m3u8:US-CA - Park Narodowy Yosemite
+#DESCRIPTION US-CA - Park Narodowy Yosemite
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//b7.hdrelay.com/camera/CID_VTSJ00000081/relay/chunklist_w1765261098.m3u8:US-CA - Pebble Beach - Pebble Beach Golf Links
+#DESCRIPTION US-CA - Pebble Beach - Pebble Beach Golf Links
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//cams.cdn-surfline.com/cdn-wc/wc-pismosouth/chunklist.m3u8:US-CA - Pismo Beach
+#DESCRIPTION US-CA - Pismo Beach
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//cams.cdn-surfline.com/cdn-wc/wc-pismobeachaddiest/chunklist.m3u8:US-CA - Pismo Beach - Molo
+#DESCRIPTION US-CA - Pismo Beach - Molo
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//2-fss-2.streamhoster.com/pl_126/202594-1354528-1/chunklist.m3u8:US-CA - Placerville - Main St
+#DESCRIPTION US-CA - Placerville - Main St
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//2-fss-2.streamhoster.com/pl_126/202594-1354526-1/chunklist.m3u8:US-CA - Pollock Pines - Pony Express Trail
+#DESCRIPTION US-CA - Pollock Pines - Pony Express Trail
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/2c7NV66YzKA:US-CA - San Clemente (YT)
+#DESCRIPTION US-CA - San Clemente (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//cams.cdn-surfline.com/cdn-wc/wc-sanclementesb/chunklist.m3u8:US-CA - San Clemente - State Beach
+#DESCRIPTION US-CA - San Clemente - State Beach
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge02.hdontap.com/ingest03-hd3/bahia-ptz_evanshotels.stream/chunklist_w438340067.m3u8:US-CA - San Diego - Bahia Resort
+#DESCRIPTION US-CA - San Diego - Bahia Resort
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge02.hdontap.com/ingest03-hd3/catamaran-ptz_evanshotels.stream/chunklist_w1058373875.m3u8:US-CA - San Diego - Catamaran Resort
+#DESCRIPTION US-CA - San Diego - Catamaran Resort
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge02.hdontap.com/ingest03-hd3/catamaran-ptz_evanshotels.stream/chunklist_w678213627.m3u8:US-CA - San Diego - Catamaran Resort
+#DESCRIPTION US-CA - San Diego - Catamaran Resort
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//595b9deb3d6ac.streamlock.net/rtplive/sandiego.stream/chunklist_w1131565190.m3u8:US-CA - San Diego - Coronado, Point Loma
+#DESCRIPTION US-CA - San Diego - Coronado, Point Loma
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge02.hdontap.com/ingest02-hd2/lauberge-delmar.stream/chunklist_w358555291.m3u8:US-CA - San Diego - Del Mar Beach
+#DESCRIPTION US-CA - San Diego - Del Mar Beach
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//cams.cdn-surfline.com/cdn-wc/wc-imperialpiern/chunklist.m3u8:US-CA - San Diego - Imperial Pier Surf
+#DESCRIPTION US-CA - San Diego - Imperial Pier Surf
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//cams.cdn-surfline.com/cdn-wc/wc-imperialbeach/chunklist.m3u8:US-CA - San Diego - Imperial Beach Surf
+#DESCRIPTION US-CA - San Diego - Imperial Beach Surf
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//stream-us1-bravo.dropcam.com/nexus_aac/8f050ede394f488fa3bad47a41d97167/chunklist_w2098648162.m3u8?public=HhIih7OMFi:US-CA - San Diego - Mission Beach
+#DESCRIPTION US-CA - San Diego - Mission Beach
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//stream-uc2-charlie.dropcam.com/nexus_aac/cd49cc7a18664c71ba5ee191853de911/chunklist_w2020472303.m3u8?public=Zp83ptXCn3:US-CA - San Diego - Mission Beach 2
+#DESCRIPTION US-CA - San Diego - Mission Beach 2
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//stream-ue1-bravo.dropcam.com/nexus_aac/5c59e48dca42413b8c51a88aad168702/chunklist_w1305145877.m3u8?public=S7MHPnNYR0:US-CA - San Diego - Mission Beach 3
+#DESCRIPTION US-CA - San Diego - Mission Beach 3
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//stream-uc2-bravo.dropcam.com/nexus_aac/13b174e055e248089ca1b73fbaeda351/chunklist_w898228113.m3u8?public=7OMFcAQpTu:US-CA - San Diego - Mission Beach 4
+#DESCRIPTION US-CA - San Diego - Mission Beach 4
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//stream-uc2-bravo.dropcam.com/nexus_aac/13b174e055e248089ca1b73fbaeda351/chunklist_w1423171230.m3u8?public=7OMFcAQpTu:US-CA - San Diego - Mission Beach Boardwalk
+#DESCRIPTION US-CA - San Diego - Mission Beach Boardwalk
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//b10.hdrelay.com/camera/1549b2bd-baa9-4eb6-a6bf-c7500a22dc90/relay/chunklist_w2089675715.m3u8:US-CA - San Diego - Ocean Beach
+#DESCRIPTION US-CA - San Diego - Ocean Beach
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//wowzaprod123-i.akamaihd.net/hls/live/508506/2410e9f4/2410e9f4_1_2010000/chunklist.m3u8:US-CA - San Diego - Ocean Beach 2
+#DESCRIPTION US-CA - San Diego - Ocean Beach 2
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//wowzaprod234-i.akamaihd.net/hls/live/1019427/2abb0b3f/2abb0b3f_1_1310000/chunklist.m3u8:US-CA - San Diego - Pacific Beach Pier
+#DESCRIPTION US-CA - San Diego - Pacific Beach Pier
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//cams.cdn-surfline.com/cdn-wc/wc-pacificbeach/chunklist.m3u8:US-CA - San Diego - Pacific Beach Surf
+#DESCRIPTION US-CA - San Diego - Pacific Beach Surf
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//b10.hdrelay.com/camera/5b421137-d008-42d5-aab2-3f32bf012497/relay/chunklist_w831143928.m3u8:US-CA - San Diego - Pacific Beach Surf 2
+#DESCRIPTION US-CA - San Diego - Pacific Beach Surf 2
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge02.hdontap.com/ingest02-hd2/pacificbeach_pacterrace.stream/chunklist_w2083556131.m3u8:US-CA - San Diego - Pacific Terrace Hotel
+#DESCRIPTION US-CA - San Diego - Pacific Terrace Hotel
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge04.hdontap.com/ingest02-hd2/pacificbeach_pacterrace.stream/chunklist_w1506893714.m3u8:US-CA - San Diego - Plaża
+#DESCRIPTION US-CA - San Diego - Plaża
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/PUfdov:US-CA - San Diego - Point Loma (YT)
+#DESCRIPTION US-CA - San Diego - Point Loma (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//cams.cdn-surfline.com/cdn-int/pt-carcavelosov/chunklist.m3u8:US-CA - San Diego - Scripps Pier
+#DESCRIPTION US-CA - San Diego - Scripps Pier
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/rLMUd_ty92Y:US-CA - San Diego - Shelter Island (YT)
+#DESCRIPTION US-CA - San Diego - Shelter Island (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//g1.ipcamlive.com/player/player.php?alias=coronadoferrylanding:US-CA - San Diego - San Diego Bay
+#DESCRIPTION US-CA - San Diego - San Diego Bay
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge02.hdontap.com/ingest03-hd3/lodge-ptz_evanshotels.stream/chunklist_w1513970553.m3u8:US-CA - San Diego - Torrey Pines Golf Course
+#DESCRIPTION US-CA - San Diego - Torrey Pines Golf Course
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//wowzaprod123-i.akamaihd.net/hls/live/508506/f4cc424d/f4cc424d_1_3146000/chunklist.m3u8:US-CA - San Diego - Waterbar Surf in Pacific Beach
+#DESCRIPTION US-CA - San Diego - Waterbar Surf in Pacific Beach
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/nkJlGiE_1wE:US-CA -San Francisco - Castro Street (YT)
+#DESCRIPTION US-CA -San Francisco - Castro Street (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/pUX2dRbf0z4:US-CA -San Francisco - Castro Street 2 (YT)
+#DESCRIPTION US-CA -San Francisco - Castro Street 2 (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/CW1CWVC-x8w:US-CA -San Francisco - Castro Street 3 (YT)
+#DESCRIPTION US-CA -San Francisco - Castro Street 3 (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/5AiPYaDjWEM:US-CA -San Francisco - Castro Street 4 (YT)
+#DESCRIPTION US-CA -San Francisco - Castro Street 4 (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.earthcam.com/usa/california/sanfrancisco/?cam=sanfranciscoskyline:US-CA -San Francisco - Panorama
+#DESCRIPTION US-CA -San Francisco - Panorama
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.earthcam.com/usa/california/sanfrancisco/?cam=rowingclub:US-CA -San Francisco - South End Rowing Club
+#DESCRIPTION US-CA -San Francisco - South End Rowing Club
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//cams.cdn-surfline.com/cdn-wc/wc-baywoodbeach/chunklist.m3u8:US-CA - San Luis Obispo - Baywood
+#DESCRIPTION US-CA - San Luis Obispo - Baywood
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//cams.cdn-surfline.com/cdn-wc/wc-avilabeach/chunklist.m3u8:US-CA - San Luis Obispo - Oceano
+#DESCRIPTION US-CA - San Luis Obispo - Oceano
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//cams.cdn-surfline.com/cdn-wc/wc-campuspt/chunklist.m3u8:US-CA - Santa Barbara - Campus Point
+#DESCRIPTION US-CA - Santa Barbara - Campus Point
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/united-states/california/santa-barbara/santa-barbara.html:US-CA - Santa Barbara - Plaża
+#DESCRIPTION US-CA - Santa Barbara - Plaża
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//vstream.command.verkada.com/filter/transcode/v2_738d3cf4f7a98c5146cb5c25b88504f6/716da979-58b7-4455-9180-8a8a3dc394e9/low_res/livevideo.m3u8:US-CA - Santa Barbara - Waterfront
+#DESCRIPTION US-CA - Santa Barbara - Waterfront
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//ipcamlive.com/player/player.php?alias=59402d0707114:US-CA - Santa Catalina Island - Avalon - Crescent Bay
+#DESCRIPTION US-CA - Santa Catalina Island - Avalon - Crescent Bay
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//cams.cdn-surfline.com/cdn-wc/wc-steamer/chunklist.m3u8:US-CA - Santa Cruz - Steamer Lane
+#DESCRIPTION US-CA - Santa Cruz - Steamer Lane
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/DH0VmRsj05c:US-CA - Santa Monica (YT)
+#DESCRIPTION US-CA - Santa Monica (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge06.nginx.hdontap.com/ho3/santamonica_swellmagnet.stream/chunklist.m3u8:US-CA - Santa Monica - Beach
+#DESCRIPTION US-CA - Santa Monica - Beach
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/jLGcACK4iXQ:US-CA - Santa Rosa - Courthouse Square (YT)
+#DESCRIPTION US-CA - Santa Rosa - Courthouse Square (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//cams.cdn-surfline.com/cdn-wc/wc-shellbeach/chunklist.m3u8:US-CA - Shell Beach
+#DESCRIPTION US-CA - Shell Beach
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//b10.hdrelay.com/camera/70e322af-bcc5-4b9d-bac6-3693f745f782/relay/chunklist_w222237502.m3u8:US-CA - Snow Valley Mountain Resort
+#DESCRIPTION US-CA - Snow Valley Mountain Resort
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//1-or.vdn.terrafox.net/live/sonoma/chunks_dvr.m3u8?nimblesessionid=925551&wmsAuthSign=c2VydmVyX3RpbWU9MTAvMy8yMDIwIDI6MzY6MjkgUE0maGFzaF92YWx1ZT1va04yTUJvUTMvL2lLc1JvUXVncC9nPT0mdmFsaWRtaW51dGVzPTMwJmlkPTE4NS4yNTMuMjI5LjEzMQ==:US-CA - Sonoma - Historic Sonoma Plaza
+#DESCRIPTION US-CA - Sonoma - Historic Sonoma Plaza
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge02.hdontap.com/ingest03-hd3/rivagrill_ttv.stream/chunklist_w450934179.m3u8:US-CA - South Lake Tahoe - Port
+#DESCRIPTION US-CA - South Lake Tahoe - Port
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge02.hdontap.com/ingest03-hd3/squaw-kt22_ttv.stream/chunklist_w398930042.m3u8:US-CA - Squaw Valley - KT22
+#DESCRIPTION US-CA - Squaw Valley - KT22
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge04.hdontap.com/ingest03-hd3/cobblestone_ttv.stream/chunklist_w1179296407.m3u8:US-CA - Tahoe City - Cobblestone Center
+#DESCRIPTION US-CA - Tahoe City - Cobblestone Center
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge04.hdontap.com/ingest03-hd3/commonsbeach_ttv.stream/chunklist_w22084592.m3u8:US-CA - Tahoe City - Commons Beach
+#DESCRIPTION US-CA - Tahoe City - Commons Beach
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge04.hdontap.com/ingest03-hd3/temecula-wine-country_fazeli.stream/chunklist_w467623678.m3u8:US-CA - Temecula - Fazeli Cellars Winery
+#DESCRIPTION US-CA - Temecula - Fazeli Cellars Winery
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge06.nginx.hdontap.com/ho3/torrance_swellmagnet.stream/chunklist.m3u8:US-CA - Torrance Beach
+#DESCRIPTION US-CA - Torrance Beach
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge04.hdontap.com/ingest03-hd3/ktrk_abr_ttv.stream/chunklist_w1389336029.m3u8:US-CA - Truckee Tahoe Airport
+#DESCRIPTION US-CA - Truckee Tahoe Airport
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5ddd47d64e730.streamlock.net%3a444/westland/westland.stream/chunklist_w1767125589.m3u8:US-CA - Venice Beach
+#DESCRIPTION US-CA - Venice Beach
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge06.nginx.hdontap.com/ho3/venice_swellmagnet.stream/chunklist.m3u8:US-CA - Venice Beach 2
+#DESCRIPTION US-CA - Venice Beach 2
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//stream-ue1-delta.dropcam.com/nexus_aac/eba27d429b0d417bb8c96f0af33e17b0/chunklist_w1297656428.m3u8?public=kzK7o0GyMw:US-CA - Visalia - Main Street
+#DESCRIPTION US-CA - Visalia - Main Street
+#SERVICE 1:64:0:0:0:0:0:0:0:0::Floryda (US-FL)
+#DESCRIPTION Floryda (US-FL)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/QTV4B59VuNU:US-FL - Anna Maria - Bimini Bay (YT)
+#DESCRIPTION US-FL - Anna Maria - Bimini Bay (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//cdn3.wowza.com/1/ZjBERjNBMS90M1JH/MWtQSFVD/hls/ktjttjqn/1728/chunklist.m3u8:US-FL - Bahia Honda Key
+#DESCRIPTION US-FL - Bahia Honda Key
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/tjK7UivDKHM:US-FL - Bradenton - Harbour Isle (YT)
+#DESCRIPTION US-FL - Bradenton - Harbour Isle (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/WeZL3zpa_6U:US-FL - Cape Canaveral - Cape Marina (YT)
+#DESCRIPTION US-FL - Cape Canaveral - Cape Marina (YT)
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/united-states/florida/clearwater/florida-clearwater-beach.html:US-FL - Clearwater Beach - Marina
+#DESCRIPTION US-FL - Clearwater Beach - Marina
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//g1.ipcamlive.com/player/player.php?alias=5b5221570c4c1:US-FL - Clearwater Beach
+#DESCRIPTION US-FL - Clearwater Beach
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//56cf3370d8dd3.streamlock.net%3a1935/live/stpete.stream/chunklist_w120601605.m3u8:US-FL - Clearwater Beach - Molo
+#DESCRIPTION US-FL - Clearwater Beach - Molo
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//56cf3370d8dd3.streamlock.net%3a1935/live/stpete.stream/chunklist_w2116371040.m3u8:US-FL - Clearwater Beach - Pier 60
+#DESCRIPTION US-FL - Clearwater Beach - Pier 60
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//g1.ipcamlive.com/player/player.php?alias=552ebb0f92678:US-FL - Clearwater Beach - Plaża
+#DESCRIPTION US-FL - Clearwater Beach - Plaża
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//wms-prod-1.wetmet.net/live/106-05-01/chunks.m3u8:US-FL - Crystal River
+#DESCRIPTION US-FL - Crystal River
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/bEoNVd3spEM:US-FL - Dania Beach - Molo (YT)
+#DESCRIPTION US-FL - Dania Beach - Molo (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//wowza.volusia.org/live/dunlawton.stream/chunklist_w1311634055.m3u8:US-FL - Daytona Beach - Volusia County
+#DESCRIPTION US-FL - Daytona Beach - Volusia County
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/-HAi_5IIAYg:US-FL - Deerfield Beach - Plaża
+#DESCRIPTION US-FL - Deerfield Beach - Plaża
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/i5wt0y1l77M:US-FL - Deerfield Beach - molo
+#DESCRIPTION US-FL - Deerfield Beach - molo
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//b10.hdrelay.com/camera/43cb0a43-b8e0-498d-a987-63a790245b38/relay/chunklist_w122193087.m3u8:US-FL - Destin - Aj's Dockside
+#DESCRIPTION US-FL - Destin - Aj's Dockside
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//b10.hdrelay.com/camera/13a98fb0-ddc0-4de5-b396-e215ccddc7d7/relay/chunklist_w1567347053.m3u8:US-FL - Destin - Aj's Harbor
+#DESCRIPTION US-FL - Destin - Aj's Harbor
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/7Gty1dKt0i8:US-FL - Destin - East Pass Towers - Destin Pass, Destin Bridge (YT)
+#DESCRIPTION US-FL - Destin - East Pass Towers - Destin Pass, Destin Bridge (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5ed7b8fd7bf40.streamlock.net%3a444/destinoffice/destinofficecam/chunklist_w1301335289.m3u8:US-FL - Destin - Beach TV
+#DESCRIPTION US-FL - Destin - Beach TV
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5ed7b8fd7bf40.streamlock.net%3a444/harborwalkvillage/hwvillage/chunklist_w1516448887.m3u8:US-FL - Destin - Harbor-Walk Village
+#DESCRIPTION US-FL - Destin - Harbor-Walk Village
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5ed7b8fd7bf40.streamlock.net%3a444/harborwalkzipline/hwzipline/chunklist_w1577765661.m3u8:US-FL - Destin - Harbor-Walk Village Zipline
+#DESCRIPTION US-FL - Destin - Harbor-Walk Village Zipline
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//b10.hdrelay.com/camera/9bedcc5a-d37e-448f-b161-055292d990b5/relay/chunklist_w550547330.m3u8:US-FL - Destin - Henderson Beach
+#DESCRIPTION US-FL - Destin - Henderson Beach
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/9Ok8JHFW6dY:US-FL - Destin - Henderson Park Inn (YT)
+#DESCRIPTION US-FL - Destin - Henderson Park Inn (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5ed7b8fd7bf40.streamlock.net%3a444/destinharbor/destinharborcam/chunklist_w2081329916.m3u8:US-FL - Destin - Port
+#DESCRIPTION US-FL - Destin - Port
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/nB2z1ArZIC4:US-FL - Destin - Inlet Reef (YT)
+#DESCRIPTION US-FL - Destin - Inlet Reef (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/P8C3FQ3wees:US-FL - Destin - St Thomas At Silver Shells (YT)
+#DESCRIPTION US-FL - Destin - St Thomas At Silver Shells (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//b10.hdrelay.com/camera/fe4340da-f9c6-4071-bb60-bd13cf4b3abc/relay/chunklist_w701105387.m3u8:US-FL - Destin - The Crab Trab
+#DESCRIPTION US-FL - Destin - The Crab Trab
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/4YFHDjig1hc:US-FL - Fort Lauderdale - Alamy Andrews Avenue Bridge
+#DESCRIPTION US-FL - Fort Lauderdale - Alamy Andrews Avenue Bridge
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/1Q0mCqww_po:US-FL - Fort Lauderdale - Downtown (YT)
+#DESCRIPTION US-FL - Fort Lauderdale - Downtown (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.earthcam.com/usa/florida/fortlauderdale/everglades/?cam=everglades:US-FL - Fort Lauderdale - Everglades Holiday Park
+#DESCRIPTION US-FL - Fort Lauderdale - Everglades Holiday Park
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.earthcam.com/usa/florida/fortlauderdale/marina/?cam=lauderdalemarina:US-FL - Fort Lauderdale - Marina
+#DESCRIPTION US-FL - Fort Lauderdale - Marina
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/9bp7dtEBWa8:US-FL - Fort Lauderdale - River Reach (YT)
+#DESCRIPTION US-FL - Fort Lauderdale - River Reach (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/89YNLIaUASE:US-FL - Fort Myers - Fishing Pier (YT)
+#DESCRIPTION US-FL - Fort Myers - Fishing Pier (YT)
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/united-states/florida/fort-myers-beach/fort-myers-beach.html:US-FL - Fort Myers Beach - Plaża
+#DESCRIPTION US-FL - Fort Myers Beach - Plaża
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//cams.cdn-surfline.com/cdn-ec/ec-ftpierceinlet/chunklist.m3u8:US-FL - Fort Pierce Inlet
+#DESCRIPTION US-FL - Fort Pierce Inlet
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//58bdb48e25cf1.streamlock.net%3a19350/live/vcfl002.stream/chunklist_w1281242659.m3u8:US-FL - Fort Pierce - Fort Pierce Inlet
+#DESCRIPTION US-FL - Fort Pierce - Fort Pierce Inlet
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/http%3a//g1.ipcamlive.com/player/player.php?alias=553a793a5bf5c:US-FL - Gulfport - 49th Street South
+#DESCRIPTION US-FL - Gulfport - 49th Street South
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.earthcam.com/usa/florida/hillsboro/?cam=hillsboro:US-FL - Hillsboro Beach
+#DESCRIPTION US-FL - Hillsboro Beach
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//ds0gpwfg6wp66.cloudfront.net/out/v1/c56a695b950949389afc8bff394ff568/index_1.m3u8:US-FL - Hollywood - Broadwalk
+#DESCRIPTION US-FL - Hollywood - Broadwalk
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge04.hdontap.com/ingest03-hd3/Beach_Cam-Enchanted_Isle.stream/chunklist_w1490318409.m3u8:US-FL - Hollywood Beach - Enchanted Isle Resort
+#DESCRIPTION US-FL - Hollywood Beach - Enchanted Isle Resort
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//ipcamlive.com/player/player.php?alias=cedarcoveresort:US-FL - Holmes Beach - Cedar Cove Resort
+#DESCRIPTION US-FL - Holmes Beach - Cedar Cove Resort
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5f4ad95bcff44.streamlock.net%3a444/beachbistro1/beachbistro1.stream/chunklist_w1684984058.m3u8:US-FL - Holmes Beach - Plaża
+#DESCRIPTION US-FL - Holmes Beach - Plaża
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//b10.hdrelay.com/camera/a44cbe2a-8944-46d5-9fc6-aaed3d65981b/relay/chunklist_w2026426436.m3u8:US-FL - Homosassa River
+#DESCRIPTION US-FL - Homosassa River
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//cdn3.wowza.com/1/SGRQWk9mcGI0QzFh/Skxoa1Nl/hls/nh5cx6jw/1728/chunklist.m3u8:US-FL - Islamorada - Cheeca Lodge
+#DESCRIPTION US-FL - Islamorada - Cheeca Lodge
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//cdn3.wowza.com/1/ZFVhMEhMc2R3YmVs/dzREL1pj/hls/wqbz8b09/1728/chunklist.m3u8:US-FL - Islamorada - Founders Park Marina
+#DESCRIPTION US-FL - Islamorada - Founders Park Marina
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//cdn3.wowza.com/1/V3VncE1uNXJ0STlG/THFHTkkv/hls/lxzttshk/1728/chunklist.m3u8:US-FL - Islamorada - Pines & Palms Resort
+#DESCRIPTION US-FL - Islamorada - Pines & Palms Resort
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//cdn3.wowza.com/1/bDgzUjc4YTZaSnZs/ckR5Mjdh/hls/qbzwzsls/1728/chunklist.m3u8:US-FL - Islamorada - Robbie’s Marina
+#DESCRIPTION US-FL - Islamorada - Robbie’s Marina
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//wms-prod-2.wetmet.net/live/142-08-01/chunks.m3u8:US-FL - Jacksonville - St. Augustine Beach
+#DESCRIPTION US-FL - Jacksonville - St. Augustine Beach
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//wms-prod-2.wetmet.net/live/142-01-01/chunks.m3u8:US-FL - Jacksonville - Beach Pier
+#DESCRIPTION US-FL - Jacksonville - Beach Pier
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//wms-prod-2.wetmet.net/live/142-06-01/chunks.m3u8:US-FL - Jacksonville - International Airport
+#DESCRIPTION US-FL - Jacksonville - International Airport
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//wms-prod-2.wetmet.net/live/142-05-01/chunks.m3u8:US-FL - Jacksonville - The White Room at 1 King Plaza
+#DESCRIPTION US-FL - Jacksonville - The White Room at 1 King Plaza
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//wms-prod-2.wetmet.net/live/142-04-01/chunks.m3u8:US-FL - Jacksonville - Orange Park%3a Club Continental
+#DESCRIPTION US-FL - Jacksonville - Orange Park: Club Continental
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//wms-prod-2.wetmet.net/live/142-03-01/chunks.m3u8:US-FL - Jacksonville - DoubleTree Hotel
+#DESCRIPTION US-FL - Jacksonville - DoubleTree Hotel
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//wms-prod-2.wetmet.net/live/142-02-01/chunks.m3u8:US-FL - Jekyll Island Skycam
+#DESCRIPTION US-FL - Jekyll Island Skycam
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//cdn3.wowza.com/1/UUJkZXVDMy9veHRG/aXB2RTNL/hls/vmhrxy5v/1728/chunklist.m3u8:US-FL - Key Largo - Courtyard by Marriott Key Largo
+#DESCRIPTION US-FL - Key Largo - Courtyard by Marriott Key Largo
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//cdn3.wowza.com/1/TUlnKzZ3SGxwVTEy/WUUyUnBU/hls/zmrjgh91/1728/chunklist.m3u8:US-FL - Key Largo - Jewfish Creek
+#DESCRIPTION US-FL - Key Largo - Jewfish Creek
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//g1.ipcamlive.com/player/player.php?alias=pilothousemarina:US-FL - Key Largo - Pilot House Marina
+#DESCRIPTION US-FL - Key Largo - Pilot House Marina
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//g1.ipcamlive.com/player/player.php?alias=pilothousestage:US-FL - Key Largo - Pilot House Marina 2
+#DESCRIPTION US-FL - Key Largo - Pilot House Marina 2
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//cdn3.wowza.com/1/V0EwN3JUZmIyc0Jp/TGNmOHVY/hls/wltg9nss/1728/chunklist.m3u8:US-FL - Key West - 24 North Hotel
+#DESCRIPTION US-FL - Key West - 24 North Hotel
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//cdn3.wowza.com/1/a3NSc3ZsT0ZZSzls/UHBjVjQz/hls/fftqxcfp/1728/chunklist.m3u8:US-FL - Key West - 24 North Hotel 2
+#DESCRIPTION US-FL - Key West - 24 North Hotel 2
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//cdn3.wowza.com/1/WCtYSVFOZDdGcnBF/ZFR3OTZT/hls/5t8vpckj/1728/chunklist.m3u8:US-FL - Key West - 24 North Hotel 3
+#DESCRIPTION US-FL - Key West - 24 North Hotel 3
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.earthcam.com/usa/florida/keywest/?cam=irishkevins:US-FL - Key West - Duval St
+#DESCRIPTION US-FL - Key West - Duval St
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//cdn3.wowza.com/1/V0d4WDJWSEFtYlhp/V1FuV0Np/hls/b2z6kgb4/1728/chunklist.m3u8:US-FL - Key West - Duval Street Live
+#DESCRIPTION US-FL - Key West - Duval Street Live
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//wowzaprod179-i.akamaihd.net/hls/live/678105/4aed1b45/4aed1b45_1_2728/chunklist.m3u8:US-FL - Key West - Duval Street Live 2
+#DESCRIPTION US-FL - Key West - Duval Street Live 2
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//wms-prod-2.wetmet.net/live/142-07-01/chunks.m3u8:US-FL - Riverside - Blue Skycam
+#DESCRIPTION US-FL - Riverside - Blue Skycam
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//cdn3.wowza.com/1/OVVNVWlIZTQxMkR3/dEIySHFq/hls/jvfbvbss/1728/chunklist.m3u8:US-FL - Key West - Harborside Motel & Marina
+#DESCRIPTION US-FL - Key West - Harborside Motel & Marina
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/IRF0RQYb3lA:US-FL - Key West - La Concha Hotel (YT)
+#DESCRIPTION US-FL - Key West - La Concha Hotel (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//cdn3.wowza.com/1/WUtRU1RBNjZmK085/eGpHREt2/hls/jvvhqqtl/1728/chunklist.m3u8:US-FL - Key West - Mallory Square
+#DESCRIPTION US-FL - Key West - Mallory Square
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/iRFf1qGgWXw:US-FL - Key West - Mallory Square (YT)
+#DESCRIPTION US-FL - Key West - Mallory Square (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/eDeCOWw5XVU:US-FL - Key West - Front Street (YT)
+#DESCRIPTION US-FL - Key West - Front Street (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/ko7o4VskXpQ:US-FL - Key West - Seaport at Marker Hotel (YT)
+#DESCRIPTION US-FL - Key West - Seaport at Marker Hotel (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//cdn3.wowza.com/1/UWdQMGZDRStwVXFP/V1owNE5M/hls/kdphjg7d/1152/chunklist.m3u8:US-FL - Key West - Mile Marker 0
+#DESCRIPTION US-FL - Key West - Mile Marker 0
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//cdn3.wowza.com/1/L3dkUDRHMkNETnM4/OXRUTE81/hls/kpjtfjtf/1728/chunklist.m3u8:US-FL - Key West - Oceans Edge Key West Resort Hotel & Marina
+#DESCRIPTION US-FL - Key West - Oceans Edge Key West Resort Hotel & Marina
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//cdn3.wowza.com/1/NG52dXVXTVEwVHVm/bk5LVXIy/hls/fr9sjvtz/1728/chunklist.m3u8:US-FL - Key West - Southernmost Hotel
+#DESCRIPTION US-FL - Key West - Southernmost Hotel
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//cdn3.wowza.com/1/a2ptNDNKeDVVUTh6/YVZGcDUx/hls/sjpyf2y1/1728/chunklist.m3u8:US-FL - Key West - Southernmost Point
+#DESCRIPTION US-FL - Key West - Southernmost Point
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//cdn3.wowza.com/1/WWJMTzZXTks5SjI5/aWh4SXl1/hls/bfd30p8g/1728/chunklist.m3u8:US-FL - Key West - Wicker Guesthouse - Duval Street
+#DESCRIPTION US-FL - Key West - Wicker Guesthouse - Duval Street
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.earthcam.com/usa/florida/lauderdalebythesea/town/?cam=lbts_beach:US-FL - Lauderdale-by-the-Sea - Anglin's Fishing Pier
+#DESCRIPTION US-FL - Lauderdale-by-the-Sea - Anglin's Fishing Pier
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.earthcam.com/usa/florida/manalapan/palmbeach/?cam=manalapan_palmbeach:US-FL - Manalapan - Eau Palm Beach Resort
+#DESCRIPTION US-FL - Manalapan - Eau Palm Beach Resort
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/KEONfxz8Ikw:US-FL - Marathon (YT)
+#DESCRIPTION US-FL - Marathon (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//cdn3.wowza.com/1/cDh3bS8zWldkTGNK/eUZpMWFm/hls/2vv9yvxf/1728/chunklist.m3u8:US-FL - Marathon - Isla Bella Beach Resort
+#DESCRIPTION US-FL - Marathon - Isla Bella Beach Resort
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//cdn3.wowza.com/1/eDYzbHQxc3F3OWlK/M2RXTkRx/hls/gbpqwwlx/1728/chunklist.m3u8:US-FL - Marathon - Isla Bella Beach Resort 2
+#DESCRIPTION US-FL - Marathon - Isla Bella Beach Resort 2
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//cdn3.wowza.com/1/L0dqSVZQRWJFblhh/T1RWMlA5/hls/pp8bmrfv/1728/chunklist.m3u8:US-FL - Marathon - Sombrero Beach
+#DESCRIPTION US-FL - Marathon - Sombrero Beach
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//cdn3.wowza.com/1/SFpTMEh2NHBldGli/dlpXWUpB/hls/p30br5bv/1152/chunklist.m3u8:US-FL - Marathon - Tranquility Bay
+#DESCRIPTION US-FL - Marathon - Tranquility Bay
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.earthcam.com/usa/florida/miamiandthebeaches/?cam=miamibeach7:US-FL - Miami - Biscayne Bay, Downtown, South Beach, Calle Ocho
+#DESCRIPTION US-FL - Miami - Biscayne Bay, Downtown, South Beach, Calle Ocho
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/xuoy96nMcUk:US-FL - Miami - Port (YT)
+#DESCRIPTION US-FL - Miami - Port (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.earthcam.com/usa/florida/miamiandthebeaches/?cam=miamibeach2:US-FL - Miami - Sunny Isles Beach
+#DESCRIPTION US-FL - Miami - Sunny Isles Beach
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.earthcam.com/usa/florida/miamiandthebeaches/?cam=miamibeach10:US-FL - Miami Beach - Lincoln Road
+#DESCRIPTION US-FL - Miami Beach - Lincoln Road
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/6l5WCN5Re6k:US-FL - Miramar Beach - Plaża (YT)
+#DESCRIPTION US-FL - Miramar Beach - Plaża (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/32BsvIxC1Z0:US-FL - Miramar Beach - Southwinds Beach (YT)
+#DESCRIPTION US-FL - Miramar Beach - Southwinds Beach (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/EhOqyqk2x0w:US-FL - Miramar Beach - Southwinds III (YT)
+#DESCRIPTION US-FL - Miramar Beach - Southwinds III (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/ufedw0VhzxA:US-FL - Miramar Beach - Westwinds Beach (YT)
+#DESCRIPTION US-FL - Miramar Beach - Westwinds Beach (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/8kPAa9qRkI0:US-FL - Naples - Beach Hotel & Golf Club (YT)
+#DESCRIPTION US-FL - Naples - Beach Hotel & Golf Club (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.earthcam.com/usa/florida/naples/waterfront/?cam=napleswaterfront:US-FL - Naples - Naples Reserve - Waterfront
+#DESCRIPTION US-FL - Naples - Naples Reserve - Waterfront
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.earthcam.com/usa/florida/naples/?cam=naplespier:US-FL - Naples - Pier
+#DESCRIPTION US-FL - Naples - Pier
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//1-or.vdn.terrafox.net/NBL/nbl-1.stream/chunks_dvr.m3u8:US-FL - Navarre Beach
+#DESCRIPTION US-FL - Navarre Beach
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//cams.cdn-surfline.com/cdn-ec/ec-navarrebeach/chunklist.m3u8:US-FL - Navarre Beach - Molo
+#DESCRIPTION US-FL - Navarre Beach - Molo
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//wowza.volusia.org/live/newsymrna.stream/chunklist_w1573965067.m3u8:US-FL - New Smyrna Beach - Plaża
+#DESCRIPTION US-FL - New Smyrna Beach - Plaża
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge02.hdontap.com/ingest02-hd2/oaklandpark_highpoweredgraphics.stream/chunklist_w1982423325.m3u8:US-FL - Oakland Park - Jaco Pastorius Park
+#DESCRIPTION US-FL - Oakland Park - Jaco Pastorius Park
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/5lK8CJLW1oI:US-FL - Okaloosa Island - Plaża (YT)
+#DESCRIPTION US-FL - Okaloosa Island - Plaża (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//stream-us1-charlie.dropcam.com/nexus_aac/159df511c5c54f2f904483dfa2b67828/chunklist_w521800378.m3u8?public=WcAfy7KgIw:US-FL - Ormond Beach - Plaża
+#DESCRIPTION US-FL - Ormond Beach - Plaża
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5ed7b8fd7bf40.streamlock.net%3a444/breakerssailfishcam/breakersmyrcam1/chunklist_w594752808.m3u8:US-FL - Palm Beach - The Breakers
+#DESCRIPTION US-FL - Palm Beach - The Breakers
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5ed7b8fd7bf40.streamlock.net%3a444/barefootonthebay/barefootonthebaycam/playlist.m3u8:US-FL - Panama City - St. Andrew's Bay
+#DESCRIPTION US-FL - Panama City - St. Andrew's Bay
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5ed7b8fd7bf40.streamlock.net%3a444/holidayinnpcbbeach/holidayinnpcbbeachcam/chunklist_w535500040.m3u8:US-FL - Panama City Beach
+#DESCRIPTION US-FL - Panama City Beach
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//g1.ipcamlive.com/player/player.php?alias=59b06d035419c&autoplay=true:US-FL - Panama City Beach 2
+#DESCRIPTION US-FL - Panama City Beach 2
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5ed7b8fd7bf40.streamlock.net%3a444/edgewater/edgewatercam/playlist.m3u8:US-FL - Panama City Beach 3
+#DESCRIPTION US-FL - Panama City Beach 3
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5ed7b8fd7bf40.streamlock.net%3a444/barefootonthebeach/barefootonthebeachcam/playlist.m3u8:US-FL - Panama City Beach - Plaża
+#DESCRIPTION US-FL - Panama City Beach - Plaża
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5ed7b8fd7bf40.streamlock.net%3a444/barefoothideaway/barefoothideawaycam/playlist.m3u8:US-FL - Panama City Beach - Chateau Motel
+#DESCRIPTION US-FL - Panama City Beach - Chateau Motel
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/5sxWGeHL66Q:US-FL - Panama City Beach - Emerald Beach Resort (YT)
+#DESCRIPTION US-FL - Panama City Beach - Emerald Beach Resort (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5ed7b8fd7bf40.streamlock.net%3a444/sandpiper26/sp26/playlist.m3u8:US-FL - Panama City Beach - East
+#DESCRIPTION US-FL - Panama City Beach - East
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//g1.ipcamlive.com/player/player.php?alias=5f64f72a8eb6f&autoplay=true:US-FL - Panama City Beach - Grand Panama Beach Resort
+#DESCRIPTION US-FL - Panama City Beach - Grand Panama Beach Resort
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5ed7b8fd7bf40.streamlock.net%3a444/sandpiper27/sp27/playlist.m3u8:US-FL - Panama City Beach - Sandpiper Beacon Beach Resort
+#DESCRIPTION US-FL - Panama City Beach - Sandpiper Beacon Beach Resort
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5ed7b8fd7bf40.streamlock.net%3a444/sharkyssunset/sharkyssunsetcam/chunklist_w702312694.m3u8:US-FL - Panama City Beach - Seahaven Beach Resorts
+#DESCRIPTION US-FL - Panama City Beach - Seahaven Beach Resorts
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5ed7b8fd7bf40.streamlock.net%3a444/sharkys/sharkysbeachcam/chunklist_w1134205452.m3u8:US-FL - Panama City Beach - Seahaven Beach Resorts 2
+#DESCRIPTION US-FL - Panama City Beach - Seahaven Beach Resorts 2
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5ed7b8fd7bf40.streamlock.net%3a444/seahavenHDCam/seahaven/playlist.m3u8:US-FL - Panama City Beach - Seahaven Beach Resorts 3
+#DESCRIPTION US-FL - Panama City Beach - Seahaven Beach Resorts 3
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5ed7b8fd7bf40.streamlock.net%3a444/sandpiper25/sp25/playlist.m3u8:US-FL - Panama City Beach - West
+#DESCRIPTION US-FL - Panama City Beach - West
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5ed7b8fd7bf40.streamlock.net%3a444/pwillys/pwillysbeachcam/chunklist_w215297994.m3u8:US-FL - Panama City Beach - Pineapple Willy's
+#DESCRIPTION US-FL - Panama City Beach - Pineapple Willy's
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5ed7b8fd7bf40.streamlock.net%3a444/pwillyspier/pwillyspiercam/chunklist_w1545563865.m3u8:US-FL - Panama City Beach - Pineapple Willy's 2
+#DESCRIPTION US-FL - Panama City Beach - Pineapple Willy's 2
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5ed7b8fd7bf40.streamlock.net%3a444/runawayisland/runawayislandcam/playlist.m3u8:US-FL - Panama City Beach - Runaway Island
+#DESCRIPTION US-FL - Panama City Beach - Runaway Island
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5ed7b8fd7bf40.streamlock.net%3a444/holidayinnpcbpool/holidayinnpcbpoolcam/chunklist_w1708958727.m3u8:US-FL - Panama City - Holiday Inn Resort - Pool
+#DESCRIPTION US-FL - Panama City - Holiday Inn Resort - Pool
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5ed7b8fd7bf40.streamlock.net%3a444/holidayinnpcbdeck/holidayinnpcbdeckcam/chunklist_w502677360.m3u8:US-FL - Panama City - Holiday Inn Resort - Escape Deck
+#DESCRIPTION US-FL - Panama City - Holiday Inn Resort - Escape Deck
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5ed7b8fd7bf40.streamlock.net%3a444/holidayinnpcbsunset/holidayinnpcbsunsetcam/chunklist_w1728284909.m3u8:US-FL - Panama City - Holiday Inn Resort - SunSet
+#DESCRIPTION US-FL - Panama City - Holiday Inn Resort - SunSet
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5ed7b8fd7bf40.streamlock.net%3a444/holidayinnpcbaqualand/holidayinnpcbaqualandcam/chunklist_w1238490771.m3u8:US-FL - Panama City - Holiday Inn Resort - Aqualand
+#DESCRIPTION US-FL - Panama City - Holiday Inn Resort - Aqualand
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.earthcam.com/usa/florida/pensacolabeach/?cam=pensacola:US-FL - Pensacola Beach - Casino Beach
+#DESCRIPTION US-FL - Pensacola Beach - Casino Beach
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/y9tatYzIJ3Y:US-FL - Perdido Key - La Riva Resort (YT)
+#DESCRIPTION US-FL - Perdido Key - La Riva Resort (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/ay-fLuw_k4c:US-FL - Perdido Key - Plaża (YT)
+#DESCRIPTION US-FL - Perdido Key - Plaża (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/plNXx3EV5R4:US-FL - Pescado in Rosemary Beach (YT)
+#DESCRIPTION US-FL - Pescado in Rosemary Beach (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//58f14b372a413.streamlock.net%3a444/copbfl2/copbfl2.stream/chunklist_w2067792703.m3u8:US-FL - Pompano Inlet
+#DESCRIPTION US-FL - Pompano Inlet
+#SERVICE 1:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.skylinewebcams.com/webcam/united-states/florida/four-corners/reunion.html:US-FL - Reunion Resort - Pole golfowe
+#DESCRIPTION US-FL - Reunion Resort - Pole golfowe
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.earthcam.com/usa/florida/stpetersburg/?cam=stpeteair:US-FL - Saint Petersburg - Albert Whitted Airport
+#DESCRIPTION US-FL - Saint Petersburg - Albert Whitted Airport
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/77aULkAkL2I:US-FL - Saint Petersburg - Waterfront, One Fourth Street (YT)
+#DESCRIPTION US-FL - Saint Petersburg - Waterfront, One Fourth Street (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge02.hdontap.com/ingest02-hd2/beachview_oceansreach.stream/chunklist_w1672946692.m3u8:US-FL - Sanibel - Ocean's Reach
+#DESCRIPTION US-FL - Sanibel - Ocean's Reach
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//g1.ipcamlive.com/player/player.php?alias=casaybelresort:US-FL - Sanibel - Plaża
+#DESCRIPTION US-FL - Sanibel - Plaża
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge04.hdontap.com/ingest03-hd3/Island_Inn_Beach.stream/chunklist_w2066988226.m3u8:US-FL - Sanibel Island
+#DESCRIPTION US-FL - Sanibel Island
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge02.hdontap.com/ingest02-hd2/beachview_oceansreach.stream/chunklist_w1993203898.m3u8:US-FL - Sanibel Island - Plaża
+#DESCRIPTION US-FL - Sanibel Island - Plaża
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//uni01rtmp.tulix.tv/westwindinn/westwindinn.stream/chunklist_w1537867035.m3u8:US-FL - Sanibel Island - Plaża 2
+#DESCRIPTION US-FL - Sanibel Island - Plaża 2
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//uni01rtmp.tulix.tv/makenoise/makenoise.stream/chunklist_w1185475952.m3u8:US-FL - Sanibel Island - Plaża 3
+#DESCRIPTION US-FL - Sanibel Island - Plaża 3
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//uni01rtmp.tulix.tv/westwindinn/westwindinn.stream/chunklist_w727878157.m3u8:US-FL - Sanibel - West Wind Inn
+#DESCRIPTION US-FL - Sanibel - West Wind Inn
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//stream-ue1-delta.dropcam.com/nexus_aac/0905e25b1c90483dbfa7f7e558a257d5/chunklist_w1578322849.m3u8?public=vSwdeD51cw:US-FL - Santa Rosa Beach - Adagio Beach
+#DESCRIPTION US-FL - Santa Rosa Beach - Adagio Beach
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//stream-us1-foxtrot.dropcam.com/nexus_aac/590329e9c8294ce4b69607f4efe928f1/chunklist_w1622589844.m3u8?public=nPSOdRvPZG:US-FL - Santa Rosa Beach - San Remo
+#DESCRIPTION US-FL - Santa Rosa Beach - San Remo
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/cpmFUDaDNOI:US-FL - Santa Rosa Beach - Blue Mountain Beach (YT)
+#DESCRIPTION US-FL - Santa Rosa Beach - Blue Mountain Beach (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//g1.ipcamlive.com/player/player.php?alias=59fca23c052c9&autoplay=true:US-FL - Santa Rosa Beach - Bud & Alley's Waterfront
+#DESCRIPTION US-FL - Santa Rosa Beach - Bud & Alley's Waterfront
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/ftGfQqCA184:US-FL - Santa Rosa Beach - Vue on 30a (YT)
+#DESCRIPTION US-FL - Santa Rosa Beach - Vue on 30a (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//ipcamlive.com/player/player.php?alias=5790117a5921b:US-FL - Sarasota - Siesta Key - Sea Club V
+#DESCRIPTION US-FL - Sarasota - Siesta Key - Sea Club V
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//ipcamlive.com/player/player.php?alias=578fa2ff153d7:US-FL - Sarasota - Siesta Key - Sea Club V 2
+#DESCRIPTION US-FL - Sarasota - Siesta Key - Sea Club V 2
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//g1.ipcamlive.com/player/player.php?alias=57c74951b6744:US-FL - Seaside Bud & Alley’s Taco Bar in
+#DESCRIPTION US-FL - Seaside Bud & Alley’s Taco Bar in
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//55507e0501d25.streamlock.net/live/staugustine.stream/chunklist_w289085752.m3u8:US-FL - St. Augustine
+#DESCRIPTION US-FL - St. Augustine
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5ed7b8fd7bf40.streamlock.net%3a444/blueparrotHDCam/blueparrot/playlist.m3u8:US-FL - St. George Island - Blue Parrot
+#DESCRIPTION US-FL - St. George Island - Blue Parrot
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//stream01-e1.truelook.com/twresort/funcam/chunks.m3u8:US-FL - St. Pete Beach - TradeWinds Resort
+#DESCRIPTION US-FL - St. Pete Beach - TradeWinds Resort
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/J6EnRl8Jh4o:US-FL - Steinhatchee - Rzeka Steinhatchee (YT)
+#DESCRIPTION US-FL - Steinhatchee - Rzeka Steinhatchee (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//cdn3.wowza.com/1/cjlqSlFjYk82NmVj/OFc3RFpw/hls/wjc2dspf/1728/chunklist.m3u8:US-FL - Stock Island - Working Waterfront
+#DESCRIPTION US-FL - Stock Island - Working Waterfront
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/Rx3HUuKQTGw:US-FL - Stuart - Haney Circle (YT)
+#DESCRIPTION US-FL - Stuart - Haney Circle (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/ogbkyRehtCo:US-FL - Tampa - Uniwersytet (YT)
+#DESCRIPTION US-FL - Tampa - Uniwersytet (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/1lZywRc-2Fw:US-FL - Tampa - Uniwersytet 2 (YT)
+#DESCRIPTION US-FL - Tampa - Uniwersytet 2 (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/bB96qObNTSU:US-FL - Tampa - Uniwersytet 3 (YT)
+#DESCRIPTION US-FL - Tampa - Uniwersytet 3 (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/4dVjzWBvWfc:US-FL - The Villages - Lake Sumter Landing Market Square (YT)
+#DESCRIPTION US-FL - The Villages - Lake Sumter Landing Market Square (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/OIEHOp-wwfY:US-FL - The Villages - Spanish Springs Town Square (YT)
+#DESCRIPTION US-FL - The Villages - Spanish Springs Town Square (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.earthcam.com/usa/florida/watersound/?cam=watersoundbeach:US-FL - Watersound - WaterSound Beach Club
+#DESCRIPTION US-FL - Watersound - WaterSound Beach Club
+#SERVICE 1:64:0:0:0:0:0:0:0:0::Georgia (US-GA)
+#DESCRIPTION Georgia (US-GA)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.earthcam.com/usa/georgia/atlanta/?cam=atlanta:US-GA - Atlanta - Centennial Olympic Park
+#DESCRIPTION US-GA - Atlanta - Centennial Olympic Park
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//d3nzocdfkx2ybv.cloudfront.net/out/cmg-wsbtvt1-rtmp-v3/live_720p30.m3u8:US-GA - Atlanta - WSB-TV Tower - Midtown
+#DESCRIPTION US-GA - Atlanta - WSB-TV Tower - Midtown
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//d3nzocdfkx2ybv.cloudfront.net/out/cmg-wsbtvt2-rtmp-v3/live_720p30.m3u8:US-GA - Atlanta - Lotnisko
+#DESCRIPTION US-GA - Atlanta - Lotnisko
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//d3nzocdfkx2ybv.cloudfront.net/out/cmg-wsbtvt3-rtmp-v3/live_720p30.m3u8:US-GA - Atlanta - Lotnisko 2
+#DESCRIPTION US-GA - Atlanta - Lotnisko 2
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//55507e0501d25.streamlock.net/live/helenga2.stream/chunklist_w2077750742.m3u8:US-GA - Helen - Main St.
+#DESCRIPTION US-GA - Helen - Main St.
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//55507e0501d25.streamlock.net/live/townscountybeach.stream/chunklist_w491043595.m3u8:US-GA - Hiawassee - Jezioro Chatuge
+#DESCRIPTION US-GA - Hiawassee - Jezioro Chatuge
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//b10.hdrelay.com/camera/78578252-8c0f-484d-850c-bb27af700b41/relay/chunklist_w788308725.m3u8:US-GA - Jekyll Island - Holiday Inn Resort
+#DESCRIPTION US-GA - Jekyll Island - Holiday Inn Resort
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.earthcam.com/usa/georgia/macon/holiday/?cam=macon_holiday:US-GA - Macon - Prince Park
+#DESCRIPTION US-GA - Macon - Prince Park
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.earthcam.com/usa/georgia/macon/?cam=macon:US-GA - Macon - Wesleyan College
+#DESCRIPTION US-GA - Macon - Wesleyan College
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge06.nginx.hdontap.com/ho5/schoonercove-teecam.stream/chunklist.m3u8:US-GA - Savannah - Schooner Cove
+#DESCRIPTION US-GA - Savannah - Schooner Cove
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//b10.hdrelay.com/camera/b8c011e5-d376-4256-ad43-7484183afe55/relay/chunklist_w2124602118.m3u8:US-GA - St. Simons Island - Pier Village
+#DESCRIPTION US-GA - St. Simons Island - Pier Village
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//b10.hdrelay.com/camera/3f3263a1-2e6c-40a2-a3a9-a15de0c0e723/relay/chunklist_w2104326535.m3u8:US-GA - St. Simons Island - Beach Club
+#DESCRIPTION US-GA - St. Simons Island - Beach Club
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//g1.ipcamlive.com/player/player.php?alias=ajsdockside:US-GA - Tybee Island - Tybee Creek
+#DESCRIPTION US-GA - Tybee Island - Tybee Creek
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//g1.ipcamlive.com/player/player.php?alias=betz:US-GA - Tybee Island - Tybee Creek 2
+#DESCRIPTION US-GA - Tybee Island - Tybee Creek 2
+#SERVICE 1:64:0:0:0:0:0:0:0:0::Północna Dakota (US-ND)
+#DESCRIPTION Północna Dakota (US-ND)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/d66NPsy_MPg:US-ND - Sturgis - Main St (YT)
+#DESCRIPTION US-ND - Sturgis - Main St (YT)
+#SERVICE 1:64:0:0:0:0:0:0:0:0::Południowa Dakota (US-SD)
+#DESCRIPTION Południowa Dakota (US-SD)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.earthcam.com/usa/northdakota/cavalier/?cam=cavalier:US-SD - Cavalier - Main St.
+#DESCRIPTION US-SD - Cavalier - Main St.
+#SERVICE 1:64:0:0:0:0:0:0:0:0::Delaware (US-DE)
+#DESCRIPTION Delaware (US-DE)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//58bdb48e25cf1.streamlock.net%3a19350/live/vcde006.stream/chunklist_w1049344048.m3u8:US-DE - Bethany Beach - Centrum
+#DESCRIPTION US-DE - Bethany Beach - Centrum
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//58bdb48e25cf1.streamlock.net%3a19350/dvr/vcde009.stream/chunklist_w1462545971.m3u8:US-DE - Bethany Beach - North Surf
+#DESCRIPTION US-DE - Bethany Beach - North Surf
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//58bdb48e25cf1.streamlock.net%3a19350/live/vcde004.stream/chunklist_w529569359.m3u8:US-DE - Bethany Beach - Ocean View
+#DESCRIPTION US-DE - Bethany Beach - Ocean View
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//58bdb48e25cf1.streamlock.net%3a19350/live/vcde005.stream/chunklist_w981382646.m3u8:US-DE - Bethany Beach - Boardwalk South
+#DESCRIPTION US-DE - Bethany Beach - Boardwalk South
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//58bdb48e25cf1.streamlock.net%3a19350/dvr/vcde008.stream/chunklist_w1095333315.m3u8:US-DE - Bethany Beach - South Surf
+#DESCRIPTION US-DE - Bethany Beach - South Surf
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//58bdb48e25cf1.streamlock.net%3a19350/live/vcde001.stream/chunklist_w1002388017.m3u8:US-DE - Bethany Beach - Coastal Kayak Webcam
+#DESCRIPTION US-DE - Bethany Beach - Coastal Kayak Webcam
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//58bdb48e25cf1.streamlock.net%3a19350/live/vcde003.stream/chunklist_w830703061.m3u8:US-DE - Bethany Beach - Deptak
+#DESCRIPTION US-DE - Bethany Beach - Deptak
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//58bdb48e25cf1.streamlock.net%3a19350/live/vcde004.stream/chunklist_w1101016953.m3u8:US-DE - Bethany Beach - Plaża
+#DESCRIPTION US-DE - Bethany Beach - Plaża
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//58bdb48e25cf1.streamlock.net%3a19350/live/vcde005.stream/chunklist_w2062150183.m3u8:US-DE - Bethany Beach - Zejście na plażę
+#DESCRIPTION US-DE - Bethany Beach - Zejście na plażę
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/gOAu4G6BGYU:US-DE - Dover - Bayhealth Hospital (YT)
+#DESCRIPTION US-DE - Dover - Bayhealth Hospital (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//58bdb48e25cf1.streamlock.net%3a19350/live/vcde001.stream/chunklist_w100634666.m3u8:US-DE - Fenwick Island - Little Assawoman Bay
+#DESCRIPTION US-DE - Fenwick Island - Little Assawoman Bay
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/t6D09UIPgcI:US-DE - Lewes - West Bay Park (YT)
+#DESCRIPTION US-DE - Lewes - West Bay Park (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//58bdb48e25cf1.streamlock.net%3a19350/live/vcde010.stream/chunklist_w1620395876.m3u8:US-DE - Long Neck - Paradise Bar & Grille
+#DESCRIPTION US-DE - Long Neck - Paradise Bar & Grille
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//58bdb48e25cf1.streamlock.net%3a19350/live/vcde007.stream/chunklist_w1243899084.m3u8:US-DE - Long Neck - Paradise Beach
+#DESCRIPTION US-DE - Long Neck - Paradise Beach
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//wms-prod-1.wetmet.net/live/207-06-01/chunks.m3u8:US-DE - Rehoboth Beach - Rehoboth Ave
+#DESCRIPTION US-DE - Rehoboth Beach - Rehoboth Ave
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//wms-prod-1.wetmet.net/live/207-01-01/chunks.m3u8:US-DE - Wilmington - Panorama
+#DESCRIPTION US-DE - Wilmington - Panorama
+#SERVICE 1:64:0:0:0:0:0:0:0:0::Hawaje (US-HI)
+#DESCRIPTION Hawaje (US-HI)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/y6ew34X8P7Q:US-HI - Honolulu - Elks Lodge (YT)
+#DESCRIPTION US-HI - Honolulu - Elks Lodge (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/vO7tYmdzZjM:US-HI - Honolulu - Zoo (YT)
+#DESCRIPTION US-HI - Honolulu - Zoo (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/6un8epJk5nQ:US-HI - Honolulu - Zoo 2 (YT)
+#DESCRIPTION US-HI - Honolulu - Zoo 2 (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/08Zb4fN3JNU:US-HI - Honolulu - Sans Souci Beach (YT)
+#DESCRIPTION US-HI - Honolulu - Sans Souci Beach (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/eFkjUPXM87I:US-HI - Honolulu - Waikiki Aquarium (YT)
+#DESCRIPTION US-HI - Honolulu - Waikiki Aquarium (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/wnNrd-VjLsQ:US-HI - Kahuku - Turtle Bay East (YT)
+#DESCRIPTION US-HI - Kahuku - Turtle Bay East (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/DY5RYp4sxYc:US-HI - Kahuku - Turtle Bay West (YT)
+#DESCRIPTION US-HI - Kahuku - Turtle Bay West (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/TlFjn8lN1Vk:US-HI - Kailua-Kona - Royal Kona Resort (YT)
+#DESCRIPTION US-HI - Kailua-Kona - Royal Kona Resort (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//b10.hdrelay.com/camera/97769e90-aa50-4f6c-b39b-c5aaea6a194b/relay/chunklist_w949214886.m3u8:US-HI - Kapolei - Ko Olina Golf Club
+#DESCRIPTION US-HI - Kapolei - Ko Olina Golf Club
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/kxWJ74URMqQ:US-HI - Kauai - Poipu Bay Golf Course (UY)
+#DESCRIPTION US-HI - Kauai - Poipu Bay Golf Course (UY)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.earthcam.com/usa/hawaii/kauai/?cam=kauai:US-HI - Kauai - Poipu Beach
+#DESCRIPTION US-HI - Kauai - Poipu Beach
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//edge07.nginx.hdontap.com/ho3/hanaleibay_ecco.stream/chunklist.m3u8:US-HI - Kauai - Princeville - Hanalei Bay Resort
+#DESCRIPTION US-HI - Kauai - Princeville - Hanalei Bay Resort
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/6i0yI_pfg7k:US-HI - Kihei - Hawaiian Islands Humpback Whale
+#DESCRIPTION US-HI - Kihei - Hawaiian Islands Humpback Whale
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//stream-ue1-bravo.dropcam.com/nexus_aac/4ac1ab56816140849f00b732195248c6/chunklist_w353817601.m3u8?public=U6LJopkCLH:US-HI - Kihei - The Shores of Maui
+#DESCRIPTION US-HI - Kihei - The Shores of Maui
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//stream-ue1-bravo.dropcam.com/nexus_aac/d5076d126c2b445a85c652f49e83e47e/chunklist_w1740204899.m3u8?public=WwbSNWdQ5W:US-HI - Lanikeha, Kaanapali - Domy na wynajem
+#DESCRIPTION US-HI - Lanikeha, Kaanapali - Domy na wynajem
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//stream-us1-alfa.dropcam.com/nexus_aac/8f4d046394d845a1b85b3d5b7b762539/chunklist_w1652561613.m3u8?public=bzWCDHXJP8:US-HI - Lanikeha, Kaanapali - Domy na wynajem 2
+#DESCRIPTION US-HI - Lanikeha, Kaanapali - Domy na wynajem 2
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/eVlhXai7ISU:US-HI - Maui - Ka'anapali - Hula Grill (YT)
+#DESCRIPTION US-HI - Maui - Ka'anapali - Hula Grill (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//stream-uc2-alfa.dropcam.com/nexus_aac/a17a31200970417aad439af910d63aed/chunklist_w990494750.m3u8?public=Ld8grQMfkG:US-HI - Maui - Kahana Village
+#DESCRIPTION US-HI - Maui - Kahana Village
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//stream-us1-foxtrot.dropcam.com/nexus_aac/7df867b859854e158198849b4aa78bda/chunklist_w1901489626.m3u8?public=8wm7JF6NIw:US-HI - Maui - Kapalua
+#DESCRIPTION US-HI - Maui - Kapalua
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//stream-us1-foxtrot.dropcam.com/nexus_aac/1496ef782d0b4c929ef67d939fb8771d/chunklist_w42804782.m3u8?public=YGbGA6OsQj:US-HI - Maui - Kihei Cove Park
+#DESCRIPTION US-HI - Maui - Kihei Cove Park
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/gd1Xq1d4pNI:US-HI - Maui - Lahaina - Royal Lahaina Resort (YT)
+#DESCRIPTION US-HI - Maui - Lahaina - Royal Lahaina Resort (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//58f14b372a413.streamlock.net%3a444/sugarbeach1/sugarbeach1.stream/chunklist_w850403892.m3u8:US-HI - Maui - Sugar Beach Resort
+#DESCRIPTION US-HI - Maui - Sugar Beach Resort
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//cams.cdn-surfline.com/cdn-wc/hi-turtlebaywest/chunklist.m3u8:US-HI - Oʻahu - Kahuku - Turtle Bay
+#DESCRIPTION US-HI - Oʻahu - Kahuku - Turtle Bay
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//cams.cdn-surfline.com/cdn-wc/hi-turtlebayeast/chunklist.m3u8:US-HI - Oʻahu - Kahuku - Turtle Bay 2
+#DESCRIPTION US-HI - Oʻahu - Kahuku - Turtle Bay 2
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.earthcam.com/usa/hawaii/bigisland/waikoloa/?cam=waikoloa:US-HI - Waikoloa
+#DESCRIPTION US-HI - Waikoloa
+#SERVICE 1:64:0:0:0:0:0:0:0:0::Idaho (US-ID)
+#DESCRIPTION Idaho (US-ID)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/iMJ2GZWS29U:US-ID - Driggs - Teton Valley (YT)
+#DESCRIPTION US-ID - Driggs - Teton Valley (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/sxtXe5Ufi18:US-ID - Driggs - Teton Valley 2 (YT)
+#DESCRIPTION US-ID - Driggs - Teton Valley 2 (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/WCOGjOAU_D8:US-ID - Driggs - Teton Valley 3 (YT)
+#DESCRIPTION US-ID - Driggs - Teton Valley 3 (YT)
+#SERVICE 1:64:0:0:0:0:0:0:0:0::Illinois (US-IL)
+#DESCRIPTION Illinois (US-IL)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.earthcam.com/usa/illinois/chicago/field/?cam=fieldmuseum:US-IL - Chicago - Panorama
+#DESCRIPTION US-IL - Chicago - Panorama
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/BVRLd_NuRpY:US-IL - Chicago - Panorama (YT)
+#DESCRIPTION US-IL - Chicago - Panorama (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/ALTRQUjZLnE:US-IL - Chicago - Panorama miasta
+#DESCRIPTION US-IL - Chicago - Panorama miasta
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//b10.hdrelay.com/camera/CID_KJWE000000AF/relay/chunklist_w1944194445.m3u8:US-IL - Galena - Chestnut Mountain Resort
+#DESCRIPTION US-IL - Galena - Chestnut Mountain Resort
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/fwT9A-4Cadc:US-IL - Peoria - McClugage Bridge (YT)
+#DESCRIPTION US-IL - Peoria - McClugage Bridge (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/h6hzVOwaN_4:US-IL - Urbana - University of Illinois (YT)
+#DESCRIPTION US-IL - Urbana - University of Illinois (YT)
+#SERVICE 1:64:0:0:0:0:0:0:0:0::Indiana (US-IN)
+#DESCRIPTION Indiana (US-IN)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/QhOBEfbyx94:US-IN - Crawfordsville - The Marie Canine Plaza (YT)
+#DESCRIPTION US-IN - Crawfordsville - The Marie Canine Plaza (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//587001e38b9df.streamlock.net%3a4443/live/campuscam.stream/chunklist_w1378335548.m3u8:US-IN - Goshen - Schrock Plaza
+#DESCRIPTION US-IN - Goshen - Schrock Plaza
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.earthcam.com/usa/indiana/notredame/?cam=notredame:US-IN - University of Notre Dame - Panorama
+#DESCRIPTION US-IN - University of Notre Dame - Panorama
+#SERVICE 1:64:0:0:0:0:0:0:0:0::Iowa (US-IA)
+#DESCRIPTION Iowa (US-IA)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/5cEirzIw6x4:US-IA - Des Moines - Court Ave (YT)
+#DESCRIPTION US-IA - Des Moines - Court Ave (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.earthcam.com/usa/iowa/dyersville/?cam=dyersville:US-IA - Dyersville - Field Of Dreams
+#DESCRIPTION US-IA - Dyersville - Field Of Dreams
+#SERVICE 1:64:0:0:0:0:0:0:0:0::Kalifornia (US-CA)
+#DESCRIPTION Kalifornia (US-CA)
+#SERVICE 1:64:0:0:0:0:0:0:0:0::Nowy Jork (US-NY)
+#DESCRIPTION Nowy Jork (US-NY)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.youtube.com/watch?v=KGuCGd726RA:US-NY - Brooklyn Bridge (YT)
+#DESCRIPTION US-NY - Brooklyn Bridge (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/Nrpp0gXFAKc:US-NY - George Washington Bridge (YT)
+#DESCRIPTION US-NY - George Washington Bridge (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.youtube.com/watch?v=38ozvar-PNw:US-NY - Hafen & Lower Manhattan (YT)
+#DESCRIPTION US-NY - Hafen & Lower Manhattan (YT)
+#SERVICE 1:64:0:0:0:0:0:0:0:0::Teksas (US-TX)
+#DESCRIPTION Teksas (US-TX)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.earthcam.com/usa/texas/dallas/gasmonkey/?cam=gmgarage:US-TX - Gas Monkey Garage
+#DESCRIPTION US-TX - Gas Monkey Garage
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/uqk1HU_GLVk:USA - W. D.C. - Reagan National Airport (YT)
+#DESCRIPTION USA - W. D.C. - Reagan National Airport (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtube.com/watch?v=LGUFNagY9OI:USA - W. D.C. - Reagan National Airport 2 (YT)
+#DESCRIPTION USA - W. D.C. - Reagan National Airport 2 (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/nPsaWA2HkCY:USA - W. D.C. - Reagan National Airport 3 (YT)
+#DESCRIPTION USA - W. D.C. - Reagan National Airport 3 (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/qUgPpUIjF34:USA - W. D.C. - Reagan National Airport 4 (YT)
+#DESCRIPTION USA - W. D.C. - Reagan National Airport 4 (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/oTKjC1dghDA:USA - W. D.C. - Reagan National Airport 5 (YT)
+#DESCRIPTION USA - W. D.C. - Reagan National Airport 5 (YT)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//wse1.resortcams.com%3a80/live/madelineisland.stream/playlist.m3u8:USA - Wisconsin - Madeline Island
 #DESCRIPTION USA - Wisconsin - Madeline Island
 #SERVICE 1:64:40:0:0:0:0:0:0:0::Ameryka Środkowa i Południowa
 #DESCRIPTION Ameryka Środkowa i Południowa
 #SERVICE 1:64:0:0:0:0:0:0:0:0::Argentyna (AR)
 #DESCRIPTION Argentyna (AR)
-#SERVICE 4097:0:1:5431:6F04:EC:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.liveincam.com/en/cam/departamento-de-capital-argentina-corrientes:AR - Corrientes - Playa Arazaty
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.liveincam.com/en/cam/departamento-de-capital-argentina-corrientes:AR - Corrientes - Playa Arazaty
 #DESCRIPTION AR - Corrientes - Playa Arazaty
 #SERVICE 1:64:0:0:0:0:0:0:0:0::Barbados (BB)
 #DESCRIPTION Barbados (BB)
-#SERVICE 4097:0:1:BC87:6F98:EC:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.liveincam.com/en/cam/silver-sands-barbados-silver-sands:BB - Silver Sands - Plaża
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.liveincam.com/en/cam/silver-sands-barbados-silver-sands:BB - Silver Sands - Plaża
 #DESCRIPTION BB - Silver Sands - Plaża
 #SERVICE 1:64:0:0:0:0:0:0:0:0::Brazylia (BR)
 #DESCRIPTION Brazylia (BR)
-#SERVICE 4097:0:0:B630:5F33:EC:0:0:0:0:https%3a//videos-3.earthcam.com/fecnetwork/6593.flv/chunklist_w1648645172.m3u8:BR - Copacobana
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//videos-3.earthcam.com/fecnetwork/6593.flv/chunklist_w1648645172.m3u8:BR - Copacobana
 #DESCRIPTION BR - Copacobana
-#SERVICE 4097:0:0:B747:C14A:EC:0:0:0:0:http%3a//69.46.0.170%3a1935/santuario_aparecida/canal1.stream/live.m3u8:BR - Santuario Aparecida - Nicho de Nossa
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//69.46.0.170%3a1935/santuario_aparecida/canal1.stream/live.m3u8:BR - Santuario Aparecida - Nicho de Nossa
 #DESCRIPTION BR - Santuario Aparecida - Nicho de Nossa
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//69.46.0.170%3a1935/santuario_aparecida/canal2.stream/live.m3u8:Brazylia - Santuario Aparecida - Nave Sul
 #DESCRIPTION Brazylia - Santuario Aparecida - Nave Sul
@@ -6731,10 +7569,14 @@
 #DESCRIPTION Curacao - Lions dive
 #SERVICE 1:64:0:0:0:0:0:0:0:0::Guadeloupe
 #DESCRIPTION Guadeloupe
-#SERVICE 4097:0:1:2778:9DE3:EC:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.liveincam.com/en/cam/sainte-anne-guadeloupe-sainte-anne:Sainte Anne - widok z wybrzeża na wyspie Grande-Terre
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.liveincam.com/en/cam/sainte-anne-guadeloupe-sainte-anne:Sainte Anne - widok z wybrzeża na wyspie Grande-Terre
 #DESCRIPTION Sainte Anne - widok z wybrzeża na wyspie Grande-Terre
-#SERVICE 1:64:41:0:0:0:0:0:0:0::Webcams: NASA
-#DESCRIPTION Webcams: NASA
+#SERVICE 1:64:0:0:0:0:0:0:0:0::Singapur
+#DESCRIPTION Singapur
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//595b9deb3d6ac.streamlock.net/rtplive/singapore.stream/chunklist_w1879182464.m3u8:Singapore
+#DESCRIPTION Singapore
+#SERVICE 1:64:41:0:0:0:0:0:0:0::NASA
+#DESCRIPTION NASA
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.youtube.com/watch?v=nA9UZF-SZoQ:NASA TV Media channel (YT)
 #DESCRIPTION NASA TV Media channel (YT)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.youtube.com/watch?v=21X5lGlDOfg:NASA TV (YT)
@@ -6743,56 +7585,88 @@
 #DESCRIPTION ISS Earth views I (YT)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.youtube.com/watch?v=XBPjVzSoepo:ISS Earth views II (YT)
 #DESCRIPTION ISS Earth views II (YT)
-#SERVICE 1:64:42:0:0:0:0:0:0:0::Webcams: Kolej
-#DESCRIPTION Webcams: Kolej
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//maybach.railcam.co.uk%3a8080/BlueAnchor_68938/tracks-v1/mono.m3u8:Kolej - UK - Blue Anchor
-#DESCRIPTION Kolej - UK - Blue Anchor
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//maybach.railcam.co.uk%3a8080/Buckfastleigh_68389/tracks-v1/mono.m3u8:Kolej - UK - Devon - Buckfastleigh
-#DESCRIPTION Kolej - UK - Devon - Buckfastleigh
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//paxman.railcam.co.uk%3a8080/KirkbyStephen_16052/tracks-v1a1/index.m3u8:Kolej - UK - Kirkby Stephen
-#DESCRIPTION Kolej - UK - Kirkby Stephen
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//maybach.railcam.co.uk%3a8080/Minehead_05286/tracks-v1a1/mono.m3u8:Kolej - UK - Minehead 1 - Station en Remise
-#DESCRIPTION Kolej - UK - Minehead 1 - Station en Remise
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//maybach.railcam.co.uk%3a8080/Minehead2_43582/tracks-v1/mono.m3u8:Kolej - UK - Minehead 2 - Seaward way crossing
-#DESCRIPTION Kolej - UK - Minehead 2 - Seaward way crossing
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//maybach.railcam.co.uk%3a8080/Corfe_14435/tracks-v1/mono.m3u8:Kolej - UK - Mirlees - Corfe Castle
-#DESCRIPTION Kolej - UK - Mirlees - Corfe Castle
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//paxman.railcam.co.uk%3a8080/Horton_37275/tracks-v1a1/index.m3u8:Kolej - UK - Ribblehead - Horton railway
-#DESCRIPTION Kolej - UK - Ribblehead - Horton railway
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//maybach.railcam.co.uk%3a8080/Ribblehead_station/tracks-v1a1/mono.m3u8:Kolej - UK - Ribblehead - Station
-#DESCRIPTION Kolej - UK - Ribblehead - Station
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//paxman.railcam.co.uk%3a8080/Ribblehead_Viaduct/tracks-v1a1/index.m3u8:Kolej - UK - Ribblehead - Viaduct
-#DESCRIPTION Kolej - UK - Ribblehead - Viaduct
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//maybach.railcam.co.uk/Abergynolwyn_68473/tracks-v1/mono.m3u8:Kolej- UK - Talyl lyn - Abergynolwyn station
-#DESCRIPTION Kolej- UK - Talyl lyn - Abergynolwyn station
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//paxman.railcam.co.uk/TywynWharf_24712/tracks-v1/index.m3u8:Kolej - UK - Talyl lyn - Tywyn Wharf Station
-#DESCRIPTION Kolej - UK - Talyl lyn - Tywyn Wharf Station
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//maybach.railcam.co.uk/PendreYard_58347/tracks-v1/mono.m3u8:Kolej - UK - Talyl lyn - Pendre yard
-#DESCRIPTION Kolej - UK - Talyl lyn - Pendre yard
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//maybach.railcam.co.uk/Williton1_17337/index.m3u8:Kolej - UK - Williton - Station
-#DESCRIPTION Kolej - UK - Williton - Station
-#SERVICE 1:64:43:0:0:0:0:0:0:0::Webcams: Bar i kamery na żywo
-#DESCRIPTION Webcams: Bar i kamery na żywo
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//213.13.26.11%3a1935/live/santuario.stream/index.m3u8:Portugalia - Sanktuarium Fatima
-#DESCRIPTION Portugalia - Sanktuarium Fatima
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//wse1.resortcams.com%3a80/live/greenparrot2.stream/playlist.m3u8:Key West - Green Parrot Bar - Stage Cam
-#DESCRIPTION Key West - Green Parrot Bar - Stage Cam
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//wse1.resortcams.com/live/greenparrot1-audio.stream/chunklist_w2069811398.m3u8:Key West - Green Parrot Bar - Bar Cam
-#DESCRIPTION Key West - Green Parrot Bar - Bar Cam
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//wse1.resortcams.com/live-audio/hogsbreath3.stream_aac/chunklist.m3u8:Key West - Hogs Breath Saloon - Stage Cam
-#DESCRIPTION Key West - Hogs Breath Saloon - Stage Cam
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//wse1.resortcams.com/live-audio/hogsbreath1.stream_aac/chunklist.m3u8:Key West - Hogs Breath Saloon - Bar Cam 1
-#DESCRIPTION Key West - Hogs Breath Saloon - Bar Cam 1
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//wse1.resortcams.com/live-audio/hogsbreath2.stream_aac/chunklist.m3u8:Key West - Hogs Breath Saloon - Bar Cam 2
-#DESCRIPTION Key West - Hogs Breath Saloon - Bar Cam 2
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//videos-3.earthcam.com/fecnetwork/4280.flv/.m3u8:New Orleans - Bourbon Street
-#DESCRIPTION New Orleans - Bourbon Street
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//videos-3.earthcam.com/fecnetwork/4281.flv/.m3u8:New Orleans - Bourbon St., Cats Meow Karaokebar
-#DESCRIPTION New Orleans - Bourbon St., Cats Meow Karaokebar
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//videos-3.earthcam.com/fecnetwork/4282.flv/.m3u8:New Orleans - Bourbon St., Cats Meow Balcony
-#DESCRIPTION New Orleans - Bourbon St., Cats Meow Balcony
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.youtube.com/watch?v=5cZyLuRDK0g:Train Driver View (YT)
-#DESCRIPTION Train Driver View (YT)
+#SERVICE 1:64:42:0:0:0:0:0:0:0::Kolej
+#DESCRIPTION Kolej
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//maybach.railcam.co.uk%3a8080/BlueAnchor_68938/tracks-v1/mono.m3u8:GB - Blue Anchor
+#DESCRIPTION GB - Blue Anchor
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//maybach.railcam.co.uk/BishopsLydeard_59234/tracks-v1a1/mono.m3u8:GB - Bishops Lydeard Station
+#DESCRIPTION GB - Bishops Lydeard Station
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//maybach.railcam.co.uk/BlueAnchor_68938/tracks-v1a1/mono.m3u8:GB - Blue Anchor - Stacja kolejowa
+#DESCRIPTION GB - Blue Anchor - Stacja kolejowa
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//maybach.railcam.co.uk%3a8080/Buckfastleigh_68389/tracks-v1/mono.m3u8:GB - Devon - Buckfastleigh
+#DESCRIPTION GB - Devon - Buckfastleigh
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//paxman.railcam.co.uk%3a8080/KirkbyStephen_16052/tracks-v1a1/index.m3u8:GB - Kirkby Stephen
+#DESCRIPTION GB - Kirkby Stephen
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//maybach.railcam.co.uk%3a8080/Minehead_05286/tracks-v1a1/mono.m3u8:GB - Minehead 1 - Station en Remise
+#DESCRIPTION GB - Minehead 1 - Station en Remise
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//maybach.railcam.co.uk%3a8080/Minehead2_43582/tracks-v1/mono.m3u8:GB - Minehead 2 - Seaward way crossing
+#DESCRIPTION GB - Minehead 2 - Seaward way crossing
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//maybach.railcam.co.uk/Minehead_05286/tracks-v1a1/mono.m3u8:GB - Minehead - Stacja kolejowa
+#DESCRIPTION GB - Minehead - Stacja kolejowa
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//maybach.railcam.co.uk%3a8080/Corfe_14435/tracks-v1/mono.m3u8:GB - Mirlees - Corfe Castle
+#DESCRIPTION GB - Mirlees - Corfe Castle
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//paxman.railcam.co.uk%3a8080/Horton_37275/tracks-v1a1/index.m3u8:GB - Ribblehead - Horton railway
+#DESCRIPTION GB - Ribblehead - Horton railway
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//maybach.railcam.co.uk%3a8080/Ribblehead_station/tracks-v1a1/mono.m3u8:GB - Ribblehead - Station
+#DESCRIPTION GB - Ribblehead - Station
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//paxman.railcam.co.uk%3a8080/Ribblehead_Viaduct/tracks-v1a1/index.m3u8:GB - Ribblehead - Viaduct
+#DESCRIPTION GB - Ribblehead - Viaduct
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//maybach.railcam.co.uk/Abergynolwyn_68473/tracks-v1/mono.m3u8:GB - Talyl lyn - Abergynolwyn station
+#DESCRIPTION GB - Talyl lyn - Abergynolwyn station
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//maybach.railcam.co.uk/Williton1_17337/tracks-v1a1/mono.m3u8:GB - Williton - Stacja kolejowa
+#DESCRIPTION GB - Williton - Stacja kolejowa
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//paxman.railcam.co.uk/TywynWharf_24712/tracks-v1/index.m3u8:GB - Tywyn - Tywyn Wharf Station
+#DESCRIPTION GB - Tywyn - Tywyn Wharf Station
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//paxman.railcam.co.uk/TywynWharf_24712/tracks-v1/mono.m3u8:GB - Tywyn - Tywyn Wharf
+#DESCRIPTION GB - Tywyn - Tywyn Wharf
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//maybach.railcam.co.uk/PendreYard_58347/tracks-v1/mono.m3u8:GB - Tywyn -  Pendre Yard
+#DESCRIPTION GB - Tywyn -  Pendre Yard
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//maybach.railcam.co.uk/Williton1_17337/index.m3u8:GB - Williton - Station
+#DESCRIPTION GB - Williton - Station
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//mediaserv01.railstream.net/Live_Single/CHS_CAM01_720p/chunks.m3u8?nimblesessionid=422799&wmsAuthSign=c2VydmVyX3RpbWU9MTAvMi8yMDIwIDE6NTc6MzUgUE0maGFzaF92YWx1ZT1WWFMyVUZ4VUV2UXNGMEFRK1pjM3RnPT0mdmFsaWRtaW51dGVzPTYw:USA - Chesterton - Przejazd kolejowy
+#DESCRIPTION USA - Chesterton - Przejazd kolejowy
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//mediaserv01.railstream.net/Live_Single/CHS_CAM02_720p/chunks.m3u8?nimblesessionid=423461&wmsAuthSign=c2VydmVyX3RpbWU9MTAvMi8yMDIwIDI6MTI6MDggUE0maGFzaF92YWx1ZT1HMTkzamc4cXJla0Zqck9aMVZIUnlRPT0mdmFsaWRtaW51dGVzPTYw:USA - Chesterton - Tory kolejowe
+#DESCRIPTION USA - Chesterton - Tory kolejowe
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/zXqx56hlpd4:USA - San Juan Capistrano - Stacja kolejowa (YT)
+#DESCRIPTION USA - San Juan Capistrano - Stacja kolejowa (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/lPTtzec_gvw:USA - Tehachapi - Depot Railroad Museum (YT)
+#DESCRIPTION USA - Tehachapi - Depot Railroad Museum (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/1O6KYuoik1c:USA - Tehachapi - Live Train Cams at West Cable MP 357-358 (YT)
+#DESCRIPTION USA - Tehachapi - Live Train Cams at West Cable MP 357-358 (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/DMXC_LHJ4ys:USA - Tehachapi - Live Train Cams at The Tehachapi Loop (YT)
+#DESCRIPTION USA - Tehachapi - Live Train Cams at The Tehachapi Loop (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//595b9deb3d6ac.streamlock.net/rtplive/americansamoa.stream/chunklist_w1722232733.m3u8:US-CA - Samoa
+#DESCRIPTION US-CA - Samoa
+#SERVICE 1:64:43:0:0:0:0:0:0:0::Bar i Pub
+#DESCRIPTION Bar i Pub
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//55507e0501d25.streamlock.net/live/greenparrot1-audio.stream/chunklist_w988386924.m3u8:US-FL - Key West - Green Parrot Bar
+#DESCRIPTION US-FL - Key West - Green Parrot Bar
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//55507e0501d25.streamlock.net/live/greenparrot2.stream/chunklist_w508763442.m3u8:US-FL - Key West - Green Parrot Bar 2
+#DESCRIPTION US-FL - Key West - Green Parrot Bar 2
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//55507e0501d25.streamlock.net/live-audio/hogsbreath1-audio.stream/chunklist_w81061.m3u8:US-FL - Key West - Hog's Breath Saloon
+#DESCRIPTION US-FL - Key West - Hog's Breath Saloon
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//55507e0501d25.streamlock.net/live-audio/hogsbreath2-audio.stream/chunklist_w1694006053.m3u8:US-FL - Key West - Hog's Breath Saloon 2
+#DESCRIPTION US-FL - Key West - Hog's Breath Saloon 2
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//55507e0501d25.streamlock.net/live-audio/smil%3ahogsbreath3.smil/chunklist_w792874338_b1500000_sleng.m3u8:US-FL - Key West - Hog's Breath Saloon 3
+#DESCRIPTION US-FL - Key West - Hog's Breath Saloon 3
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//cdn3.wowza.com/1/aXlyaTNGRHIvQjdz/S2FwRXJ6/hls/jh9pvhjk/1728/chunklist.m3u8:US-FL - Key West - Irish Kevin's
+#DESCRIPTION US-FL - Key West - Irish Kevin's
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//cdn3.wowza.com/1/OXZNMlU0RVV1QVBJ/a0MrMDdo/hls/knztfpkf/1152/chunklist.m3u8:US-FL - Key West - Schooner Wharf
+#DESCRIPTION US-FL - Key West - Schooner Wharf
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//cdn3.wowza.com/1/a3UxeU1rY1hsMDlm/N2h4TGdm/hls/p3jptp7f/1728/chunklist.m3u8:US-FL - Key West - Smokin' Tuna Saloon
+#DESCRIPTION US-FL - Key West - Smokin' Tuna Saloon
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/eDeCOWw5XVU:US-FL - Key West - Two Friends Rooftop (YT)
+#DESCRIPTION US-FL - Key West - Two Friends Rooftop (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//wse1.resortcams.com%3a80/live/greenparrot2.stream/playlist.m3u8:US-FL - Key West - Green Parrot Bar - Stage Cam
+#DESCRIPTION US-FL - Key West - Green Parrot Bar - Stage Cam
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//wse1.resortcams.com/live/greenparrot1-audio.stream/chunklist_w2069811398.m3u8:US-FL - Key West - Green Parrot Bar - Bar Cam
+#DESCRIPTION US-FL - Key West - Green Parrot Bar - Bar Cam
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//youtu.be/eMCA7GVtQ1c:US-FL - Key West - Willie T's Restaurant & Bar (YT)
+#DESCRIPTION US-FL - Key West - Willie T's Restaurant & Bar (YT)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//5ed7b8fd7bf40.streamlock.net%3a444/schoonersbarHDCam/schbar/chunklist_w49043867.m3u8:US-FL - Panama City Beach - Hill Bar, Beach
+#DESCRIPTION US-FL - Panama City Beach - Hill Bar, Beach
+#SERVICE 1:64:0:0:0:0:0:0:0:0::Nowy znacznik
+#DESCRIPTION Nowy znacznik
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.youtube.com/watch?v=XBPjVzSoepo:Earth From Space (YT)
 #DESCRIPTION Earth From Space (YT)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.youtube.com/watch?v=mRe-514tGMg:EarthCam Live%3a Times Square in 4K (YT)
@@ -6801,8 +7675,6 @@
 #DESCRIPTION Port Miami Webcam -- Live Streaming from PTZtv (YT)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.youtube.com/watch?v=ph1vpnYIxJk:Rolling Cam Venice - The most beautiful Live Cam in Venice Italy (YT)
 #DESCRIPTION Rolling Cam Venice - The most beautiful Live Cam in Venice Italy (YT)
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.youtube.com/watch?v=CnkO8K8QS98:Cape May NJ Beach Cam and Surf Report (YT)
-#DESCRIPTION Cape May NJ Beach Cam and Surf Report (YT)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.youtube.com/watch?v=HpZAez2oYsA:Live View of Ponte delle Guglie Venice - View from Hotel Filu Venezia (YT)
 #DESCRIPTION Live View of Ponte delle Guglie Venice - View from Hotel Filu Venezia (YT)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.youtube.com/watch?v=JlqrHo-Rsi0:THE WORLD LIVE special version - earthTV (YT)

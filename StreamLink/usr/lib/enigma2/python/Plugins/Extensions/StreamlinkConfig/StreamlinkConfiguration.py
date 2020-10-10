@@ -40,7 +40,7 @@ config.plugins.streamlinksrv.WPpreferDASH = ConfigEnableDisable(default = False)
 config.plugins.streamlinksrv.WPdevice = ConfigSelection(default = "androidtv", choices = [("androidtv", "Android TV"), ("web", _("web client")), ])
 config.plugins.streamlinksrv.WPvideoDelay = ConfigSelection(default = "0", choices = [("0", _("don't delay")), ("0.25", _("by %s s." % '0.25')),
                                                                                       ("0.5", _("by %s s." % '0.5')), ("0.75", _("by %s s." % '0.75')),
-                                                                                      ("1.0", _("by %s s." % '1.0'))])
+                                                                                      ("1.0", _("by %s s." % '1.0')), ("5.0", _("by %s s." % '5.0'))])
 # teleelevidenie
 config.plugins.streamlinksrv.TELEusername = ConfigText()
 config.plugins.streamlinksrv.TELEpassword = ConfigPassword()
