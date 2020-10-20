@@ -9,3 +9,7 @@
 #DESCRIPTION Test serwisu Skyline Webcams
 #SERVICE 1:0:1:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.wetter.com/hd-live-webcams/schweiz/paradiso-monte-san-salvatore/5785fdbee1618/:Test serwisu wetter.com
 #DESCRIPTION Test serwisu wetter.com
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.ozolio.com/explore/BKTA00000AF7:Test ozolio by Billy 2011
+#DESCRIPTION Test ozolio by Billy 2011
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/http%3a//attheshore.com/livecam-steelpier564:Test attheshore by Billy 2011
+#DESCRIPTION Test attheshore by Billy 2011
