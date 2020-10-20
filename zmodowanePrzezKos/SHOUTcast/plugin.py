@@ -2,6 +2,7 @@
 # mod by Kos, j00zek
 
 # List of changes:
+# 04.10.2020 - added audio codec & bitrate to genere --> favorites, Yellow button stations from shoutcast.com
 # 24.12.2019 - improved display of tags in the station list, improved 'def ok_pressed'
 # 23.12.2019 - improve VFD/LCD handling + code clean ups
 # 22.12.2019 - improve skins flexibility bu using defined renderers in skins instead of hard coded label
@@ -488,34 +489,34 @@ class SHOUTcastWidget(Screen):
             self.showWindow()
 
     def yellow_pressed(self):
-        baza_list = ['http://www.radio-browser.info/webservice/xml/stations/bycountry/Poland',
-         'http://www.radio-browser.info/webservice/xml/stations/bytag/disco%20polo',
-         'http://www.radio-browser.info/webservice/xml/stations/bytag/Dance',
-         'http://www.radio-browser.info/webservice/xml/stations/bytag/Techno',
-         'http://www.radio-browser.info/webservice/xml/stations/byname/Italo',
-         'http://www.radio-browser.info/webservice/xml/stations/bytag/90s',
-         'http://www.radio-browser.info/webservice/xml/stations']
+        baza_list = ['http://api.shoutcast.com/station/advancedsearch&f=xml&k=fa1jo93O_raeF0v9&search=Polska',
+         'http://api.shoutcast.com/station/advancedsearch&f=xml&k=fa1jo93O_raeF0v9&search=Trance',
+         'http://api.shoutcast.com/station/advancedsearch&f=xml&k=fa1jo93O_raeF0v9&search=Dance',
+         'http://api.shoutcast.com/station/advancedsearch&f=xml&k=fa1jo93O_raeF0v9&search=Techno',
+         'http://api.shoutcast.com/station/advancedsearch&f=xml&k=fa1jo93O_raeF0v9&search=90s',
+         'http://api.shoutcast.com/station/randomstations?k=fa1jo93O_raeF0v9&f=xml',
+         'http://api.shoutcast.com/station/advancedsearch&f=xml&k=fa1jo93O_raeF0v9&search=all']
         self.stationListURL = baza_list[config.plugins.shoutcast.lista.value - 1]
-        tag = self.stationListURL.replace('http://www.radio-browser.info/webservice/xml/stations', '')
+        tag = self.stationListURL.replace('http://api.shoutcast.com/station/advancedsearch&f=xml&k=fa1jo93O_raeF0v9&search=all', '')
         if tag == '':
-            tag = _('ALL STATIONS')
-        elif tag == '/bycountry/Poland':
+            tag = _('ALL STATIONS')         
+        elif tag == 'http://api.shoutcast.com/station/advancedsearch&f=xml&k=fa1jo93O_raeF0v9&search=Polska':
             tag = _('Poland')
-        elif tag == '/bytag/disco%20polo':
-            tag = _('Disco Polo')
-        elif tag == '/bytag/Dance':
-            tag = _('Dance')
-        elif tag == '/bytag/Techno':
-            tag = _('Techno')
-        elif tag == '/byname/Italo':
-            tag = _('Italo')
-        elif tag == '/bytag/90s':
+        elif tag == 'http://api.shoutcast.com/station/advancedsearch&f=xml&k=fa1jo93O_raeF0v9&search=Trance':
+            tag = _('Trance')
+        elif tag == 'http://api.shoutcast.com/station/advancedsearch&f=xml&k=fa1jo93O_raeF0v9&search=Dance':
+            tag = _('Dance')          
+        elif tag == 'http://api.shoutcast.com/station/advancedsearch&f=xml&k=fa1jo93O_raeF0v9&search=Techno':
+            tag = _('Techno')            
+        elif tag == 'http://api.shoutcast.com/station/advancedsearch&f=xml&k=fa1jo93O_raeF0v9&search=90s':
             tag = _('90s')
+        elif tag == 'http://api.shoutcast.com/station/randomstations?k=fa1jo93O_raeF0v9&f=xml':
+            tag = _('Random stations')
         if self.visible:
             if self.mode != self.STATIONLIST:
                 if self.visible:
                     self.mode = self.STATIONLIST
-                    self.stationListHeader = 'www.radio-browser.info'
+                    self.stationListHeader = ' www.api.shoutcast.com'
                     self.headerTextString = _('Station list from %s %s') % (self.stationListHeader, tag)
                     self['headertext'].setText(self.headerTextString)
                     self['statustext'].setText(_('Loading station list, please wait ...'))
@@ -810,7 +811,7 @@ class SHOUTcastWidget(Screen):
     def addGenreToFavorite(self):
         sel = self.getSelectedItem()
         if sel is not None:
-            self.addFavorite(name=sel.name, text=sel.name, favoritetype='genre')
+            self.addFavorite(name=sel.name, text=sel.name, favoritetype='genre', audio=sel.mt, bitrate=sel.br)
 
     def addStationToFavorite(self):
         sel = self.getSelectedItem()
@@ -934,11 +935,11 @@ class SHOUTcastWidget(Screen):
 
     def GoogleImageCallback(self, result):
         global coverfiles
-        bad_link = ['http://cdn.discogs.com',
+        bad_link = ['https://www.allmusic.com',
          'http://www.jaren80muziek.nl',
          'http://www.inthestudio.net',
-         'https://deepmp3.ru',
-         'http://beyondbreed.com',
+         'http://www.israel-music.com',
+         'https://www.discogs.com',
          'https://i1.sndcdn.com',
          'http://www.lyrics007.com',
          'https://lametralleta.es',
@@ -1087,8 +1088,8 @@ class SHOUTcastWidget(Screen):
                 title = ('\c00289496'+_('Title: ') + ('\c00?25=01''%s') % sTitle)
                 print '[SHOUTcast] Title: %s ' % title
                 self['titel'].setText(title)
-                self.session.summary.setSongName(sTitle)
                 self.session.summary.setText(title)
+                self.session.summary.setSongName(sTitle)
             else:
                 print '[SHOUTcast] Ignoring useless updated info provided by streamengine!'
         return
@@ -1467,7 +1468,7 @@ class SHOUTcastSetup(Screen, ConfigListScreen):
         self.setTitle(_('SHOUTcast setup'))
         self['key_red'] = StaticText(_('Cancel'))
         self['key_green'] = StaticText(_('OK'))
-        self['description'] = Label(_('Station List number: ( 1 - Poland ) ( 2 - DiscoPolo ) ( 3 - Dance ) ( 4 - Techno ) ( 5 - Italo ) ( 6 - 90s ) ( 7 - All Stations )'))
+        self['description'] = Label(_('Station List number: ( 1 - Poland ) ( 2 - Trance ) ( 3 - Dance ) ( 4 - Techno ) ( 5 - 90s ) ( 6 - Random stations ) ( 7 - All Stations )'))
         self.list = [getConfigListEntry(_('Show cover:'), config.plugins.shoutcast.showcover),
          getConfigListEntry(_('Cover from:'), config.plugins.shoutcast.where),
          getConfigListEntry(_('Cover Position H:'), config.plugins.shoutcast.pos_cover_width),
