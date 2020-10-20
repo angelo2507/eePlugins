@@ -801,7 +801,10 @@ class AdvancedFreePlayerStart(Screen):
         
         # wybrano plik
         # do zmiany nazwy, dla plikow, nie podajemy rozszerzenia
-        self.FileListSelectedItem = os.path.splitext( self.filelist.getFilename() )[0]
+        try:
+            self.FileListSelectedItem = os.path.splitext( self.filelist.getFilename() )[0]
+        except Exception:
+            self.FileListSelectedItem = self.filelist.getFilename()
         myConfig.FileListSelectedItem.value = self.FileListSelectedItem
 
         extension = self.getExtension(self.filelist.getFilename())[1:]
