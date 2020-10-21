@@ -1,10 +1,11 @@
 echo "refreshing streamlink git"
-cd /DuckboxDisk/github/streamlinkSOURCE
+SRCpath=/DuckboxDisk/github/streamlink-27-BILLY2011-SOURCE
+cd $SRCpath
 git pull
 
 echo "copying..."
 
-src=/DuckboxDisk/github/streamlinkSOURCE/src
+src=$SRCpath/src
 dst=/DuckboxDisk/github/eePlugins/StreamLink/usr/lib/python2.7/site-packages
 
 rm -f /DuckboxDisk/github/eePlugins/StreamLink/usr/lib/python2.7/site-packages/streamlink/plugins/*.py

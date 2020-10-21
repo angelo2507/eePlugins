@@ -1,10 +1,10 @@
 #!/usr/bin/python2.7 
-import os
-os.environ["XDG_CONFIG_HOME"] = "/etc"
+from streamlink.jtools import *
 
-print 'Usage: streamlink -l debug "url" best'
-os.system('if [ `ps -ef|grep -v grep|grep -c ffmpeg` -eq 0 ];then rm -f /tmp/ffmpeg-*;fi;rm -f /tmp/*.streamlink.')
+print 'PRZYKLAD: streamlink -l debug [ -o /tmp/fileName] "url" best'
+cleanCMD()
 
 import streamlink_cli.main
 streamlink_cli.main.main()
-os.system('if [ `ps -ef|grep -v grep|grep -c ffmpeg` -eq 0 ];then rm -f /tmp/ffmpeg-*;fi;rm -f /tmp/*.streamlink.')
+
+cleanCMD()

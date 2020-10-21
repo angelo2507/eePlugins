@@ -8,10 +8,16 @@
 
 __version__ = "1.4.0"
 
-import os
+import os, signal
 os.environ["XDG_CONFIG_HOME"] = "/etc"
 
-os.system('if [ `ps -ef|grep -v grep|grep -c ffmpeg` -eq 0 ];then rm -f /tmp/ffmpeg-*;fi')
+cleanCMD="""
+if [ `ps -ef|grep -v grep|grep -c ffmpeg` -eq 0 ];then 
+ rm -f /tmp/ffmpeg-*
+fi
+killall hlsdl 2>/dev/null
+"""
+os.system(cleanCMD)
 
 import sys
 import time
@@ -71,7 +77,8 @@ except ImportError:
 
 #config stored in E2 settings file
 import urllib2, base64 #for remoteE2
-
+import time
+    
 from streamlink.e2config import getE2config
 
 PORT_NUMBER = getE2config('PortNumber', 8088) # change it to 88 for livestreamersrv compatibility
@@ -333,6 +340,36 @@ def sendOfflineMP4(http, send_headers=True, file2send="/usr/lib/enigma2/python/P
     http.wfile.write(open(file2send, "r").read())
     http.wfile.close()
 
+def sendCachedFile(http, send_headers=True, pid=0, file2send=None):
+    LOGGER.debug("sendCachedFile(send_headers={0}, pid={1}, file2send={2})", str(send_headers), pid, file2send)
+    if file2send is None:
+        return
+    if send_headers:
+        sendHeaders(http)
+
+    CachedFile = open(file2send, "rb")
+    while not CachedFile.closed:
+        try:
+            data = CachedFile.read(8192)
+            if len(data):
+                http.wfile.write(data)
+                time.sleep(0.05)
+            else:
+                break
+            
+        except IOError:
+            log.error("sendCachedFile aborted")
+            os.system('kill -s 9 %s;killall hlsdl' % pid)
+            return
+    http.wfile.close()
+    if int(pid) > 1000:
+        os.system('kill -s 9 %s;killall hlsdl' % pid)
+        if os.path.exists('/proc/%s') % pid:
+            LOGGER.debug("Error killing pid {0}", pid )
+        else:
+            LOGGER.debug("pid {0} has been killed", pid )
+            
+            
 def Stream(streamlink, http, url, argstr, quality):
     global parser, _loglevel
 
@@ -452,16 +489,19 @@ def Stream(streamlink, http, url, argstr, quality):
             # player disconnected
             LOGGER.info('Detected player disconnect')
     except Exception as err:
-        if not_stream_opened and LOGLEVEL not in ("debug", "trace"):
-            LOGGER.error("Got exception: {0}", err)
-        else:
-            LOGGER.error("Got exception: {0}\n{1}", err, traceback.format_exc().splitlines())
-
         if str(err) == 'wperror-403':
             sendOfflineMP4(http, send_headers=not_stream_opened, file2send="/usr/lib/enigma2/python/Plugins/Extensions/StreamlinkConfig/streams/wperror-403.mp4")
         elif str(err) == 'wperror-422':
             sendOfflineMP4(http, send_headers=not_stream_opened, file2send="/usr/lib/enigma2/python/Plugins/Extensions/StreamlinkConfig/streams/wperror-422.mp4")
+        elif str(err).startswith('FileCache:'): #<<<<< FileCache
+            retData = str(err).strip().split(':')
+            #LOGGER.debug("FileCache data: pid= {0}, file2send= {1}", retData[1], retData[2])
+            sendCachedFile(http, send_headers=not_stream_opened, pid=retData[1], file2send=retData[2])
         else:
+            if not_stream_opened and LOGLEVEL not in ("debug", "trace"):
+                LOGGER.error("Got exception: {0}", err)
+            else:
+                LOGGER.error("Got exception: {0}\n{1}", err, traceback.format_exc().splitlines())
             sendOfflineMP4(http, send_headers=not_stream_opened)
     finally:
         if fd:
@@ -469,7 +509,7 @@ def Stream(streamlink, http, url, argstr, quality):
             fd.close()
             LOGGER.info("Closing currently open stream...")
             remoteE2() #to put in standby
-            os.system('if [ `ps -ef|grep -v grep|grep -c ffmpeg` -eq 0 ];then rm -f /tmp/ffmpeg-*;fi;rm -f /tmp/*.streamlink.') #troche porzadku bo smietnik zostaje
+        os.system(cleanCMD) #troche porzadku bo smietnik zostaje
 
 class Streamlink2(Streamlink):
     _loaded_plugins = None
@@ -492,7 +532,7 @@ class StreamHandler(BaseHTTPRequestHandler):
         sendHeaders(s)
 
     def do_GET(s):
-        os.system('if [ `ps -ef|grep -v grep|grep -c ffmpeg` -eq 0 ];then rm -f /tmp/ffmpeg-*;fi;rm -f /tmp/*.streamlink.')
+        os.system(cleanCMD)
         url=unquote(s.path[1:])
         quality="best"
 
@@ -559,12 +599,12 @@ def start():
         jVersion = str(e)
     LOGGER.info("###################################################")
     LOGGER.info("{0} Server ({1} - {2}) started", time.asctime(), __version__, jVersion)
-    LOGGER.info("Host:          {0}", hostname())
-    LOGGER.info("Port:          {0}", PORT_NUMBER)
-    LOGGER.info("OS:            {0}", platform.platform())
-    LOGGER.info("Python:        {0}".format(platform.python_version()))
-    LOGGER.info("Streamlink:    {0} / {1}".format(streamlink_version, streamlink_version_date))
-    LOGGER.info("Log level:     {0}", _loglevel)
+    LOGGER.info("Host:            {0}", hostname())
+    LOGGER.info("Port:            {0}", PORT_NUMBER)
+    LOGGER.info("OS:              {0}", platform.platform())
+    LOGGER.info("Python:          {0}".format(platform.python_version()))
+    LOGGER.info("Streamlink:      {0} / {1}".format(streamlink_version, streamlink_version_date))
+    LOGGER.info("Log level:       {0}", _loglevel)
     LOGGER.debug("Options Parser: {0}".format(opts_parser_version))
     LOGGER.debug("youtube-dl:     {0}".format(ytdl_version))
     LOGGER.info("Requests({0}), Socks({1}), Websocket({2})".format(requests_version, socks_version, websocket_version))
@@ -670,6 +710,7 @@ class Daemon:
         Stop the daemon
         """
         # Get the pid from the pidfile
+        os.system(cleanCMD)
         try:
             pf = open(self.pidfile,"r")
             pid = int(pf.read().strip())
